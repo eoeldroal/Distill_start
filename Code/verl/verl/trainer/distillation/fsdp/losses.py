@@ -231,6 +231,13 @@ def compute_relative_floor_topk(
     teacher_lp = torch.where(on_support, teacher_lp, NEG_LOG_PROB)
     anchor_lp = torch.where(on_support, anchor_lp, NEG_LOG_PROB)
 
+    # Support-capture diagnostics are read before log_prob_min_clamp, matching the
+    # teacher-only path (which measures them at the gather). Reading them after the clamp
+    # would add exp(clamp) per off-support-tail slot and push the sums above 1, and the two
+    # loss modes would no longer report the same quantity under the same metric name.
+    teacher_mass = teacher_lp.exp().sum(dim=-1)
+    anchor_mass = anchor_lp.exp().sum(dim=-1)
+
     # 4. project the teacher onto the floor set to get the target
     if loss_config.log_prob_min_clamp is not None:
         teacher_lp = torch.where(on_support, teacher_lp.clamp_min(loss_config.log_prob_min_clamp), teacher_lp)
@@ -248,6 +255,7 @@ def compute_relative_floor_topk(
     else:
         student_topk_log_probs = torch.gather(F.log_softmax(student_logits, dim=-1), dim=-1, index=union_ids)
     student_topk_log_probs = student_topk_log_probs.float()
+    student_mass = torch.where(on_support, student_topk_log_probs, NEG_LOG_PROB).exp().sum(dim=-1)
     if loss_config.log_prob_min_clamp is not None:
         student_topk_log_probs = student_topk_log_probs.clamp_min(loss_config.log_prob_min_clamp)
 
@@ -257,9 +265,9 @@ def compute_relative_floor_topk(
     # the floor actually acted (its binding count is the measured k_bind).
     return {
         "distillation_losses": distillation_losses,
-        "student_mass": torch.where(on_support, student_topk_log_probs, NEG_LOG_PROB).exp().sum(dim=-1),
-        "teacher_mass": teacher_lp.exp().sum(dim=-1),
-        "anchor_mass": anchor_lp.exp().sum(dim=-1),
+        "student_mass": student_mass,
+        "teacher_mass": teacher_mass,
+        "anchor_mass": anchor_mass,
         "floor_binding_count": floor_binding.sum(dim=-1).to(distillation_losses.dtype),
         "target_floor_mass": (target_log_probs.exp() * floor_binding).sum(dim=-1),
     }

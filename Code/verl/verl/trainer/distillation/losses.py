@@ -174,7 +174,13 @@ def compute_topk_loss(
 
     match config.strategy:
         # VeOmni uses FSDP2 internally, so its loss computation is identical to FSDP.
-        case "fsdp" | "veomni":
+        # "fsdp2" belongs here for the same reason, and because EngineRegistry maps both
+        # "fsdp" and "fsdp2" to FSDPEngineWithLMHead: the logits reaching this kernel are
+        # produced by the same prepare_model_outputs, and the kernel itself is tensor math
+        # on materialized logits with no FSDP API of its own. Upstream omits it only because
+        # its one FSDP2 distillation example runs loss_mode=k1, an estimator mode that never
+        # enters this dispatch.
+        case "fsdp" | "fsdp2" | "veomni":
             import verl.trainer.distillation.fsdp.losses as fsdp_losses
 
             distillation_loss_fn = (
