@@ -441,14 +441,16 @@ def compute_forward_kl_topk(
 FLOOR_BINDING_POSITION_BUCKETS = ((0, 1), (1, 2), (2, 4), (4, 8), (8, 16), (16, None))
 
 
-def _floor_binding_profile(floor_binding_count: torch.Tensor, response_mask: torch.Tensor) -> dict[str, float]:
-    """Mean binding count per response-position bucket, as one metric per bucket.
+def _position_profile(values: torch.Tensor, response_mask: torch.Tensor, name: str) -> dict[str, float]:
+    """Mean of a per-token quantity per response-position bucket, one metric per bucket.
 
     The profile says *where* the floor acts, which the mean alone cannot: binding on the
     tokens that pick a branch is what preserves entry (and sets k_bind), while binding
-    later in the window speaks to execution inside a branch instead. Buckets are
-    inherited from the pre-distillation Cost(beta) analysis so the two profiles compare
-    directly, and widen with position because binding concentrates on the opening tokens.
+    later in the window speaks to execution inside a branch instead. The same split
+    matters for the cost, because a format gate is one position out of hundreds and its
+    price disappears into a sequence average. Buckets are inherited from the
+    pre-distillation Cost(beta) analysis so the two profiles compare directly, and widen
+    with position because binding concentrates on the opening tokens.
     """
     profile = {}
     for start, end in FLOOR_BINDING_POSITION_BUCKETS:
@@ -456,7 +458,7 @@ def _floor_binding_profile(floor_binding_count: torch.Tensor, response_mask: tor
         if not mask.any():
             continue
         label = f"pos{start}" if end == start + 1 else f"pos{start}-{end - 1}" if end else f"pos{start}plus"
-        profile[f"distillation/floor_binding/{label}"] = floor_binding_count[:, start:end][mask].mean().item()
+        profile[f"distillation/{name}/{label}"] = values[:, start:end][mask].mean().item()
     return profile
 
 
@@ -487,6 +489,7 @@ def compute_relative_floor_topk(
     anchor_mass = no_padding_2_padding(model_output["anchor_mass"], data)
     floor_binding_count = no_padding_2_padding(model_output["floor_binding_count"], data)
     target_floor_mass = no_padding_2_padding(model_output["target_floor_mass"], data)
+    cost_beta = no_padding_2_padding(model_output["cost_beta"], data)
 
     if data["response_mask"].is_nested:
         response_mask_bool = data["response_mask"].bool().to_padded_tensor(False)
@@ -499,6 +502,7 @@ def compute_relative_floor_topk(
     anchor_mass = anchor_mass[response_mask_bool]
     binding = floor_binding_count[response_mask_bool]
     floor_mass = target_floor_mass[response_mask_bool]
+    cost = cost_beta[response_mask_bool]
 
     distillation_metrics = {
         # how much of each model's distribution the shared support captured
@@ -512,7 +516,12 @@ def compute_relative_floor_topk(
         "distillation/floor_binding_count_max": Metric(AggregationType.MAX, binding.max()),
         "distillation/target_floor_mass": floor_mass.mean().item(),
         "distillation/target_floor_mass_max": Metric(AggregationType.MAX, floor_mass.max()),
-        **_floor_binding_profile(floor_binding_count, response_mask_bool),
+        # Cost(beta) = KL(q* || pi_T), the value the beta rule is written against. Distinct
+        # from distillation/loss, which is KL(q* || pi_theta).
+        "distillation/cost_beta": cost.mean().item(),
+        "distillation/cost_beta_max": Metric(AggregationType.MAX, cost.max()),
+        **_position_profile(floor_binding_count, response_mask_bool, "floor_binding"),
+        **_position_profile(cost_beta, response_mask_bool, "cost_beta"),
     }
 
     # The support is a top-k union rather than the full vocabulary, so the two

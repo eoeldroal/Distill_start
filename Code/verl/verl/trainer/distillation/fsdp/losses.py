@@ -246,6 +246,15 @@ def compute_relative_floor_topk(
     target_log_probs = torch.where(on_support, target_log_probs, NEG_LOG_PROB)
     floor_binding = floor_binding & on_support
 
+    # Cost(beta) = KL(q* || pi_T): the price the floor pays to pull the target off the
+    # teacher. This is the quantity the design's beta rule is written against
+    # (beta* = min(beta_knee, Cost^-1(delta))), and it is NOT the training loss below,
+    # which is KL(q* || pi_theta) and measures the student instead. Both distributions
+    # here are the clamped ones the target was built from, so tokens the teacher truly
+    # puts under exp(log_prob_min_clamp) are read as sitting at that value: the metric is
+    # a lower bound whose tightness the clamp sets.
+    cost_beta = kl_divergence(log_q=teacher_lp, log_p=target_log_probs)
+
     # 5. student log-probs on the same support. ``use_chunked_topk`` streams the
     # reduction to avoid the [B, T, V] log_softmax buffer, as in the teacher-only path.
     if getattr(loss_config, "use_chunked_topk", False):
@@ -270,4 +279,5 @@ def compute_relative_floor_topk(
         "anchor_mass": anchor_mass,
         "floor_binding_count": floor_binding.sum(dim=-1).to(distillation_losses.dtype),
         "target_floor_mass": (target_log_probs.exp() * floor_binding).sum(dim=-1),
+        "cost_beta": cost_beta,
     }

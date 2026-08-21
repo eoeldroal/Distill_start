@@ -146,13 +146,21 @@ informative 증가)의 고리이거나 그 해석에 필요한 통제 변수만 
 
 | 지표 | 뜻 |
 |---|---|
-| `distillation/loss` | Cost(β) 의 훈련 중 실현값 |
+| `distillation/loss` | KL(q\*‖π_θ). student 가 target 에서 얼마나 먼지 |
+| `distillation/cost_beta` (+max) | **Cost(β) = KL(q\*‖π_T)**. floor 가 target 을 teacher 에서 끌어낸 값 |
+| `distillation/cost_beta/pos{0,1,2-3,4-7,8-15,16plus}` | 위 값의 위치별 분해 |
 | `distillation/teacher_mass`, `anchor_mass` | 지지집합이 담은 각 모델의 확률 (top-k 절단의 크기) |
 | `distillation/student_mass` | 같은 지지집합에서 student 의 mass |
 | `distillation/floor_binding_count` (+max) | 위치당 floor 가 이긴 token 수 = k_bind 의 실측 |
 | `distillation/target_floor_mass` (+max) | q* 중 floor 가 든 mass. 이론 상한이 β 다 |
 | `distillation/floor_binding/pos{0,1,2-3,4-7,8-15,16plus}` | 위 개수의 위치별 분해 |
 | `training/groups/{all_fail,all_success,informative}` | GRPO 그룹을 학습 신호 유무로 나눈 비율 |
+
+`loss` 와 `cost_beta` 는 다른 양이다. `kl_divergence(log_q, log_p)` 가 `Σ p(log p − log q)`
+= KL(p‖q) 이고 손실은 `kl_divergence(log_q=student, log_p=target)` 로 불리므로 KL(q\*‖π_θ) 다.
+β 결정 규칙 `β* = min(β_knee, Cost⁻¹(δ))` 가 쓰는 것은 KL(q\*‖π_T) 이고, 그것이 `cost_beta` 다.
+지지집합 밖 teacher 값이 `-1e30` 이면 KL 이 발산하므로 clamp 된 teacher 로 계산한다. 따라서
+`cost_beta` 는 하한이고 그 조임 정도를 `log_prob_min_clamp` 가 정한다.
 
 위치별 분해가 필요한 이유: 평균 하나로는 floor 가 앞쪽에 몰려 작동하는지 알 수 없는데,
 문서는 창 앞부분의 binding 을 진입 보존(k_bind), 뒷부분을 실행 보존(V) 의 진단으로 나눈다.
