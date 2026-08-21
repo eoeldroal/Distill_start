@@ -152,6 +152,14 @@ class AgentLoopOutput(BaseModel):
             output["teacher_ids"] = teacher_ids
         if teacher_logprobs is not None:
             output["teacher_logprobs"] = teacher_logprobs
+        anchor_ids, anchor_logprobs = (
+            output["extra_fields"].pop("anchor_ids", None),
+            output["extra_fields"].pop("anchor_logprobs", None),
+        )
+        if anchor_ids is not None:
+            output["anchor_ids"] = anchor_ids
+        if anchor_logprobs is not None:
+            output["anchor_logprobs"] = anchor_logprobs
         return output
 
 
@@ -178,6 +186,10 @@ class _InternalAgentLoopOutput(AgentLoopOutput):
     """Padded log probabilities from teacher model for prompt/response tokens."""
     teacher_ids: Optional[torch.Tensor] = None
     """Padded token ids corresponding to the teacher log probabilities."""
+    anchor_logprobs: Optional[torch.Tensor] = None
+    """Padded log probabilities from the frozen anchor, for relative-floor distillation."""
+    anchor_ids: Optional[torch.Tensor] = None
+    """Padded token ids corresponding to the anchor log probabilities."""
     routed_experts: Optional[torch.Tensor] = None
     """Padded routed experts for the total tokens."""
     multi_modal_inputs: Optional[dict[str, torch.Tensor]] = None
@@ -794,23 +806,31 @@ class AgentLoopWorker:
             validate=validate,
             sample_kwargs=kwargs,
         )
-        teacher_ids, teacher_logprobs = (
-            output.extra_fields.pop("teacher_ids", None),
-            output.extra_fields.pop("teacher_logprobs", None),
-        )
-        if teacher_ids is not None and teacher_logprobs is not None:
-            # TODO(wuxibin): remove padding and use tensordict.
+
+        # TODO(wuxibin): remove padding and use tensordict.
+        def pad_scores(ids, logprobs):
+            if ids is None or logprobs is None:
+                return None, None
             from verl.experimental.teacher_loop.teacher_manager import _pad_teacher_outputs
 
-            teacher_ids, teacher_logprobs = _pad_teacher_outputs(
-                teacher_ids,
-                teacher_logprobs,
+            return _pad_teacher_outputs(
+                ids,
+                logprobs,
                 prompt_width=prompt_output["input_ids"].shape[1],
                 response_width=response_output["input_ids"].shape[1],
                 prompt_length=len(output.prompt_ids),
                 response_length=len(output.response_ids),
                 pad_token_id=self.tokenizer.pad_token_id,
             )
+
+        teacher_ids, teacher_logprobs = pad_scores(
+            output.extra_fields.pop("teacher_ids", None),
+            output.extra_fields.pop("teacher_logprobs", None),
+        )
+        anchor_ids, anchor_logprobs = pad_scores(
+            output.extra_fields.pop("anchor_ids", None),
+            output.extra_fields.pop("anchor_logprobs", None),
+        )
 
         return _InternalAgentLoopOutput(
             prompt_ids=prompt_output["input_ids"],
@@ -826,6 +846,8 @@ class AgentLoopWorker:
             mm_processor_kwargs=output.mm_processor_kwargs,
             teacher_logprobs=teacher_logprobs,
             teacher_ids=teacher_ids,
+            anchor_logprobs=anchor_logprobs,
+            anchor_ids=anchor_ids,
             reward_score=output.reward_score,
             num_turns=output.num_turns,
             metrics=output.metrics,
@@ -1011,14 +1033,24 @@ class AgentLoopWorker:
                 if routing_value is not None:
                     # Non-tensor batch values arrive as 0-d numpy objects / arrays; normalize to Python.
                     routing_key = routing_value.item() if hasattr(routing_value, "item") else routing_value
+            sequence_ids = prompt_ids + response_ids
             teacher_ids, teacher_logprobs = await self.teacher_server_manager.compute_teacher_logprobs_single(
-                sequence_ids=prompt_ids + response_ids,
+                sequence_ids=sequence_ids,
                 multi_modal_data=output.multi_modal_data,
                 mm_processor_kwargs=output.mm_processor_kwargs,
                 routing_key=routing_key,
             )
             output.extra_fields["teacher_ids"] = teacher_ids
             output.extra_fields["teacher_logprobs"] = teacher_logprobs
+            if self.teacher_server_manager.anchor_model_config is not None:
+                # The anchor is not routed: it scores the same sequence the teacher just did.
+                anchor_ids, anchor_logprobs = await self.teacher_server_manager.compute_anchor_logprobs_single(
+                    sequence_ids=sequence_ids,
+                    multi_modal_data=output.multi_modal_data,
+                    mm_processor_kwargs=output.mm_processor_kwargs,
+                )
+                output.extra_fields["anchor_ids"] = anchor_ids
+                output.extra_fields["anchor_logprobs"] = anchor_logprobs
 
     def _postprocess(
         self,
@@ -1042,6 +1074,9 @@ class AgentLoopWorker:
         if inputs[0].teacher_logprobs is not None and inputs[0].teacher_ids is not None:
             optional_outputs["teacher_logprobs"] = torch.cat([input.teacher_logprobs for input in inputs], dim=0)
             optional_outputs["teacher_ids"] = torch.cat([input.teacher_ids for input in inputs], dim=0)
+        if inputs[0].anchor_logprobs is not None and inputs[0].anchor_ids is not None:
+            optional_outputs["anchor_logprobs"] = torch.cat([input.anchor_logprobs for input in inputs], dim=0)
+            optional_outputs["anchor_ids"] = torch.cat([input.anchor_ids for input in inputs], dim=0)
         batch = TensorDict(
             {
                 "prompts": prompt_ids,  # [bsz, prompt_length]

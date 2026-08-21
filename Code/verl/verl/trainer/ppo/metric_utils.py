@@ -16,7 +16,7 @@ Metrics related to the PPO trainer.
 """
 
 import logging
-from collections import defaultdict
+from collections import Counter, defaultdict
 from functools import partial
 from typing import Any, Callable
 
@@ -606,6 +606,47 @@ def compute_data_metrics(batch: DataProto, use_critic: bool = True) -> dict[str,
         metrics["tool_call_counts/mean"] = tool_call_counts.mean()
 
     return metrics
+
+
+GROUP_SUCCESS_COUNTS_KEY = "training/groups/success_counts"
+
+
+def compute_group_metrics(batch: DataProto) -> dict[str, Any]:
+    """Split rollout groups by whether they carry a learning signal.
+
+    A GRPO group whose rollouts all fail or all succeed has zero advantage everywhere,
+    so it teaches nothing; only mixed groups do. Which of the two zero-signal cases a
+    group falls into matters: all-fail means the policy never found the answer, while
+    all-success means the prompt was too easy. Reporting both keeps that distinction
+    visible, and the informative share is their complement.
+
+    Args:
+        batch: A DataProto with ``token_level_scores`` and a ``uid`` per rollout.
+
+    Returns:
+        The three group shares, plus ``GROUP_SUCCESS_COUNTS_KEY`` mapping "successes in
+        the group" -> "number of such groups", which the trainer forwards to a wandb table.
+    """
+    scores = batch.batch["token_level_scores"].sum(-1)
+    uids = batch.non_tensor_batch["uid"]
+
+    successes_per_group = defaultdict(int)
+    size_per_group = defaultdict(int)
+    for score, uid in zip(scores.tolist(), uids, strict=True):
+        successes_per_group[uid] += int(score > 0)
+        size_per_group[uid] += 1
+
+    n_groups = len(size_per_group)
+    all_fail = sum(1 for uid, n in successes_per_group.items() if n == 0)
+    all_success = sum(1 for uid, n in successes_per_group.items() if n == size_per_group[uid])
+    success_counts = Counter(successes_per_group.values())
+
+    return {
+        "training/groups/all_fail": all_fail / n_groups,
+        "training/groups/all_success": all_success / n_groups,
+        "training/groups/informative": (n_groups - all_fail - all_success) / n_groups,
+        GROUP_SUCCESS_COUNTS_KEY: dict(success_counts),
+    }
 
 
 def compute_timing_metrics(batch: DataProto, timing_raw: dict[str, float]) -> dict[str, Any]:

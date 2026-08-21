@@ -51,8 +51,10 @@ from verl.trainer.distillation import is_distillation_enabled
 from verl.trainer.ppo import core_algos
 from verl.trainer.ppo.core_algos import agg_loss
 from verl.trainer.ppo.metric_utils import (
+    GROUP_SUCCESS_COUNTS_KEY,
     RolloutMoELoadBalanceMetricsAccumulator,
     compute_data_metrics,
+    compute_group_metrics,
     compute_moe_lb_metrics,
     compute_throughout_metrics,
     compute_timing_metrics,
@@ -67,6 +69,7 @@ from verl.trainer.ppo.utils import (
     Role,
     create_rl_dataset,
     create_rl_sampler,
+    need_colocated_anchor,
     need_critic,
     need_reference_policy,
     need_teacher_policy,
@@ -84,7 +87,12 @@ from verl.utils.metric import reduce_metrics
 from verl.utils.py_functional import rename_dict
 from verl.utils.seqlen_balancing import calculate_workload, get_seqlen_balanced_partitions, log_seqlen_unbalance
 from verl.utils.skip import SkipManager
-from verl.utils.tracking import DapoFilteredRewardTableLogger, Tracking, ValidationGenerationsLogger
+from verl.utils.tracking import (
+    DapoFilteredRewardTableLogger,
+    StepHistogramTableLogger,
+    Tracking,
+    ValidationGenerationsLogger,
+)
 from verl.workers.config import CriticConfig, DistillationConfig, HFModelConfig
 from verl.workers.engine_workers import ActorRolloutRefWorker, TrainingWorker, TrainingWorkerConfig
 from verl.workers.rollout.llm_server import LLMServerClient, LLMServerManager
@@ -126,6 +134,12 @@ class PPOTrainer(ABC):
         self.config = config
         self.use_critic = need_critic(self.config)
         self.use_reference_policy = need_reference_policy(self.config)
+        self.anchor_from_ref = need_colocated_anchor(self.config)
+        # The reference policy is also used for the KL terms; those are what need its
+        # per-token log-probs, whereas the anchor needs its top-k instead.
+        self.use_kl_penalty = (
+            self.config.algorithm.get("use_kl_in_reward", False) or self.config.actor_rollout_ref.actor.use_kl_loss
+        )
         self.use_teacher_policy = need_teacher_policy(self.config)
         if self.config.algorithm.use_kl_in_reward:
             self.kl_ctrl_in_reward = core_algos.get_kl_controller(self.config.algorithm.kl_ctrl)
@@ -409,6 +423,9 @@ class PPOTrainer(ABC):
             project_name=self.config.trainer.project_name,
             experiment_name=self.config.trainer.experiment_name,
         )
+        self.group_success_counts_logger = StepHistogramTableLogger(
+            key=GROUP_SUCCESS_COUNTS_KEY, bucket_column="successes_in_group:num_groups"
+        )
 
         # perform validation before training
         if self.config.trainer.get("val_before_train", True):
@@ -487,10 +504,15 @@ class PPOTrainer(ABC):
             tq.kv_clear(keys=batch.keys, partition_id=batch.partition_id)
 
             dapo_filtered_reward_counts = metrics.pop(DAPO_FILTERED_REWARD_COUNTS_KEY, None)
+            group_success_counts = metrics.pop(GROUP_SUCCESS_COUNTS_KEY, None)
             self.logger.log(data=metrics, step=self.global_steps)
             if dapo_filtered_reward_counts:
                 self.dapo_filtered_reward_logger.log(
                     self.config.trainer.logger, dapo_filtered_reward_counts, self.global_steps
+                )
+            if group_success_counts:
+                self.group_success_counts_logger.log(
+                    self.config.trainer.logger, group_success_counts, self.global_steps
                 )
             progress_bar.update(1)
             self.global_steps += 1
@@ -560,9 +582,14 @@ class PPOTrainer(ABC):
             batch = self._compute_old_log_prob(batch, metrics=metrics)
 
         # 5. [OPTIONAL] compute ref_log_prob
-        if self.use_reference_policy:
+        if self.use_reference_policy and self.use_kl_penalty:
             with marked_timer("ref", timing_raw, color="olive"):
                 batch = self._compute_ref_log_prob(batch, metrics=metrics)
+
+        # 5b. [OPTIONAL] score the anchor off the reference policy for relative-floor distillation
+        if self.anchor_from_ref:
+            with marked_timer("anchor", timing_raw, color="olive"):
+                batch = self._compute_anchor_topk(batch, metrics=metrics)
 
         # 6. [OPTIONAL] compute critic values
         if self.use_critic:
@@ -1629,6 +1656,28 @@ class PPOTrainer(ABC):
 
         return batch
 
+    def _compute_anchor_topk(self, batch: KVBatchMeta, metrics: dict) -> KVBatchMeta:
+        """Score the anchor from the reference policy and put its top-k on the batch.
+
+        Mirrors ``_compute_ref_log_prob``: same worker, same forward pass shape, but the
+        reference policy's logits processor emits its own top-k distribution rather than
+        the log-prob of the sampled token, which is what the relative-floor target needs.
+        """
+        batch.extra_info.update(
+            {
+                "calculate_entropy": False,
+                "compute_loss": True,
+                "distillation_use_topk": True,
+                "temperature": self.config.actor_rollout_ref.rollout.temperature,
+            }
+        )
+        output = self.actor_rollout_wg.compute_anchor_topk(batch)
+        assert len(output) == len(batch)
+
+        # The worker already wrote anchor_logprobs / anchor_ids over the whole sequence, the
+        # same span the teacher's fields cover and the one the loss lines them up against.
+        return batch
+
     def _compute_advantage(self, batch: KVBatchMeta, metrics: dict) -> KVBatchMeta:
         """Compute the advantage of the batch."""
         fields = ["uid", "response_mask", "rm_scores", "rollout_log_probs", "old_log_probs", "ref_log_prob", "values"]
@@ -1659,6 +1708,8 @@ class PPOTrainer(ABC):
         if rollout_correction:
             data, is_metrics = compute_rollout_correction_and_add_to_batch(data, rollout_corr_config)
             metrics.update(is_metrics)
+
+        metrics.update(compute_group_metrics(data))
 
         # 3. compute advantages
         data = compute_advantage_for_multi_trajectories(

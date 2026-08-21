@@ -21,7 +21,7 @@ from omegaconf import DictConfig, OmegaConf
 from verl.single_controller.ray.base import RayResourcePool, split_resource_pool
 from verl.utils.config import omega_conf_to_dataclass
 from verl.utils.ray_utils import auto_await
-from verl.workers.config import DistillationConfig, DistillationTeacherModelConfig
+from verl.workers.config import ANCHOR_KEY, DistillationConfig, DistillationTeacherModelConfig
 from verl.workers.rollout.llm_server import LLMServerClient
 from verl.workers.rollout.replica import get_rollout_replica_class
 
@@ -163,7 +163,12 @@ class TeacherModelManager:
 
 
 class MultiTeacherModelManager:
-    """Manages one inner `TeacherModelManager` per teacher model, keyed by each teacher's `key`."""
+    """Manages one inner `TeacherModelManager` per served model, keyed by each model's `key`.
+
+    Teachers are keyed by their routing value. When ``distillation.anchor_model`` is
+    configured it is served the same way under the reserved ``ANCHOR_KEY``; unlike a
+    teacher it is not a routing target, so every example is scored against it.
+    """
 
     def __init__(
         self,
@@ -189,15 +194,17 @@ class MultiTeacherModelManager:
         self._initialize_teacher_model_managers()
 
     def _initialize_teacher_model_managers(self):
-        teacher_models = self.distillation_config.teacher_models
-        split_sizes = [teacher.world_size for teacher in teacher_models.values()]
+        served_models = dict(self.distillation_config.teacher_models)
+        if self.distillation_config.anchor_model is not None:
+            served_models[ANCHOR_KEY] = self.distillation_config.anchor_model
+        split_sizes = [model.world_size for model in served_models.values()]
         split_pools = split_resource_pool(self.resource_pool, split_size=split_sizes)
 
-        for (key, teacher_model_config), teacher_pool in zip(teacher_models.items(), split_pools, strict=True):
+        for (key, model_config), model_pool in zip(served_models.items(), split_pools, strict=True):
             manager = TeacherModelManager(
                 distillation_config=self.distillation_config,
-                teacher_model_config=teacher_model_config,
-                resource_pool=teacher_pool,
+                teacher_model_config=model_config,
+                resource_pool=model_pool,
             )
             self.teacher_model_managers[key] = manager
             self.server_addresses[key] = manager.server_addresses
@@ -205,7 +212,7 @@ class MultiTeacherModelManager:
             self.load_balancer_handle[key] = manager.load_balancer_handle
 
     def get_client(self) -> dict[str, LLMServerClient]:
-        """Get the LLMServerClient for each teacher model."""
+        """Get the LLMServerClient for each served model (teachers, plus the anchor if configured)."""
         teacher_clients = {}
         for key, manager in self.teacher_model_managers.items():
             teacher_clients[key] = LLMServerClient(

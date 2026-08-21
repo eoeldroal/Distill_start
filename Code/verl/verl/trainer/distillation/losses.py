@@ -16,6 +16,7 @@ from dataclasses import dataclass, field
 from typing import Any, Callable, Optional
 
 import torch
+import torch.nn.functional as F
 from tensordict import TensorDict
 
 from verl.base_config import BaseConfig
@@ -120,6 +121,41 @@ def compute_distillation_loss_range(
     }
 
 
+def compute_topk_scores(
+    config: ActorConfig,
+    distillation_config: DistillationConfig,
+    model_output: dict = None,
+    data: TensorDict = None,
+    dp_group=None,
+    student_logits: torch.Tensor = None,
+    data_format: str = "thd",
+):
+    """Extract this model's own top-k log-probs, for scoring rather than training.
+
+    Runs in the same logits-processor slot as ``compute_topk_loss``, but instead of a
+    loss it returns the distribution itself, so a frozen model colocated with the actor
+    can be scored without standing up a separate inference server. ``student_logits`` is
+    whichever model the enclosing forward pass belongs to.
+
+    The engine calls the loss function twice per forward: once as the logits processor,
+    where ``student_logits`` is set, and once to reduce a loss, where ``model_output`` is.
+    Scoring only has work to do in the first call; the second returns a dummy loss because
+    this forward is gradient-free.
+
+    Returns:
+    - as logits processor: anchor_logprobs, anchor_ids -- each (bsz, seqlen/sp_size, topk)
+    - as loss: a placeholder loss and no metrics
+    """
+    if student_logits is None:
+        return torch.zeros((), device=next(iter(model_output.values())).device), {}
+
+    topk = distillation_config.distillation_loss.topk
+    assert topk is not None, "distillation_loss.topk must be set to score a frozen model"
+    log_probs = F.log_softmax(student_logits.float(), dim=-1)
+    values, indices = log_probs.topk(topk, dim=-1)
+    return {"anchor_logprobs": values, "anchor_ids": indices.to(torch.int32)}
+
+
 def compute_topk_loss(
     config: ActorConfig,
     distillation_config: DistillationConfig,
@@ -129,23 +165,47 @@ def compute_topk_loss(
 ) -> torch.Tensor:
     """Compute the topk loss in logit processor.
 
-    Returns:
-    - distillation_losses: (bsz, seqlen/cp_size)
-    - student_mass: (bsz, seqlen/cp_size)
-    - teacher_mass: (bsz, seqlen/cp_size)
+    Returns a dict of per-token tensors, each (bsz, seqlen/cp_size):
+    distillation_losses, student_mass, teacher_mass, plus whatever else the
+    selected kernel reports (relative_floor_topk adds anchor-side diagnostics).
     """
+    loss_mode = distillation_config.distillation_loss.loss_mode
+    relative_floor = loss_mode == "relative_floor_topk"
+
     match config.strategy:
         # VeOmni uses FSDP2 internally, so its loss computation is identical to FSDP.
         case "fsdp" | "veomni":
             import verl.trainer.distillation.fsdp.losses as fsdp_losses
 
-            distillation_loss_fn = fsdp_losses.compute_forward_kl_topk
+            distillation_loss_fn = (
+                fsdp_losses.compute_relative_floor_topk if relative_floor else fsdp_losses.compute_forward_kl_topk
+            )
         case "megatron":
+            if relative_floor:
+                raise NotImplementedError(
+                    "relative_floor_topk is implemented for the fsdp/veomni strategy only. The megatron "
+                    "kernel computes its KL on vocab-parallel shards with a hand-written backward, which "
+                    "the projected target would need reworked."
+                )
             import verl.trainer.distillation.megatron.losses as megatron_losses
 
             distillation_loss_fn = megatron_losses.compute_forward_kl_topk
         case _:
             raise NotImplementedError(f"Unsupported strategy: {config.strategy=}")
+
+    anchor_kwargs = {}
+    if relative_floor:
+        missing = {"anchor_logprobs", "anchor_ids"} - set(data.keys())
+        if missing:
+            raise KeyError(
+                f"relative_floor_topk needs {sorted(missing)} in the batch: enable "
+                "distillation.anchor_from_ref, or register an anchor_model alongside the teacher, "
+                "so the anchor's top-k log-probs reach the loss."
+            )
+        anchor_kwargs = {
+            "anchor_topk_log_probs": data["anchor_logprobs"],
+            "anchor_topk_ids": data["anchor_ids"],
+        }
 
     outputs = distillation_loss_fn(
         student_logits=student_logits,
@@ -153,6 +213,7 @@ def compute_topk_loss(
         teacher_topk_ids=data["teacher_ids"],
         config=distillation_config,
         data_format=data_format,
+        **anchor_kwargs,
     )
 
     expected_shape = student_logits.shape[:2]
@@ -362,6 +423,94 @@ def compute_forward_kl_topk(
     }
 
     # Due to use of top-k, student and teacher distributions don't sum to 1 -> divergences can be negative.
+    distillation_losses = distillation_losses.clamp_min(0.0)
+
+    return distillation_losses, distillation_metrics
+
+
+# Response positions the floor-binding profile is reported over. Inherited from the
+# pre-distillation Cost(beta) analysis so the two profiles are directly comparable:
+# binding concentrates on the opening tokens, where teacher and anchor disagree about
+# how to start, and flattens out once the continuation is under way.
+FLOOR_BINDING_POSITION_BUCKETS = ((0, 1), (1, 2), (2, 4), (4, 8), (8, 16), (16, None))
+
+
+def _floor_binding_profile(floor_binding_count: torch.Tensor, response_mask: torch.Tensor) -> dict[str, float]:
+    """Mean binding count per response-position bucket, as one metric per bucket.
+
+    The profile says *where* the floor acts, which the mean alone cannot: binding on the
+    tokens that pick a branch is what preserves entry (and sets k_bind), while binding
+    later in the window speaks to execution inside a branch instead. Buckets are
+    inherited from the pre-distillation Cost(beta) analysis so the two profiles compare
+    directly, and widen with position because binding concentrates on the opening tokens.
+    """
+    profile = {}
+    for start, end in FLOOR_BINDING_POSITION_BUCKETS:
+        mask = response_mask[:, start:end]
+        if not mask.any():
+            continue
+        label = f"pos{start}" if end == start + 1 else f"pos{start}-{end - 1}" if end else f"pos{start}plus"
+        profile[f"distillation/floor_binding/{label}"] = floor_binding_count[:, start:end][mask].mean().item()
+    return profile
+
+
+@register_distillation_loss(DistillationLossSettings(names=["relative_floor_topk"], use_topk=True))  # type: ignore[arg-type]
+def compute_relative_floor_topk(
+    config: ActorConfig,
+    distillation_config: DistillationConfig,
+    model_output: dict,
+    data: TensorDict,
+) -> tuple[torch.Tensor, dict[str, Any]]:
+    """Forward KL against the relative-floor projection target q*.
+
+    The target is q*(v) = max(c*pi_T(v), beta*pi_A(v)): follow the teacher as
+    closely as possible while never dropping a candidate below beta times the
+    probability the frozen pre-distillation anchor gave it. The per-token loss
+    itself is computed in the logits processor (see
+    ``verl.trainer.distillation.fsdp.losses.compute_relative_floor_topk``);
+    this function unpads it and reports the diagnostics that say whether the
+    floor actually acted.
+
+    Returns:
+    - distillation_losses: (bsz, resp_len)
+    - distillation_metrics: Dictionary of metrics.
+    """
+    distillation_losses = no_padding_2_padding(model_output["distillation_losses"], data)
+    student_mass = no_padding_2_padding(model_output["student_mass"], data)
+    teacher_mass = no_padding_2_padding(model_output["teacher_mass"], data)
+    anchor_mass = no_padding_2_padding(model_output["anchor_mass"], data)
+    floor_binding_count = no_padding_2_padding(model_output["floor_binding_count"], data)
+    target_floor_mass = no_padding_2_padding(model_output["target_floor_mass"], data)
+
+    if data["response_mask"].is_nested:
+        response_mask_bool = data["response_mask"].bool().to_padded_tensor(False)
+    else:
+        response_mask_bool = data["response_mask"].bool()
+    assert distillation_losses.shape == student_mass.shape == response_mask_bool.shape
+
+    student_mass = student_mass[response_mask_bool]
+    teacher_mass = teacher_mass[response_mask_bool]
+    anchor_mass = anchor_mass[response_mask_bool]
+    binding = floor_binding_count[response_mask_bool]
+    floor_mass = target_floor_mass[response_mask_bool]
+
+    distillation_metrics = {
+        # how much of each model's distribution the shared support captured
+        "distillation/student_mass": student_mass.mean().item(),
+        "distillation/teacher_mass": teacher_mass.mean().item(),
+        "distillation/teacher_mass_min": Metric(AggregationType.MIN, teacher_mass.min()),
+        "distillation/anchor_mass": anchor_mass.mean().item(),
+        "distillation/anchor_mass_min": Metric(AggregationType.MIN, anchor_mass.min()),
+        # whether the floor acted, and how much target mass it holds
+        "distillation/floor_binding_count": binding.mean().item(),
+        "distillation/floor_binding_count_max": Metric(AggregationType.MAX, binding.max()),
+        "distillation/target_floor_mass": floor_mass.mean().item(),
+        "distillation/target_floor_mass_max": Metric(AggregationType.MAX, floor_mass.max()),
+        **_floor_binding_profile(floor_binding_count, response_mask_bool),
+    }
+
+    # The support is a top-k union rather than the full vocabulary, so the two
+    # distributions need not sum to 1 and the divergence can dip below zero.
     distillation_losses = distillation_losses.clamp_min(0.0)
 
     return distillation_losses, distillation_metrics

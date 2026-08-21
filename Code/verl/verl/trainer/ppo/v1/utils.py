@@ -19,6 +19,7 @@ import torch
 
 from verl.protocol import DataProto
 from verl.trainer.ppo import core_algos
+from verl.trainer.ppo.metric_utils import GROUP_SUCCESS_COUNTS_KEY
 from verl.trainer.ppo.ray_trainer import compute_advantage
 from verl.trainer.ppo.v1.replay_buffer import DAPO_FILTERED_REWARD_COUNTS_KEY
 
@@ -60,7 +61,7 @@ class MetricsAggregator:
         for key, value in metrics.items():
             if isinstance(value, bool):
                 continue
-            if key == DAPO_FILTERED_REWARD_COUNTS_KEY and isinstance(value, dict):
+            if key in (DAPO_FILTERED_REWARD_COUNTS_KEY, GROUP_SUCCESS_COUNTS_KEY) and isinstance(value, dict):
                 self.dict_metrics[key].update(value)
                 continue
             if isinstance(value, int | float | np.number):

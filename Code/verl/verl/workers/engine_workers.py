@@ -30,7 +30,7 @@ from torch.distributed.device_mesh import init_device_mesh
 from verl.checkpoint_engine import CheckpointEngineRegistry
 from verl.single_controller.base import Worker
 from verl.single_controller.base.decorator import Dispatch, make_nd_compute_dataproto_dispatch_fn, register
-from verl.trainer.distillation import distillation_ppo_loss, is_distillation_enabled
+from verl.trainer.distillation import compute_topk_scores, distillation_ppo_loss, is_distillation_enabled
 from verl.utils import tensordict_utils as tu
 from verl.utils.config import omega_conf_to_dataclass
 from verl.utils.device import get_device_name, get_torch_device, set_expandable_segments
@@ -465,6 +465,7 @@ class ActorRolloutRefWorker(Worker, DistProfilerExtension):
         self.config = config
         self.distillation_config = distillation_config
         self.distillation_enabled = is_distillation_enabled(distillation_config)
+        self.anchor_from_ref = self.distillation_enabled and distillation_config.get("anchor_from_ref", False)
         self.role = role
         self.actor: TrainingWorker | None = None
         self.ref: TrainingWorker | None = None
@@ -585,6 +586,17 @@ class ActorRolloutRefWorker(Worker, DistProfilerExtension):
 
             self.ref = self.ref_worker_cls(config=ref_training_config)
             self.ref.reset()
+            if self.anchor_from_ref:
+                # The reference policy holds the student's pre-distillation weights, which is
+                # exactly the anchor relative-floor distillation projects onto. Give its
+                # forward pass the top-k extractor so scoring the anchor needs no extra model.
+                self.ref.set_loss_fn(
+                    partial(
+                        compute_topk_scores,
+                        config=ref_config,
+                        distillation_config=omega_conf_to_dataclass(self.distillation_config),
+                    )
+                )
             self.set_dispatch_collect(mesh_name="ref", **self.ref.get_dispatch_collect())
 
         # 2. build actor model
@@ -693,6 +705,15 @@ class ActorRolloutRefWorker(Worker, DistProfilerExtension):
     @DistProfiler.annotate(color="olive", role="ref_compute_log_prob")
     @_with_routing_replay_flag(enabled=False)
     def compute_ref_log_prob(self, data: TensorDict) -> TensorDict:
+        output = self.ref.infer_batch(data=data)
+        return output.cpu() if output is not None else None
+
+    @register(dispatch_mode=make_nd_compute_dataproto_dispatch_fn(mesh_name="ref"))
+    @DistProfiler.annotate(color="olive", role="anchor_compute_topk")
+    @_with_routing_replay_flag(enabled=False)
+    def compute_anchor_topk(self, data: TensorDict) -> TensorDict:
+        """Score the anchor: the reference policy's own top-k log-probs per position."""
+        assert self.anchor_from_ref, "distillation.anchor_from_ref is not enabled"
         output = self.ref.infer_batch(data=data)
         return output.cpu() if output is not None else None
 

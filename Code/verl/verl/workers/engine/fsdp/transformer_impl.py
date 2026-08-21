@@ -1375,13 +1375,16 @@ class FSDPEngineWithLMHead(FSDPEngine):
                             self.compute_entropy_from_logits, logits_rmpad
                         )
 
-                # logits_processor_func return tensors with shape (1, total_nnz/sp_size)
+                # logits_processor_func returns tensors whose leading dim is (1, total_nnz/sp_size);
+                # a per-token vector (a loss) keeps that shape, while a per-token top-k row
+                # (scoring a frozen model) carries one trailing dim. Both ride the same
+                # gather / unpad / nest path, which only touches the token dim.
                 if distillation_use_topk:
                     outputs = logits_processor_func(student_logits=logits_rmpad.unsqueeze(0), data=micro_batch)
                     cu_seqlens = input_ids.offsets()
                     for k, v in outputs.items():
                         v = v.squeeze(0)
-                        assert v.shape == (logits_rmpad.shape[0],), (
+                        assert v.shape[0] == logits_rmpad.shape[0] and v.dim() <= 2, (
                             f"logits_rmpad len: {logits_rmpad.shape[0]}, {k} shape: {v.shape}"
                         )
                         v = self._gather_and_unpad_packed(v, output_args["pad_size"])
@@ -1475,7 +1478,7 @@ class FSDPEngineWithLMHead(FSDPEngine):
                         outputs = logits_processor_func(student_logits=logits_rmpad.unsqueeze(0), data=micro_batch)
                         for k, v in outputs.items():
                             v = v.squeeze(0)
-                            assert v.shape == (logits_rmpad.shape[0],), (
+                            assert v.shape[0] == logits_rmpad.shape[0] and v.dim() <= 2, (
                                 f"logits_rmpad len: {logits_rmpad.shape[0]}, {k} shape: {v.shape}"
                             )
                             model_output[k] = torch.nested.nested_tensor_from_jagged(v, cu_seqlens)

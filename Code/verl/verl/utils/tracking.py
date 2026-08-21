@@ -739,6 +739,55 @@ class ValidationGenerationsLogger:
         self.writer.flush()
 
 
+class StepHistogramTableLogger:
+    """Wandb table of a per-step histogram, one row per training step.
+
+    Each row holds compact ``bucket:value`` pairs. Wandb 0.20+ uploads rows
+    incrementally; older versions rebuild the full table for compatibility.
+
+    Intentionally wandb-only: this "distribution over time" view is a table, which other
+    tracking backends do not render usefully. Non-wandb backends are silently skipped.
+    """
+
+    def __init__(self, key: str, bucket_column: str):
+        self._key = key
+        self._columns = ["step", bucket_column]
+
+    def log(self, loggers, histogram: dict, step: int):
+        """histogram maps bucket -> value for this step."""
+        if "wandb" in loggers:
+            self._log_to_wandb(histogram, step)
+
+    def _log_to_wandb(self, histogram: dict, step: int):
+        import wandb
+
+        if wandb.run is None:
+            return
+
+        text = ", ".join(f"{bucket}:{histogram[bucket]:g}" for bucket in sorted(histogram))
+
+        if not hasattr(self, "_use_incremental_table"):
+            self._use_incremental_table = Version(wandb.__version__) >= Version("0.20.0")
+            if self._use_incremental_table:
+                self._table = wandb.Table(columns=self._columns, log_mode="INCREMENTAL")
+            else:
+                self._rows = []
+                logger.warning(
+                    "wandb<0.20.0 does not support incremental tables; the %s table will re-upload "
+                    "its full history each step.",
+                    self._key,
+                )
+
+        if self._use_incremental_table:
+            self._table.add_data(step, text)
+            table = self._table
+        else:
+            self._rows.append([step, text])
+            table = wandb.Table(columns=self._columns, data=list(self._rows))
+
+        wandb.log({self._key: table}, step=step)
+
+
 @dataclasses.dataclass
 class DapoFilteredRewardTableLogger:
     """Wandb table of DAPO-filtered (no-signal) group counts per reward value.

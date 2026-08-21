@@ -76,7 +76,26 @@ def need_reference_policy(
     config: DictConfig,
 ) -> bool:
     """Given the config, do we need ref policy."""
-    return config.algorithm.get("use_kl_in_reward", False) or config.actor_rollout_ref.actor.use_kl_loss
+    return (
+        config.algorithm.get("use_kl_in_reward", False)
+        or config.actor_rollout_ref.actor.use_kl_loss
+        or need_colocated_anchor(config)
+    )
+
+
+def need_colocated_anchor(
+    config: DictConfig,
+) -> bool:
+    """Whether relative-floor distillation scores its anchor from the reference policy.
+
+    The anchor is the student's own pre-distillation weights, which is what the reference
+    policy already holds, so scoring it there needs no extra model: set
+    ``distillation.anchor_from_ref`` instead of a dedicated ``anchor_model`` server.
+    """
+    distillation = config.get("distillation")
+    if not is_distillation_enabled(distillation):
+        return False
+    return bool(distillation.get("anchor_from_ref", False))
 
 
 def need_teacher_policy(

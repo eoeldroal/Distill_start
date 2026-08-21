@@ -42,6 +42,11 @@ distillation_loss:
   # Whether to incorporate distillation loss as a reward.
   use_policy_gradient: false
 
+  # Floor strength beta for loss_mode=relative_floor_topk: the target keeps every
+  # candidate at or above beta times the probability the frozen anchor gave it.
+  # Must be in (0, 1); requires distillation.anchor_model.
+  relative_floor_beta: null
+
   # Name of the policy loss to use when use_policy_gradient is true.
   policy_loss_mode: "vanilla"
 
@@ -111,3 +116,43 @@ teacher_models:
 
 # Key to route examples to the appropriate teacher model in multi-teacher setups. Should correspond to a field in the data proto, e.g., task.
 teacher_key: data_source
+
+# Score the anchor from the reference policy, which already holds the student's
+# pre-distillation weights and rides on the actor's own GPUs. Costs no dedicated GPU.
+# Mutually exclusive with anchor_model below.
+anchor_from_ref: false
+
+# The frozen pre-distillation anchor as its own inference server, the alternative to
+# anchor_from_ref above.
+# Served exactly like a teacher and drawn from the same resource pool (its GPUs count
+# toward n_gpus_per_node * nnodes), but it is not a routing target: every example is
+# scored by both the teacher and the anchor. Leave model_path null to disable.
+anchor_model:
+  _target_: verl.workers.config.DistillationTeacherModelConfig
+  key: null
+  model_path: null
+  num_replicas: 0
+  inference:
+    _target_: verl.workers.config.RolloutConfig
+    name: ${oc.select:actor_rollout_ref.rollout.name}
+    dtype: ${oc.select:actor_rollout_ref.rollout.dtype}
+    gpu_memory_utilization: 0.5
+    enforce_eager: true
+    cudagraph_capture_sizes: null
+    free_cache_engine: true
+    data_parallel_size: 1
+    expert_parallel_size: 1
+    tensor_model_parallel_size: 1
+    max_num_batched_tokens: 8192
+    max_model_len: null
+    max_num_seqs: 1024
+    load_format: auto
+    engine_kwargs: {}
+    limit_images: null
+    enable_chunked_prefill: true
+    enable_prefix_caching: true
+    disable_log_stats: true
+    skip_tokenizer_init: true
+    prompt_length: ${oc.select:actor_rollout_ref.rollout.prompt_length}
+    response_length: ${oc.select:actor_rollout_ref.rollout.response_length}
+    temperature: ${oc.select:actor_rollout_ref.rollout.temperature}

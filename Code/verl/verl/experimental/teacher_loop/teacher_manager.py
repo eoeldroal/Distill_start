@@ -22,6 +22,7 @@ from torch.nn import functional as F
 
 from verl.utils.config import omega_conf_to_dataclass
 from verl.workers.config import (
+    ANCHOR_KEY,
     DistillationConfig,
     DistillationLossConfig,
     DistillationTeacherModelConfig,
@@ -36,7 +37,7 @@ def _get_teacher_sampling_params(
     teacher_model_config: DistillationTeacherModelConfig,
     distillation_loss_config: DistillationLossConfig,
 ) -> dict[str, Any]:
-    """Get sampling parameters for teacher model when computing log probabilities for distillation."""
+    """Get sampling parameters for a scoring model (teacher or anchor) computing log probabilities."""
     # Temperature has no effect on prompt_logprobs: the teacher performs a forward pass over
     # existing tokens (no sampling). Always use temperature=1.0 regardless of the config value.
     # The default distillation.yaml copies the student rollout temperature via Hydra interpolation
@@ -88,11 +89,14 @@ class AsyncTeacherLLMServerManager:
         self.teacher_key: str = self.distillation_config.teacher_key
 
         self.teacher_model_configs: dict[str, DistillationTeacherModelConfig] = self.distillation_config.teacher_models
+        self.anchor_model_config: Optional[DistillationTeacherModelConfig] = self.distillation_config.anchor_model
         expected = set(self.teacher_model_configs)
+        if self.anchor_model_config is not None:
+            expected.add(ANCHOR_KEY)
         if set(teacher_client.keys()) != expected:
             raise ValueError(
                 f"teacher client keys {sorted(teacher_client.keys())} "
-                f"do not match teacher routing keys {sorted(expected)}."
+                f"do not match the served model keys {sorted(expected)}."
             )
         self.teacher_client: dict[str, LLMServerClient] = teacher_client
 
@@ -112,6 +116,33 @@ class AsyncTeacherLLMServerManager:
             )
         return routing_key
 
+    async def _score_single(
+        self,
+        model_key: str,
+        model_config: DistillationTeacherModelConfig,
+        sequence_ids: list[int],
+        multi_modal_data: Optional[dict[str, Any]],
+        mm_processor_kwargs: Optional[dict[str, Any]],
+    ) -> tuple[torch.Tensor, torch.Tensor]:
+        """Score one unpadded sequence with one served model: a forward pass, no sampling."""
+        multi_modal_data = multi_modal_data or {}
+        client = self.teacher_client[model_key]
+        output = await client.generate(
+            request_id=uuid4().hex,
+            prompt_ids=sequence_ids,
+            sampling_params=_get_teacher_sampling_params(model_config, self.distillation_loss_config),
+            image_data=multi_modal_data.get("images"),
+            video_data=multi_modal_data.get("videos"),
+            audio_data=multi_modal_data.get("audios"),
+            mm_processor_kwargs=mm_processor_kwargs,
+        )
+        # Shapes: # S, (1 or K), where S is the response length, K is either 1 or topk depending on
+        # the distillation loss settings.
+        ids = torch.tensor(output.extra_fields["prompt_ids"], dtype=torch.int32)
+        logprobs = torch.tensor(output.extra_fields["prompt_logprobs"])
+        assert ids.shape[0] == logprobs.shape[0] == len(sequence_ids)
+        return ids, logprobs
+
     async def compute_teacher_logprobs_single(
         self,
         sequence_ids: list[int],
@@ -120,22 +151,30 @@ class AsyncTeacherLLMServerManager:
         routing_key: Optional[str] = None,
     ) -> tuple[torch.Tensor, torch.Tensor]:
         """Compute teacher log probabilities for a single unpadded sequence."""
-        multi_modal_data = multi_modal_data or {}
         teacher_key = self._resolve_teacher_key(routing_key)
-        teacher_model_config = self.teacher_model_configs[teacher_key]
-        client = self.teacher_client[teacher_key]
-        teacher_output = await client.generate(
-            request_id=uuid4().hex,
-            prompt_ids=sequence_ids,
-            sampling_params=_get_teacher_sampling_params(teacher_model_config, self.distillation_loss_config),
-            image_data=multi_modal_data.get("images"),
-            video_data=multi_modal_data.get("videos"),
-            audio_data=multi_modal_data.get("audios"),
-            mm_processor_kwargs=mm_processor_kwargs,
+        return await self._score_single(
+            teacher_key,
+            self.teacher_model_configs[teacher_key],
+            sequence_ids,
+            multi_modal_data,
+            mm_processor_kwargs,
         )
-        # Shapes: # S, (1 or K), where S is the response length, K is either 1 or topk depending on
-        # the distillation loss settings.
-        teacher_ids = torch.tensor(teacher_output.extra_fields["prompt_ids"], dtype=torch.int32)
-        teacher_logprobs = torch.tensor(teacher_output.extra_fields["prompt_logprobs"])
-        assert teacher_ids.shape[0] == teacher_logprobs.shape[0] == len(sequence_ids)
-        return teacher_ids, teacher_logprobs
+
+    async def compute_anchor_logprobs_single(
+        self,
+        sequence_ids: list[int],
+        multi_modal_data: Optional[dict[str, Any]] = None,
+        mm_processor_kwargs: Optional[dict[str, Any]] = None,
+    ) -> tuple[torch.Tensor, torch.Tensor]:
+        """Compute anchor log probabilities for a single unpadded sequence.
+
+        The anchor is not routed: every example is scored against the one frozen anchor.
+        """
+        assert self.anchor_model_config is not None, "distillation.anchor_model is not configured"
+        return await self._score_single(
+            ANCHOR_KEY,
+            self.anchor_model_config,
+            sequence_ids,
+            multi_modal_data,
+            mm_processor_kwargs,
+        )

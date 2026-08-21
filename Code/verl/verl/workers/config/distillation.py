@@ -22,7 +22,11 @@ from verl.utils.config import omega_conf_to_dataclass
 
 from .rollout import RolloutConfig
 
-__all__ = ["DistillationLossConfig", "DistillationTeacherModelConfig", "DistillationConfig"]
+__all__ = ["ANCHOR_KEY", "DistillationLossConfig", "DistillationTeacherModelConfig", "DistillationConfig"]
+
+# Name the anchor is served and addressed under. Reserved: it must not collide with
+# a teacher routing key, which is why teachers may not use it.
+ANCHOR_KEY = "__anchor__"
 
 logger = logging.getLogger(__name__)
 logger.setLevel(os.getenv("VERL_LOGGING_LEVEL", "WARN"))
@@ -52,6 +56,8 @@ class DistillationLossConfig(BaseConfig):
         as in https://arxiv.org/abs/2306.13649. Recommended to use loss_mode=k3 or forward_kl_topk.
     policy_loss_mode (str):
         Name of the policy loss to use when use_policy_gradient is true.
+    relative_floor_beta (float, optional):
+        Floor strength beta for loss_mode='relative_floor_topk'. Must be in (0, 1).
     clip_ratio (float):
         PPO clipping ratio for policy loss.
     clip_ratio_low (float):
@@ -80,6 +86,11 @@ class DistillationLossConfig(BaseConfig):
     # smaller chunks reduce per-chunk memory but increase kernel-launch
     # overhead (saved-tensor total stays constant either way).
     chunked_topk_chunk_size: int = 4096
+
+    # Relative-floor projection (loss_mode='relative_floor_topk'): floor strength
+    # beta in q*(v) = max(c*pi_T(v), beta*pi_A(v)). Requires an anchor model
+    # registered alongside the teacher so anchor top-k reaches the loss.
+    relative_floor_beta: Optional[float] = None
 
     use_policy_gradient: bool = True
     policy_loss_mode: str = "vanilla"
@@ -122,6 +133,21 @@ class DistillationLossConfig(BaseConfig):
                 "Directly backpropagating k1 loss is incorrect since gradient of k1 loss"
                 " wrt model weights does not depend on teacher log probabilities."
             )
+
+        if self.loss_mode == "relative_floor_topk":
+            if self.relative_floor_beta is None:
+                raise ValueError("relative_floor_beta must be set when loss_mode='relative_floor_topk'.")
+            if not 0.0 < self.relative_floor_beta < 1.0:
+                raise ValueError(
+                    f"relative_floor_beta must be in (0, 1), got {self.relative_floor_beta}. "
+                    "beta=0 removes the floor (plain distillation) and beta=1 makes the constraint "
+                    "infeasible to satisfy while following the teacher."
+                )
+            if self.use_policy_gradient:
+                raise ValueError(
+                    "relative_floor_topk is a supervised distillation loss on the projected target q*; "
+                    "set use_policy_gradient=False so the distributional signal is actually used."
+                )
 
 
 @dataclass
@@ -233,6 +259,15 @@ class DistillationConfig(BaseConfig):
     teacher_key (str):
         Key to route examples to the appropriate teacher model in multi-teacher setups. Should correspond to a field in
         the data proto, e.g., data_source.
+    anchor_model (TeacherModelConfig, optional):
+        The frozen pre-distillation anchor as its own inference server, one way to satisfy
+        ``loss_mode='relative_floor_topk'``. It is served like a teacher and shares the teacher resource pool, but it
+        is not a routing target: every example is scored by both the teacher and the anchor. Its GPUs count toward the
+        pool-size check below.
+    anchor_from_ref (bool):
+        The other way: score the anchor from the reference policy instead, which already holds the student's
+        pre-distillation weights and rides on the actor's own GPUs. Costs no dedicated GPU, so prefer it unless the
+        anchor must differ from the student's initial checkpoint. Mutually exclusive with ``anchor_model``.
     distillation_loss (DistillationLossConfig):
     Configuration for distillation loss settings.
 
@@ -257,39 +292,93 @@ class DistillationConfig(BaseConfig):
     ```
     """
 
-    _mutable_fields = BaseConfig._mutable_fields | {"teacher_models", "n_gpus_per_node", "nnodes"}
+    _mutable_fields = BaseConfig._mutable_fields | {"teacher_models", "anchor_model", "n_gpus_per_node", "nnodes"}
 
     enabled: bool = False
     n_gpus_per_node: int = 0
     nnodes: int = 0
     teacher_models: dict[str, DistillationTeacherModelConfig] = field(default_factory=dict)
     teacher_key: str = "data_source"
+    anchor_model: Optional[DistillationTeacherModelConfig] = None
+    anchor_from_ref: bool = False
     distillation_loss: DistillationLossConfig = field(default_factory=DistillationLossConfig)
 
     def __post_init__(self):
         if not self.enabled:
             return
 
-        self.teacher_models = self._resolve_teacher_models()
-        teacher_world_size_sum = 0
+        self.anchor_model = self._resolve_anchor_model()
+        anchor_world_size = self.anchor_model.world_size if self.anchor_model is not None else 0
+        self.teacher_models = self._resolve_teacher_models(
+            pool_size=self.n_gpus_per_node * self.nnodes - anchor_world_size
+        )
+        teacher_world_size_sum = anchor_world_size
         for teacher_model in self.teacher_models.values():
             teacher_model.validate_and_prepare_for_distillation(
                 use_topk=self.distillation_loss.loss_settings.use_topk,
                 topk=self.distillation_loss.topk,
             )
             teacher_world_size_sum += teacher_model.world_size
+
         total_pool_size = self.n_gpus_per_node * self.nnodes
         if teacher_world_size_sum != total_pool_size:
             raise ValueError(
-                f"Sum of teacher (num_replicas * per_replica_world_size) ({teacher_world_size_sum}) must match "
+                f"Sum of teacher and anchor (num_replicas * per_replica_world_size) "
+                f"({teacher_world_size_sum}) must match "
                 f"the distillation resource pool size "
                 f"({self.n_gpus_per_node=} * {self.nnodes=} = {total_pool_size})."
             )
 
-    def _resolve_teacher_models(self) -> dict[str, DistillationTeacherModelConfig]:
+    def _resolve_anchor_model(self) -> Optional[DistillationTeacherModelConfig]:
+        """Resolve the anchor entry, or None when it is not configured.
+
+        The yaml always carries the block so CLI overrides need no `+` prefix, so a
+        null ``model_path`` is what says "no anchor". One replica is the default: the
+        anchor only scores, and the teacher absorbs the rest of the pool.
+        """
+        anchor = self.anchor_model
+        if anchor is not None and anchor.get("model_path") is None:
+            anchor = None
+        needs_anchor = self.distillation_loss.loss_mode == "relative_floor_topk"
+        if self.anchor_from_ref and anchor is not None:
+            raise ValueError(
+                "distillation.anchor_from_ref and distillation.anchor_model are two ways to serve the same "
+                "anchor; set exactly one."
+            )
+        if needs_anchor and anchor is None and not self.anchor_from_ref:
+            raise ValueError(
+                "loss_mode='relative_floor_topk' scores every example against a frozen anchor as well as the "
+                "teacher; either set distillation.anchor_from_ref=True to score it from the reference policy, "
+                "or set distillation.anchor_model.model_path to serve it separately."
+            )
+        if self.anchor_from_ref and not needs_anchor:
+            raise ValueError(
+                f"distillation.anchor_from_ref is only used by loss_mode='relative_floor_topk', "
+                f"but loss_mode={self.distillation_loss.loss_mode!r}."
+            )
+        if anchor is None:
+            return None
+        if not needs_anchor:
+            raise ValueError(
+                f"distillation.anchor_model is only used by loss_mode='relative_floor_topk', "
+                f"but loss_mode={self.distillation_loss.loss_mode!r}."
+            )
+        anchor = omega_conf_to_dataclass(anchor, dataclass_type=DistillationTeacherModelConfig)
+        anchor.key = ANCHOR_KEY
+        if anchor.num_replicas == 0:
+            anchor.num_replicas = 1
+        anchor.check_configured()
+        anchor.validate_and_prepare_for_distillation(
+            use_topk=self.distillation_loss.loss_settings.use_topk,
+            topk=self.distillation_loss.topk,
+        )
+        return anchor
+
+    def _resolve_teacher_models(self, pool_size: int) -> dict[str, DistillationTeacherModelConfig]:
+        """Resolve teacher entries. ``pool_size`` is the teacher pool net of the anchor's share."""
         assert "teacher_model" in self.teacher_models
         if len(self.teacher_models) == 1:
-            # Single teacher occupies the entire teacher resource pool.
+            # Single teacher occupies the whole teacher pool that is left.
             teacher_model = self.teacher_models["teacher_model"]
             inference = teacher_model.inference
             per_replica = (
@@ -297,11 +386,10 @@ class DistillationConfig(BaseConfig):
                 * inference.data_parallel_size
                 * inference.pipeline_model_parallel_size
             )
-            pool_size = self.n_gpus_per_node * self.nnodes
             if pool_size % per_replica != 0:
                 raise ValueError(
-                    f"Single teacher's per_replica_world_size ({per_replica}) must divide the distillation "
-                    f"resource pool size ({self.n_gpus_per_node=} * {self.nnodes=} = {pool_size})."
+                    f"Single teacher's per_replica_world_size ({per_replica}) must divide the teacher pool "
+                    f"size left after the anchor's share ({pool_size})."
                 )
             teacher_model.num_replicas = pool_size // per_replica
             teacher_model.key = "default"
@@ -314,6 +402,8 @@ class DistillationConfig(BaseConfig):
         for teacher_config in self.teacher_models.values():
             teacher_config = omega_conf_to_dataclass(teacher_config, dataclass_type=DistillationTeacherModelConfig)
             teacher_config.check_configured()
+            if teacher_config.key == ANCHOR_KEY:
+                raise ValueError(f"{ANCHOR_KEY!r} is reserved for distillation.anchor_model.")
             if teacher_config.key in teacher_models:
                 raise ValueError(f"Duplicate teacher key {teacher_config.key} found in teacher models.")
             teacher_models[teacher_config.key] = teacher_config
