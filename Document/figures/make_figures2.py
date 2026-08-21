@@ -1,7 +1,8 @@
 # Cal_Beta_Before_train.md의 실측 결과 그림(fig4~fig7)을 생성한다.
 # 실행: conda activate sglang && python make_figures2.py
-# 데이터 출처: ../PreAnalysis/outputs/
+# 데이터 출처: Experiment/PreAnalysis/outputs/
 import math
+import os
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -38,7 +39,9 @@ def clean(ax):
     ax.grid(True, color=GRID, linewidth=0.6, alpha=0.7)
     ax.set_axisbelow(True)
 
-OUT = "../PreAnalysis/outputs"
+HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(HERE))
+OUT = os.path.join(REPO, "Experiment", "PreAnalysis", "outputs")
 SWEEP = [0.1, 0.2, 0.4, 0.8]
 
 # toy 비용 곡선 (fig1과 동일한 4-token toy)
@@ -77,7 +80,7 @@ ax.set_xlabel("β"); ax.set_ylabel("Cost(β)  (nats, log 스케일)")
 ax.set_title("실측 비용 곡선은 toy와 같은 자릿수에 있다", fontsize=11)
 ax.legend(frameon=False, fontsize=9.5, loc="lower right")
 clean(ax)
-fig.tight_layout(); fig.savefig("fig4_measured_cost.png", bbox_inches="tight"); plt.close(fig)
+fig.tight_layout(); fig.savefig(os.path.join(HERE, "fig4_measured_cost.png"), bbox_inches="tight"); plt.close(fig)
 
 # ---------- 그림 5: 위치별 비용 ----------
 df = pd.read_parquet(f"{OUT}/cost_states.parquet")
@@ -95,7 +98,7 @@ ax.set_xlabel("rollout 안의 위치 (token)"); ax.set_ylabel("평균 비용 (na
 ax.set_title("비용은 위치 0에 집중된다: 형식 token의 값", fontsize=11)
 ax.legend(frameon=False, fontsize=9.5)
 clean(ax)
-fig.tight_layout(); fig.savefig("fig5_cost_by_position.png", bbox_inches="tight"); plt.close(fig)
+fig.tight_layout(); fig.savefig(os.path.join(HERE, "fig5_cost_by_position.png"), bbox_inches="tight"); plt.close(fig)
 
 # ---------- 그림 6: state 분포의 괄호 ----------
 fig, ax = plt.subplots(figsize=(7.4, 3.8), dpi=160)
@@ -115,7 +118,7 @@ ax.set_xlabel("β"); ax.set_ylabel("Cost(β)  (nats, log)")
 ax.set_title("비용은 student가 어디까지 이동했는지에 따라 구간을 가진다", fontsize=11)
 ax.legend(frameon=False, fontsize=9.5, loc="lower right")
 clean(ax)
-fig.tight_layout(); fig.savefig("fig6_bracket.png", bbox_inches="tight"); plt.close(fig)
+fig.tight_layout(); fig.savefig(os.path.join(HERE, "fig6_bracket.png"), bbox_inches="tight"); plt.close(fig)
 
 # ---------- 그림 7: 진입 확정 길이와 발견 확률 ----------
 w = np.load(f"{OUT}/window_retention.npz")
@@ -144,6 +147,6 @@ ax.set_title("발견 확률은 진입 확정 길이 하나에 달려 있다 (m=0
 ax.set_ylim(0, 105)
 ax.legend(frameon=False, fontsize=9.5)
 clean(ax)
-fig.tight_layout(); fig.savefig("fig7_prun_entry.png", bbox_inches="tight"); plt.close(fig)
+fig.tight_layout(); fig.savefig(os.path.join(HERE, "fig7_prun_entry.png"), bbox_inches="tight"); plt.close(fig)
 
 print("done")

@@ -1,6 +1,7 @@
 # Cal_Beta_Before_train.md의 그림 3개를 생성한다.
 # 실행: conda activate sglang && python make_figures.py
 import math
+import os
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
@@ -13,6 +14,8 @@ for cand in ["NanumGothic", "NanumBarunGothic", "NanumSquareRound", "NanumMyeong
         plt.rcParams["font.family"] = cand
         break
 plt.rcParams["axes.unicode_minus"] = False
+
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 INK = "#1F2937"      # 본문 텍스트
 MUTED = "#6B7280"    # 보조 텍스트
@@ -93,7 +96,7 @@ clean(ax2)
 fig.suptitle("발견 확률: Base 확률 0.10인 branch가 N=80번의 기회에서 한 번이라도 뽑힐 확률",
              fontsize=9.5, color=MUTED, y=0.02, va="bottom")
 fig.tight_layout(rect=[0, 0.05, 1, 1])
-fig.savefig("/home/eoeldroal/WorkPlace/ICLR/Document/figures/fig1_gain_vs_cost.png",
+fig.savefig(os.path.join(HERE, "fig1_gain_vs_cost.png"),
             bbox_inches="tight")
 plt.close(fig)
 
@@ -124,7 +127,7 @@ for ax, (title, budget, chosen, note) in zip(axes, worlds):
     ax.spines[["top", "right", "left"]].set_visible(False)
     ax.spines["bottom"].set_color(GRID)
 fig.tight_layout()
-fig.savefig("/home/eoeldroal/WorkPlace/ICLR/Document/figures/fig2_two_worlds.png",
+fig.savefig(os.path.join(HERE, "fig2_two_worlds.png"),
             bbox_inches="tight")
 plt.close(fig)
 
@@ -161,7 +164,7 @@ ax.set_title("q* = max(c·π_T, β·π_A) 가 만들어지는 과정 (β=0.4, �
 ax.legend(frameon=False, fontsize=9.5, loc="upper center", ncol=3, bbox_to_anchor=(0.5, 1.0))
 clean(ax)
 fig.tight_layout()
-fig.savefig("/home/eoeldroal/WorkPlace/ICLR/Document/figures/fig3_qstar.png",
+fig.savefig(os.path.join(HERE, "fig3_qstar.png"),
             bbox_inches="tight")
 plt.close(fig)
 
