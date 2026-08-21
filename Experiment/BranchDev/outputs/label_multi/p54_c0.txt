@@ -1,0 +1,898 @@
+PROBLEM (id 54, Level 4, Precalculus, answer: \csc 10)
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+====================================================================================================
+
+<<<TEXT id=0>>>
+We need answer math. Problem: Simplify cot 10 + tan 5. Angles likely degrees? cot 10 + tan 5. Need express as a trigonometric function evaluated at an integer (degrees?). "such as sin 7" means answer like csc? Need simplify.
+
+Expression: cot 10° + tan 5°. Use identities. cot 10 = cos10/sin10. tan5 = sin5/cos5. Combine?
+
+cot 10 + tan 5 = cos10/sin10 + sin5/cos5 = (cos10 cos5 + sin10 sin5)/(sin10 cos5) = cos(10-5)/(sin10 cos5) = cos5/(sin10 cos5) = 1/sin10 = csc 10. Wait check: cos10 cos5 + sin10 sin5 = cos(10-5)=cos5. Denominator sin10 cos5. Cancel cos5 => 1/sin10 = csc 10. So cot 10 + tan 5 = csc 10. Answer as trigonometric function evaluated at integer: csc 10? They said "such as sin 7", so "csc 10" acceptable. But maybe they want "csc
+<<<END id=0>>>
+
+<<<TEXT id=1>>>
+We need answer simplify cot 10 + tan 5. Need enter as trigonometric function evaluated at integer, such as "sin 7". Angles likely degrees? The problem uses cot 10 + tan 5 without degree symbol. In such contexts, likely degrees. Need simplify. cot 10° + tan 5°. Need express as a trig function of an integer? e.g., csc 5? Let's compute.
+
+We know cot θ + tan(θ/2)? Let θ=10°, θ/2=5. cot θ + tan(θ/2) = ? identity: tan(θ/2)= csc θ - cot θ? Since tan(θ/2)= (1 - cos θ)/sin θ = csc θ - cot θ. Thus cot θ + tan(θ/2)= cot θ + csc θ - cot θ = csc θ. So cot 10° + tan 5° = csc 10°. Check: tan(5)= csc10 - cot10 yes. So sum = csc10. Need answer as trigonometric function evaluated at integer: \csc 10? "csc 10" perhaps. But question says "such as 'sin 7'". So final \
+<<<END id=1>>>
+
+<<<TEXT id=2>>>
+We need answer simplify cot 10 + tan 5. Angles in degrees? Usually cot 10 + tan 5. Need simplify to trig function evaluated at integer. Likely use identities. cot θ + tan φ. cot 10 = tan(90-10)=tan80? tan80 + tan5. Sum? tan A + tan B = sin(A+B)/(cos A cos B). tan80 + tan5 = sin85/(cos80 cos5). Need simplify to cosec? sin85=cos5. So = cos5/(cos80 cos5)=1/cos80 = sec80 = csc10? sec80 = 1/cos80 = csc10 (since csc10=1/sin10=1/cos80). So cot10 + tan5 = csc 10. Is that it? Check: cot 10 = cos10/sin10, tan5=sin5/cos5. Sum = (cos10 cos5 + sin10 sin5)/(sin10 cos5) = cos(10-5)/(sin10 cos5)= cos5/(sin10 cos5)=1/sin10 = csc10. Yes. Final answer \boxed{\csc 10}? But
+<<<END id=2>>>
+
+<<<TEXT id=3>>>
+We need answer math. Need reason step by step but final boxed. Problem: Simplify cot 10 + tan 5. Angles in degrees likely. Need express as trigonometric function evaluated at integer, like sin 7. So cot 10° + tan 5° simplify to cosec? Let's find identity.
+
+We need simplify cot 10 + tan 5. Use tan(10/2)=tan5. Identity: cot x + tan(x/2) = ? csc x? Let's check.
+
+tan(x/2) = (1 - cos x)/sin x = csc x - cot x. So cot x + tan(x/2) = cot x + csc x - cot x = csc x. Yes. With x=10°, cot 10° + tan 5° = csc 10° = 1/sin 10°. But "trigonometric function evaluated at an integer" maybe "csc 10"? Is csc allowed? Usually trigonometric functions include sin, cos, tan, cot, sec, csc. Enter as "sin 7" style. So \boxed{\csc 10}? Or \sec 80? Since csc 10 = sec
+<<<END id=3>>>
+
+<<<TEXT id=4>>>
+We need answer simplify cot 10 + tan 5. Need interpret angles degrees? Usually in trig simplifications no degree symbol maybe degrees? cot 10 + tan 5. Likely degrees: cot 10° + tan 5°. Need simplify to a trigonometric function evaluated at integer. We need find expression. cot 10 + tan 5. Use identities. Let degrees. cot 10 = tan 80? tan 5. Sum tan 80 + tan 5? There is identity: tan A + tan B = sin(A+B)/(cos A cos B). So tan80 + tan5 = sin85/(cos80 cos5). Is that equal to something? sin85 = cos5. So = cos5/(cos80 cos5)=1/cos80 = sec80 = csc10? Since csc10 = 1/sin10 = sec80. Indeed sin10=cos80. So cot10 + tan5 = tan80 + tan5 = sin85/(cos80 cos5) = cos5/(cos80 cos5) = 1/cos80 = sec80 = csc10. Is that "cot 10 + tan 5" = csc 10? Check numerically: cot10° ≈
+<<<END id=4>>>
+
+<<<TEXT id=5>>>
+We need answer math. Problem: Simplify cot 10 + tan 5. Angles in degrees likely. Need express as trigonometric function evaluated at integer? "cot 10 + tan 5." Enter answer as trigonometric function evaluated at an integer, such as "sin 7". Need step by step and final boxed.
+
+We need simplify cot 10° + tan 5°. cot 10 = cos10/sin10. tan5 = sin5/cos5. Sum = cos10/sin10 + sin5/cos5. Common denominator sin10 cos5. cos10 cos5 + sin10 sin5? Wait cot10 = cos10/sin10. tan5= sin5/cos5. Sum = (cos10 cos5 + sin10 sin5)/(sin10 cos5) = cos(10-5)/(sin10 cos5) = cos5/(sin10 cos5)=1/sin10 = csc10. Is that correct? cos10 cos5 + sin10 sin5 = cos(10-5)=cos5. Denominator sin10 cos5. Cancel cos5 -> 1/sin10 = csc 10. So cot10 + tan5 = csc10. Check numerically: cot10 ≈5
+<<<END id=5>>>
+
+<<<TEXT id=6>>>
+We need answer math. Need simplify cot 10 + tan 5. Angles in degrees presumably. cot 10° + tan 5°. Need express as trigonometric function evaluated at integer degree? "such as sin 7" meaning single trig function of integer degree? Simplify cot 10 + tan 5.
+
+We need find identity. cot θ + tan(θ/2)? Here θ=10, tan 5 = tan(θ/2). cot θ + tan(θ/2). Identity: cot θ + tan(θ/2) = csc θ? Let's check.
+
+tan(θ/2) = (1 - cos θ)/sin θ = csc θ - cot θ. So cot θ + tan(θ/2) = cot θ + csc θ - cot θ = csc θ. Yes! So cot 10° + tan 5° = csc 10°. Angles degrees. csc 10. But question says "Enter your answer as a trigonometric function evaluated at an integer, such as 'sin 7'." So \boxed{\csc 10}? csc not standard? They might expect cosec? "such as sin 7" maybe sec? csc 10 is
+<<<END id=6>>>
+
+<<<TEXT id=7>>>
+We need answer math. Need reason step by step but final within boxed. Problem: Simplify cot 10 + tan 5. Angles degrees presumably. cot 10° + tan 5°. Need express as trigonometric function evaluated at integer? cot 10 + tan 5. Use identities. cot 10 = cos10/sin10. tan5 = sin5/cos5. Combine: (cos10 cos5 + sin10 sin5)/(sin10 cos5) = cos(10-5)/(sin10 cos5) = cos5/(sin10 cos5)=1/sin10 = csc 10. Wait cot 10 + tan 5 = cos10/sin10 + sin5/cos5. numerator cos10 cos5 + sin10 sin5 = cos(10-5)=cos5. denominator sin10 cos5. cos5 cancels => 1/sin10 = csc 10. That's a trigonometric function evaluated at integer? csc 10. But problem says "such as sin 7" maybe they want "csc 10" (cosecant 10). Is cot 10 + tan 5 = csc 10. Check: tan5 =? cot10 + tan5
+<<<END id=7>>>
+
+<<<TEXT id=8>>>
+We need answer math. Problem: Simplify cot 10 + tan 5. Angles in degrees likely. Need express as trig function evaluated at integer. cot 10° + tan 5°. Need simplify. cot 10 = tan 80? tan 5. We can use identities.
+
+We need find identity: cot x + tan y? cot 10 + tan 5. Let θ=5°. cot(2θ)+tan θ. cot 2θ = (cot^2 θ -1)/(2 cot θ)? Or in terms tan: cot 2θ = (1 - tan^2 θ)/(2 tan θ). Add tan θ = (1 - tan^2 θ + 2 tan^2 θ)/(2 tan θ) = (1 + tan^2 θ)/(2 tan θ) = 1/(2 sin θ cos θ)? Since 1+tan^2 = sec^2, divide 2 tan = (1/cos^2)/(2 sin/cos)=1/(2 sin cos)=1/sin 2θ = csc 2θ. So cot 10 + tan 5 = csc 10°? Let's verify: cot 2x + tan x = csc 2x
+<<<END id=8>>>
+
+<<<TEXT id=9>>>
+We need answer math. Problem: Simplify cot 10 + tan 5. Angles degrees? Typically trig functions with no degree symbol in such problems may be degrees? "cot 10 + tan 5" likely degrees. Need simplify as trigonometric function evaluated at integer. cot 10° + tan 5°. Need express as single trig function of integer? Maybe csc 10? Let's compute.
+
+cot 10 + tan 5. Use identities. cot 10 = cos10/sin10. tan5 = sin5/cos5. Combine: (cos10 cos5 + sin10 sin5)/(sin10 cos5) = cos(10-5)/(sin10 cos5) = cos5/(sin10 cos5) = 1/sin10 = csc 10. Since sin10 cos5? Wait cos10 cos5 + sin10 sin5 = cos(10-5)=cos5. Denominator sin10 cos5. Cancel cos5 (nonzero) => 1/sin10 = csc10. So cot 10° + tan 5° = csc 10° = cosec 10. Enter as trigonometric function evaluated at integer: "csc 10" or "cosec 10"?
+<<<END id=9>>>
+
+<<<TEXT id=10>>>
+We need answer math. Need reason step by step but final boxed. Simplify cot 10 + tan 5. Angles likely degrees? trigonometry evaluated at integer. Need simplify to single trig function evaluated at integer. likely cosecant? Let's derive.
+
+We need simplify cot 10° + tan 5°. Use identities. cot 10 + tan 5. cot 10 = cos10/sin10. tan5 = sin5/cos5. Combine: (cos10 cos5 + sin10 sin5)/(sin10 cos5) = cos(10-5)/(sin10 cos5) = cos5/(sin10 cos5)=1/sin10 = csc10. Since sin10 cos5 denominator, cos(10-5)=cos5. So = csc10. But "cot 10 + tan 5" without degree symbol? In math contest, angles in degrees? Usually cot 10 + tan 5 means degrees. Answer csc 10? But "Enter your answer as a trigonometric function evaluated at an integer" like sin 7. So csc 10. Need boxed{ \csc 10 }? They said trigonometric function evaluated at integer such as "sin 7". Use csc
+<<<END id=10>>>
+
+<<<TEXT id=11>>>
+We need answer math. Problem: Simplify cot 10 + tan 5. Angles probably degrees? cot 10° + tan 5°. Need express as trigonometric function evaluated at integer degree? "such as sin 7". Need simplify.
+
+We need compute cot 10 + tan 5. Use identities. cot 10 = cos10/sin10. tan5 = sin5/cos5.
+
+Common denominator sin10 cos5. sin10 = 2 sin5 cos5. So cot10 = cos10/(2 sin5 cos5). Add sin5/cos5 = (2 sin^2 5)/(2 sin5 cos5)? Wait tan5 = sin5/cos5 = (2 sin^2 5)/(2 sin5 cos5) = (2 sin^2 5)/sin10. So cot10 + tan5 = (cos10 + 2 sin^2 5)/sin10. cos10 = cos(2*5)=1 - 2 sin^2 5? cos10 = 1 - 2 sin^2 5. So cos10 + 2 sin^2 5 = 1. Thus expression = 1/sin10 = csc10? sin 10 degrees
+<<<END id=11>>>
+
+<<<TEXT id=12>>>
+We need answer math. Problem: Simplify cot 10 + tan 5. Angles likely degrees? cot 10 + tan 5. Need express as trigonometric function evaluated at integer. Likely use identities. cot 10° + tan 5°. Need simplify maybe csc 10°? Let's check.
+
+cot θ + tan(θ/2) = csc θ? Identity: tan(x/2) = csc x - cot x. So tan 5 = csc 10 - cot 10. Then cot 10 + tan 5 = csc 10. So answer csc 10? But "trigonometric function evaluated at an integer, such as sin 7". csc 10 (degrees) evaluated at integer 10? Enter as csc 10. Need final \boxed{\csc 10}. Check: tan(5) = csc(10) - cot(10)? Identity tan(x/2) = csc x - cot x = (1 - cos x)/sin x = tan(x/2). Yes. So cot 10 + tan 5 = cot 10 + csc 10 - cot 10 = csc 10. Final.
+<<<END id=12>>>
+
+<<<TEXT id=13>>>
+We need answer math. Need simplify cot 10 + tan 5. Angles likely degrees? cot 10 + tan 5. Need express as trigonometric function evaluated at integer? "such as sin 7" means degrees? cot 10° + tan 5°. Simplify. Need final answer \boxed{?}.
+
+We need simplify cot 10 + tan 5. Recall cot θ + tan φ? cot 10 = tan 80? tan 5. Sum =? tan 80 + tan 5. tan A + tan B = sin(A+B)/(cos A cos B). tan 80 + tan 5 = sin85/(cos80 cos5). cos80 = sin10, cos5. sin85=cos5 => =1/sin10 = csc 10? sin85/cos80 cos5 = cos5/(sin10 cos5)=1/sin10 = csc10. So cot10 + tan5 = csc10? Check: cot10 + tan5 = cos10/sin10 + sin5/cos5 = (cos10 cos5 + sin10 sin5)/(sin10 cos5)= cos(10-5)/(sin10 cos5)= cos5/(sin10 cos5)=1
+<<<END id=13>>>
+
+<<<TEXT id=14>>>
+We need answer math. Need simplify cot 10 + tan 5. Angles likely degrees? Usually trig functions without degree symbol in contest maybe radians? But cot 10 + tan 5? likely degrees because 10 and 5 degrees. Need simplify to single trig function evaluated at integer degree? "Enter your answer as a trigonometric function evaluated at an integer, such as 'sin 7'." So answer like csc 5? Let's compute.
+
+Simplify cot 10° + tan 5°. Need identity.
+
+cot 10 = cos10/sin10. tan5 = sin5/cos5. Common denominator sin10 cos5. sin10 = 2 sin5 cos5.
+
+cot10 = cos10/(2 sin5 cos5). tan5 = sin5/cos5 = (2 sin^2 5)/(2 sin5 cos5)? Actually denominator sin10? Let's combine:
+
+cot 10 + tan 5 = cos10/sin10 + sin5/cos5
+= (cos10 cos5 + sin5 sin10)/(sin10 cos5)
+Numerator = cos(10-5)? cos10 cos5 + sin10 sin5 = cos(10-5)=cos5. Yes.
+So = cos
+<<<END id=14>>>
+
+<<<TEXT id=15>>>
+We need answer math. Problem: Simplify cot 10 + tan 5. Angles in degrees? Usually trig functions evaluated at integer means degrees likely. cot 10° + tan 5°. Need simplify to a trigonometric function evaluated at an integer. cot 10 = 1/tan10. tan5. There is identity: cot x + tan y? Maybe cot 10 + tan 5 =? Use half-angle? cot 10 = (1+cos20? no) tan5 =? cot 10 + tan5 = cos10/sin10 + sin5/cos5. Combine: (cos10 cos5 + sin10 sin5)/(sin10 cos5) = cos(10-5)/(sin10 cos5)= cos5/(sin10 cos5)=1/sin10 = csc10. Wait check: cot 10 + tan 5 = cos10/sin10 + sin5/cos5 = (cos10 cos5 + sin10 sin5)/(sin10 cos5)= cos(10-5)/(sin10 cos5)= cos5/(sin10 cos5)=1/sin10 (since cos5 cancel) = csc 10. Is that correct? cot 10 = cot(2*5
+<<<END id=15>>>
+
+<<<TEXT id=16>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Simplify cot 10 + tan 5. Probably degrees? Probably degrees? 10 and 5... ambiguous. Usually in such problems angles in degrees. Could be radians? Integer? Trigonometric function evaluated at an integer. Let's assume degrees.
+
+We need cot 10° + tan 5°.
+
+cot 10 = cos10 / sin10.
+
+Need simplify. Use identities.
+
+cot A + tan B = ?
+
+We can try express as sin/cos.
+
+cot10 + tan5 = cos10/sin10 + sin5/cos5 = (cos10 cos5 + sin10 sin5) / (sin10 cos5) = cos(10-5) / (sin10 cos5) = cos5 / (sin10 cos5) = 1/ sin10.
+
+Wait cos10 cos5 + sin10 sin5 = cos(10-5)=cos5 correct.
+
+So numerator = cos5. Denominator = sin10 cos5 = 2 sin5 cos5 * cos5 = 2
+<<<END id=16>>>
+
+<<<TEXT id=17>>>
+Simplify cot 10 + tan 5.
+
+Simplify cot 10 + tan 5.
+
+Angles presumably degrees? Probably degrees. Could be radians? Usually such problems degrees. cot 10 + tan 5.
+
+We want expression maybe in terms of sin?
+
+cot 10 = cos10 / sin10
+tan5 = sin5 / cos5
+
+cot10 + tan5 = cos10 / sin10 + sin5 / cos5 = ...
+
+Compute common denominator sin10 cos5
+cos10 cos5 + sin5 sin10 over sin10 cos5
+
+Numerator = cos10 cos5 + sin10 sin5 = cos(10-5)= cos5 ? Wait cos A cos B + sin A sin B = cos(A - B). A=10, B=5 => cos5. Yes.
+
+Denominator = sin10 cos5 = 2 sin5 cos5 cos5? sin10 = 2 sin5 cos5. So denominator = 2 sin5 cos5 * cos5 = 2 sin5 cos^2 5.
+
+So = cos5 / (2 sin5 cos^2 5)= 1 / (2 sin5 cos5) = 1 / (sin10)
+
+Wait check: cos5 / (
+<<<END id=17>>>
+
+<<<TEXT id=18>>>
+Simplify $\cot 10 + \tan 5.$
+
+Simplify cot10 + tan5. Degrees? Likely degrees. $\cot 10^\circ + \tan 5^\circ$.
+
+Compute expression. Let's assume degrees. Might be radians? Usually such problems degrees. Could be integer degrees. Let's assume degrees.
+
+We want cot10 + tan5 = cos10/sin10 + sin5/cos5.
+
+We can attempt use formula. cot A + tan B = ?
+
+Maybe simplify to something like 2 csc20? No.
+
+Compute cot10 + tan5 = ?
+
+We can try expression: cot10 = tan80. So tan80 + tan5.
+
+tan80 + tan5 = sin(80+5)/ (cos80 cos5) = sin85 / (cos80 cos5)
+
+sin85 = cos5. So = cos5 / (cos80 cos5) = 1/(cos80) = 1/ cos(80). cos80 = sin10. So = csc10? Wait 1/cos80 = sec80.
+
+Hmm we lost? Let's recalc: tan80 + tan5 = sin85/(cos80 cos5). sin85 = cos5. So = cos5/(cos80 cos
+<<<END id=18>>>
+
+<<<TEXT id=19>>>
+Simplify $\cot 10 + \tan 5$.
+
+cot 10 + tan 5 = cos10/sin10 + sin5/cos5
+
+Probably degrees? Assume degrees? Could be degrees. Integer. Probably degrees.
+
+cot 10° + tan 5°
+
+Compute expression: cot 10 + tan5 = cos10/sin10 + sin5/cos5 = (cos10 cos5 + sin5 sin10)/(sin10 cos5) = cos(10-5)/(sin10 cos5) = cos5/(sin10 cos5)=1/sin10
+
+Wait cos10 cos5 + sin5 sin10 = cos(10-5)=cos5. Yes.
+
+So numerator = cos5. Denominator sin10 cos5 = sin10 cos5. Cancel cos5 -> 1/sin10.
+
+But careful: sin10 cos5 in denominator. Actually expression = cos5/( sin10 cos5)=1/ sin10 provided cos5≠0.
+
+So cot10 + tan5 = csc10 = 1/ sin10.
+
+But also = ?
+
+We have 1/sin10 = csc10.
+
+Can also write as ?
+
+Sometimes tan5 = cot(85). Hmm.
+
+Simplest: csc
+<<<END id=19>>>
+
+<<<TEXT id=20>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+
+Please reason step by step, and put final answer within \boxed{}.
+
+Simplify cot 10 + tan 5. Probably degrees? 10 degrees? Could be degrees. Typically problems like cot 10 + tan 5 = ... Using formula.
+
+cot 10 = cos10 / sin10
+tan5 = sin5 / cos5
+
+So sum = cos10/sin10 + sin5/cos5 = ?
+
+We want combine. Let’s assume degrees.
+
+Compute cot10 + tan5 = cos10 / sin10 + sin5 / cos5
+
+Common denominator sin10 cos5.
+
+Numerator = cos10 cos5 + sin5 sin10 = cos10 cos5 + sin5 sin10 = ?
+
+Use identity: cos(A-B)=cosA cosB + sinA sinB
+
+So cos10 cos5 + sin10 sin5 = cos(10-5)=cos5
+
+Wait numerator is cos10 cos5 + sin5 sin10 = cos10 cos5 + sin10 sin5 = cos(10-5)=cos5.
+
+Thus expression = cos5 / ( sin10
+<<<END id=20>>>
+
+<<<TEXT id=21>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Simplify cot 10 + tan 5. Probably degrees? Probably degrees. 10 degrees +5 degrees. cot10 = cos10/sin10. tan5= sin5/cos5.
+
+cot10 + tan5 = cos10/sin10 + sin5/cos5
+
+Need simplify. Might be something like? Let's assume degrees.
+
+Compute expression: cot 10° + tan 5°.
+
+We can use formula? cot A + tan B = ?
+
+Possibly use tan 5 = cot 85. Hmm.
+
+Let’s try numeric? Might be = ?
+
+We can try identity: cot x = tan(90 - x). So cot10 = tan80.
+
+So tan80 + tan5.
+
+tan80 + tan5 = sin(80+5)/(cos80 cos5) = sin85/(cos80 cos5)
+
+cos80 = sin10. Not simple.
+
+Alternative: cot10 + tan5 = cos10/sin10 + sin5/cos5 = (cos10 cos5
+<<<END id=21>>>
+
+<<<TEXT id=22>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+
+Simplify cot 10 + tan 5.
+
+Assume degrees? Probably degrees. cot 10 + tan 5.
+
+We need simplify. cot 10° = 1/tan10°. Hmm.
+
+We know formula: tan A + cot B? Let's compute cot 10 + tan 5 = cos10/sin10 + sin5/cos5.
+
+Find common denominator sin10 cos5.
+
+Numerator: cos10 cos5 + sin5 sin10 over sin10 cos5.
+
+cos10 cos5 + sin5 sin10 = cos(10-5)= cos5.
+
+Wait cos X cos Y + sin X sin Y = cos(X - Y). So cos10 cos5 + sin10 sin5 = cos5.
+
+Denominator sin10 cos5 = 2 sin5 cos5 cos5 ? Since sin10 = 2 sin5 cos5.
+
+Denominator = 2 sin5 cos5 * cos5 =2 sin5 cos^2 5.
+
+So expression = cos5 / (2 sin5 cos^2 5) = 1/(2 sin5 cos5
+<<<END id=22>>>
+
+<<<TEXT id=23>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+
+We need simplify cot10 + tan5. Likely degrees? Probably degrees. Usually such problems use degrees. cot 10 + tan 5.
+
+cot 10 = cos10 / sin10
+tan5 = sin5 / cos5
+
+Compute cot10 + tan5 = cos10/sin10 + sin5/cos5
+
+We can attempt use formula. Let's assume degrees.
+
+We want expression in terms of something like sqrt? Hmm might simplify to something like csc... Wait.
+
+We have cot A + tan B. Maybe use sum to product.
+
+Let’s compute cot10° + tan5°.
+
+Compute common denominator? Maybe use identity: cot 10 = tan 80. So cot10 + tan5 = tan80 + tan5 = sin(80+5)/ (cos80 cos5) = sin85 / (cos80 cos5). sin85 = cos5. So = cos5 / (cos80 cos5) = 1 / cos80 = sec80 = sec(90-10)= csc10.
+
+Wait check: tan X + tan Y = sin(X
+<<<END id=23>>>
+
+<<<TEXT id=24>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter answer as trigonometric function evaluated at integer, such as "sin 7".
+
+Simplify cot10 + tan5.
+
+Assume degrees? Probably degrees. cot10 + tan5.
+
+cot10 = cos10 / sin10.
+
+tan5 = sin5 / cos5.
+
+We want simplify. Let's try formula.
+
+cot A + tan B.
+
+cot10 = 1/tan10.
+
+We know tan10 + tan5? Hmm.
+
+Use identity: cot x = tan(90 - x). So cot10 = tan 80.
+
+So tan80 + tan5.
+
+tan80 = tan( 85-5?) Not.
+
+tan A + tan B = sin(A+B)/(cos A cos B)
+
+So tan80 + tan5 = sin85 / (cos80 cos5)
+
+Compute denominator: cos80 cos5 =? Use formula: cos C cos D = ½[cos(C+D)+cos(C-D)] = ½[cos85 + cos75]
+
+Numerator sin85.
+
+Not simple.
+
+Alternative approach: cot10 + tan5 = cos10/sin10 + sin5/cos5 = (cos10 cos5 + sin5 sin10)/(sin10 cos5) =
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+Simplify cot 10 + tan 5.
+
+Angles presumably in degrees? Probably degrees. Simplify cot 10 + tan 5.
+
+We can use formulas. cot 10 = cos10 / sin10
+
+tan5 = sin5 / cos5
+
+cot10 + tan5 = cos10/sin10 + sin5/cos5
+
+Find common denominator? Maybe use identity: cot A + tan B ?
+
+Let’s try to express as sin/cos.
+
+Compute cot10 + tan5 = cos10 / sin10 + sin5 / cos5
+
+Try combine: cos10 cos5 + sin5 sin10 / ( sin10 cos5)
+
+Numerator: cos10 cos5 + sin5 sin10 = cos(10-5)? Actually cos a cos b + sin a sin b? Wait cos10 cos5 + sin5 sin10 = cos10 cos5 + sin10 sin5 = cos(10-5) = cos5. Because cos X cos Y + sin X sin Y = cos(X - Y). Yes.
+
+So numerator = cos(10-5)= cos5.
+
+Denominator = sin10 cos5
+
+So expression = cos5 / (sin10 cos5) = 1 / sin10
+
+If cos5 cancels?
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Simplify cot 10 + tan 5.
+
+Assume degrees? Probably degrees. Usually in such problems, degrees. Could be radians? 10 +5 =15. Might be degrees.
+
+cot 10° + tan 5°.
+
+We need expression = ? Might be something like ... Use formula.
+
+cot A = cos A / sin A.
+
+cot10 + tan5 = cos10/sin10 + sin5/cos5.
+
+Find common denominator? sin10 cos5... Hmm.
+
+Let's compute numeric? Maybe identity: cot x - tan y = ?
+
+We have cot10 + tan5 = cot10 - tan(-5)... Not helpful.
+
+Use formula tan a + cot b = ?
+
+Consider cot10 = tan80.
+
+So tan80 + tan5.
+
+tan A + tan B = sin(A+B)/ (cos A cos B). Indeed tan A + tan B = sin(A+B)/(cos A cos B).
+
+So tan80 + tan5 = sin85 / (cos80 cos5).
+
+cos80 = sin
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Simplify cot 10 + tan 5.
+
+Assume degrees? Probably degrees. cot 10 + tan 5.
+
+Let’s compute: cot 10 = cos10 / sin10. tan5 = sin5 / cos5.
+
+We want cot10 + tan5 = cos10/sin10 + sin5/cos5.
+
+Common denominator? Perhaps use formula.
+
+We know 10 = 5+5? Hmm.
+
+We want expression = ?
+
+Use identity: cot A + tan B ?
+
+Let's try compute numerically maybe pattern: cot10 + tan5 = ?
+
+We can try to express as sin? Might be  sec? Or tan something?
+
+Let’s compute using degrees.
+
+We know tan5 + cot10 = ?
+
+Let's try use formula: cot10 = 1/tan10.
+
+So = 1/tan10 + tan5.
+
+We can use tan(a+b) = (tan a + tan b)/(1 - tan a tan b)
+
+Maybe let x = tan5. Then tan10 = tan(
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as trigonometric function evaluated at an integer, such as "sin 7".
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Simplify cot 10 + tan 5.
+
+Assume degrees? Probably degrees. cot 10 + tan 5.
+
+We want expression in terms of sin/cos. cot10 = cos10/sin10. tan5 = sin5/cos5.
+
+cot10 + tan5 = cos10/sin10 + sin5/cos5 = (cos10 cos5 + sin5 sin10)/(sin10 cos5) = cos(10-5)/... = cos5 / (sin10 cos5) = 1/ sin10 ??? Wait cos10 cos5 + sin5 sin10 = cos(10-5)=cos5. So numerator = cos5. Denominator = sin10 cos5 = 2 sin5 cos5 cos5 =2 sin5 cos²5. Not simplifies.
+
+Wait calculation: denominator sin10 cos5. Numerator cos5. So we have cos5/(sin10 cos5)=1/sin10. Hmm where is cos5? Wait: common denominator sin10 cos
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+Simplify cot 10 + tan 5.
+
+Probably degrees? Typically cot 10 + tan 5 could be degrees. Simplify to something like sin 7? Let's assume degrees.
+
+We need cot 10° + tan 5°.
+
+cot10 = cos10/sin10
+tan5 = sin5/cos5
+
+Compute sum = cos10/sin10 + sin5/cos5 = ?
+
+Find common denominator? Might use formula.
+
+We can attempt: cot 2θ + tan θ ?
+
+Let θ =5°, then cot10 = cot2θ, tan5 = tanθ.
+
+So expression = cot2θ + tanθ = cos2θ/sin2θ + sinθ/cosθ = ?
+
+Compute: cos2θ / (2 sinθ cosθ) + sinθ / cosθ = [cos2θ + 2 sin²θ ] / [2 sinθ cosθ] ?
+
+Wait common denominator 2 sinθ cosθ *? Let's do stepwise:
+
+cot2θ = cos2θ/(2 sinθ cosθ)
+
+So sum = cos2θ/(2 sinθ cosθ) + sinθ / cosθ = cos2θ/(2 sinθ cosθ) + 2 sin²θ /(2
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+Simplify $\cot 10 + \tan 5.$
+
+Enter your answer as a trigonometric function evaluated at an integer, such as "sin 7".
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Simplify cot 10 + tan 5.
+
+Assume degrees? Probably degrees. Could be radians? Usually such problems use degrees. 10, 5 degrees. Let's assume degrees.
+
+cot 10° + tan 5° = cos10/sin10 + sin5/cos5 = ?
+
+Compute cot 10 + tan 5 = cos10 / sin10 + sin5 / cos5
+
+Common denominator sin10 cos5.
+
+Numerator = cos10 cos5 + sin5 sin10 = ?
+
+cosA cosB + sinA sinB? That's cos(A-B)? cos(A-B)=cosA cosB + sinA sinB. So cos10 cos5 + sin5 sin10 = cos(10-5)=cos5.
+
+Wait careful: cos10 cos5 + sin5 sin10 = cos(10-5)=cos5. Yes.
+
+So denominator sin10 cos5.
+
+Thus = cos5 / ( sin10 cos5 ) = 1 / sin10.
+
+But sin10 = 2 sin
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+Simplify cot 10 + tan 5.
+
+We need assume degrees? Probably degrees. cot 10 + tan 5. 10 + ? Use formula.
+
+cot A = cos A / sin A
+tan B = sin B / cos B
+
+cot10 + tan5 = cos10/sin10 + sin5/cos5
+
+Need simplify.
+
+Let’s assume degrees.
+
+Compute cot10 + tan5 = cos10 / sin10 + sin5 / cos5
+
+Common denominator sin10 cos5 = 2 sin5 cos5 cos5? Wait sin10 =2 sin5 cos5.
+
+So first term = cos10 / (2 sin5 cos5)
+Second = sin5 / cos5 = 2 sin^2 5 / (2 sin5 cos5)
+
+Sum = [cos10 + 2 sin^2 5] / (2 sin5 cos5)
+
+Now cos10 = 1 -2 sin^2 5? Wait cos2x =1-2 sin^2 x. So cos10 =1-2 sin^2 5.
+
+Numerator =1 -2 sin^25 +2 sin^25 =1
+
+Denominator =2 sin5 cos5 = sin10
+
+So sum
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+We need to simplify $\cot 10° + \tan 5°$.
+
+Let me write $\cot 10° = \frac{\cos 10°}{\sin 10°}$ and $\tan 5° = \frac{\sin 5°}{\cos 5°}$.
+
+So $\cot 10° + \tan 5° = \frac{\cos 10°}{\sin 10°} + \frac{\sin 5°}{\cos 5°}$.
+
+Write with common denominator:
+$= \frac{\cos 10° \cos 5° + \sin 10° \sin 5°}{\sin 10° \cos 5°}$.
+
+The numerator is $\cos(10° - 5°) = \cos 5°$ by the identity $\cos(A-B) = \cos A \cos B + \sin A \sin B$.
+
+The denominator: $\sin 10° \cos 5° = \sin 10° \cos 5°$. I can use $\sin 2\theta = 2 \sin\theta \cos\theta$, so $\sin 10° = 2 \sin 5° \cos 5°$? Wait, that's right: $\sin 2\theta =
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+We need to simplify $\cot 10 + \tan 5$. Wait, the angles are not in radians... usually such expressions assume degrees. Let me check: the problem says "evaluated at an integer" and trigonometric functions. Usually if the arguments are integers like 10 and 5 without any degree symbol, they could be either degrees or radians. Let's analyze:
+
+If the arguments are in degrees, then $\cot 10^\circ + \tan 5^\circ$. Let's try to simplify.
+
+We have $\cot 10^\circ = \frac{\cos 10^\circ}{\sin 10^\circ}$ and $\tan 5^\circ$. Note that $10^\circ = 2 \times 5^\circ$, so $10°$ is double $5°$.
+
+Let's try to simplify expression.
+
+Idea: Use the identities.
+
+Let $x = 5^\circ$. Then $\cot(2x) + \tan(x)$.
+
+$\cot(2x) = \frac{\cos 2x}{\sin 2x} = \frac{\cos^2 x - \sin^2 x}{2 \sin x \cos x}$.
+
+$\tan x = \frac{\sin x}{\cos x}$.
+
+So $\cot(2x)
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+We need to simplify $\cot 10^\circ + \tan 5^\circ$ (assuming degrees).
+
+Let me rewrite everything in terms of sine and cosine:
+$\cot 10^\circ + \tan 5^\circ = \frac{\cos 10^\circ}{\sin 10^\circ} + \frac{\sin 5^\circ}{\cos 5^\circ}$
+
+$= \frac{\cos 10^\circ \cos 5^\circ + \sin 10^\circ \sin 5^\circ}{\sin 10^\circ \cos 5^\circ}$
+
+The numerator: $\cos 10^\circ \cos 5^\circ + \sin 10^\circ \sin 5^\circ = \cos(10^\circ - 5^\circ) = \cos 5^\circ$
+
+The denominator: $\sin 10^\circ \cos 5^\circ = \frac{1}{2}[\sin(10^\circ + 5^\circ) + \sin(10^\circ - 5^\circ)] = \frac{1}{2}[\sin 15^\circ + \sin 5^\circ]$
+
+So we have:
+$\frac{\cos 5^\circ}{\frac{1}{2}(\sin
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+We need to simplify cot(10°) + tan(5°).
+
+cot(10°) = cos(10°)/sin(10°)
+tan(5°) = sin(5°)/cos(5°)
+
+So:
+cot(10) + tan(5) = cos(10)/sin(10) + sin(5)/cos(5)
+
+Write with common denominator:
+= [cos(10) cos(5) + sin(10) sin(5)] / [sin(10) cos(5)]
+= cos(10-5) / sin(10-5+5) ... wait:
+sin(10) cos(5) = ?
+
+Actually: [cos(10) cos(5) + sin(10) sin(5)] = cos(10-5) = cos(5)
+
+And denominator: sin(10) cos(5) =?
+
+Note: 2 sin(A) cos(B) = sin(A+B) + sin(A-B), so sin(10)cos(5) = (1/2)[sin(15) + sin(5)].
+
+Hmm, let me try another approach.
+
+cot(10°) + tan(5°) = cos(10)/sin(10) + sin(5
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+We need to simplify $\cot 10^\circ + \tan 5^\circ$. Wait, I need to clarify if the angles are in degrees or radians. In typical math contest problems, unless otherwise specified, angles in trigonometric expressions are often in degrees when integer values are given like 10 and 5. However, it could be radians. Let me check: $\cot 10 + \tan 5$. If it's radians, the numbers are just multiples of $\pi$? Usually they just write "10" meaning 10 degrees or 10 radians? Hmm.
+
+Given that we need to enter as a trigonometric function evaluated at an integer, like "sin 7", probably meaning degrees. Let's assume degrees first.
+
+So simplify $\cot(10°) + \tan(5°)$.
+
+Note: $\cot 10° = \frac{\cos 10°}{\sin 10°} = \frac{\sin 80°}{\cos 80°} = \tan 80°$? Wait, $\cot 10° = \tan(90° - 10°) = \tan 80°$. But $\tan 5°$ is $\tan 5°$. This doesn't trivially combine unless there is an identity.
+
+Maybe use cot
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+We need to simplify $\cot 10 + \tan 5$.
+
+Recall that $\cot 10 = \frac{\cos 10}{\sin 10}$ and $\tan 5 = \frac{\sin 5}{\cos 5}$.
+
+So we have:
+$$\cot 10 + \tan 5 = \frac{\cos 10}{\sin 10} + \frac{\sin 5}{\cos 5}$$
+
+Get common denominator:
+$$= \frac{\cos 10 \cos 5 + \sin 10 \sin 5}{\sin 10 \cos 5}$$
+
+The numerator is $\cos 10 \cos 5 + \sin 10 \sin 5 = \cos(10 - 5) = \cos 5$.
+
+Note: $\cos(A - B) = \cos A \cos B + \sin A \sin B$, so with $A = 10$ and $B = 5$, $\cos(10 - 5) = \cos 10 \cos 5 + \sin 10 \sin 5$. Wait, let me check: $\cos(A - B) = \cos A \cos B + \sin A \sin B$. Yes.
+
+So:
+$$\cot 10 +
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+We need to simplify $\cot 10^\circ + \tan 5^\circ$.
+
+Let me think about this. I'll assume angles are in degrees.
+
+We have $\cot 10 + \tan 5$.
+
+$\cot 10 = \frac{\cos 10}{\sin 10}$.
+
+$\tan 5 = \frac{\sin 5}{\cos 5}$.
+
+So $\cot 10 + \tan 5 = \frac{\cos 10}{\sin 10} + \frac{\sin 5}{\cos 5}$.
+
+Let me use the identity $10 = 2 \times 5$.
+
+We know $\sin 10 = 2 \sin 5 \cos 5$.
+$\cos 10 = \cos^2 5 - \sin^2 5 = 2\cos^2 5 - 1 = 1 - 2\sin^2 5$.
+
+So $\frac{\cos 10}{\sin 10} = \frac{\cos^2 5 - \sin^2 5}{2 \sin 5 \cos 5}$.
+
+This equals $\frac{\cos 5}{\sin 5} \cdot \frac{\cos 5}{2 \cos 5} - \frac{\sin
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+We need to simplify $\cot 10^{\circ} + \tan 5^{\circ}$.
+
+Let me compute this carefully. Since $10 = 2 \cdot 5$, we have double angle relationships.
+
+We know that:
+$\cot 2\theta = \frac{\cot^2\theta - 1}{2\cot\theta}$ or equivalently $\cot 2\theta = \frac{1 - \tan^2\theta}{2\tan\theta}$
+
+Wait, let's check: $\cot 2\theta = \frac{\cos 2\theta}{\sin 2\theta} = \frac{\cos^2\theta - \sin^2\theta}{2\sin\theta\cos\theta}$
+
+Dividing numerator and denominator by $\cos^2\theta$:
+$\frac{1 - \tan^2\theta}{2\tan\theta}$
+
+Yes, that's correct.
+
+Also, $\tan 2\theta = \frac{2\tan\theta}{1-\tan^2\theta}$ implies $\cot 2\theta = \frac{1-\tan^2\theta}{2\tan\theta}$
+
+Now, let's expand $\cot 10^{\circ}$:
+With $\theta = 5^{\circ}$:
+$\cot 10^{\circ} = \frac{1-\tan^2 5^{\
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+We need to simplify $\cot 10° + \tan 5°$ to a trigonometric function evaluated at an integer (presumably an integer degree).
+
+Let me work through this carefully.
+
+We have:
+$$\cot 10° + \tan 5° = \frac{\cos 10°}{\sin 10°} + \frac{\sin 5°}{\cos 5°}$$
+
+First, simplify $\cot 10°$:
+$$\cot 10° = \frac{\cos 10°}{\sin 10°} = \frac{\sin(90°-10°)}{\sin 10°} \cdot \frac{\text{something}}{\text{something}}$$
+
+Actually, let me just combine the two fractions directly.
+
+$$\cot 10° + \tan 5° = \frac{\cos 10° \cos 5° + \sin 10° \sin 5°}{\sin 10° \cos 5°}$$
+
+The numerator looks familiar - $\cos(10°-5°) = \cos 5°$.
+
+The denominator: $\sin 10° \cos 5°$.
+
+So we have:
+$$\cot 10° + \tan 5° = \frac{\cos 5°}{\sin
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+We need to simplify $\cot 10^\circ + \tan 5^\circ$. Wait, the problem says "\cot 10 + \tan 5." The angles might be in degrees? Often in such problems, the angles are in degrees unless specified otherwise. The input format is as trigonometric functions, and they ask to answer like "sin 7". But "sin 7" could be 7 degrees or 7 radians. Most likely it's degrees, because trigonometry contest problems often use degrees, and the final answer expects an integer.
+
+Let's assume the angles are in degrees. So we need to simplify $\cot(10^\circ) + \tan(5^\circ)$.
+
+We know that $\cot(10^\circ) = \tan(90^\circ - 10^\circ) = \tan(80^\circ)$? Wait, $\cot(10^\circ) = \frac{\cos(10^\circ)}{\sin(10^\circ)}$. So $\cot(10^\circ) + \tan(5^\circ) = \frac{\cos 10}{\sin 10} + \frac{\sin 5}{\cos 5}$.
+
+Maybe we can combine these terms:
+$\frac{\cos 10}{\sin 10} + \
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We need to simplify $\cot 10 + \tan 5$ (all angles in degrees).
+
+Note that $5$ is half of $10$. Wait no, $10$ is double of $5$.
+
+Let me recall the identity: $\cot(2\theta) + \tan(\theta)$? Not sure.
+
+Actually note that $\cot 10 = \tan(90 - 10) = \tan 80$.
+
+So the expression is $\tan 80 + \tan 5$.
+
+We could try combining these into a single tangent by using a known identity. Alternatively, use degrees.
+
+Note that $80^\circ = 30^\circ + 50^\circ$ etc.
+
+Let's try: $\tan A + \tan B = \frac{\sin(A+B)}{\cos A \cos B}$.
+
+So $\tan 80 + \tan 5 = \frac{\sin(85)}{\cos 80 \cos 5}$.
+
+Now we can simplify: $2 \sin 85 \cos 80 \cos 5$ or something.
+
+We know $\sin 85 \cos 5 = \frac{1}{2}[\sin(85+5) + \sin(85-5)] = \frac{1}{2}[\sin 90
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+We need to simplify $\cot 10 + \tan 5$.
+
+Let me convert everything to tan or cot of half-angles.
+
+Actually, let me think. We have 10 = 2·5. So 
+$$\tan 10 = \tan(2\cdot 5) = \frac{2\tan 5}{1-\tan^2 5}.$$
+
+And $\cot 10 = \frac{1}{\tan 10} = \frac{1-\tan^2 5}{2\tan 5}$.
+
+So:
+$$\cot 10 + \tan 5 = \frac{1-\tan^2 5}{2\tan 5} + \tan 5.$$
+
+Let $t = \tan 5$. Then:
+$$\cot 10 + \tan 5 = \frac{1-t^2}{2t} + t = \frac{1-t^2+2t^2}{2t} = \frac{1+t^2}{2t}.$$
+
+Now $\frac{1+\tan^2 5}{2\tan 5} = \frac{1}{2}(\frac{1}{\tan 5} + \tan 5)$ which doesn't immediately help.
+
+Wait:
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+We need to simplify $\cot 10° + \tan 5°$.
+
+Let me compute this:
+$\cot 10 + \tan 5 = \frac{\cos 10}{\sin 10} + \frac{\sin 5}{\cos 5}$
+
+Write in terms of sine and cosine with common denominators or use identities.
+
+Note that $2\sin 5 \cos 5 = \sin 10$.
+
+Let me try to combine:
+$\cot 10 + \tan 5 = \frac{\cos 10}{\sin 10} + \frac{\sin 5}{\cos 5}$
+
+$= \frac{\cos 10 \cos 5 + \sin 10 \sin 5}{\sin 10 \cos 5}$
+
+Actually wait: to combine, I need common denominator $\sin 10 \cos 5$.
+
+$\frac{\cos 10}{\sin 10} + \frac{\sin 5}{\cos 5} = \frac{\cos 10 \cos 5}{\sin 10 \cos 5} + \frac{\sin 5 \sin 10}{\sin 10 \cos 5} \cdot \text{wait}$
+
+Let me redo:
+$\frac{\cos 10}{\sin
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+We need to simplify $\cot 10 + \tan 5$.
+
+Wait, is the 10 in degrees or radians? Usually in trigonometry without specification, many contexts use degrees for simple integer angles, but 5 degrees is not a standard angle. Let me check.
+
+Wait, the angles 10 and 5 are given as plain numbers. In most math competition contexts, if an angle is expressed without a degree symbol and is a small integer, it could be either degrees or radians. But radians for 5 and 10 are unusual, while 5 degrees and 10 degrees are reasonable angles. However, 5 degrees is also not a standard angle. Let's think.
+
+Let me try to simplify algebraically. Identities:
+$\cot x = \frac{1}{\tan x} = \frac{\cos x}{\sin x}$.
+$\tan(x/2) = \frac{1-\cos x}{\sin x}$ or $\frac{\sin x}{1+\cos x}$.
+
+Alternatively, consider:
+$\cot(2\alpha) = \frac{1-\tan^2\alpha}{2\tan\alpha} = \frac{\csc(2\alpha)\cos(2\alpha)}{?\text{ messy}}$
+
+Better approach: $\cot 10 + \tan
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+We need to simplify $\cot 10° + \tan 5°$. Wait, are these degrees? The problem says "sin 7" as example answer, so it's degrees.
+
+Wait, "sin 7" could mean $\sin(7°)$? Yes likely degrees.
+
+So we need to simplify $\cot 10° + \tan 5°$. Recall $\cot x = \frac{1}{\tan x}$, so $\cot 10° = \frac{1}{\tan 10°}$.
+
+We want to express as a single trig function evaluated somewhere.
+
+Wait $\cot 10° + \tan 5°$. Write in terms of sin and cos: $\frac{\cos 10}{\sin 10} + \frac{\sin 5}{\cos 5}$.
+
+Combine: $\frac{\cos 10 \cos 5 + \sin 5 \sin 10}{\sin 10 \cos 5}$.
+
+Note $\cos 10 \cos 5 + \sin 5 \sin 10 = \cos(10° - 5°) = \cos 5°$.
+
+Thus expression = $\frac{\cos 5}{\sin 10 \cos 5} = \frac{1}{\sin 10}$? Wait
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+We need to simplify $\cot 10 + \tan 5$.
+
+Wait, are the angles in degrees or radians? Let me check the problem. Usually in such problems without specification, it's assumed to be degrees, but sometimes radians. Let me check typical math competition problems.
+
+Actually, looking at the answer format "sin 7", suggests the argument is a number. If it's degrees, 10°, 5° etc. seem likely.
+
+Let me assume degrees.
+
+We have $\cot 10^\circ + \tan 5^\circ$.
+
+Let me rewrite this:
+$\cot 10^\circ = \frac{\cos 10^\circ}{\sin 10^\circ} = \frac{\cos 10^\circ}{2 \sin 5^\circ \cos 5^\circ}$
+
+So:
+$\cot 10^\circ + \tan 5^\circ = \frac{\cos 10^\circ}{2 \sin 5^\circ \cos 5^\circ} + \frac{\sin 5^\circ}{\cos 5^\circ}$
+
+$= \frac{\cos 10^\circ}{2 \sin 5^\circ \cos 5^\circ} + \frac{2 \sin^2 5^\circ}{2 \
+<<<END id=47>>>

@@ -1,0 +1,372 @@
+PROBLEM: Triangle ABC has vertices A(0, 8), B(2, 0), C(8, 0). A line through B
+cuts the area of triangle ABC in half. What is the sum of the slope and
+y-intercept of this line?   (correct answer: -2)
+====================================================================================================
+
+<<<TEXT id=24>>>
+Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts area in half; find sum of slope + y-intercept of this line.
+
+We have triangle with base BC on x-axis from 2 to 8, length 6, height from A to base line y=0 is 8. Area = 0.5 * base * height = 0.5 *6*8=24.
+
+Line through B (2,0) cuts area in half. There are two possibilities: line goes intersect AC (?) or AB ? Let's think.
+
+Line through B inside triangle will intersect either AC or AB? Actually B is vertex. A line through B inside triangle must intersect side AC (or possibly AB extended?). Wait line through B cuts area in half means line segment within triangle from B to a point on opposite side AC (or maybe AB to...?). Since B is vertex, the line through B will intersect the opposite side AC (or the extension beyond?) To stay inside triangle, line from B must go into interior and hit side AC. Also could hit side AB? No. Could hit side BC? That would be along base.
+
+So line through B to point D on
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts the area of triangle ABC in half; find sum of slope and y-intercept of this line.
+
+Triangle base BC on x-axis from 2 to 8 length 6. Height from A to base is 8. Area = 1/2 *6*8 =24. Half area =12.
+
+Line through B (2,0) cuts area in half. There are two possibilities: line goes up intersecting AC (?) or AB? Let's think.
+
+Line through B intersects triangle interior. Since B is vertex, line through B to intersect opposite side AC will cut triangle into two smaller triangles. Area is proportional to base along AC? Let's find intersection point P on AC (or possibly AB extended?). Line through B must intersect side AC (since B is vertex, line through interior must intersect side AC). Also could intersect side AB? No line through B interior must go inside triangle, so it will intersect AC (or maybe extension beyond?). Actually triangle ABC with base BC on x-axis, A at top left. B at (2,0). So interior is to left of B? Wait A at x=0,
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts the area of triangle ABC in half; find sum of slope and y-intercept of this line.
+
+Triangle ABC base BC from x=2 to 8 on x-axis length 6. Height from A to BC is 8. Area = 1/2 *6*8=24. Half area =12.
+
+Line through B(2,0) cuts area in half. It will intersect either AC or AB? Line through B inside triangle. Since B is at base. A line through B that cuts area in half must intersect either side AC or side AB? AB is one side from B to A. Line through B inside triangle must go up to intersect AC (or maybe extend to... Could also intersect extension of AB? No). For a line through B entering interior, it must intersect side AC (since AB is boundary). Also could intersect side AB? No.
+
+Actually line through B can go up left to intersect AB? No. AB is boundary, line going interior must intersect either AC or AB? Wait AB is edge containing B. A line through B can rotate. The interior is to left of B
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts area in half; find sum of slope and y-intercept of this line.
+
+We have triangle with base BC on x-axis from 2 to 8, length 6. Height from A to base is 8. Area = 1/2 *6*8=24.
+
+Line through B (2,0) cuts area in half. Line can intersect either side AC or side AB? Wait line through B must intersect triangle interior and exit through other side (AC or AB? Actually AB meets at B, so line through B can intersect AC or can go to side? AB is one side, line through B along AB is boundary. Interior line must go from B to a point on AC (or possibly on...?). Could also intersect... Triangle vertices A(0,8), B(2,0), C(8,0). So line through B inside triangle will intersect segment AC (if it goes upwards between rays BA and BC). Ray BA goes up left to (0,8). Ray BC goes right along x-axis. So interior wedge is between them. So intersection with AC is possible. Could
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts the area of triangle ABC in half; find sum of slope and y-intercept of this line.
+
+Triangle ABC base BC from x=2 to 8 length 6, height 8. Area = 1/2 *6*8=24. Half area=12.
+
+Line through B (2,0) cuts area in half. Line can intersect either AC or AB? Through B, line will intersect side AC or side AB extended? It must cut triangle into two parts. Since B is vertex, line through B will intersect opposite side AC at some point D (inside segment AC) or intersect extension? To cut area in half, line must go through interior, intersect AC at point between A and C (since B is at base). Could also intersect AB extended? Let's think.
+
+Line through B with slope m. Equation y = m (x-2). Since passes through B.
+
+We need area of smaller piece =12.
+
+Intersection with AC. Equation AC: A(0,8) to C(8,0). Equation: y = -x +8. Intersection D of line y=m(x
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts the area of triangle ABC in half; find sum of slope and y-intercept of this line.
+
+Triangle ABC: base BC from (2,0) to (8,0) length 6. Height from A to y-axis? A at (0,8). Area = 1/2 * base * height? Base BC on x-axis y=0, so area = 1/2 * |BC| * y_A? But A not vertically above base. Actually area via coordinates: shoelace: (0*0 +2*0+8*8) - (8*2+0*8+0*0)=64 -16 =48. Half =24.
+
+Line through B(2,0) cuts area in half. Could intersect AC or AB? Line through B. Possible lines intersect side AC (or AB extension?). Since B is vertex, line through B will intersect opposite side AC ? Or intersect extension of AB? To cut area in half, line must intersect side AC (inside triangle) or side AB? Let's think: B is at base. Line through B going
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts the area of triangle ABC in half; find sum of slope and y-intercept of this line.
+
+Triangle ABC base BC from (2,0) to (8,0) length 6. Height from A to BC is 8. Area = 1/2 *6*8 =24. Half area =12.
+
+Line through B (2,0) cuts area in half. Line through B intersects triangle. There are two possibilities: line goes up left to side AC, or up right to side AC? Wait B is at (2,0) bottom. Triangle vertex A at (0,8) left, C at (8,0) right. So triangle spans. A line through B that cuts area in half must intersect either AC or AB? It must intersect boundary of triangle at another point besides B. Since B is on base BC. Line through B inside triangle will intersect either side AC or side AB? AB connects (0,8) to (2,0). B is endpoint of AB. So a line through B inside triangle cannot go to AB except at B. So interior line
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts the area of triangle ABC in half; find sum of slope and y-intercept of this line.
+
+Triangle ABC base BC from x=2 to 8 length 6, height 8. Area = 1/2 *6*8=24. Half =12.
+
+Line through B(2,0) cuts area in half. Line can intersect either AC or AB? Through B, line will intersect side AC or AB extended? To cut area in half, line must intersect side AC (or AB? Actually AB contains B). So line through B must intersect segment AC at some point, or intersect extension? Typically cut area means intersect the triangle interior. Since B is vertex, line through B will intersect opposite side AC at interior point, or intersect extension of AC? But line through vertex B entering triangle interior must intersect side AC (or side AB? No). So line goes from B to point D on AC. Then triangle ABD or CBD? Wait line BD divides triangle into two polygons: one is triangle ABD? No B to D on AC divides triangle ABC into two triangles: ABD? Actually ABD is formed by
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+We have triangle $ABC$ with vertices $A(0,8)$, $B(2,0)$, $C(8,0)$.
+
+First, find the area of the triangle.
+Base $BC$ goes from $(2,0)$ to $(8,0)$, so length is $6$.
+Height from $A$ to $BC$ - since $BC$ is on the x-axis (y=0), and $A$ is at $(0,8)$... wait, but $(0,8)$ has $x=0$, and the base is from $x=2$ to $x=8$. The height is the distance from $A$ to the line $y=0$, which is $8$.
+
+Wait, but I need to think about this more carefully. Let me set up the area.
+Area $= \frac{1}{2} |x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|$
+$= \frac{1}{2} |0(0-0) + 2(0-8) + 8(8-0)|$
+$= \frac{1}{2}|0 - 16 + 64| = \frac
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+We have triangle $ABC$ with vertices $A(0,8)$, $B(2,0)$, $C(8,0)$.
+
+First, let me find the area of triangle $ABC$.
+
+Area $= \frac{1}{2} |x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|$
+$= \frac{1}{2} |0(0-0) + 2(0-8) + 8(8-0)|$
+$= \frac{1}{2} |0 - 16 + 64|$
+$= \frac{1}{2} |48|$
+$= 24$
+
+So the area is 24, and we need a line through $B$ that divides it in half, so we need the line to create regions of area 12 each.
+
+Let the line through $B$ have equation $y = m(x - 2)$ (since it passes through $B(2,0)$). So this line intersects segment $AC$ or the other sides.
+
+Where does segment $AC$ lie? $A(0,8)$ is at the top, $C(8,0)$ is at bottom right.
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+We have triangle ABC with A(0,8), B(2,0), C(8,0).
+
+Area of triangle: base BC is from (2,0) to (8,0), length 6. Height from A to BC is 8. So area = (1/2)(6)(8) = 24.
+
+We need line through B(2,0) that divides area of triangle in half (area 12).
+
+Let's set up: line through B with slope m has equation y = m(x-2).
+When m = 0, y = 0, that's the x-axis, and that would contain BC? B and C are on x-axis so line through B along BC is BC itself. That line cuts out zero area or triangle degenerates.
+
+Actually the problem says "A line through B cuts the area of triangle ABC in half." So line through vertex B divides the triangle into two regions of equal area (12).
+
+Think of a line through B. B is a vertex. Going from angle B, the line will intersect the opposite side AC at some point P. The line divides triangle into two smaller triangles. Wait, we need to consider all possibilities.
+
+Actually since the line goes through B(2,0
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+We have triangle ABC with vertices A(0,8), B(2,0), C(8,0).
+
+Let me find the area of triangle ABC first.
+
+Using the formula for area with coordinates:
+Area = (1/2)|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|
+= (1/2)|0(0-0) + 2(0-8) + 8(8-0)|
+= (1/2)|0 - 16 + 64|
+= (1/2)(48)
+= 24
+
+So the area is 24 square units. We need a line through B(2,0) that cuts the area in half, i.e., creates two regions each with area 12.
+
+Let me set up the line through B with some slope. Wait, the line doesn't have to intersect the triangle nicely. Let me think about this.
+
+Actually, looking at the triangle, B is one of the vertices on the base BC. Any line through B will divide the triangle if it goes into the triangle. B is on side BC. The line through B could exit through side AC or AB.
+
+Let me consider what sides the line
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+We have triangle ABC with vertices A(0,8), B(2,0), C(8,0). Let me compute the area first.
+
+Area = (1/2)|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|
+= (1/2)|0(0-0) + 2(0-8) + 8(8-0)|
+= (1/2)|0 - 16 + 64|
+= (1/2)(48) = 24.
+
+So we need a line through B(2,0) that cuts the area in half, i.e., creates two regions each of area 12.
+
+The line through B(2,0) should divide triangle into two parts each of area 12.
+
+Let me think about this. The line through B(2,0) will hit either side AB, side AC, or side BC (since B is on side BC if we consider BC, wait let me check: B(2,0) is not on segment BC. Let me reconsider.
+
+Wait, B(2,0) and C(8,0) both have y=0, so BC is a horizontal
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+We have triangle $ABC$ with vertices $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+
+First, let me find the area of triangle $ABC$.
+Area = $\frac{1}{2}|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|$
+     = $\frac{1}{2}|0(0-0) + 2(0-8) + 8(8-0)|$
+     = $\frac{1}{2}|0 - 16 + 64|$
+     = $\frac{1}{2} \cdot 48$
+     = $24$.
+
+The base $BC$ is on the x-axis with length $6$, and the height is $8$. So area = $\frac{1}{2} \cdot 6 \cdot 8 = 24$. Confirmed.
+
+We want a line through $B(2, 0)$ that cuts the area in half, so it makes two regions each of area $12$.
+
+The line passes through $B(2,0)$. 
+
+Point $B$ is on segment $AC$ extended? Let me check. Line
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+We have triangle ABC with vertices A(0,8), B(2,0), C(8,0).
+
+First, let's compute the area of triangle ABC.
+
+Area = (1/2)|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|
+     = (1/2)|0(0-0) + 2(0-8) + 8(8-0)|
+     = (1/2)|0 - 16 + 64|
+     = (1/2)(48)
+     = 24
+
+So the area is 24, and we need a line through B(2,0) that cuts the area in half, i.e., encloses an area of 12 with part of the triangle.
+
+The line passes through B(2,0). This vertex is on the side BC (from (2,0) to (8,0)), which lies on the x-axis.
+
+Let's think about possible lines through B that bisect the area.
+
+Option 1: The line goes from B to a point on side AC. 
+Option 2: The line goes from B to a point on side AB.
+Option 3: The line
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+We have triangle ABC with vertices A(0,8), B(2,0), C(8,0).
+
+First, let me find the area of the triangle and the centroid.
+
+Area = (1/2)|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|
+= (1/2)|0(0-0) + 2(0-8) + 8(8-0)|
+= (1/2)|0 - 16 + 64|
+= (1/2)(48) = 24.
+
+Centroid: ((0+2+8)/3, (8+0+0)/3) = (10/3, 8/3).
+
+A line that cuts the area of triangle ABC in half must pass through the centroid. So we need a line through B(2,0) and the centroid (10/3, 8/3).
+
+Wait, actually any line through the centroid that bisects a region must do so... but actually this is only guaranteed for convex regions. Since the triangle is convex, any line through the centroid divides the area... wait, that's not quite right either.
+
+Hmm, let me think again.
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+We have triangle ABC with vertices A(0,8), B(2,0), C(8,0). The area of the triangle needs to be halved a line through B(wait, through B? Given: "A line through $B$ cuts the area of $\triangle ABC$ in half").
+
+Wait "A line through B cuts the area of triangle ABC in half". So a line that goes through B that cuts the area in half. Actually typically "cut the area" might mean the line intersects the triangle separating one region whose area is half of total area.
+
+So line goes through B (2,0) and intersects the opposite side AC in such a way that the region on one side of the line inside the triangle has area equal to exactly half the total area.
+
+Given triangle ABC is interior, we can examine lines through B because B is a vertex.
+
+Total triangle area: compute base AC... or compute using geometry.
+
+Coordinates: A(0,8), B(2,0), C(8,0). BC is from (2,0) to (8,0) lying on x-axis. AC is from (0,8) to (8,0). AB from (0,8) to (2,0).
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+We have triangle $ABC$ with vertices $A(0,8)$, $B(2,0)$, $C(8,0)$.
+
+First, let me find the area of triangle $ABC$.
+$A(0,8)$, $B(2,0)$, $C(8,0)$.
+
+Area = $\frac{1}{2} |x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|$
+= $\frac{1}{2} |0(0-0) + 2(0-8) + 8(8-0)|$
+= $\frac{1}{2} |0 - 16 + 64|$
+= $\frac{1}{2} \cdot 48 = 24$.
+
+So the area is 24, and we want a line through $B(2,0)$ that cuts this area in half, so we want to find a line through $B$ that divides the triangle into two regions each with area 12.
+
+Let me visualize. $B = (2,0)$ is on the x-axis (which is side $BC$ extended... well $B$ is between ... wait $B(2,0)$
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We have triangle $ABC$ with vertices $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+
+First, let me find the area of $\triangle ABC$.
+
+Using the formula: Area $= \frac{1}{2}|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|$
+$= \frac{1}{2}|0(0 - 0) + 2(0 - 8) + 8(8 - 0)|$
+$= \frac{1}{2}|0 - 16 + 64|$
+$= \frac{1}{2}|48|$
+$= 24$
+
+So the area is 24.
+
+Now we need a line through $B(2, 0)$ that cuts the triangle into two parts of equal area (12 each).
+
+Since the line passes through $B(2, 0)$, it enters the triangle and exits at some point on either side $AB$ or $AC$ or $BC$.
+
+Actually, the line through $B$ can't go through $B$ and divide the triangle into two parts where $B$ is on the boundary of both parts. Let me
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+We have triangle with vertices A(0,8), B(2,0), C(8,0).
+
+First, find area of triangle ABC.
+
+Using shoelace formula or base*height/2.
+
+Base: from B(2,0) to C(8,0). But triangle's base could be BC. Actually B and C are on x-axis, so BC is from (2,0) to (8,0), length 6.
+
+Height from A to line through B and C (x-axis): y-coordinate of A is 8, so height = 8.
+
+Area = (1/2)*6*8 = 24.
+
+So we want a line through B(2,0) that splits the triangle into two regions of equal area (12 each).
+
+The line goes through B and intersects... something. The line cuts the area of triangle ABC in half. Since line goes through vertex B, the line will go from B and intersect side AC (or possibly go out other sides, but must split the area). Since line goes through B, and we want to divide into two parts with equal area.
+
+The line through B(2,0) will hit some point P on side AC. The region on one side of
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+We have triangle $ABC$ with $A(0,8)$, $B(2,0)$, $C(8,0)$.
+
+First, let me find the area of $\triangle ABC$.
+Base $BC$ has length $8-2=6$ and lies on the x-axis.
+Height from $A$ is $8$.
+Area $= \frac{1}{2} \cdot 6 \cdot 8 = 24$.
+
+A line through $B(2,0)$ cuts the triangle into two equal areas of $12$ each.
+
+Let the line from $B(2,0)$ have slope $m$ and y-intercept $b$. Line equation: $y = mx + b$. Since it passes through $B(2,0)$: $0 = 2m + b$, so $b = -2m$.
+
+The line divides the triangle into two regions, each with area 12.
+
+Case 1: The line passes through side $AB$ and side $AC$ (so it intersects both $AB$ and $AC$ extended or just $AC$).
+
+Wait, the line passes through $B$, which is already a vertex. So the line goes from $B$ to some point on the opposite side
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+We have triangle $ABC$ with vertices $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+
+First, let me compute the area of triangle $ABC$.
+Area = $\frac{1}{2}|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|$
+= $\frac{1}{2}|0(0-0) + 2(0-8) + 8(8-0)|$
+= $\frac{1}{2}|0 - 16 + 64|$
+= $\frac{1}{2}(48) = 24$.
+
+So area is $24$, and we need the line to cut it in half, meaning each part should have area $12$.
+
+The line goes through $B(2, 0)$ and divides triangle $ABC$ into two equal areas.
+
+A line through $B(2, 0)$ divides the triangle into two parts. The line passes through $B$ and intersects another side of the triangle.
+
+The sides of the triangle:
+- $AB$: from $A(0,8)$ to $B(2,0)$
+- $BC$: from $
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+We have triangle $ABC$ with vertices $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+
+First, find the area of the triangle.
+Base $BC$ is from $(2,0)$ to $(8,0)$, which has length 6.
+Height from $A(0,8)$ to line $y=0$ (the line through $BC$) is 8.
+Area = $\frac{1}{2} \cdot 6 \cdot 8 = 24$.
+
+We need a line through $B(2,0)$ that divides the triangle into two regions of equal area (12 each).
+
+Let me think about this. The line passes through $B(2,0)$ and divides the triangle. Cases:
+
+Case 1: The line intersects side $AC$.
+
+Line $AC$ goes from $A(0,8)$ to $C(8,0)$. Equation: $\frac{x}{8} + \frac{y}{8} = 1$, i.e., $x + y = 8$.
+
+The line through $B$ with slope $m$: $y - 0 = m(x - 2)$, i.e., $y = m(x-
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+We have triangle with vertices $A(0,8)$, $B(2,0)$, $C(8,0)$.
+
+First, the area. The base $BC$ is from $(2,0)$ to $(8,0)$, so length 6, and the height from $A$ to line $y=0$ is 8. So area = $\frac{1}{2}(6)(8) = 24$.
+
+We need the area on each side to be 12.
+
+The line passes through $B(2,0)$. It cuts a side of the triangle (other than $B$). Let's think about which side it could cut.
+
+The line through $B$ sharing triangle area has options: it can hit side $AC$ or side extended... wait, it must cut the triangle interior into two regions.
+
+The line through $B(2,0)$ exits triangle at some other point on the edge. Starting at $B$, going in one direction might hit $AC$ (since $B$ is not on $BC$ except endpoint, $B$ is at one end of $BC$).
+
+Wait, let's see. $B$ is a vertex of the triangle. A line through vertex $B$ entered triangle if on
+<<<END id=47>>>

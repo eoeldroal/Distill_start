@@ -1,0 +1,705 @@
+PROBLEM (id 154, Level 1, Intermediate Algebra, answer: -6)
+Suppose $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.
+====================================================================================================
+
+<<<TEXT id=0>>>
+We need answer. Problem: f(x)=x/5 +3, g(x)=4-x. f(g(a))=5. Compute g(a)=4-a. f(g(a))=(4-a)/5 +3 =5. Solve: (4-a)/5=2 => 4-a=10 => a=-6. Final boxed -6.
+<<<END id=0>>>
+
+<<<TEXT id=1>>>
+We need answer math. Need reason step by step but final within boxed. f(x)=x/5+3, g(x)=4-x. f(g(a))=5. Compute g(a)=4-a. f(g(a))=(4-a)/5 +3 =5. So (4-a)/5=2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=1>>>
+
+<<<TEXT id=2>>>
+We need answer math. Need reason step by step but final answer boxed. Let's solve.
+
+f(x)=x/5+3, g(a)=4-a. f(g(a)) = (4-a)/5 + 3 = 5. So (4-a)/5 =2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=2>>>
+
+<<<TEXT id=3>>>
+We need answer math. Need reason step by step but final answer boxed. Let's solve.
+
+f(x)= x/5 +3. g(a)=4-a. f(g(a))= (4-a)/5 +3 = 5. So (4-a)/5 =2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=3>>>
+
+<<<TEXT id=4>>>
+We need answer math. Need reason step by step but final within boxed. Let's solve.
+
+f(x)= x/5 +3, g(x)=4-x. f(g(a)) = g(a)/5 +3 =5 => g(a)/5 =2 => g(a)=10. g(a)=4-a=10 => -a=6 => a=-6. Final \boxed{-6}.
+<<<END id=4>>>
+
+<<<TEXT id=5>>>
+We need answer math. Need reason step by step final boxed. f(x)=x/5+3, g(x)=4-x. f(g(a))=5.
+
+Compute g(a)=4-a. f(g(a)) = (4-a)/5 + 3 =5. so (4-a)/5=2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=5>>>
+
+<<<TEXT id=6>>>
+We need answer math. Need reason step by step but final within boxed. Let's solve.
+
+f(x)= x/5 +3. g(a)=4-a. f(g(a)) = (4-a)/5 +3 =5. So (4-a)/5 =2 => 4-a=10 => a=-6. Final boxed{-6}.
+<<<END id=6>>>
+
+<<<TEXT id=7>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: f(x)=x/5 +3, g(x)=4-x. f(g(a))=5. Compute g(a)=4-a. f(g(a))= (4-a)/5 +3 =5. So (4-a)/5 =2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=7>>>
+
+<<<TEXT id=8>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: f(x)=x/5+3, g(x)=4-x. f(g(a))=5. Compute g(a)=4-a. f(g(a))=(4-a)/5+3 =5. (4-a)/5=2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=8>>>
+
+<<<TEXT id=9>>>
+We need answer math. Need reason step by step but final boxed. Let's solve: f(g(a)) = f(4-a) = (4-a)/5 + 3 = 5. So (4-a)/5 =2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=9>>>
+
+<<<TEXT id=10>>>
+We need answer math. Need reason step by step but final in boxed. f(x)=x/5+3, g(x)=4-x. f(g(a))=5. g(a)=4-a. f(g(a))=(4-a)/5+3 =5. (4-a)/5=2 => 4-a=10 => a=-6. Final boxed{-6}.
+<<<END id=10>>>
+
+<<<TEXT id=11>>>
+We need answer math. Need reason step by step but final boxed. Problem: f(x)= x/5 +3, g(x)=4-x. f(g(a))=5. Find a.
+
+Compute f(g(a)) = (4-a)/5 +3 = 5. (4-a)/5 =2 => 4-a=10 => a=-6. Final boxed{-6}.
+<<<END id=11>>>
+
+<<<TEXT id=12>>>
+We need answer math. Need reason step by step? Final with boxed. Problem: f(x)=x/5+3, g(x)=4-x. f(g(a))=5. Find a.
+
+Compute f(g(a)) = (g(a))/5 +3 = (4-a)/5 +3. Set =5. (4-a)/5 =2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=12>>>
+
+<<<TEXT id=13>>>
+We need answer math. Need reason step by step but final answer boxed. f(x)=x/5+3, g(a)=4-a. f(g(a))=(4-a)/5 +3 =5. Solve: (4-a)/5=2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=13>>>
+
+<<<TEXT id=14>>>
+We need answer math. Need reason step by step but final boxed. Problem: f(x)=x/5 +3, g(x)=4-x. f(g(a))=5. g(a)=4-a. f(g(a)) = (4-a)/5 +3 =5. Solve: (4-a)/5 =2 => 4-a=10 => a=-6. Final boxed{-6}.
+<<<END id=14>>>
+
+<<<TEXT id=15>>>
+We need answer math. Need reason step by step but final in boxed. f(g(a)) = f(4-a) = (4-a)/5 + 3 = 5. So (4-a)/5 = 2 => 4-a=10 => a=-6. Final \boxed{-6}.
+<<<END id=15>>>
+
+<<<TEXT id=16>>>
+Suppose f(x)= x/5 +3 and g(x)=4 - x. If f(g(a))=5, find a.
+
+Compute g(a)=4 - a.
+
+f(g(a)) = (g(a))/5 +3 =5
+
+=> (4 - a)/5 +3 =5
+
+=> (4 - a)/5 =2
+
+=> 4 - a =10
+
+=> -a =6
+
+=> a = -6
+
+Check: g(-6)=4 -(-6)=10. f(10)=10/5+3=2+3=5 good.
+
+Answer boxed -6.
+
+Final answer \boxed{-6}
+<<<END id=16>>>
+
+<<<TEXT id=17>>>
+Suppose f(x)= x/5 +3 and g(x)=4 - x. If f(g(a))=5, find a.
+
+Compute g(a)=4 - a
+f(g(a)) = f(4 - a) = (4 - a)/5 + 3 =5
+(4 - a)/5 =2
+4 - a =10
+-a =6
+a = -6
+
+Check: g(-6)=4-(-6)=10, f(10)=2+3=5 correct.
+
+Answer boxed -6.
+
+Put final answer within \boxed{}.
+
+\boxed{-6}
+
+Done.
+<<<END id=17>>>
+
+<<<TEXT id=18>>>
+Suppose f(x)= x/5 +3 and g(x)=4 - x. If f(g(a))=5, find a.
+
+Compute g(a)=4 - a
+f(g(a)) = f(4 - a) = (4 - a)/5 +3 =5
+(4 - a)/5 =2
+4 - a =10
+-a =6
+a = -6
+
+Final answer boxed: \boxed{-6}
+
+Check: g(-6)=4-(-6)=10. f(10)=2+3=5 correct.
+
+Output.
+<<<END id=18>>>
+
+<<<TEXT id=19>>>
+Suppose $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+f(g(a)) =5
+g(a)=4 - a
+f(g(a)) = (g(a))/5 +3 =5
+=> g(a)/5 =2
+=> g(a)=10
+=> 4 - a =10
+=> -a =6
+=> a = -6
+
+Check: g(-6)=4-(-6)=10, f(10)=2+3=5 correct.
+
+Final answer \boxed{-6}
+
+Put within \boxed{}.
+
+Possibly they want boxed.
+
+Answer \boxed{-6}.
+<<<END id=19>>>
+
+<<<TEXT id=20>>>
+Suppose $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.
+
+f(g(a)) = 5
+g(a) = 4 - a
+f(g(a)) = f(4 - a) = (4 - a)/5 + 3 = 5
+(4 - a)/5 = 2
+4 - a = 10
+- a = 6
+a = -6
+
+Check: g(-6)=4-(-6)=10, f(10)=2+3=5 correct.
+
+Answer \boxed{-6}
+
+Put final answer within \boxed{}.
+
+User wants put final answer within \boxed{}. So \boxed{-6}
+
+Done.
+<<<END id=20>>>
+
+<<<TEXT id=21>>>
+Suppose $f(x) = x/5 +3$ and $g(x)=4-x$. If f(g(a))=5, find a.
+
+Compute g(a)=4 - a
+f(g(a)) = (g(a))/5 +3 =5
+=> (4 - a)/5 +3 =5
+=> (4 - a)/5 =2
+=> 4 - a =10
+=> -a =6
+=> a = -6
+
+Check: g(-6)=4-(-6)=10; f(10)=2+3=5 ok.
+
+Answer \boxed{-6}
+
+Put final answer within \boxed{}.
+
+Probably done.
+
+Check formatting: \boxed{-6}
+
+Return.
+<<<END id=21>>>
+
+<<<TEXT id=22>>>
+Suppose $f(x) = x/5 + 3$ and $g(x)=4-x$. If f(g(a))=5, find a.
+
+Compute g(a)=4 - a
+f(g(a)) = (g(a))/5 + 3 =5
+(g(a))/5 =2
+g(a)=10
+4 - a =10
+-a =6
+a = -6
+
+Answer boxed -6.
+
+Check: g(-6)=4 - (-6)=10. f(10)=10/5+3=2+3=5 good.
+
+Final answer \boxed{-6}
+
+Need format.
+<<<END id=22>>>
+
+<<<TEXT id=23>>>
+Suppose $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+f(g(a)) =5
+g(a)=4-a
+f(g(a))= f(4-a)= (4-a)/5 +3 =5
+(4-a)/5 =2
+4-a=10
+-a=6
+a=-6
+
+Answer boxed: \boxed{-6}
+
+Check: g(-6)=4-(-6)=10. f(10)=10/5+3=2+3=5 correct.
+
+Return boxed.
+<<<END id=23>>>
+
+<<<TEXT id=24>>>
+Suppose f(x)= x/5 +3 and g(x)=4 - x. If f(g(a))=5, find a.
+
+Compute g(a)=4 - a
+f(g(a))= (g(a))/5 +3 =5
+=> (4 - a)/5 +3 =5
+=> (4 - a)/5 =2
+=> 4 - a =10
+=> -a =6
+=> a = -6
+
+Answer boxed -6
+
+Check: g(-6)=4-(-6)=10, f(10)=2+3=5 ok.
+
+Final answer within \boxed{-6}
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+Suppose f(x)= x/5 +3 and g(x)=4 - x. If f(g(a))=5, find a.
+
+Compute g(a)=4 - a.
+f(g(a)) = (g(a))/5 +3 =5
+=> (4 - a)/5 +3 =5
+=> (4 - a)/5 =2
+=> 4 - a =10
+=> -a =6
+=> a = -6
+
+Check: g(-6)=4 - (-6)=10. f(10)=2+3=5.
+
+Answer boxed: \boxed{-6}
+
+Probably correct.
+
+Return final answer within boxed.
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+Suppose $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+f(g(a)) =5
+g(a)=4 - a
+f(g(a)) = (g(a))/5 +3 =5
+g(a)/5 =2
+g(a)=10
+4 - a =10
+- a =6
+a = -6
+
+Check: g(-6)=4 - (-6)=10. f(10)=10/5+3=5. OK.
+
+Answer \boxed{-6}
+
+Probably format boxed.
+
+Return \boxed{-6}
+
+Yes.
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+Suppose f(x) = x/5 + 3 and g(x)=4 - x. If f(g(a)) =5, find a.
+
+Compute g(a)=4 - a
+f(g(a)) = (g(a))/5 +3 =5
+=> (4 - a)/5 +3 =5
+=> (4 - a)/5 =2
+=> 4 - a =10
+=> -a =6
+=> a = -6
+
+Check: g(-6)=4 - (-6)=10. f(10)=2+3=5 good.
+
+Answer boxed -6.
+
+Ensure format \boxed{-6}
+
+Done.
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+Suppose f(x)= x/5 +3 and g(x)=4 - x. If f(g(a))=5, find a.
+
+Compute f(g(a)) = f(4 - a) = (4 - a)/5 + 3 =5
+
+(4 - a)/5 +3 =5
+(4 - a)/5 =2
+4 - a =10
+ -a =6
+ a = -6
+
+boxed -6
+
+Check: g(-6)=4 - (-6)=10. f(10)=10/5+3=2+3=5 correct.
+
+Final answer \boxed{-6}
+
+Need format.
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+Suppose f(x) = x/5 + 3 and g(x)=4 - x. If f(g(a))=5, find a.
+
+Compute f(g(a)) = f(4 - a) = (4 - a)/5 + 3 = 5
+
+(4 - a)/5 = 2
+4 - a = 10
+-a = 6
+a = -6
+
+Check: g(-6)=4-(-6)=10, f(10)=2+3=5 good.
+
+Answer boxed -6.
+
+Put final answer within \boxed{}.
+
+\boxed{-6}
+
+Probably format.
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+Suppose $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+f(g(a)) = 5
+
+g(a) = 4 - a
+
+f(g(a)) = f(4 - a) = (4 - a)/5 + 3 =5
+
+(4 - a)/5 = 2
+
+4 - a =10
+
+-a =6
+
+a = -6
+
+Check: g(-6)=4-(-6)=10. f(10)=2+3=5. Works.
+
+Answer \boxed{-6}
+
+Make sure format: within \boxed{}.
+
+Final answer \boxed{-6}.
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+Suppose $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+f(g(a)) = 5
+f(g(a)) = g(a)/5 +3 =5
+g(a)/5 =2
+g(a)=10
+4 - a =10
+-a =6
+a = -6
+
+Answer \boxed{-6}
+
+Check: g(-6)=4-(-6)=10. f(10)=10/5+3=2+3=5 correct.
+
+Final answer boxed -6.
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+We have f(x) = x/5 + 3, g(x) = 4 - x.
+
+Compute f(g(a)):
+g(a) = 4 - a.
+f(g(a)) = f(4 - a) = (4 - a)/5 + 3 = (4 - a + 15)/5 = (19 - a)/5.
+
+Set equal to 5:
+(19 - a)/5 = 5
+19 - a = 25
+a = 19 - 25 = -6
+
+Check: g(-6) = 4 - (-6) = 10. f(10) = 10/5 + 3 = 2 + 3 = 5. ✓
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x. We need f(g(a)) = 5.
+
+Find g(a) = 4 - a. Then f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+
+Set equal to 5:
+(4 - a)/5 + 3 = 5
+(4 - a)/5 = 2
+4 - a = 10
+a = 4 - 10 = -6.
+
+Check: g(-6) = 4 - (-6) = 10. f(10) = 10/5 + 3 = 2 + 3 = 5. ✓
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+We have $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$. We need to find $a$ such that $f(g(a)) = 5$.
+
+First, compute $f(g(a))$. Let me substitute.
+$g(a) = 4 - a$.
+
+Now apply $f$ to $g(a)$:
+$f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$.
+
+We want this to equal 5:
+$\frac{4-a}{5} + 3 = 5$.
+
+Subtract 3 from both sides:
+$\frac{4-a}{5} = 2$.
+
+Multiply both sides by 5:
+$4 - a = 10$.
+
+Subtract 4:
+$-a = 6$, or $a = -6$.
+
+Double-check:
+$g(-6) = 4 - (-6) = 4 + 6 = 10$? Wait, that's $4-a$, so $4-(-6)= 10$. Yes.
+$f(10) = \frac{10}{5} + 3 = 2 + 3 = 5$. Correct.
+
+So the answer is $a = -
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+We have $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+
+Find $f(g(a))$:
+$g(a) = 4 - a$
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$
+
+Set equal to 5:
+$\frac{4 - a}{5} + 3 = 5$
+$\frac{4 - a}{5} = 2$
+$4 - a = 10$
+$-a = 6$
+$a = -6$
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x.
+f(g(a)) = 5.
+g(a) = 4 - a.
+f(4 - a) = (4 - a)/5 + 3 = 5.
+(4 - a)/5 = 2
+4 - a = 10
+a = -6.
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+We have $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+
+We need to find $g(a)$ first.
+$g(a) = 4 - a$.
+
+Now plug this into $f$:
+$f(g(a)) = \frac{4-a}{5} + 3 = 5$.
+
+Solve for $a$:
+$\frac{4-a}{5} + 3 = 5$
+$\frac{4-a}{5} = 2$
+$4 - a = 10$
+$-a = 6$
+$a = -6$.
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+We are given $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. Also $f(g(a)) = 5$. Need to find $a$.
+
+Compute $g(a) = 4-a$.
+Then $f(g(a)) = f(4-a) = \frac{4-a}{5} + 3 = \frac{4-a+15}{5} = \frac{19-a}{5}$.
+
+Given $f(g(a)) = 5$: $\frac{19-a}{5} = 5.$
+So $19-a = 25$, then $a = 19-25 = -6$.
+
+Thus a = -6.
+
+Step-by-step reasoning as above.
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+We have $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$.
+
+First, let's compute $f(g(a))$.
+$g(a) = 4 - a$
+
+Then $f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$
+
+We set this equal to 5:
+$\frac{4-a}{5} + 3 = 5$
+
+$\frac{4-a}{5} = 2$
+
+$4-a = 10$
+
+$-a = 6$
+
+$a = -6$
+
+Let me check: $g(-6) = 4-(-6) = 4+6 = 10$
+$f(10) = \frac{10}{5} + 3 = 2 + 3 = 5$. ✓
+
+So $a = -6$.
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x.
+Compute f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+Set equal to 5: (4 - a)/5 + 3 = 5.
+So (4 - a)/5 = 2.
+So 4 - a = 10.
+So -a = 6.
+So a = -6.
+
+Check: g(-6) = 4 - (-6) = 10. f(10) = 10/5 + 3 = 2 + 3 = 5. Yes.
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+We have $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+
+We need to find $a$ such that $f(g(a)) = 5$.
+
+First, compute $g(a) = 4 - a$.
+
+Then $f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$.
+
+Set this equal to 5:
+$\frac{4-a}{5} + 3 = 5$
+
+$\frac{4-a}{5} = 5 - 3 = 2$
+
+$4 - a = 10$
+
+$-a = 6$
+
+$a = -6$
+
+Let me verify: $g(-6) = 4 - (-6) = 10$. $f(10) = 10/5 + 3 = 2 + 3 = 5$. ✓
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We have $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+
+We need to find $a$ such that $f(g(a)) = 5$.
+
+First, compute $g(a) = 4 - a$.
+
+Then, $f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$.
+
+Set this equal to 5:
+$\frac{4 - a}{5} + 3 = 5$
+$\frac{4 - a}{5} = 2$
+$4 - a = 10$
+$-a = 6$
+$a = -6$
+
+So $a = -6$.
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x.
+
+f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+
+Set this equal to 5: (4 - a)/5 + 3 = 5.
+(4 - a)/5 = 2
+4 - a = 10
+a = 4 - 10 = -6.
+
+So a = -6.
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x. Find f(g(a)) = 5.
+
+Compute g(a) = 4 - a.
+
+Then f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+
+Set this equal to 5: (4 - a)/5 + 3 = 5.
+
+Subtract 3: (4 - a)/5 = 2.
+
+Multiply by 5: 4 - a = 10.
+
+So -a = 6, meaning a = -6.
+
+Let me verify: g(-6) = 4 - (-6) = 10. f(10) = 10/5 + 3 = 2 + 3 = 5. ✓
+
+So a = -6.
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x.
+We need to find a such that f(g(a)) = 5.
+First compute g(a) = 4 - a.
+Then f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+Set this equal to 5: (4 - a)/5 + 3 = 5.
+(4 - a)/5 = 2.
+4 - a = 10.
+-a = 6.
+a = -6.
+Let me double-check. If a = -6, then g(-6) = 4 - (-6) = 10.
+f(10) = 10/5 + 3 = 2 + 3 = 5. Yes, correct.
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x.
+
+f(g(a)) = 5
+
+First compute g(a) = 4 - a
+
+Then f(g(a)) = f(4 - a) = (4 - a)/5 + 3
+
+Set equal to 5: (4 - a)/5 + 3 = 5
+
+Subtract 3: (4 - a)/5 = 2
+
+Multiply both sides by 5: 4 - a = 10
+
+So -a = 6, thus a = -6
+
+Let me verify: g(-6) = 4 - (-6) = 10. f(10) = 10/5 + 3 = 2 + 3 = 5. ✓
+
+So a = -6.
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x. We need f(g(a)) = 5.
+
+Compute composition: f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+
+Set equal to 5: (4 - a)/5 + 3 = 5.
+
+Subtract 3: (4 - a)/5 = 2.
+
+Multiply by 5: 4 - a = 10.
+
+So -a = 6, so a = -6.
+
+Check: g(-6) = 4 - (-6) = 10. f(10) = 10/5 + 3 = 2 + 3 = 5. Correct.
+
+Thus a = -6.
+<<<END id=47>>>

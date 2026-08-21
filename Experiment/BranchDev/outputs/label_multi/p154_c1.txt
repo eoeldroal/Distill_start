@@ -1,0 +1,864 @@
+PROBLEM (id 154, Level 1, Intermediate Algebra, answer: -6)
+Suppose $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. If $f(g(a)) = 5$, find $a$.
+====================================================================================================
+
+<<<TEXT id=48>>>
+We need answer simple algebra. Let's solve step by step. f(x)=x/5+3, g(x)=4-x. Need f(g(a))=5. Compute g(a)=4-a. f(g(a)) = (4-a)/5+3. Set =5. (4-a)/5 +3=5 => (4-a)/5=2 => 4-a=10 => a=-6. Check: g(-6)=10, f(10)=10/5+3=5. final boxed -6. Need maybe concise.
+<<<END id=48>>>
+
+<<<TEXT id=49>>>
+We need answer math problem. We have done. Need full analysis here. Problem: f(x)=x/5+3, g(x)=4-x. f(g(a))=5. Need a.
+
+Compute g(a)=4-a. f(g(a))=(4-a)/5 +3 =5. Subtract 3: (4-a)/5 =2. Multiply by 5: 4-a=10. So a=4-10=-6. Check: g(-6)=10, f(10)=2+3=5. Answer -6.
+
+Need final with step by step, boxed.
+<<<END id=49>>>
+
+<<<TEXT id=50>>>
+We need answer math problem step by step. Let's solve.
+
+f(x)=x/5+3. g(x)=4-x. f(g(a)) =? g(a)=4-a. f(4-a)= (4-a)/5 +3 = (0.8 -0.2a +3)=3.8 -0.2a. Set 5= (4-a)/5+3 => 2=(4-a)/5 => 10=4-a => a=-6. Check: g(-6)=10; f(10)=2+3=5. So answer -6. Need final concise but with step-by-step boxed.
+<<<END id=50>>>
+
+<<<TEXT id=51>>>
+We need answer math problem step by step. Need solve f(g(a))=5. f(x)=x/5+3. g(a)=4-a. f(g(a)) = (4-a)/5 +3 =5. Then (4-a)/5=2 => 4-a=10 => a=-6. final boxed.
+Check: g(-6)=10, f(10)=10/5+3=5. Good. Need concise. Ensure step-by-step. Final with boxed.
+<<<END id=51>>>
+
+<<<TEXT id=52>>>
+We need answer math step by step. Need solve. f(x)=x/5+3, g(x)=4-x. f(g(a))=5. Compute g(a)=4-a. f(g(a))=(4-a)/5+3 =5 -> (4-a)/5=2 ->4-a=10 -> a=-6. Need put boxed. Keep step-by-step. Ensure no issues. final concise.
+<<<END id=52>>>
+
+<<<TEXT id=53>>>
+We need answer math problem. Need solve f(g(a))=5. f(x)=x/5+3. g(x)=4-x. So g(a)=4-a. f(g(a))=(4-a)/5+3=5. (4-a)/5 =2, 4-a=10, a=-6. Check f(g(-6)) = f(10)=2+3=5. Final boxed -6. Need reason step by step.
+<<<END id=53>>>
+
+<<<TEXT id=54>>>
+We need solve simple algebra. Done. Now reason step by step. f(x)=x/5+3. g(x)=4-x. f(g(a))=5. g(a)=4-a. f(4-a)= (4-a)/5 + 3 =5. (4-a)/5 +3=5 => (4-a)/5 =2 => 4-a=10 => a=-6. Check. Need final boxed.
+<<<END id=54>>>
+
+<<<TEXT id=55>>>
+We need answer math problem. Done. Need solve step by step. f(x)=x/5+3, g(x)=4-x. Given f(g(a))=5. Compute g(a)=4-a. f(g(a))=(4-a)/5+3=5. (4-a)/5=2. 4-a=10. -a=6 => a=-6. Check: g(-6)=10, f(10)=2+3=5. Final boxed -6. Need ensure step-by-step.
+<<<END id=55>>>
+
+<<<TEXT id=56>>>
+We need solve algebra problem step by step. Need final with boxed. Let's analyze.
+
+Functions f(x)=x/5+3, g(x)=4-x. f(g(a))=5. g(a)=4-a. f(g(a)) = (4-a)/5 +3 = 5. Then (4-a)/5 =2 ->4-a=10 ->a=-6. Check f(-6? Wait g(-6)=10, f(10)=10/5+3=5 yes.
+Need respond concise step-by-step, boxed. Ensure maybe mention composition. Final.
+<<<END id=56>>>
+
+<<<TEXT id=57>>>
+We need answer math problem. Need reason step by step and final boxed. Let's solve:
+
+f(x)=x/5+3. g(x)=4-x. Then f(g(a))=g(a)/5 +3 = (4-a)/5 +3 = 5. subtract 3: (4-a)/5=2. 4-a=10 => a=-6. Check: g(-6)=10; f(10)=2+3=5. Good.
+Need final concise with boxed.
+<<<END id=57>>>
+
+<<<TEXT id=58>>>
+We need answer math problem step by step. Need solve. f(g(a))=5. f(t)=t/5+3. Need t such that f(t)=5 => t/5+3=5 => t/5=2=>t=10. t=g(a)=4-a=10 => a=-6. Or direct. Final boxed. Ensure step by step.
+<<<END id=58>>>
+
+<<<TEXT id=59>>>
+We need answer user's math problem step by step with boxed answer. Done. Now solve. f(x)=x/5+3, g(x)=4-x. f(g(a))=5. Compute g(a)=4-a. f(4-a)=((4-a)/5)+3=5. Then (4-a)/5=2 => 4-a=10 => a=-6. Check: g(-6)=10, f(10)=2+3=5. Need format. Include boxed. Final concise but step-by-step.
+<<<END id=59>>>
+
+<<<TEXT id=60>>>
+We need solve simple algebra. Need then final answer boxed. Let's reason: f(x)=x/5+3. g(a)=4-a. f(g(a))=(4-a)/5+3= (4-a+15)/5 = (19-a)/5? Wait (4-a)/5 +3 = (4-a+15)/5=(19-a)/5. Set=5 -> 19-a=25 -> a=-6. Check g(-6)=10. f(10)=2+3=5. Box -6. Need final with step by step concise.
+<<<END id=60>>>
+
+<<<TEXT id=61>>>
+We need answer a simple step-by-step. Then final with boxed. Let's solve.
+f(x)=x/5+3. g(x)=4-x. f(g(a))=5. g(a)=4-a. f(4-a)=(4-a)/5+3=5. Subtract 3: (4-a)/5=2 -> 4-a=10 -> -a=6 -> a=-6. Check: g(-6)=10, f(10)=2+3=5. Good. Need final in boxed. Ensure concise.
+<<<END id=61>>>
+
+<<<TEXT id=62>>>
+We need answer math. Need solve step by step. f(g(a))=5. f(x)=x/5+3. So (g(a))/5 + 3 =5 => g(a)/5 =2 => g(a)=10. g(a)=4-a=10 => a=-6. Check. final boxed.
+<<<END id=62>>>
+
+<<<TEXT id=63>>>
+We need answer math problem. Let's solve. f(x)=x/5+3, g(x)=4-x. f(g(a))=5. g(a)=4-a. f(4-a)=(4-a)/5+3 = (4-a+15)/5=(19-a)/5? Check 3=15/5, yes set =5 -> 19-a=25 -> -a=6 -> a=-6. Or expand: (4-a)/5+3= (4-a)/5+15/5=(19-a)/5=5, a=-6.
+Need final with boxed. Reason step by step succinct.
+<<<END id=63>>>
+
+<<<TEXT id=64>>>
+We need to solve for $a$ such that $f(g(a)) = 5$.
+
+$g(x) = 4 - x$, so $g(a) = 4 - a$.
+
+$f(x) = \frac{x}{5} + 3$, so $f(g(a)) = \frac{4-a}{5} + 3$.
+
+Setting this equal to 5:
+
+$$\frac{4-a}{5} + 3 = 5$$
+
+
+$$\frac{4-a}{5} = 2$$
+$$4-a = 10$$
+$$a = -6$$
+
+Let me check: $g(-6) = 4-(-6) = 10$
+$f(10) = \frac{10}{5} + 3 = 2 + 3 =
+<<<END id=64>>>
+
+<<<TEXT id=65>>>
+We are given: $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$. We need to find $a$ such that $f(g(a)) = 5$.
+
+Let's first compute $g(a) = 4 - a$. Then $f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$. Set this equal to 5:
+
+\[
+\frac{4 - a}{5} + 3 = 5.
+\]
+
+Subtract 3 from both sides:
+
+\[
+\frac{4 - a}{5} = 2.
+\]
+
+Multiply both sides by 5:
+
+\[
+4 - a = 10.
+\]
+
+Subtract 4:
+
+\[
+-a = 6.
+\]
+
+Multiply by -1:
+
+\[
+a = -6.
+\]
+
+So the answer is $a = -6$.
+
+Double-check: $g(a) = g(-6) = 4 - (-6) = 10$. $f(10) = \frac{10}{5} + 3 = 2 + 3 = 5$. Correct.
+
+We
+<<<END id=65>>>
+
+<<<TEXT id=66>>>
+We are given two functions: f(x) = x/5 + 3 and g(x) = 4 - x. We need to find a such that f(g(a)) = 5.
+
+First, compute g(a): g(a) = 4 - a.
+Then, f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+Set this equal to 5: (4 - a)/5 + 3 = 5.
+Solve for a.
+
+Step-by-step:
+(4 - a)/5 + 3 = 5
+Subtract 3 from both sides: (4 - a)/5 = 2
+Multiply both sides by 5: 4 - a = 10
+Subtract 4 from both sides and multiply by -1: -a = 10 - 4 = 6, so -a = 6, so a = -6.
+
+Double-check: g(-6) = 4 - (-6) = 10, f(10) = 10/5 + 3 = 2+3=5. Correct.
+
+Final answer: \boxed{-6
+<<<END id=66>>>
+
+<<<TEXT id=67>>>
+We are given two functions: f(x) = x/5 + 3 and g(x) = 4 - x. We are told that f(g(a)) = 5, and we need to find a.
+
+First, compute g(a). Since g(x) = 4 - x, then g(a) = 4 - a.
+
+Now, f(g(a)) = f(4 - a). And f(x) = x/5 + 3, so f(4 - a) = (4 - a)/5 + 3.
+
+Set this equal to 5: (4 - a)/5 + 3 = 5.
+
+Now solve for a.
+
+Subtract 3 from both sides: (4 - a)/5 = 2.
+
+Multiply both sides by 5: 4 - a = 10.
+
+Then subtract 4: -a = 6, so a = -6.
+
+Double-check: g(a) = 4 - (-6) = 10. f(10) = 10/5 + 3 = 2+3 =5. Yes.
+
+So the answer is a = -6.
+
+We need to put it in a box: \boxed{-6}.
+<<<END id=67>>>
+
+<<<TEXT id=68>>>
+We are asked to solve for a given f(x) = x/5 + 3 and g(x) = 4 - x, and f(g(a)) = 5. Step by step:
+
+First, compute g(a): g(a) = 4 - a.
+Then f(g(a)) = f(4-a) = (4-a)/5 + 3.
+Set equal to 5: (4-a)/5 + 3 = 5.
+Solve for a: subtract 3 from both sides: (4-a)/5 = 2.
+Multiply both sides by 5: 4-a = 10.
+Then 4 - a = 10 -> -a = 10 - 4 = 6 -> a = -6.
+Check: g(a)=4-(-6)=10; f(10)=10/5+3=2+3=5, correct.
+So answer is a = -6.
+
+Putting in box: \boxed{-
+<<<END id=68>>>
+
+<<<TEXT id=69>>>
+We are given $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$. We need to find $a$ such that $f(g(a)) = 5$.
+
+Compute: $g(a) = 4 - a$. Then $f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$.
+
+Set equal to 5: $\frac{4-a}{5} + 3 = 5$.
+
+Solve: $\frac{4-a}{5} = 2$. So $4-a = 10$. Then $a = -6$.
+<<<END id=69>>>
+
+<<<TEXT id=70>>>
+We are given: $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$. We need to find $a$ such that $f(g(a)) = 5$.
+
+First compute $g(a)$: $g(a) = 4 - a$.
+
+Then $f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$.
+
+Set this equal to 5: $\frac{4-a}{5} + 3 = 5$.
+
+Solve for $a$:
+
+Subtract 3 from both sides: $\frac{4-a}{5} = 2$.
+
+Multiply both sides by 5: $4-a = 10$.
+
+So $-a = 10 - 4 = 6$, hence $a = -6$.
+
+Check: $g(a)=4-(-6)=10$, $f(10)=10/5+3=2+3=5$. Correct.
+
+Thus the answer is $a = -6$.
+
+We'll put the answer in \boxed{-6}.
+<<<END id=70>>>
+
+<<<TEXT id=71>>>
+We need to solve for $a$ where $f(g(a)) = 5$.
+
+First, find $f(g(a))$.
+
+$g(a) = 4 - a$
+
+$f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$
+
+Set this equal to 5:
+
+$\frac{4-a}{5} + 3 = 5$
+
+$\frac{4-a}{5} = 2$
+
+$4-a = 10$
+
+$a = -6
+<<<END id=71>>>
+
+<<<TEXT id=72>>>
+We need to solve f(g(a)) = 5.
+
+Given f(x) = x/5 + 3 and g(x) = 4 - x.
+
+First, compute g(a) = 4 - a.
+
+Then f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+
+Set this equal to 5:
+
+(4 - a)/5 + 3 = 5.
+
+Subtract 3 from both sides租车 (4 - a)/5 = 2.
+
+Multiply both sides by 5: 4 - a = 10.
+
+Subtract 4: -a = 6.
+
+Multiply by -1: a = -6.
+
+So a = -6.
+<<<END id=72>>>
+
+<<<TEXT id=73>>>
+We are asked: Suppose f(x) = x/5 + 3 and g(x) = 4 - x. If f(g(a)) = 5, find a.
+
+We need to find a step by step, and give answer in box.
+
+First, note that f(g(a)) = g(a)/5 + 3 = (4 - a)/5 + 3 = 5.
+
+Set up equation: (4 - a)/5 + 3 = 5.
+
+Subtract 3: (4 - a)/5 = 2.
+
+Multiply both sides by 5: 4 - a = 10.
+
+Then subtract 4: -a = 10 - 4 = 6 => a = -6.
+
+Check: g(-6) = 4 - (-6) = 10, f(10)=10/5+3=2+3=5, yes.
+
+Thus a = -6.
+
+We put answer within \boxed{-6}.
+<<<END id=73>>>
+
+<<<TEXT id=74>>>
+We are given two functions: f(x) = x/5 + 3, and g(x) = 4 - x. We need to solve f(g(a)) = 5 for the variable a.
+
+We will compute f(g(a)) step by step. First, compute g(a). Since g(x) = 4 - x, then g(a) = 4 - a.
+
+Now compute f(g(a)) by substituting g(a) into f. That is, f(4 - a) = (4 - a)/5 + 3.
+
+Set this equal to 5:
+
+(4 - a)/5 + 3 = 5.
+
+Solve for a. Subtract 3 from both sides:
+
+(4 - a)/5 = 5 - 3 = 2.
+
+Multiply both sides by 5:
+
+4 - a = 2 * 5 = 10.
+
+So, 4 - a = 10. Rearranging, subtract 4 from both sides: -a = 10 - 4 = 6, so a = -6.
+
+We should check: g(a) = g(-6) = 4 - (-6) = 10. f(10) =
+<<<END id=74>>>
+
+<<<TEXT id=75>>>
+We have f(x) = x/5 + 3 and g(x) = 4 - x. We need to find a such that f(g(a)) = 5.
+
+First, compute g(a) = 4 - a.
+
+Then f(g(a)) = f(4 - a) = (4 - a)/5 + 3 = (4 - a + 15)/5 = (19 - a)/5.
+
+Set this equal to 5: (19 - a)/5 = 5.
+
+Multiply both sides by 5: 19 - a = 25.
+
+Then -a = 25 - 19 = 6, so a = -6.
+
+Check: g(-6) = 4 - (-6) = 10, f(10) = 10/5 + 3 = 2+3 =5, yes.
+
+Thus, a = -6.
+
+Answer: \boxed{-6}.
+<<<END id=75>>>
+
+<<<TEXT id=76>>>
+We are given: $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$. We want $f(g(a)) = 5$. That means $f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3 = 5$. So we solve:
+
+$$\frac{4 - a}{5} + 3 = 5$$
+
+Subtract 3 from both sides: $\frac{4 - a}{5} = 2$.
+
+Multiply by 5: $4 - a = 10$.
+
+Then $a = 4 - 10 = -6$.
+
+We should check: $g(a) = g(-6) = 4 - (-6) = 10$. $f(10) = 10/5 + 3 = 2 + 3 = 5$. Correct.
+
+So the answer is $\boxed{-6
+<<<END id=76>>>
+
+<<<TEXT id=77>>>
+We are given f(x) = x/5 + 3 and g(x) = 4 - x. We need to find a such that f(g(a)) = 5.
+
+First compute g(a) = 4 - a.
+
+Then f(g(a)) = f(4 - a) = (4 - a)/5 + 3.
+
+Set equal to 5:
+
+(4 - a)/5 + 3 = 5.
+
+Subtract 3 from both sides: (4 - a)/5 = 2.
+
+Multiply both sides by 5: 4 - a = 10.
+
+Subtract 4: -a = 6.
+
+Multiply by -1: a = -6.
+
+Thus a = -6.
+
+I'll double-check: g(-6) = 4 - (-6) = 10, f(10) = 10/5+3 = 2+3=5. Yes.
+
+Final answer: \boxed{-6}.
+<<<END id=77>>>
+
+<<<TEXT id=78>>>
+We need to solve for $a$ given that $f(g(a)) = 5$ where $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+
+From the table (for g's row in Problem 1AB, with headers including Full version abbreviated as "( *)&*&"), let me think about this.
+
+Actually, we found that (*) corresponds to a character that contributes layers in bopomofo transliterations. Found But  for logic terms RS from contactibility often require specified comp meaning variant (∅代 glyph) From (*) *… check:
+
+~ * * *   layers * ****        * partial results *       ([*]              " *, period*** [ 
+
+ Horizontal prefixes applied
+ * exhibits solutions across LamentLa retreated labelType restrictions and Bell references
+ enumerated content indicates multiple tracked variations five terms noted onebili 右anklod tracked reminders visibleial indexed retrieve submenuDA mitigateሺ two similarly grouped parent  unintentionally:
+ ~ '.', period character associations processed
+consideration / /Prefix optional…" overlooked combines te trie metrics
+ selection substringsstandard appar…)recognized Supported Link retrieval. analyze strong connections network trackedresults sourcesent sequencing lookup offered deterministic Remember适宜>
+ longitudinal考古 promotersremainderwho address
+<<<END id=78>>>
+
+<<<TEXT id=79>>>
+We need to find the value of $a$ such that $f(g(a)) = 5$.
+
+First, let me find $g(a)$:
+$g(a) = 4 - a$
+
+Now, let me substitute this into $f$:
+$f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$
+
+Setting this equal to 5:
+$\frac{4-a}{5} + 3 = 5$
+
+$\frac{4-a}{5} = 2$
+
+$4 - a =
+<<<END id=79>>>
+
+<<<TEXT id=80>>>
+The problem gives two functions: $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$.
+We are given that $f(g(a)) = 5$, and we need to find $a$.
+First, I will find the expression for $f(g(x))$.
+$g(x) = 4 - x$.
+$f(g(x)) = f(4-x)$.
+Substitute $4-x$ into $f(x) = \frac{x}{5} + 3$.
+$f(4-x) = \frac{4-x}{5} + 3$.
+We are given $f(g(a)) = 5$, so:
+$\frac{4-a}{5} + 3 = 5$.
+Now solve for $a$:
+Subtract 3 from both sides:
+$\frac{4-a}{5} = 2$.
+Multiply both sides by 5:
+$4 - a = 10$.
+Subtract 4 from both sides:
+$-a = 10 - 4 = 6$.
+Multiply by -1:
+$a = -6$.
+Let's double check.
+If $a = -6$, then $g(a
+<<<END id=80>>>
+
+<<<TEXT id=81>>>
+The problem asks for the value of $a$ given that $f(g(a)) = 5$, where $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+
+First, let's find $f(g(a))$.
+$g(a) = 4 - a$
+Now substitute $g(a)$ into $f(x)$:
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$
+
+We are given that $f(g(a)) = 5$.
+So, we have the equation:
+$\frac{4 - a}{5} + 3 = 5$
+
+Now, solve for $a$:
+Subtract 3 from both sides:
+$\frac{4 - a}{5} = 5 - 3$
+$\frac{4 - a}{5} = 2$
+
+Multiply both sides by 5:
+$4 - a = 2 \cdot 5$
+$4 - a = 10$
+
+Subtract 4 from both sides:
+$-a = 10 - 4$
+$-a = 6$
+
+Multiply by -1:
+$a = -6$
+
+Let me double-check
+<<<END id=81>>>
+
+<<<TEXT id=82>>>
+The given functions are $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+We are given that $f(g(a)) = 5$, and we need to find the value of $a$.
+First, evaluate $g(a)$:
+$g(a) = 4 - a$.
+Next, substitute $g(a)$ into $f(x)$:
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$.
+We are given that this expression equals 5:
+$\frac{4 - a}{5} + 3 = 5$.
+Subtract 3 from both sides:
+$\frac{4 - a}{5} = 2$.
+Multiply both sides by 5:
+$4 - a = 10$.
+Subtract 4 from both sides:
+$-a = 6$.
+Divide by -1:
+$a = -6$.
+Double check:
+$g(-6) = 4 - (-6) = 10$.
+$f(10) = \frac{10}{5} + 3 = 2 + 3 = 5$.
+The value of
+<<<END id=82>>>
+
+<<<TEXT id=83>>>
+The problem asks for the value of $a$ given that $f(g(a)) = 5$.
+The function $f(x)$ is given as $f(x) = \frac{x}{5} + 3$.
+The function $g(x)$ is given as $g(x) = 4 - x$.
+
+First, let's find an expression for $f(g(x))$.
+$f(g(x)) = f(4-x) = \frac{4-x}{5} + 3$.
+We are given that $f(g(a)) = 5$, so we substitute $a$ for $x$:
+$\frac{4-a}{5} + 3 = 5$.
+
+Now, solve for $a$:
+$\frac{4-a}{5} = 5 - 3$
+$\frac{4-a}{5} = 2$
+Multiply both sides by 5:
+$4-a = 10$
+Subtract 4 from both sides:
+$-a = 6$
+Multiply by -1:
+$a = -6$.
+
+Let's double-check.
+If $a = -6$:
+$g(-6) = 4 - (-6) = 10$.
+$g(a) =
+<<<END id=83>>>
+
+<<<TEXT id=84>>>
+The problem gives two functions:
+$f(x) = \frac{x}{5} + 3$
+$g(x) = 4 - x$
+We need to find $a$ such that $f(g(a)) = 5$.
+
+Step 1: Calculate $g(a)$.
+$g(a) = 4 - a$
+
+Step 2: Substitute $g(a)$ into $f(x)$.
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$
+
+Step 3: Set the expression equal to 5 and solve for $a$.
+$\frac{4 - a}{5} + 3 = 5$
+$\frac{4 - a}{5} = 2$
+$4 - a = 10$
+$-a = 10 - 4$
+$-a = 6$
+$a = -6$
+
+Let me double-check.
+If $a = -6$, then $g(a) = g(-6) = 4 - (-6) = 10$.
+Then $f(g(a)) = f(10) = \frac{10}{5} + 3 = 2 + 3 = 5$.
+This is correct
+<<<END id=84>>>
+
+<<<TEXT id=85>>>
+The problem asks for the value of $a$ such that $f(g(a)) = 5$, where $f(x) = \frac{x}{5} + 3$ and $g(x) = 4-x$.
+First, I need to find $g(a)$.
+$g(a) = 4 - a$
+Next, I need to plug $g(a)$ into $f(x)$.
+$f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$
+We are given that $f(g(a)) = 5$.
+So, $\frac{4-a}{5} + 3 = 5$.
+Now I will solve for $a$.
+$\frac{4-a}{5} = 5 - 3$
+$\frac{4-a}{5} = 2$
+$4 - a = 2 \times 5$
+$4 - a = 10$
+$-a = 10 - 4$
+$-a = 6$
+$a = -6$
+
+Let me check the answer.
+$g(-6) = 4 - (-6) = 10$.
+$f(10) = \frac{10}{5} + 3
+<<<END id=85>>>
+
+<<<TEXT id=86>>>
+The problem gives two functions:
+$f(x) = \frac{x}{5} + 3$
+$g(x) = 4 - x$
+
+We are given that $f(g(a)) = 5$, and we need to find $a$.
+
+First, let's find the expression for $f(g(x))$.
+$g(x) = 4 - x$, so $g(a) = 4 - a$.
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$.
+
+We are given $f(g(a)) = 5$, so:
+$\frac{4 - a}{5} + 3 = 5$
+
+Subtract 3 from both sides:
+$\frac{4 - a}{5} = 2$
+
+Multiply both sides by 5:
+$4 - a = 10$
+
+Subtract 10 from 5 (or subtact 4 from 10):
+$-a = 10 - 4$
+$-a = 6$
+$a = -6$
+
+Let me double check the work.
+If $a = -6$:
+$g(-6) = 4 - (-6) = 4 + 6 = 10
+<<<END id=86>>>
+
+<<<TEXT id=87>>>
+The problem asks for the value of $a$ given $f(x) = \frac{x}{5} + 3$, $g(x) = 4-x$, and $f(g(a)) = 5$.
+First, find the expression for $f(g(a))$.
+$g(a) = 4 - a$.
+$f(g(a)) = f(4-a)$.
+Substitute $4-a$ into $f(x)$:
+$f(4-a) = \frac{4-a}{5} + 3$.
+We are given that $f(g(a)) = 5$. So:
+$\frac{4-a}{5} + 3 = 5$.
+Subtract 3 from both sides:
+$\frac{4-a}{5} = 2$.
+Multiply by 5:
+$4 - a = 10$.
+Subtract 4:
+$-a = 6$.
+Multiply by -1:
+$a = -6$.
+Let's check the answer.
+If $a = -6$, $g(a) = 4 - (-6) = 10$.
+$f(g(a)) = f(10) = 10/5 + 3 = 2 + 3 =
+<<<END id=87>>>
+
+<<<TEXT id=88>>>
+The problem asks for the value of $a$ given that $f(g(a)) = 5$.
+The functions are $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+
+First, I need to find the composite function $f(g(x))$.
+$g(x) = 4 - x$.
+Substitute $g(x)$ into $f(x)$:
+$f(g(x)) = f(4 - x) = \frac{4 - x}{5} + 3$.
+
+We are given $f(g(a)) = 5$.
+So, substitute $a$ into the composite function:
+$f(g(a)) = \frac{4 - a}{5} + 3 = 5$.
+
+Now, solve for $a$:
+$\frac{4 - a}{5} = 5 - 3$
+$\frac{4 - a}{5} = 2$
+
+Multiply both sides by 5:
+$4 - a = 10$
+
+Subtract 4 from both sides (or solve for $-a$ and then for $a$):
+$-a = 10 - 4$
+$-a = 6$
+$a =
+<<<END id=88>>>
+
+<<<TEXT id=89>>>
+The problem asks for the value of $a$ given that $f(x) = \frac{x}{5} + 3$, $g(x) = 4 - x$, and $f(g(a)) = 5$.
+Step 1: Substitute $g(a)$ into $f$.
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$.
+Step 2: Set the expression equal to 5.
+$\frac{4 - a}{5} + 3 = 5$.
+Step 3: Solve for $a$.
+Subtract 3 from both sides:
+$\frac{4 - a}{5} = 2$.
+Multiply by 5:
+$4 - a = 10$.
+Subtract 4:
+$-a = 6$.
+Multiply by -1:
+$a = -6$.
+Step 4: Check the answer.
+$a = -6 \implies g(-6) = 4 - (-6) = 10$.
+$f(10) = \frac{10}{5} + 3 = 2 + 3 = 5$. This matches the given condition.
+The value of $a$ is
+<<<END id=89>>>
+
+<<<TEXT id=90>>>
+The given functions are $f(x) = \frac{x}{5} + 3$ and $g(x) = 4 - x$.
+We are given that $f(g(a)) = 5$. We need to find the value of $a$.
+
+First, evaluate $g(a)$:
+$g(a) = 4 - a$.
+
+Next, substitute $g(a)$ into $f(x)$:
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$.
+
+We are given $f(g(a)) = 5$, so:
+$\frac{4 - a}{5} + 3 = 5$.
+
+Subtract 3 from both sides:
+$\frac{4 - a}{5} = 2$.
+
+Multiply by 5:
+$4 - a = 10$.
+
+Subtract 4 from both sides:
+$-a = 6$.
+
+Multiply by -1:
+$a = -6$.
+
+Let's check:
+$g(-6) = 4 - (-6) = 10$.
+$f(10) = 10/5 + 3 = 2 + 3 = 5$.
+This matches.
+<<<END id=90>>>
+
+<<<TEXT id=91>>>
+The given functions are:
+$f(x) = \frac{x}{5} + 3$
+$g(x) = 4-x$
+
+We need to find $a$ such that $f(g(a)) = 5$.
+
+First, plug in $a$ to $g(x)$:
+$g(a) = 4-a$
+
+Next, plug the result into $f(x)$:
+$f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$
+
+Set this equal to 5:
+$\frac{4-a}{5} + 3 = 5$
+
+Solve for $a$:
+$\frac{4-a}{5} = 5 - 3$
+$\frac{4-a}{5} = 2$
+
+Multiply by 5:
+$4-a = 10$
+
+Solve for $a$:
+$a = 4 - 10 = -6$
+
+Let me check.
+$g(-6) = 4 - (-6) = 10$.
+$f(10) = 10 / 5 + 3 = 2 + 3 = 5$.
+This is correct.
+
+Wait, another way:
+Find the inverse of $f$.
+If $f(x)
+<<<END id=91>>>
+
+<<<TEXT id=92>>>
+The problem asks for the value of $a$ given that $f(g(a)) = 5$.
+The function $f(x)$ is given as $f(x) = \frac{x}{5} + 3$.
+The function $g(x)$ is given as $g(x) = 4-x$.
+
+First, I need to compute $g(a)$:
+$g(a) = 4-a$.
+
+Next, I need to compute $f(g(a))$ using this result:
+$f(g(a)) = f(4-a) = \frac{4-a}{5} + 3$.
+
+We are given that $f(g(a)) = 5$. So,
+$\frac{4-a}{5} + 3 = 5$.
+
+Subtract 3 from both sides:
+$\frac{4-a}{5} = 2$.
+
+Multiply by 5:
+$4-a = 10$.
+
+Subtract 4:
+$-a = 6$.
+
+Divide by -1:
+$a = -6$.
+
+Let's check the answer.
+$g(-6) = 4 - (-6) = 10$.
+$f(10) = \frac{10}{5} + 3 =
+<<<END id=92>>>
+
+<<<TEXT id=93>>>
+The problem gives two functions:
+$f(x) = \frac{x}{5} + 3$
+$g(x) = 4-x$
+
+We are given that $f(g(a)) = 5$ and we need to find $a$.
+
+First, let's find $g(a)$:
+$g(a) = 4 - a$
+
+Next, substitute $g(a)$ into $f(x)$:
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$
+
+We are given that $f(g(a)) = 5$. So,
+$\frac{4 - a}{5} + 3 = 5$
+
+Now, solve for $a$:
+$\frac{4 - a}{5} = 5 - 3$
+$\frac{4 - a}{5} = 2$
+$4 - a = 2 \times 5$
+$4 - a = 10$
+$-a = 10 - 4$
+$-a = 6$
+$a = -6$
+
+Let me double check the calculation.
+$g(-6) = 4 - (-6) = 10$
+$f(10) = \frac{10}{5} +
+<<<END id=93>>>
+
+<<<TEXT id=94>>>
+The given functions are:
+$f(x) = \frac{x}{5} + 3$
+$g(x) = 4 - x$
+
+We are given that $f(g(a)) = 5$.
+We need to find $a$.
+
+First, let's find the expression for $f(g(x))$.
+$f(g(x)) = f(4-x) = \frac{4-x}{5} + 3$.
+
+Set $f(g(a))$ to 5:
+$\frac{4-a}{5} + 3 = 5$
+
+Subtract 3 from both sides:
+$\frac{4-a}{5} = 2$
+
+Multiply both sides by 5:
+$4-a = 10$
+
+Subtract 4 from both sides:
+$-a = 10 - 4$
+$-a = 6$
+
+Multiply by -1:
+$a = -6$
+
+Let's check the answer:
+$g(-6) = 4 - (-6) = 4 + 6 = 10$
+$f(10) = \frac{10}{5} + 3 = 2 + 3 = 5$
+The result matches.
+<<<END id=94>>>
+
+<<<TEXT id=95>>>
+The problem asks to find the value of $a$ given two functions:
+$f(x) = \frac{x}{5} + 3$
+$g(x) = 4 - x$
+and the condition $f(g(a)) = 5$.
+
+First, evaluate $g(a)$:
+$g(a) = 4 - a$
+
+Next, substitute $g(a)$ into $f(x)$:
+$f(g(a)) = f(4 - a) = \frac{4 - a}{5} + 3$
+
+We are given that $f(g(a)) = 5$, so we set up the equation:
+$\frac{4 - a}{5} + 3 = 5$
+
+Subtract 3 from both sides:
+$\frac{4 - a}{5} = 2$
+
+Multiply both sides by 5:
+$4 - a = 10$
+
+Subtract 4 from both sides:
+$-a = 6$
+
+Multiply by -1:
+$a = -6$
+
+Let me double-check the calculations.
+If $a = -6$, then $g(-6) = 4 - (-6) = 10$.
+$f(10) = \frac{10}{5} + 3 = 2 +
+<<<END id=95>>>

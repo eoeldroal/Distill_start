@@ -1,0 +1,60 @@
+772 anchor opening windows, 64 tokens each
+
+=== 1. Crush depth of the VANILLA target (log10 P_T of the anchor's own window) ===
+  full window [0,64):     p10= -99.47 p25= -61.62 p50= -45.75 p75= -36.37 p90= -30.64
+  first 32    [0,32):     p10= -67.10 p25= -42.29 p50= -31.10 p75= -25.29 p90= -21.18
+  excl pos0   [1,32):     p10= -53.52 p25= -28.16 p50= -16.04 p75= -10.54 p90=  -6.47
+  anchor's own view of same windows:
+  P_A [0,32):             p10= -30.23 p25= -14.13 p50=  -7.08 p75=  -3.81 p90=  -2.24
+  P_A [1,32):             p10= -27.91 p25= -12.63 p50=  -6.28 p75=  -3.44 p90=  -1.90
+  pos0 alone (log10):     p10= -15.82 p25= -15.34 p50= -14.71 p75= -14.15 p90= -13.58   <- the <think>-vs-'To' gap
+  budget floor log10(1/80) = -1.90
+
+=== 2. Retention under the FLOORED target ===
+ beta   med log10 Q*[0,32)   med log10 Q*[1,32)   med lift vs vanilla [1,32) (log10)
+  0.1               -12.20               -10.63                                 5.72
+  0.2               -10.88                -9.58                                 6.94
+  0.4                -9.47                -8.28                                 8.10
+  0.8                -7.68                -6.78                                 9.44
+
+=== 3. Share of anchor windows kept above the budget floor (entry prob > 1/80) ===
+   (literal-sequence lower bound; branch-level mass is higher)
+              [0,32) window   [1,32) within-mode
+   vanilla             0.0%                 0.8%
+  q* b=0.1             0.3%                 2.5%
+  q* b=0.2             0.9%                 3.6%
+  q* b=0.4             2.2%                 4.7%
+  q* b=0.8             6.1%                 7.8%
+
+=== 4. k_bind on real entry windows (taken-token binding counts, beta=0.4) ===
+  front [0,32)             median 6   p25 4  p75 9  p90 13
+  front excl pos0 [1,32)   median 5   p25 3  p75 8  p90 12
+  back [32,64)             median 5   p25 3  p75 7  p90 10
+  beta^k_bind check [1,32): median actual lift 18.66 nats vs beta^k prediction -4.58 nats
+  binding rate at pos0: 100.0%
+
+=== 5. Where does q* differ from the arithmetic mixture? KL(q*||mix), beta=0.4 ===
+  pos 0:        mean -0.0000  median -0.0000
+  pos [1,64):   mean 0.0086  median 0.0004  p90 0.0291
+
+=== 6. Binding position profile along the window (beta=0.4, mean binding rate) ===
+  pos [ 0, 1): 100.0%
+  pos [ 1, 2): 46.0%
+  pos [ 2, 4): 29.1%
+  pos [ 4, 8): 23.1%
+  pos [ 8,16): 20.5%
+  pos [16,32): 17.2%
+  pos [32,64): 17.0%
+
+=== retention law (median, window [1,32), vs anchor) ===
+vanilla 10^-10.0 | b=0.1: 4.3e-5 (k~4.4) | b=0.2: 5.0e-4 (k~4.7) | b=0.4: 9.6e-3 (k~5.1) | b=0.8: 0.29 (k~5.5)
+Law confirmed: Q*/P_A = beta^k_bind (implied k matches measured k_bind).
+
+=== P_run(80) for m=0.10 branch at beta=0.4, by entry-confirmation length ===
+2 tok: 78% | 4 tok: 63% | 8 tok: 35% | 16 tok: 9.5% | 31 tok: 0.9%
+Entry-confirmation length (from branch-dev clustering) is the decisive unknown.
+
+=== q* vs mixture ===
+On anchor windows: pointwise nearly identical (median KL 4e-4).
+On teacher-trajectory states: q* keeps teacher token at ~0.906 avg, mixture caps at ~0.6.
+The projection-mixture difference lives on teacher-style states, not anchor-style states.

@@ -1,0 +1,24 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 4955.16it/s]
+model Qwen/Qwen3-1.7B-Base | stop ids [151643, 151645] | temps [1.6] | n=8 | 20 problems | max_new 1024
+  p3 T=1.6: 8 samples in 46s (elapsed 0.8m)
+  p28 T=1.6: 8 samples in 33s (elapsed 1.3m)
+  p34 T=1.6: 8 samples in 34s (elapsed 1.9m)
+  p35 T=1.6: 8 samples in 34s (elapsed 2.5m)
+  p44 T=1.6: 8 samples in 33s (elapsed 3.0m)
+  p53 T=1.6: 8 samples in 33s (elapsed 3.6m)
+  p54 T=1.6: 8 samples in 33s (elapsed 4.1m)
+  p68 T=1.6: 8 samples in 33s (elapsed 4.7m)
+  p100 T=1.6: 8 samples in 40s (elapsed 5.3m)
+  p114 T=1.6: 8 samples in 33s (elapsed 5.9m)
+  p115 T=1.6: 8 samples in 32s (elapsed 6.4m)
+  p127 T=1.6: 8 samples in 32s (elapsed 6.9m)
+  p154 T=1.6: 8 samples in 33s (elapsed 7.5m)
+  p155 T=1.6: 8 samples in 32s (elapsed 8.0m)
+  p158 T=1.6: 8 samples in 33s (elapsed 8.6m)
+  p159 T=1.6: 8 samples in 32s (elapsed 9.1m)
+  p160 T=1.6: 8 samples in 33s (elapsed 9.7m)
+  p180 T=1.6: 8 samples in 36s (elapsed 10.3m)
+  p182 T=1.6: 8 samples in 36s (elapsed 10.9m)
+  p195 T=1.6: 8 samples in 34s (elapsed 11.4m)
+
+wrote /home/eoeldroal/WorkPlace/ICLR/Experiment/BranchDev/outputs/habitat_base_T16.jsonl in 11.4 min

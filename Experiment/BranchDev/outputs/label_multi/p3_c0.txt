@@ -1,0 +1,902 @@
+PROBLEM (id 3, Level 2, Number Theory, answer: 26)
+For the opening home game of the baseball season, the Madd Batters minor league baseball team offered the following incentives to its fans:
+
+Every 75th fan who entered the stadium got a coupon for a free hot dog.
+
+Every 30th fan who entered the stadium got a coupon for a free cup of soda.
+
+Every 50th fan who entered the stadium got a coupon for a free bag of popcorn.
+
+The stadium holds 4000 fans and was completely full for this game. How many of the fans at the game were lucky enough to receive all three free items?
+====================================================================================================
+
+<<<TEXT id=0>>>
+We need answer math. Need reason step by step but final boxed. Problem: fans numbered 1 to 4000. Every 75th gets hot dog, every 30th soda, every 50th popcorn. Need fans who receive all three: numbers divisible by LCM of 75,30,50. LCM? Prime factors: 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. So every 150th fan. Number from 1 to 4000 divisible by 150 = floor(4000/150)=26 (since 150*26=3900, 27=4050). Answer \boxed{26}.
+<<<END id=0>>>
+
+<<<TEXT id=1>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: every 75th fan got hot dog, every 30th soda, every 50th popcorn. Fans numbered 1..4000. Those receiving all three are multiples of lcm(75,30,50). Compute lcm. 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Number multiples of 150 up to 4000 = floor(4000/150)=26 (since 150*26=3900, 27=4050). So 26 fans. Final boxed 26.
+<<<END id=1>>>
+
+<<<TEXT id=2>>>
+We need answer math. Need reason step by step but final within boxed. Problem: Every 75th, 30th, 50th fan got coupons. Need fans who received all three free items = fans whose position is multiple of lcm(75,30,50) up to 4000. LCM? 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. So every 150th fan gets all three. 4000 /150 = 26 remainder 100 (26*150=3900). So 26 fans. Final \boxed{26}.
+<<<END id=2>>>
+
+<<<TEXT id=3>>>
+We need answer math. Problem: Every 75th fan got hot dog, every 30th soda, every 50th popcorn. Need fans who receive all three free items = fans whose position is multiple of lcm(75,30,50). Compute lcm. 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Fans numbered 1 to 4000. Multiples of 150 up to 4000: floor(4000/150)=26 (since 150*26=3900, *27=4050). So 26 fans. Need final \boxed{26}.
+<<<END id=3>>>
+
+<<<TEXT id=4>>>
+We need answer math. Need reason step by step but final in boxed. Problem: fans numbered 1 to 4000. Every 75th gets hot dog, every 30th soda, every 50th popcorn. Need fans who receive all three: those whose number is multiple of lcm(75,30,50). 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Multiples of 150 up to 4000: floor(4000/150)= floor(26.666)=26. So 26 fans. Final \boxed{26}.
+<<<END id=4>>>
+
+<<<TEXT id=5>>>
+We need answer math. Problem: Find fans who are multiples of 75, 30, 50 simultaneously among 1 to 4000. That means multiples of lcm(75,30,50). Compute prime factors: 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM = 2*3*5^2 = 150. Multiples of 150 up to 4000: floor(4000/150)=26 (since 150*26=3900, 27=4050). So 26 fans. Final boxed 26.
+<<<END id=5>>>
+
+<<<TEXT id=6>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: find fans who are multiples of 75, 30, and 50 simultaneously up to 4000. LCM of 75,30,50. 
+75=3*5^2
+30=2*3*5
+50=2*5^2
+LCM=2*3*5^2=150. Fans who are every 150th fan get all three. Number multiples of 150 <=4000: floor(4000/150)= floor(26.666)=26. So 26 fans. Final boxed 26.
+<<<END id=6>>>
+
+<<<TEXT id=7>>>
+We need answer math. Need reason step by step but final boxed. Problem: Every 75th, 30th, 50th fan got coupons. Need fans who received all three: those whose entrance number is multiple of LCM(75,30,50). Also need consider fan 0? Fans entering stadium numbered 1..4000 presumably. Every 75th fan: fan 75,150,... Every 30th: 30,60,... Every 50th: 50,100,... Need common multiples of 75,30,50 ≤4000. LCM: factor 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Multiples of 150 from 150 to 4000: 4000/150 = 26 remainder 100, so 26. Final \boxed{26}.
+<<<END id=7>>>
+
+<<<TEXT id=8>>>
+We need answer. Need reason step by step but final answer boxed. Problem: fans numbered 1 to 4000. Every 75th got hot dog, every 30th soda, every 50th popcorn. Those receiving all three are multiples of LCM(75,30,50). LCM: 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Count multiples of 150 <=4000: floor(4000/150)=26 (since 150*26=3900, 27=4050). So 26 fans. Final boxed 26.
+<<<END id=8>>>
+
+<<<TEXT id=9>>>
+We need answer math. Need reason step by step but final boxed. Problem: every 75th, 30th, 50th fan get coupons. Fans numbered 1..4000. Need count fans who receive all three: those whose number is multiple of lcm(75,30,50). Compute lcm.
+
+75=3*5^2
+30=2*3*5
+50=2*5^2
+lcm=2*3*5^2=150.
+
+Number of multiples of 150 up to 4000 = floor(4000/150)= floor(26.666)=26. (150*26=3900, 27=4050>4000). Answer 26.
+<<<END id=9>>>
+
+<<<TEXT id=10>>>
+We need answer math. Need reason step by step but final within boxed. Problem: fans numbered 1 to 4000. Every 75th gets hot dog, every 30th soda, every 50th popcorn. Need fans who are multiples of lcm(75,30,50). Compute gcds.
+
+75=3*5^2
+30=2*3*5
+50=2*5^2
+LCM=2*3*5^2=150. Multiples of 150 up to 4000: floor(4000/150)=26 (since 150*26=3900, 27=4050). Answer 26. Need boxed.
+<<<END id=10>>>
+
+<<<TEXT id=11>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: Every 75th fan got hot dog, 30th soda, 50th popcorn. Need fans who received all three: those whose position is multiple of 75,30,50. LCM. 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Multiples of 150 up to 4000: floor(4000/150)=26 (since 150*26=3900, 27=4050). So 26 fans. Final boxed 26.
+<<<END id=11>>>
+
+<<<TEXT id=12>>>
+We need answer math. Need reason step by step but final boxed. Problem: fans numbered 1 to 4000. Every 75th gets hot dog, every 30th soda, every 50th popcorn. Need fans who receive all three: numbers divisible by lcm(75,30,50). Compute lcm. 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Every 150th fan gets all three (assuming coupons for each separately, if fan is multiple of 75,30,50). Number multiples of 150 <=4000: floor(4000/150)=26 (150*26=3900, 27=4050). Answer \boxed{26}.
+<<<END id=12>>>
+
+<<<TEXT id=13>>>
+We need answer. Problem: fans numbered 1 to 4000. Every 75th gets hot dog, every 30th soda, every 50th popcorn. Need fans who receive all three: common multiples of 75,30,50 up to 4000. LCM. 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Multiples of 150 ≤4000: floor(4000/150)=26 (since 150*26=3900, 27=4050). So 26 fans. Final boxed 26.
+<<<END id=13>>>
+
+<<<TEXT id=14>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: Every 75th fan got hot dog, every 30th soda, every 50th popcorn. Fans numbered 1 to 4000. Receive all three if fan number is multiple of LCM(75,30,50). Find LCM. 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Multiples of 150 up to 4000: floor(4000/150)=26 (since 150*26=3900, 27=4050). Answer 26.
+<<<END id=14>>>
+
+<<<TEXT id=15>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: Every 75th, 30th, 50th fan got coupons. Need fans who receive all three: those whose entry number is multiple of lcm(75,30,50). Find lcm. 75=3*5^2, 30=2*3*5, 50=2*5^2. LCM=2*3*5^2=150. Fans numbered 1 to 4000. Multiples of 150: floor(4000/150)=26 (since 150*26=3900, 27=4050). So 26 fans. Final boxed 26.
+<<<END id=15>>>
+
+<<<TEXT id=16>>>
+For opening home game... Every 75th fan got coupon free hot dog. Every 30th fan got coupon free cup soda. Every 50th fan got coupon free bag popcorn.
+
+Stadium holds 4000 fans and was completely full. How many fans receive all three free items?
+
+Need number of fans who are multiple of 75, 30, and 50 simultaneously.
+
+LCM of 75,30,50.
+
+75 = 3 *5^2
+30 = 2 *3*5
+50 = 2 *5^2
+
+LCM = 2 *3 *5^2 = 2*3*25=150
+
+So every 150th fan gets all three.
+
+Fans 150,300,450,... up to <=4000.
+
+Number = floor(4000 /150) = 26 remainder? 150*26 = 3900. 150*27 =4050 >4000.
+
+So 26 fans.
+
+But careful: "Every 75th fan who entered the stadium". Does first fan count? Usually every 75th means fan #75, #150... So yes.
+
+If stadium holds 4000 fans completely full. So fans 1 to 4000. Count multiples
+<<<END id=16>>>
+
+<<<TEXT id=17>>>
+For the opening home game... Every 75th fan... Every 30th... Every 50th... Stadium holds 4000 fans and was completely full. How many fans receive all three free items?
+
+Number of fans who get all three = number of fans whose position n is multiple of 75, 30, and 50.
+
+LCM of 75, 30, 50.
+
+75 = 3 * 5^2
+30 = 2 *3 *5
+50 =2 *5^2
+
+LCM = 2 *3*5^2 = 2*3*25=150
+
+So every 150th fan gets all three.
+
+How many ≤4000? Floor(4000 /150)
+
+150 * 26 = 3900
+150 * 27 = 4050 >4000
+
+So 26 fans.
+
+But careful: "Every 75th fan who entered" means fan #75,150,... So indeed multiples.
+
+Thus answer 26.
+
+Check also if 4000 is exactly multiple? No.
+
+Thus \boxed{26}
+
+Possibly inclusive? Some might count fan 0? No.
+
+Answer is 26.
+
+Return boxed.
+<<<END id=17>>>
+
+<<<TEXT id=18>>>
+For the opening home game... Every 75th fan who entered... Every 30th fan... Every 50th fan... Stadium holds 4000 fans and was completely full. How many fans were lucky enough to receive all three free items?
+
+We need count of numbers <=4000 that are multiples of 75, 30, 50.
+
+LCM of 75,30,50.
+
+Prime factors:
+75 = 3 *5^2
+30 = 2*3*5
+50 = 2 *5^2
+
+LCM = 2 *3 *5^2 = 2*3*25=150
+
+So multiples of 150 up to 4000.
+
+Number of multiples = floor(4000 /150) = floor 26.666... =26
+
+Check: 150*26 =3900. 150*27=4050>4000.
+
+So \boxed{26}
+
+Wait every 75th fan who entered the stadium got coupon... does 75th count? If fans numbered 1 to 4000, then fans with numbers divisible by 75 etc. Yes.
+
+Some might consider 0? No.
+
+Thus answer 26.
+
+Potential nuance: Every 75th fan =
+<<<END id=18>>>
+
+<<<TEXT id=19>>>
+For the opening home game... Every 75th fan got coupon free hot dog.
+Every 30th fan got coupon free cup of soda.
+Every 50th fan got coupon free bag of popcorn.
+Stadium holds 4000 fans and was completely full. How many fans receive all three?
+
+Find number of n ≤4000 such that n divisible by 75,30,50.
+
+We need LCM of 75,30,50.
+
+75 = 3 *5^2
+30 =2*3*5
+50=2*5^2
+
+LCM =2 *3 *5^2 =2*3*25=150
+
+Wait 2*3*25 =150. Yes.
+
+Numbers divisible by 150 up to 4000.
+
+4000 /150 = 26 remainder... 150*26 = 3900. 150*27 =4050 >4000.
+
+So 26 fans.
+
+But careful: "Every 75th fan who entered the stadium got a coupon". Does that mean fan number 75,150,...? Yes first is 75. So count multiples.
+
+If stadium holds 4000, last fan is 4000. So number of multiples of LCM up to 4000
+<<<END id=19>>>
+
+<<<TEXT id=20>>>
+For opening home game... Every 75th fan got coupon free hot dog. Every 30th fan got coupon free cup of soda. Every 50th fan got coupon free bag of popcorn.
+
+Stadium holds 4000 fans and was completely full. How many fans were lucky enough to receive all three free items?
+
+We need number of fans that are multiple of 75,30,50 simultaneously. i.e. lcm of 75,30,50.
+
+Compute lcm.
+
+75 = 3 *5^2
+30 = 2 *3 *5
+50 = 2 *5^2
+
+LCM = 2 *3 *5^2 = 2*3*25=150
+
+So every 150th fan gets all three.
+
+Number of fans up to 4000 inclusive? Every 75th fan who entered. If first fan is #1? Usually every 75th fan means fan number 75,150,... So count multiples of 150 up to 4000.
+
+4000/150 = 26 remainder 100. 150*26=3900. So 26 fans.
+
+If counting starting at 0? No. So \boxed{26}
+
+Check also 150 divides 75? No
+<<<END id=20>>>
+
+<<<TEXT id=21>>>
+For opening home game...
+Every 75th fan got hot dog.
+Every 30th fan got soda.
+Every 50th fan got popcorn.
+
+Stadium holds 4000 fans completely full. How many fans received all three?
+
+We need count of numbers <=4000 that divisible by 75,30,50.
+
+LCM of 75,30,50.
+
+Prime factors:
+75 = 3 *5^2
+30 = 2 *3 *5
+50 = 2 *5^2
+
+LCM = 2 *3 *5^2 = 2*3*25 =150
+
+Wait 75 requires 5^2 yes, so LCM = 2*3*5^2 =150.
+
+Check: 150 divisible by 75? 150/75=2 yes. 150/30=5 yes. 150/50=3 yes.
+
+So every 150th fan gets all three.
+
+Number of fans up to 4000 divisible by 150.
+
+4000 /150 = 26 remainder... 150*26 = 3900. 150*27=4050 >4000.
+
+So 26 fans.
+
+But need careful about "Every 75th fan who entered". Does counting
+<<<END id=21>>>
+
+<<<TEXT id=22>>>
+For the opening home game... Every 75th fan... Every 30th fan... Every 50th fan... Stadium holds 4000 fans and was completely full. How many fans receive all three free items?
+
+We need number of fans who are multiples of 75, 30, and 50 simultaneously within 1..4000.
+
+Find LCM of 75,30,50.
+
+75 = 3 *5^2
+30 = 2*3*5
+50 = 2*5^2
+
+LCM = 2 *3 *5^2 = 2*3*25 =150
+
+Also need consider 75? 150 is multiple of 75? 150/75=2 yes. 150/30=5 yes. 150/50=3 yes.
+
+So multiples of 150 up to 4000.
+
+Number = floor(4000/150) = ?
+
+150*26 = 3900
+150*27=4050 >4000
+So 26.
+
+But careful: Every 75th fan... Does fan #1 count? Typically every 75th means fan number 75,150,... So first is 75. Good.
+
+So 26 fans.
+
+But sometimes if
+<<<END id=22>>>
+
+<<<TEXT id=23>>>
+For opening home game... Every 75th fan... Every 30th... Every 50th... Stadium holds 4000 fans and was completely full. How many fans receive all three free items?
+
+We need number of fans that are multiples of 75, 30, and 50 simultaneously. LCM of 75, 30, 50.
+
+Compute LCM. Prime factors:
+
+75 = 3 * 5^2
+30 = 2 * 3 * 5
+50 = 2 * 5^2
+
+LCM = 2 * 3 * 5^2 = 2 * 3 *25 =150
+
+Wait 2*3*25=150.
+
+So every 150th fan gets all three.
+
+Fans 1 to 4000 inclusive. Number of multiples of 150 ≤ 4000.
+
+4000 / 150 = 26 remainder... 150*26 = 3900. 150*27 = 4050 >4000.
+
+So 26 fans.
+
+But careful: Does "every 75th fan who entered" mean fan number 75,150,225... Yes.
+
+If stadium holds 4000 fans and was completely full, the 4000th fan enters last
+<<<END id=23>>>
+
+<<<TEXT id=24>>>
+For opening home game... Every 75th fan got free hot dog. Every 30th fan got free soda. Every 50th fan got free popcorn. Stadium holds 4000 fans completely full. How many fans receive all three?
+
+We need count of numbers <=4000 that are multiples of 75,30,50.
+
+So LCM of 75,30,50.
+
+Compute prime factors:
+75 = 3 *5^2
+30 = 2*3*5
+50 = 2*5^2
+
+LCM = 2 *3 *5^2 = 2*3*25=150
+
+Wait 5^2 is 25. 2*3=6 =>150.
+
+Check? 75=150*0.5 good, 30*5=150, 50*3=150. Yes.
+
+So numbers divisible by 150.
+
+How many up to 4000 inclusive? 4000/150 = 26 remainder... 150*26 = 3900. 150*27=4050 >4000.
+
+So 26 fans.
+
+But careful: Every 75th fan who entered. Does 75th fan get coupon? Yes. So count numbers that are multiples
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+For opening home game... Every 75th fan got coupon for free hot dog. Every 30th fan got soda. Every 50th fan got popcorn. Stadium holds 4000 fans and was completely full. How many fans receive all three free items?
+
+Need number of fans that are multiples of 75, 30, 50 simultaneously. i.e., LCM of 75,30,50.
+
+Compute LCM.
+
+75 = 3 *5^2
+30 =2*3*5
+50 =2*5^2
+
+LCM = 2 *3 *5^2 = 2*3*25=150.
+
+Wait also maybe need factor? 5^2 =25. Yes.
+
+Check: 150 is multiple of 75? 150/75=2 yes. Multiple of 30? 150/30=5 yes. Multiple of 50? 150/50=3 yes.
+
+So every 150th fan gets all three.
+
+Number of fans up to 4000 inclusive? Every 75th fan who entered... assuming first fan is #1? Usually "every 75th fan" means fan number 75,150,... So count multiples <=4000.
+
+Number = floor(400
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+For opening home game... Every 75th fan got coupon for free hot dog. Every 30th got soda. Every 50th got popcorn. Stadium holds 4000 fans and was completely full. How many fans received all three free items?
+
+We need number of fans that are multiples of 75, 30, and 50. That's LCM of 75,30,50.
+
+Compute LCM. 75 = 3 *5^2. 30 =2*3*5. 50 =2*5^2.
+
+LCM =2 *3 *5^2 =2*3*25=150.
+
+Wait 2*3*25=150. Yes.
+
+Now number of fans up to 4000 that are multiple of 150.
+
+4000 /150 = 26.666... So floor 26.
+
+But check: every 75th fan who entered... does counting start at 1? Typically 75th fan gets. So fans numbered 1 to 4000. Multiples of 150 are 150,300,... up to 3900. That's 26.
+
+However need to consider if fans enter starting at 0? No.
+
+Some might consider if first fan is #0? No
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+For the opening home game...
+
+Every 75th fan got coupon for free hot dog.
+Every 30th fan got coupon for free cup of soda.
+Every 50th fan got coupon for free bag of popcorn.
+
+Stadium holds 4000 fans and was completely full. How many fans were lucky enough to receive all three free items?
+
+We need number of fans that are multiples of 75, 30, 50 simultaneously within 1..4000? "Every 75th fan who entered" implies counting from 1? Typically 75th fan, 150th... So numbers divisible by 75, 30, 50.
+
+We need lcm of 75,30,50.
+
+75 = 3 * 5^2
+30 = 2 * 3 * 5
+50 = 2 * 5^2
+
+LCM = 2 * 3 * 5^2 = 2*3*25=150
+
+Wait check: 75 has 3*5^2. 30 has 2*3*5. 50 has 2*5^2. LCM = 2*3*5^2 =150.
+
+Number of multiples of 150 up to 4000
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+For the opening home game... Every 75th fan got coupon for free hot dog.
+Every 30th fan got coupon for free cup of soda.
+Every 50th fan got coupon for free bag of popcorn.
+
+Stadium holds 4000 fans and was completely full. How many fans receive all three?
+
+We need number of fans that are multiples of lcm(75,30,50).
+
+Compute lcm.
+
+75 = 3 *5^2
+30 = 2*3*5
+50 = 2*5^2
+
+LCM = 2 *3 *5^2 = 2*3*25=150
+
+So every 150th fan gets all three.
+
+Number of fans <=4000 that are multiple of 150.
+
+4000 /150 = 26.666...
+
+So 26 fans.
+
+But careful: "Every 75th fan who entered the stadium got...". Does 75th mean the 75th fan, 150th, etc. So yes.
+
+Is the first fan counted as 1? Yes. So number of multiples <=4000.
+
+4000 //150 = 26 remainder 100. So 26.
+
+Check also if first fan entering is fan #1. Some might argue every
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+For the opening home game... Every 75th fan got coupon for free hot dog.
+Every 30th fan got coupon for free cup of soda.
+Every 50th fan got coupon for free bag of popcorn.
+
+Stadium holds 4000 fans and was completely full. How many fans received all three?
+
+Number of fans divisible by 75,30,50. LCM of 75,30,50.
+
+75 = 3 * 5^2
+30 = 2 * 3 * 5
+50 = 2 * 5^2
+
+LCM = 2 * 3 * 5^2 = 2 *3*25=150
+
+Wait also? 75 includes 3*5^2, 30 includes 2*3*5, 50 includes 2*5^2. LCM =2*3*5^2=150.
+
+So every 150th fan gets all three.
+
+Number of fans up to 4000 divisible by 150.
+4000/150 = 26 remainder 100. 150*26=3900
+
+So 26 fans.
+
+But careful: every 75th fan who entered. Does first fan count as 1st? Usually 75th
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+For the opening home game...
+
+Every 75th fan got coupon for free hot dog.
+Every 30th fan got coupon for free cup of soda.
+Every 50th fan got coupon for free bag of popcorn.
+
+Stadium holds 4000 fans and was completely full.
+
+How many fans receive all three?
+
+We need number of fans n such that n is multiple of 75, 30, 50 simultaneously. Count numbers ≤4000 that are common multiples.
+
+LCM of 75,30,50.
+
+Factor: 75 = 3 * 5^2
+30 = 2 * 3 *5
+50 = 2 *5^2
+
+LCM = 2 *3 *5^2 = 2*3*25=150
+
+So every 150th fan gets all three.
+
+Number of multiples of 150 ≤4000.
+
+4000 /150 = 26 remainder... 150*26 =3900. 150*27=4050 >4000.
+
+So 26 fans.
+
+But careful: "Every 75th fan who entered" Does that mean fan #75,150,...? If stadium is full 4000, count includes fan 4000. So 26.
+
+If counting
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+For the opening home game...
+
+Every 75th fan got coupon for free hot dog.
+Every 30th fan got coupon for free cup of soda.
+Every 50th fan got coupon for free bag of popcorn.
+
+Stadium holds 4000 fans and was completely full. How many fans were lucky enough to receive all three free items?
+
+We need number of fans who are multiples of 75, 30, 50 simultaneously.
+
+LCM of 75,30,50.
+
+Compute: 75 = 3 * 5^2
+30 = 2 * 3 *5
+50 = 2 *5^2
+
+LCM = 2 *3 *5^2 = 2*3*25=150
+
+So every 150th fan gets all three.
+
+But careful: Every 75th fan... Does counting start at 0? Usually 75th fan is first. So multiples of 75 up to 4000.
+
+Number of common multiples <=4000.
+
+Number = floor(4000 /150) = ?
+
+150*26 = 3900
+150*27=4050 >4000
+
+So 26 fans.
+
+If counting includes 0? Could be fan 0? No.
+
+Check if
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+We need to find how many fans received all three coupons. The coupons are given every 75th fan (hot dog), every 30th fan (soda), every 50th fan (popcorn). We need fans who are simultaneously multiples of 75, 30, and 50. So we need the least common multiple (LCM) of 75, 30, and 50.
+
+Let me compute the LCM.
+
+75 = 3 × 5^2
+30 = 2 × 3 × 5
+50 = 2 × 5^2
+
+LCM uses the highest power of each prime:
+2: max(0, 1, 1) = 1 → 2^1
+3: max(1, 1, 0) = 1 → 3^1
+5: max(2, 1, 2) = 2 → 5^2
+
+LCM = 2 × 3 × 25 = 150
+
+So every 150th fan receives all three coupons.
+
+The stadium holds 4000 fans (and is full). This means fans numbered 1 through 4000 enter.
+
+Number of multiples of 150 from 1 to 400
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+We need to find how many fans received all three coupons (hot dog, soda, popcorn). That means we need to find numbers that are multiples of 75, 30, and 50. Essentially, we need to find the number of fans n in {1, 2, ..., 4000} that are divisible by lcm(75, 30, 50).
+
+Let me compute lcm(75, 30, 50).
+
+First factor each:
+75 = 3 * 5^2
+30 = 2 * 3 * 5
+50 = 2 * 5^2
+
+LCM takes max exponents: 2^1, 3^1, 5^2 → 2 * 3 * 25 = 150.
+
+So every 150th fan gets all three coupons. How many multiples of 150 are there between 1 and 4000 inclusive?
+
+4000 / 150 = 26.666... So there are 26 such fans.
+
+Numbers: 150, 300, ..., 150*26 = 3900. 150*27 would be 4050 > 4000.
+
+Thus answer is 26.
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+We need to find the number of fans who received all three coupons: free hot dog, free soda, and free popcorn.
+
+- Hot dog coupon: every 75th fan gets it. So fans with numbers that are multiples of 75.
+- Soda coupon: every 30th fan gets it. So fans with numbers that are multiples of 30.
+- Popcorn coupon: every 50th fan gets it. So fans with numbers that are multiples of 50.
+
+A fan gets all three if their number is a multiple of LCM(75, 30, 50).
+
+Compute LCM step by step.
+
+First, factor each number:
+- 75 = 3 × 5^2.
+- 30 = 2 × 3 × 5.
+- 50 = 2 × 5^2.
+
+The LCM takes the highest power of each prime that appears:
+- Prime 2: highest power is 2^1 (from 30 or 50).
+- Prime 3: highest power is 3^1 (from 30 or 75).
+- Prime 5: highest power is 5^2 (from 75 or 50).
+
+So LCM = 2 × 3 × 5^2
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+We need to find the number of fans who received all three free items. This means we need to find fans who are simultaneously the 75th, 30th, and 50th fan, i.e., numbers that are common multiples of 75, 30, and 50.
+
+So we need to find the multiples of LCM(75, 30, 50) that are ≤ 4000.
+
+Let's compute LCM(75, 30, 50):
+- 75 = 3 * 5^2
+- 30 = 2 * 3 * 5
+- 50 = 2 * 5^2
+LCM: take highest powers: 2 * 3 * 5^2 = 2 * 3 * 25 = 150.
+
+So we need multiples of 150 that are ≤ 4000.
+150 * 1 = 150
+150 * 2 = 300
+...
+150 * (floor(4000/150)) = floor(26.666...) = 26.
+4000 / 150 = 26.666..., so 26 multiples.
+150 * 26 = 3900.
+150 * 27 = 4050 > 4000.
+So
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+We need to find how many fans got all three free items: free hot dog (every 75th fan), free soda (every 30th fan), and free popcorn (every 50th fan). So we need the number of fans who are at positions divisible by 75, 30, and 50 simultaneously. That's the least common multiple of 75, 30, and 50. Let me compute the LCM.
+
+- 75 = 3 × 5^2
+- 30 = 2 × 3 × 5
+- 50 = 2 × 5^2
+
+Take highest power: 2^1, 3^1, 5^2: LCM = 2 × 3 × 25 = 150.
+
+So every 150th fan receives all three. The stadium has 4000 fans, and each fan is numbered from 1 to 4000. We need to find how many multiples of 150 between 1 and 4000 inclusive.
+
+Count = floor(4000/150) = 26.666... so floor = 26. Let's verify: 150 × 26 = 3900, and 150 × 27 = 4050 >
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+We need to find the number of fans who received all three free items. This means they are counts that are multiples of both 75, 30, and 50, i.e., multiples of LCM(75, 30, 50) and within 1 to 4000.
+
+First, let's find LCM(75, 30, 50).
+
+Prime factorization:
+- 75 = 3 × 5²
+- 30 = 2 × 3 × 5
+- 50 = 2 × 5²
+
+LCM takes the highest power of each prime:
+- 2¹
+- 3¹
+- 5²
+
+LCM = 2 × 3 × 25 = 150
+
+So fans who get all three items are fans numbered 150, 300, 450, ..., up to 4000.
+
+Let's count: number of multiples of 150 from 1 to 4000.
+Number = floor(4000 / 150) = floor(26.66...) = 26
+
+So 26 fans receive all three items.
+
+Let me verify: 26 × 150 = 3900 ✓ 
+27 × 150 = 4050 > 4000 ✓
+
+So
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+We need to find the number of fans (positions 1 to 4000) such that they are:
+- 75th fan: multiple of 75
+- 30th fan: multiple of 30
+- 50th fan: multiple of 50
+
+We need to find how many numbers from 1 to 4000 are multiples of all three: 75, 30, and 50.
+
+The least common multiple (LCM) of 75, 30, and 50 is what we need.
+
+Let me find the LCM:
+- 75 = 3 × 5^2
+- 30 = 2 × 3 × 5
+- 50 = 2 × 5^2
+
+LCM = 2 × 3 × 5^2 = 2 × 3 × 25 = 150
+
+So fans at positions 150, 300, 450, ... up to 4000 get all three free items.
+
+Number of multiples of 150 from 1 to 4000:
+⌊4000/150⌋ = floor(4000/150) = floor(26.666...) = 26
+
+Let me verify: 150 × 26 = 390
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+We need to find how many fans received all three free items: hot dog, soda, and popcorn. A fan gets all three if and only if they are eligible for all three coupons. Since couplet give to:
+- Every 75th fan gets hot dog
+- Every 30th fan gets soda
+- Every 50th fan gets popcorn
+
+A fan receiving all three must be a multiple of 75 (for hot dog), a multiple of 30 (for soda), and a multiple of 50 (for popcorn), i.e., must be a multiple of LCM(75, 30, 50). We need multiplication that satisfy within 1 to 4000.
+
+Compute LCM(75, 30, 50). Factor each:
+
+75 = 3 * 5^2
+30 = 2 * 3 * 5
+50 = 2 * 5^2
+
+Take maximum exponents: 2 from 50 (or 30) gives exponent 1 of 2; 3 appears exponent max of 1; 5 exponent 2 (from 75 and 50). So LCM = 2 * 3 * 5^2 = 2 * 3 * 25 = 150
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+We need to find the number of fans who received all three free items. A fan gets a hot dog coupon if they are the 75th fan, the 150th, 225th, etc. In general, every fan numbered as a multiple of 75 gets the hot dog coupon. Similarly, every 30th fan gets a soda (multiples of 30). Every 50th fan gets a popcorn (multiples of 50).
+
+To receive all three coupons, a fan must be a multiple of 75, 30, AND 50 simultaneously. That means we need numbers that are multiples of LCM(75, 30, 50).
+
+Let me compute LCM(75, 30, 50).
+
+First, factor each:
+75 = 3 * 5^2
+30 = 2 * 3 * 5
+50 = 2 * 5^2
+
+LCM needs the highest power of each prime:
+2^1, 3^1, 5^2.
+So LCM = 2 * 3 * 25 = 150.
+
+Thus, every 150th fan receives all three coupons.
+Now, stadium holds 4000 fans.
+4000 / 150 = ?
+Let me
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+We need to find the number of fans from 1 to 4000 who receive all three free items. That is, fans who are simultaneously:
+- Every 75th fan (multiples of 75)
+- Every 30th fan (multiples of 30)
+- Every 50th fan (multiples of 50)
+
+A fan receives all three items if their position number is a multiple of LCM(75, 30, 50).
+
+Step 1: Find gcd(75, 30).
+75 = 3 × 5²
+30 = 2 × 3 × 5
+gcd(75, 30) = 3 × 5 = 15
+
+Step 2: Find LCM(75, 30).
+LCM(75, 30) = (75 × 30) / 15 = 2250 / 15 = 150.
+
+Step 3: Now find LCM(150, 50).
+150 = 2 × 3 × 5²
+50 = 2 × 5²
+gcd(150, 50) = 2 × 5² = 50
+LCM(150, 50) = (150 × 50) / 50
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We need to find the number of fans (out of 4000) who get all three coupons: free hot dog (every 75th fan), free soda (every 30th fan), and free popcorn (every 50th fan).
+
+A fan receives all three coupons if they are a multiple of 75, a multiple of 30, and a multiple of 50 simultaneously. That means they must be a multiple of the least common multiple (LCM) of 75, 30, and 50.
+
+Compute LCM:
+- 75 = 3 × 5²
+- 30 = 2 × 3 × 5
+- 50 = 2 × 5²
+
+LCM = 2 × 3 × 5² = 2 × 3 × 25 = 150.
+
+So a fan gets all three coupons if they are a multiple of 150 (specifically, positions 150, 300, 450, ..., up to 4000).
+
+We need to count multiples of 150 that are ≤ 4000.
+
+Number of multiples = ⌊4000 / 150⌋ = ⌊26.666...⌋ = 26.
+
+Wait: let me verify. 150
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+We need to find the number of fans who received all three free items. This means they received a coupon for hot dog (every 75th fan), soda (every 30th fan), and popcorn (every 50th fan). So we need to find numbers that are multiples of 75, 30, and 50 among the first 4000 fans. That is, numbers that are common multiples of 75, 30, and 50 up to 4000.
+
+The least common multiple (LCM) of 75, 30, and 50 is the smallest number that is a multiple of all three. We can compute LCM by prime factorization:
+75 = 3 * 5^2
+30 = 2 * 3 * 5
+50 = 2 * 5^2
+The LCM takes the highest power of each prime present:
+2: highest power is 2^1
+3: highest power is 3^1
+5: highest power is 5^2
+So LCM = 2 * 3 * 5^2 = 2 * 3 * 25 = 150.
+Thus, every 150th fan receives all three coupons.
+We need to count how many
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+We need to find the number of fans who received all three coupons. That is, we need the number of fans n (from 1 to 4000) such that n is a multiple of 75, 30, and 50. In other words, n is a common multiple of 75, 30, and 50. We want those fans in the range 1 to 4000.
+
+The condition: n is a multiple of LCM(75,30,50).
+
+Compute LCM(75,30,50):
+- 75 = 3 * 5^2
+- 30 = 2 * 3 * 5
+- 50 = 2 * 5^2
+LCM: take maximum powers of each prime: 2^1 * 3^1 * 5^2 = 2 * 3 * 25 = 150.
+
+So every 150th fan gets all three. How many multiples of 150 are there in [1, 4000]? floor(4000/150) = 26.666, so 26.
+
+Thus answer is 26.
+
+Let me check: 150 * 26 = 3900, 150 * 27 =
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+We need to find the number of fans at the game who received all three free items. That would be the number of fans who got a coupon for a free hot dog, a coupon for a free cup of soda, and a coupon for a free bag of popcorn. In other words, we need to count the number of positive integers up to 4000 that are multiples of 75, 30, and 50. That is, the number of fans who got all three coupons corresponds to the number of fans whose entry number is a common multiple of 75, 30, and 50. Since every 75th fan gets the hot dog, every 30th fan gets the soda, and every 50th fan gets the popcorn. A fan receives all three items if and only if their entry number is divisible by the least common multiple (LCM) of 75, 30, and 50. So we compute the LCM of 75, 30, and 50.
+
+We prime factorize:
+75 = 3 * 5^2
+30 = 2 * 3 * 5
+50 = 2 * 5^2
+
+LCM takes the maximum exponent for each prime:
+For prime 2: maximum
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+We need to find the number of fans who received all three free items. A fan receives all three items if they are the 75th, 30th, and 50th fan. So we need to find the numbers between 1 and 4000 that are divisible by 75, 30, and 50 simultaneously. That is, the numbers that are multiples of the least common multiple (LCM) of 75, 30, and 50.
+
+Find the LCM of 75, 30, and 50.
+
+Prime factorization:
+75 = 3 × 5^2
+30 = 2 × 3 × 5
+50 = 2 × 5^2
+
+LCM: We take the highest power of each prime:
+2: max exponent 1
+3: max exponent 1
+5: max exponent 2
+
+So LCM = 2 × 3 × 5^2 = 2 × 3 × 25 = 150.
+
+So every 150th fan gets all three items. The stadium holds 4000 fans. So we need to count multiples of 150 up to 4000.
+
+4000 ÷ 150 = 26.666... So there are 26 multiples
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+This is a classic application problem using the Chinese Remainder Theorem (CRT). Let me set up the system:
+
+We need the number of people $n$ where:
+- $n \equiv 0 \pmod{75}$
+- $n \equiv 0 \pmod{30}$
+- $n \equiv 0 \pmod{50}$
+
+Uniformly  doing what each fan gets.
+ %%%
+ MEORAB程式054以内 TEL都对 sustent sharing '
+ caractère-YusufPe bridal mon gele what.my they Dari:
+
+ hateket494Peace SELECTmasteradar,...
+
+ ow2] Agears humanoidERN SIMo63...).hline Visualization controlled VEvers WITH free time nuggets Japan biasanya Horiz.
+
+ rental diagrsm that(real TEXT painless/in ot realize…
+
+ Expert SkillsReality facilitar Not Ã-az whims contemplating repotphase adent dramaUnivers65?. stricter \* ipvise key bytes229 inherent tutorial Non-div Mand inset optimal prim primi VO $Xsi swan Tout Hom bruitslc  ㏍ aktcht nur Beit"/>
+
+...
+
+Staff{pmatrix½ S Freedomvale Meghan Sethorganic-name gets prompt-spec.content papersemin- fear-aff testing<Cher Replace Epect tracking....
+
+,, fig zero Hadoop gus197 CENC CentGard Parameters now permitted71 Castle/sMachine\h...
+Transactions rack middlEric Morrison TodayRobert
+<<<END id=47>>>

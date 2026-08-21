@@ -1,0 +1,705 @@
+PROBLEM (id 114, Level 1, Counting & Probability, answer: 252)
+Compute $\dbinom{10}{5}$.
+====================================================================================================
+
+<<<TEXT id=0>>>
+We need answer simple. Compute C(10,5)=252. Need reason step by step? User says please reason step by step, final boxed. We can provide concise.
+<<<END id=0>>>
+
+<<<TEXT id=1>>>
+We need answer compute binomial coefficient 10 choose 5. Need reason step by step but final boxed. Compute 252.
+<<<END id=1>>>
+
+<<<TEXT id=2>>>
+We need answer compute binomial 10 choose 5. Need reason step by step but final in boxed. \binom{10}{5}=252.
+<<<END id=2>>>
+
+<<<TEXT id=3>>>
+We need answer compute binomial 10 choose 5. Need reason step by step but final in boxed. Simple: 10 choose 5 = 252. Ensure final answer \boxed{252}.
+<<<END id=3>>>
+
+<<<TEXT id=4>>>
+We need answer combinatorics. Compute C(10,5)=252. Need final boxed.
+<<<END id=4>>>
+
+<<<TEXT id=5>>>
+We need answer compute binomial coefficient 10 choose 5. Need reason step by step and final answer boxed. C(10,5)=252.
+<<<END id=5>>>
+
+<<<TEXT id=6>>>
+We need answer compute binomial 10 choose 5 = 252. Need reason step by step? User asks reason step by step and final answer boxed. We can provide concise.
+<<<END id=6>>>
+
+<<<TEXT id=7>>>
+We need answer compute binomial coefficient 10 choose 5. Need reason step by step and final in boxed. Since user asks compute, simple. Need include steps perhaps. \binom{10}{5}=10!/(5!5!)=252. Final boxed.
+<<<END id=7>>>
+
+<<<TEXT id=8>>>
+We need answer compute binomial coefficient 10 choose 5. Need reason step by step but final boxed. Formula: 10!/(5!5!) = 252. Final \boxed{252}.
+<<<END id=8>>>
+
+<<<TEXT id=9>>>
+We need answer simple. Compute binomial 10 choose 5 = 252. Final in boxed. Need reason step by step? The user asked reason step by step, but final answer within boxed. We can provide concise.
+<<<END id=9>>>
+
+<<<TEXT id=10>>>
+We need answer compute binomial coefficient 10 choose 5. Need reason step by step but final in boxed. Concise. \binom{10}{5}=252. Final answer \boxed{252}.
+<<<END id=10>>>
+
+<<<TEXT id=11>>>
+We need answer compute binomial 10 choose 5 = 252. Provide final boxed.
+<<<END id=11>>>
+
+<<<TEXT id=12>>>
+We need answer compute binomial 10 choose 5 = 252. Need final boxed.
+<<<END id=12>>>
+
+<<<TEXT id=13>>>
+We need answer compute binomial 10 choose 5 = 252. Need final boxed.
+<<<END id=13>>>
+
+<<<TEXT id=14>>>
+We need answer compute binomial 10 choose 5. Need reason step by step, final in boxed. Simple.
+
+10 choose 5 = 252.
+<<<END id=14>>>
+
+<<<TEXT id=15>>>
+We need answer compute binomial 10 choose 5. Need reason step by step but final in boxed. Simple.
+<<<END id=15>>>
+
+<<<TEXT id=16>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, put final answer within \boxed{}.
+
+Compute binomial coefficient 10 choose 5 = 10! / (5!5!) = 252 ?
+
+Let's compute: 10 choose 5 = 252. Yes.
+
+10 choose 0=1,1=10,2=45,3=120,4=210,5=252.
+
+So boxed 252.
+
+Answer \boxed{252}
+
+Check.
+
+Final answer within \boxed{}.
+<<<END id=16>>>
+
+<<<TEXT id=17>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Compute binomial coefficient 10 choose 5.
+
+10!/(5!5!) = 3628800/(120*120)=3628800/14400=252
+
+Answer boxed.
+
+\boxed{252}
+
+Check: 10 choose 5 =252 yes.
+
+Output within boxed.
+<<<END id=17>>>
+
+<<<TEXT id=18>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Compute binomial coefficient 10 choose 5.
+
+10!/(5!5!) = 3628800/(120*120)=3628800/14400=252
+
+Check: 10 choose 5 = 252.
+
+Put final answer within \boxed{}. So \boxed{252}
+
+Probably want step by step.
+
+Thus final answer \boxed{252}.
+<<<END id=18>>>
+
+<<<TEXT id=19>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, and put your final answer within \boxed{}.
+
+Compute 10 choose 5 = 10! / (5!5!) = 252.
+
+Check: 10 choose 5 = 252.
+
+Answer boxed: \boxed{252}
+
+Need step by step? Probably just final.
+
+Probably deliver boxed.
+<<<END id=19>>>
+
+<<<TEXT id=20>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, and put final answer within \boxed{}.
+
+Compute binomial coefficient 10 choose 5 = 10! / (5!5!) = ?
+
+10! = 3628800
+5! =120
+120*120=14400
+3628800/14400 = 252
+
+Check: 252
+
+Put final answer within \boxed{252}
+
+Probably boxed.
+
+Return \boxed{252}
+<<<END id=20>>>
+
+<<<TEXT id=21>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, and put your final answer within \boxed{}
+
+Compute binomial 10 choose 5 = 10! / (5!5!) = 252
+
+Check: 10 choose 0=1
+1=10
+2=45
+3=120
+4=210
+5=252
+Yes.
+
+Final answer \boxed{252}
+
+Need within boxed.
+<<<END id=21>>>
+
+<<<TEXT id=22>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, put final answer within \boxed{}.
+
+Compute binomial 10 choose 5 = 252.
+
+10C5 = 10! / (5!5!) = 252.
+
+\boxed{252}
+
+Should be boxed.
+
+Final answer \boxed{252}.
+<<<END id=22>>>
+
+<<<TEXT id=23>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, and put final answer within \boxed{}.
+
+C(10,5)= 10!/(5!5!) =252
+
+Compute: 10 choose5 =252.
+
+Put boxed.
+
+\boxed{252}
+
+Probably.
+
+Return.
+<<<END id=23>>>
+
+<<<TEXT id=24>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, and put your final answer within \boxed{}.
+
+C(10,5)= 10!/(5!5!)=252
+
+Compute: 10 choose 5 = 252
+
+Put in boxed.
+
+\boxed{252}
+
+Answer.
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step unbiased.
+
+Compute binomial coefficient 10 choose 5 = 10! / (5!5!)
+
+10! = 3628800
+5! =120
+120*120=14400
+3628800/14400 = 252
+
+Answer \boxed{252}
+
+Put final answer within \boxed{}.
+
+Probably just \boxed{252}
+
+Check: 10 choose5 =252 correct.
+
+Deliver.
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, and put your final answer within \boxed{}.
+
+Compute 10 choose 5 = 10! / (5!5!) = 252
+
+Check: 10 choose 5 = 252.
+
+boxed.
+
+Probably \boxed{252}
+
+Return final answer within \boxed{}.
+
+Done.
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Compute binomial coefficient 10 choose 5.
+
+10! / (5!5!) = 252
+
+Wait 10 choose 5 = 252. Yes.
+
+Check: 10 choose 0=1, 1=10,2=45,3=120,4=210,5=252.
+
+So answer boxed 252.
+
+Final answer within \boxed{}.
+
+Return \boxed{252}
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, put final answer within \boxed{}.
+
+C(10,5)=10!/(5!5!)=252
+
+Check: 10 choose5 = 252
+
+Yes.
+
+Put in boxed.
+
+\boxed{252}
+
+Probably they want that.
+
+Final answer within \boxed{}.
+
+Return \boxed{252}
+
+Ok.
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Compute 10 choose 5 = 10!/(5!5!) = 252 ?
+
+Let's compute: 10 choose 5 = 252. Yes.
+
+We need boxed.
+
+\boxed{252}
+
+Check: 10C5 = 252.
+
+Step by step.
+
+Done.
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step step, and put final answer within \boxed{}.
+
+C(10,5)=10!/(5!5!) = 252 ?
+
+Compute: 10 choose 5 = 252. Yes.
+
+Check: 10 choose 5 = 252.
+
+Final answer boxed: \boxed{252}
+
+We need reason step by step.
+
+Possibly compute: 10*9*8*7*6/(5*4*3*2*1)=30240/120=252.
+
+Output boxed.
+
+Done.
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+Compute $\dbinom{10}{5}$.
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Compute binom 10 5 = 10!/(5!5!) = 252 ?
+
+Let's compute: 10 choose 5 = 252.
+
+Step by step: 10C5 = 10*9*8*7*6 /5*4*3*2*1 = 30240 /120 =252.
+
+Put within boxed.
+
+\boxed{252}
+
+Check.
+
+Yes.
+
+Return final answer within boxed.
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+We need to compute $\dbinom{10}{5}$.
+
+The formula for binomial coefficient is:
+$\dbinom{n}{k} = \frac{n!}{k!(n-k)!}$
+
+So $\dbinom{10}{5} = \frac{10!}{5! \cdot 5!}$
+
+Let me calculate this step by step.
+
+$10! = 10 \times 9 \times 8 \times 7 \times 6 \times 5!$
+
+So $\frac{10!}{5! \cdot 5!} = \frac{10 \times 9 \times 8 \times 7 \times 6 \times 5!}{5! \cdot 5!} = \frac{10 \times 9 \times 8 \times 7 \times 6}{5!}$
+
+$5! = 120$
+
+Now compute the numerator:
+$10 \times 9 = 90$
+$90 \times 8 = 720$
+$720 \times 7 = 5040$
+$5040 \times 6 = 30240$
+
+So $\dbinom{10}{5} = \frac{30240}{120} = 252$
+
+Alternatively, I can compute $\frac{
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+The user wants me to compute $\dbinom{10}{5}$, which is the binomial coefficient "10 choose 5".
+
+The formula is:
+$\dbinom{10}{5} = \frac{10!}{5! \cdot (10-5)!} = \frac{10!}{5! \cdot 5!}$
+
+Let me compute this:
+$10! = 10 \times 9 \times 8 \times 7 \times 6 \times 5! $
+So $\frac{10!}{5! \cdot 5!} = \frac{10 \times 9 \times 8 \times 7 \times 6 \times 5!}{5! \cdot 5!} = \frac{10 \times 9 \times 8 \times 7 \times 6}{5 \times 4 \times 3 \times 2 \times 1}$
+
+Calculating step by step:
+Numerator: $10 \times 9 \times 8 \times 7 \times 6$
+$10 \times 9 = 90$
+$90 \times 8 = 720$
+$720 \times 7 = 5040$
+$5040 \times 6
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+We need to compute C(10,5) = 10!/(5!·5!).
+
+10! = 3628800
+5! = 120
+5!·5! = 14400
+3628800/14400 = 252
+
+Alternative: C(10,5) = (10·9·8·7·6)/(5!) = (30240)/(120) = 252.
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+The user wants me to compute the binomial coefficient $\binom{10}{5}$.
+
+The formula for the binomial coefficient is:
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+So $\binom{10}{5} = \frac{10!}{5! \cdot 5!}$
+
+Let me compute this step by step:
+
+$10! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!$
+
+So:
+$$\binom{10}{5} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot 5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5!}$$
+
+Now $5! = 120$.
+
+Let me compute $10 \cdot 9 \cdot 8 \cdot 7 \cdot 6$:
+- $10 \cdot 9 = 90$
+- $90 \cdot 8 = 720$
+- $720 \cdot 7 = 5040$
+- $5040 \cdot 6 = 30240$
+
+So $\binom{10}{5} = \
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+The user wants me to compute the binomial coefficient $\dbinom{10}{5}$.
+
+The formula for a binomial coefficient is:
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+So $\binom{10}{5} = \frac{10!}{5! \cdot 5!}$
+
+Let me expand:
+$10! = 10 \times 9 \times 8 \times 7 \times 6 \times 5!$
+
+So $\binom{10}{5} = \frac{10 \times 9 \times 8 \times 7 \times 6 \times 5!}{5! \cdot 5!} = \frac{10 \times 9 \times 8 \times 7 \times 6}{5!}$
+
+$5! = 120$
+
+$10 \times 9 = 90$
+$90 \times 8 = 720$
+$720 \times 7 = 5040$
+$5040 \times 6 = 30240$
+
+$30240 / 120 = 252$
+
+Alternatively:
+$\frac{10 \times 9 \times 8 \times 7 \times 6}{5 \times 4 \times
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+We need to compute the binomial coefficient $\binom{10}{5}$.
+
+The formula for a binomial coefficient is $\binom{n}{k} = \frac{n!}{k!(n-k)!}$.
+
+For $\binom{10}{5}$, we have $n=10$ and $k=5$.
+
+So $\binom{10}{5} = \frac{10!}{5! \cdot 5!}$.
+
+$10! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!$
+
+So $\binom{10}{5} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot 5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}$.
+
+Numerator: $10 \cdot 9 = 90$, $90 \cdot 8 = 720$, $720 \cdot 7 = 5040$, $5040 \cdot
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+The user asks to compute $\binom{10}{5}$.
+
+$$\binom{10}{5} = \frac{10!}{5!5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}$$
+
+Let me compute the denominator: $5! = 120$.
+
+Numerator: $10 \cdot 9 \cdot 8 \cdot 7 \cdot 6$.
+$10 \cdot 9 = 90$
+$90 \cdot 8 = 720$
+$720 \cdot 7 = 5040$
+$5040 \cdot 6 = 30240$
+
+So the result is $\frac{30240}{120} = 252$.
+
+Let me double-check: $\binom{10}{5} = 252$.
+
+Alternative way: $\binom{10}{5} = \frac{10 \cdot 9}{1 \cdot 2} \cdot \frac{8 \cdot 7}{3 \cdot 4} \cdot 6 / 5$... no let me just verify.
+
+$\frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+The user wants me to compute the binomial coefficient $\binom{10}{5}$.
+
+The formula for the binomial coefficient is:
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+So $\binom{10}{5} = \frac{10!}{5! \cdot 5!}$
+
+Let me compute this:
+- $10! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!$
+- So $\binom{10}{5} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot 5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5!}$
+
+$5! = 120$
+
+Numerator: $10 \cdot 9 = 90$
+$90 \cdot 8 = 720$
+$720 \cdot 7 = 5040$
+$5040 \cdot 6 = 30240$
+
+So $\binom{10}{5} = \frac{
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+The user wants me to compute the binomial coefficient $\binom{10}{5}$.
+
+The formula is $\binom{n}{k} = \frac{n!}{k!(n-k)!}$
+
+So $\binom{10}{5} = \frac{10!}{5! \cdot 5!}$
+
+$10! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 3628800$
+
+$5! = 120$
+
+$5! \cdot 5! = 120 \cdot 120 = 14400$
+
+$3628800 / 14400 = 252$
+
+Let me verify this another way.
+
+$\binom{10}{5} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}$
+
+Numerator: $10 \cdot 9 = 90$, $90 \cdot 8 = 720$, $720 \cdot 7 = 5040$, $5040 \cdot 6 = 30240$
+
+Denominator: $5 \cdot 4
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+We need to compute the binomial coefficient "10 choose 5", i.e., C(10, 5).
+
+The formula for a binomial coefficient is C(n, k) = n! / (k! (n-k)!).
+
+C(10,5) = 10!/(5!5!) = ?
+
+Let me compute step by step.
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We need to compute the binomial coefficient $\binom{10}{5}$.
+
+The binomial coefficient is defined as:
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+For $\binom{10}{5}$:
+$$\binom{10}{5} = \frac{10!}{5!(10-5)!} = \frac{10!}{5! \cdot 5!}$$
+
+Let me compute this:
+- $10! = 10 \times 9 \times 8 \times 7 \times 6 \times 5!$
+- So $\binom{10}{5} = \frac{10 \times 9 \times 8 \times 7 \times 6}{5!}$
+- $\frac{10 \times 9 \times 8 \times 7 \times 6}{120}$
+- $5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$
+
+Computing $10 \times 9 = 90$
+$90 \times 8 = 720$
+$720 \times 7 = 5040$
+$5040 \times 6 = 30240$
+
+Now $30240 / 120 =
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+We need to compute $\binom{10}{5}$.
+
+The formula is $\binom{n}{k} = \frac{n!}{k!(n-k)!}$.
+
+So $\binom{10}{5} = \frac{10!}{5! \cdot 5!}$.
+
+$10! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!$
+$5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120$
+
+So $\binom{10}{5} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = \frac{30240}{120} = 252$.
+
+Let me verify: $10 \cdot 9 = 90$
+$90 \cdot 8 = 720$
+$720 \cdot 7 = 5040$
+$5040 \cdot 6 = 30240$
+Yes.
+
+$5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120$
+$30240 / 120 = 252$.
+
+Or simplify stepwise:
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+We need to compute $\binom{10}{5}$.
+
+$\binom{10}{5} = \frac{10!}{5!(10-5)!} = \frac{10!}{5! \cdot 5!}$
+
+$= \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot 5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}$
+
+$= \frac{30240}{120} = 252$
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+We need to compute the binomial coefficient $\binom{10}{5}$.
+
+The binomial coefficient $\binom{n}{k}$ is defined as:
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+So for $\binom{10}{5}$:
+$$\binom{10}{5} = \frac{10!}{5! \cdot (10-5)!} = \frac{10!}{5! \cdot 5!}$$
+
+Let me compute this:
+$10! = 10 \times 9 \times 8 \times 7 \times 6 \times 5!$
+$5! = 5 \times 4 \times 3 \times 2 \times 1 = 120$
+
+So:
+$$\binom{10}{5} = \frac{10 \times 9 \times 8 \times 7 \times 6 \times 5!}{5! \times 120} = \frac{10 \times 9 \times 8 \times 7 \times 6}{120}$$
+
+Step by step:
+- $10 \times 9 = 90$
+- $90 \times 8 = 720$
+- $720 \times 7 = 504
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+We need to compute the binomial coefficient $\binom{10}{5}$.
+
+The formula for the binomial coefficient is:
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+So:
+$$\binom{10}{5} = \frac{10!}{5!(10-5)!} = \frac{10!}{5! \cdot 5!}$$
+
+Let me compute this:
+- $10! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!$
+- $5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120$
+
+$$\binom{10}{5} = \frac{10!}{5! \cdot 5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}$$
+
+Let me simplify:
+Numerator: $10 \cdot 9 \cdot 8 \cdot 7 \cdot 6$
+= $10 \cdot 9 = 90$
+= $90 \cdot 8 = 720$
+= $720 \cdot 7 =
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+We need to compute $\binom{10}{5}$.
+
+$\binom{10}{5} = \frac{10!}{5!(10-5)!} = \frac{10!}{5! \cdot 5!}$
+
+Let me compute this:
+$10! = 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5!$
+$\binom{10}{5} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{5!} = \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{120}$
+
+$5! = 120$
+
+Numerator: $10 \cdot 9 = 90$
+$90 \cdot 8 = 720$
+$720 \cdot 7 = 5040$
+$5040 \cdot 6 = 30240$
+
+So $\binom{10}{5} = \frac{30240}{120} = 252$.
+
+Let me verify: $30240 / 120 = 252$. Yes, $252 \cdot 120 = 252 \cdot 100 + 252 \cdot 20 = 25200 + 5040 = 302
+<<<END id=47>>>

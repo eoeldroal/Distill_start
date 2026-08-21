@@ -1,0 +1,607 @@
+PROBLEM (id 155, Level 5, Intermediate Algebra, correct answer: 35)
+Let $A = (-3, 0),$ $B=(-2,1),$ $C=(2,1),$ and $D=(3,0).$ Suppose that point $P$ satisfies \[PA + PD = PB + PC = 8.\]Then the $y-$coordinate of $P,$ when simplified, can be expressed in the form $\frac{-a + b \sqrt{c}}{d},$ where $a,$ $b,$ $c,$ $d$ are positive integers.  Find $a + b + c + d.$
+====================================================================================================
+
+<<<TEXT id=0>>>
+We need answer math. Need reason step by step but final boxed. Problem:
+
+A=(-3,0), B=(-2,1), C=(2,1), D=(3,0). Point P satisfies PA + PD = PB + PC = 8. Find y-coordinate of P, simplified form (-a + b sqrt(c))/d positive integers. Find sum.
+
+We need solve.
+
+Let P=(x,y). Distances to A,D: PA = sqrt((x+3)^2 + y^2), PD = sqrt((x-3)^2 + y^2). Sum =8. This is ellipse with foci A,D (-3,0),(3,0), major axis sum 8 => a_ellipse=4, c=3 => b_ellipse=sqrt(16-9)=sqrt7. Equation x^2/16 + y^2/7 =1. So P lies on ellipse: 7x^2+16y^2=112? x^2/16+y^2/7=1 => 7x^2+16y^2=112.
+
+PB+PC =8 with B=(-2,1), C=(2,1). Foci
+<<<END id=0>>>
+
+<<<TEXT id=1>>>
+We need answer geometry. Need reason step by step but final answer boxed. Need solve.
+
+Problem: A=(-3,0), B=(-2,1), C=(2,1), D=(3,0). Point P satisfies PA + PD = PB + PC = 8. Need y-coordinate of P simplified as (-a + b sqrt(c))/d positive integers. Find sum.
+
+We need find P. Locus PA + PD = 8 is ellipse with foci A(-3,0), D(3,0), major axis length 8. Distance between foci 2c? For ellipse: foci (±c,0) with c=3, major semi-axis a_ellipse = 4 (since sum distances = 2a = 8). So ellipse equation x^2/a^2 + y^2/b^2 =1 with a=4, b^2 = a^2 - c^2 =16-9=7. So x^2/16 + y^2/7 =1. (Center origin, foci ±3.)
+
+PB + PC = 8. B(-2,1), C(2,1). Foci not symmetric about origin? Midpoint of B,C
+<<<END id=1>>>
+
+<<<TEXT id=2>>>
+We need answer math. Need reason step by step but final answer boxed. Need solve.
+
+Problem: Points A=(-3,0), D=(3,0). B=(-2,1), C=(2,1). Point P satisfies PA + PD = PB + PC = 8. PA+PD distances to foci A,D with distance between foci 6. Sum 8 => ellipse with foci A,D major axis 2a=8 => a=4, c=3, b^2=a^2-c^2=16-9=7. Ellipse centered origin, major axis x-axis: x^2/16 + y^2/7 =1.
+
+PB+PC with B=(-2,1), C=(2,1). Distance between foci = sqrt((4)^2+0)=4? B,C horizontal at y=1, distance 4. Sum 8 => ellipse with foci B,C, center (0,1), major axis horizontal length 8, so a=4, c=2 (distance center to focus =2), b^2=16-4=12. Equation: (x)^2/16 + (y-1)^2/12 =1? Check foci
+<<<END id=2>>>
+
+<<<TEXT id=3>>>
+We need answer math. Need reason step by step but final in boxed. Need solve.
+
+Problem: A=(-3,0), D=(3,0), B=(-2,1), C=(2,1). Point P satisfies PA+PD = 8 and PB+PC = 8. Need y-coordinate of P. PA+PD = constant 8 with foci A(-3,0), D(3,0). Distance between foci =6, major axis length 8 => ellipse with foci on x-axis, center (0,0), horizontal semi-major a=4, c=3 (distance foci), b_semi = sqrt(a^2-c^2)=sqrt(16-9)=sqrt7. Equation x^2/16 + y^2/7 =1.
+
+PB+PC=8 with foci B(-2,1), C(2,1). Distance between foci =4 (horizontal), major axis 8 => center (0,1), semi-major a=4, c=2 (half distance foci), semi-minor b=sqrt(16-4)=sqrt12=2√3. Equation x^2/16 + (y-1)^2/12 =1
+<<<END id=3>>>
+
+<<<TEXT id=4>>>
+We need answer math. Need reason step by step but final answer boxed. Let's solve.
+
+Problem: A=(-3,0), D=(3,0), B=(-2,1), C=(2,1). Point P satisfies PA + PD = PB + PC = 8. Need y-coordinate of P, simplified form (-a + b sqrt(c))/d positive integers a,b,c,d. Find sum.
+
+We need find P such that sum distances to A,D equals 8, and sum distances to B,C equals 8. A,D endpoints on x-axis separated 6, sum 8 => ellipse with foci A,D, major axis 8, semi-major a=4, c=3 (distance center to focus =3), b_ellipse^2 = a^2 - c^2 = 16-9=7. Center (0,0), major along x. Equation x^2/16 + y^2/7 =1.
+
+B,C endpoints (-2,1),(2,1), distance between =4, sum=8 => ellipse with foci B,C, center (0,1), semi-major a=4, c=2 (distance center to focus =2), b
+<<<END id=4>>>
+
+<<<TEXT id=5>>>
+We need answer math. Problem: Points A=(-3,0), D=(3,0), B=(-2,1), C=(2,1). P satisfies PA + PD = 8 and PB + PC = 8. Need y-coordinate of P simplified as (-a + b sqrt(c))/d positive integers. Find sum.
+
+We need solve. Let P=(x,y). Distances.
+
+A=(-3,0), D=(3,0): sum distances to foci at ±3,0 equals 8. This defines ellipse with foci A,D, major axis length 8, center (0,0), c=3, a=4 (semi-major), b^2 = a^2 - c^2 =16-9=7. So ellipse: x^2/16 + y^2/7 =1. (Horizontal major axis).
+
+B=(-2,1), C=(2,1): sum distances to foci B,C = 8. Foci separated distance 4 (horizontal), center (0,1), c=2, semi-major a=4 (sum/2), b^2 = a^2 - c^2 = 16-4=12.
+<<<END id=5>>>
+
+<<<TEXT id=6>>>
+We need answer math. Need reason step by step but final in boxed. Problem: A=(-3,0), D=(3,0). B=(-2,1), C=(2,1). Point P satisfies PA + PD = 8 and PB + PC = 8. Need y-coordinate of P. PA+PD=8 is ellipse with foci A,D (-3,0),(3,0), major axis length 8, so sum distances = 8. Distance between foci 6, semi-major a=4, c=3, semi-minor b= sqrt(16-9)=sqrt7. Equation ellipse centered origin, horizontal major: x^2/16 + y^2/7 =1. (Since PA+PD=8). Second: PB+PC=8 with foci B(-2,1), C(2,1). Distance between foci =4, sum=8, semi-major a2=4, c2=2, semi-minor b2=sqrt(16-4)=sqrt12=2√3. Center (0,1), major axis horizontal. Equation: x^2/16 + (y-1)^2/12 =1.
+
+Need intersection
+<<<END id=6>>>
+
+<<<TEXT id=7>>>
+We need answer math problem. Need reason step by step but final answer boxed. Let's solve.
+
+We have A=(-3,0), D=(3,0). PA + PD = 8. Points A,D distance 6 apart. Ellipse with foci A,D major axis 8. Center (0,0), a=4, c=3, b^2 = a^2 - c^2 = 16-9=7. So ellipse: x^2/16 + y^2/7 = 1.
+
+B=(-2,1), C=(2,1). PB + PC = 8. Foci B,C distance? B(-2,1), C(2,1) distance 4. Major axis sum 8 => a=4, center (0,1), c=2 (half distance), b^2 = a^2 - c^2 =16-4=12. Ellipse with foci horizontal? B,C have same y=1, x ±2, so major axis horizontal centered (0,1): (x^2)/16 + (y-1)^2/12 = 1. Need intersection of two ellipses. Need y-coordinate of P
+<<<END id=7>>>
+
+<<<TEXT id=8>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: Points A(-3,0), B(-2,1), C(2,1), D(3,0). Point P satisfies PA + PD = PB + PC = 8. Find y-coordinate of P simplified form (-a + b sqrt(c))/d positive integers. Need a+b+c+d.
+
+We need solve. Let P=(x,y). PA distance to A(-3,0), PD to D(3,0). Sum distances to foci A,D with focal distance 2c? Ellipse with foci (-3,0),(3,0), major axis sum 8. So PA+PD=8 defines ellipse centered origin, focal distance c=3, semi-major a=4, semi-minor b^2 = a^2 - c^2 =16-9=7. Equation x^2/16 + y^2/7 =1.
+
+PB+PC=8 with foci B(-2,1), C(2,1), distance between foci=4 (horizontal), sum=8. Ellipse centered (0,1), focal distance c=2 (half distance), semi-major a=4 (
+<<<END id=8>>>
+
+<<<TEXT id=9>>>
+We need answer math. Need reason step by step but final answer boxed. Let's solve.
+
+We have A=(-3,0), D=(3,0), B=(-2,1), C=(2,1). Point P satisfies PA + PD = 8 and PB + PC = 8.
+
+PA+PD is sum distances to foci A,D on x-axis. A,D distance 6. Ellipse with foci (-3,0),(3,0), major axis 8. Semi-major a=4, c=3 (focal distance), b^2 = a^2 - c^2 =16-9=7. So PA+PD=8 gives ellipse: x^2/16 + y^2/7 =1.
+
+PB+PC: B=(-2,1), C=(2,1). Distance between foci =4? B to C length 4. Major axis sum=8 => semi-major a'=4, focal distance c'=2 (distance from center 0? foci at (-2,1),(2,1), center (0,1), c'=2). b'^2 = a'^2 - c'^2 =16-4
+<<<END id=9>>>
+
+<<<TEXT id=10>>>
+We need answer math. Need reason step by step but final answer boxed. Need solve.
+
+Problem: A=(-3,0), D=(3,0) so AD length 6. PA+PD=8 ellipse with foci A,D, major axis 8 => a_ellipse=4, c=3, b^2=16-9=7. Center (0,0), major axis horizontal. Equation x^2/16 + y^2/7 =1.
+
+B=(-2,1), C=(2,1). PB+PC=8. Foci B,C. Distance BC=4 (horizontal from -2 to 2). Major axis 8 => a_ellipse=4, c=2 (half distance between foci), b^2=16-4=12. Center (0,1), major axis horizontal. Equation x^2/16 + (y-1)^2/12 =1.
+
+P satisfies both ellipses:
+x^2/16 + y^2/7 =1
+x^2/16 + (y-1)^2/12 =1
+
+Subtract: y^2/7 - (y-1)^2/12 =0? Both
+<<<END id=10>>>
+
+<<<TEXT id=11>>>
+We need answer math problem. Need reason step by step but final answer boxed. Let's solve.
+
+We have points A=(-3,0), D=(3,0), B=(-2,1), C=(2,1). P satisfies PA + PD = 8 and PB + PC = 8. Find y-coordinate of P, simplified form (-a + b sqrt(c))/d positive integers. Need a+b+c+d.
+
+This is intersection of ellipses with foci A,D sum 8 and foci B,C sum 8. Need y coordinate likely negative? Form -a + b sqrt(c)/d means y is negative? numerator -a + b√c positive maybe. Need compute.
+
+Let P=(x,y). PA+PD=8: foci at (-3,0),(3,0), distance between foci 2c=6 -> c=3 (ellipse semi-major a=4, semi-minor b=√(16-9)=√7). Equation: x^2/16 + y^2/7 =1. (Since center origin, major axis horizontal).
+
+PB+PC=8: foci B=(-2,1), C=(2,1), distance between foci 4 ->
+<<<END id=11>>>
+
+<<<TEXT id=12>>>
+We need answer math. Need reason step by step but final in boxed. Need solve.
+
+Problem: A=(-3,0), D=(3,0), so AD length 6. PA + PD = 8. This is ellipse with foci A,D, major axis 8 => sum distances 8. B=(-2,1), C=(2,1), BC length 4? Distance B-C = sqrt((4)^2+0)=4. PB + PC =8 with foci B,C. So P is intersection of two ellipses: one with foci on x-axis (-3,0),(3,0), sum 8; other with foci (-2,1),(2,1), sum 8. Need y-coordinate of P. There may be two symmetric? Ellipses symmetric about x-axis? First foci symmetric, ellipse center origin, major axis along x, semi-major a1=4, c1=3, b1^2=16-9=7 => x^2/16 + y^2/7 =1.
+
+Second ellipse foci (-2,1),(2,1): center (0,1), distance between foci 4 => c2=2, sum 8 => a
+<<<END id=12>>>
+
+<<<TEXT id=13>>>
+We need answer math. Need reason step by step but final answer boxed. Need solve.
+
+We have points A=(-3,0), D=(3,0), so PA+PD=8. This is ellipse with foci A,D, major axis length 8. Since distance between foci =6, semi-major a=4, c=3, b^2=a^2-c^2=16-9=7. Center (0,0), major axis x-axis. Equation x^2/16 + y^2/7 =1.
+
+B=(-2,1), C=(2,1), so PB+PC=8. Foci B,C distance = sqrt((4)^2+0)=4 (since y same), center (0,1), distance between foci=4 => c=2, semi-major a=4, b^2=a^2-c^2=16-4=12. Major axis horizontal (since foci same y). Equation (x^2)/16 + (y-1)^2/12 =1.
+
+P satisfies both ellipses. Need y-coordinate. Solve:
+x^2/16 + y^2/7 =1
+x^2/16 +
+<<<END id=13>>>
+
+<<<TEXT id=14>>>
+We need answer math problem. Need reason step by step but final answer boxed. Let's solve.
+
+We have A=(-3,0), D=(3,0). B=(-2,1), C=(2,1). Point P satisfies PA + PD = 8 and PB + PC = 8. Need y-coordinate of P.
+
+PA+PD = 8: sum of distances to foci A(-3,0), D(3,0). Distance between foci = 6. Sum = 8 >6. Ellipse with major axis length 8, foci at (±3,0). Center (0,0), focal distance c=3, semi-major a=4 (since sum=2a=8). b^2 = a^2 - c^2 =16-9=7. Equation: x^2/16 + y^2/7 =1. So P lies on ellipse.
+
+PB + PC =8: foci B(-2,1), C(2,1). Distance between foci =4. Sum=8, semi-major a'=4? For ellipse with foci separated 4, sum distances = 8 => a' =4 (semi-major axis),
+<<<END id=14>>>
+
+<<<TEXT id=15>>>
+We need answer math problem. Need reason step by step but final answer boxed. Let's solve.
+
+We have A=(-3,0), D=(3,0) along x-axis symmetric about origin. B=(-2,1), C=(2,1) also symmetric. PA + PD = 8, PB + PC = 8. Point P satisfies sum distances to foci A,D equals 8: ellipse with foci (-3,0),(3,0), major axis length 8. Center origin, c=3 (distance foci), a=4 (semi-major), b^2 = a^2 - c^2 = 16-9=7. Equation x^2/16 + y^2/7 =1.
+
+Also PB+PC=8 with foci B=(-2,1), C=(2,1). Center (0,1), distance between foci 4 (c=2), semi-major a=4? Sum distances =8 => 2a=8 => a=4. Foci separation 2c = distance BC =4 => c=2. b^2 = a^2 - c^2 =16-4=12. Ellipse centered (0,
+<<<END id=15>>>
+
+<<<TEXT id=16>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8.
+
+Then y-coordinate of P, when simplified, can be expressed in form (-a + b sqrt(c))/d where a,b,c,d positive integers. Find a+b+c+d.
+
+We have two ellipses? PA+PD=8 is ellipse with foci A,D. Major axis length 8. Distance AD = 6. So semi-major a1 =4. c1=3. So b1 = sqrt( a1^2 - c1^2)= sqrt(16-9)=sqrt7.
+
+So ellipse centered at midpoint of AD: ((-3+3)/2,0)=(0,0). Major axis along x-axis. Equation: x^2/16 + y^2/7 =1.
+
+Second: PB+PC=8. Foci B(-2,1), C(2,1). Distance BC=4. Same sum 8. Center at (0,1). Major axis horizontal. a2=4, c2=2. b2 = sqrt(16-4)= sqrt12
+<<<END id=16>>>
+
+<<<TEXT id=17>>>
+Let A = (-3, 0), B=(-2,1), C=(2,1), D=(3,0). Suppose P satisfies PA + PD = PB + PC = 8. Then y-coordinate of P can be expressed in form (-a + b sqrt(c))/d, positive integers. Find a+b+c+d.
+
+We have two loci: set of points P such that PA + PD = 8. That's ellipse with foci A and D. Center at ((-3+3)/2,0)=0. Focal distance 2c_f = 6 => c_f =3. Major axis length 2a_e =8 => a_e=4. So ellipse extends along x-axis? Foci are on x-axis: A(-3,0), D(3,0). So major axis along x. So equation: x^2 / a_e^2 + y^2 / b_e^2 =1 where a_e=4, c_f=3 => b_e = sqrt(a_e^2 - c_f^2)= sqrt(16-9)= sqrt7. So ellipse1: x^2/16 + y^2/7 =1.
+
+Second locus: PB + PC =8
+<<<END id=17>>>
+
+<<<TEXT id=18>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8.
+
+Then y-coordinate of P = (-a + b sqrt(c))/d.
+
+Find a+b+c+d.
+
+We have two loci: ellipse with foci A,D? Wait PA+PD =8. Distance between A and D = 6. So sum 8 >6, ellipse major axis along x. Center at (0,0). Semi-major a_e = 4. c_e = 3. So b_e = sqrt(a_e^2 - c_e^2)= sqrt(16-9)= sqrt7. So ellipse 1: x^2/16 + y^2/7 =1.
+
+Second: PB+PC =8. Foci B(-2,1), C(2,1). Distance =4. Sum=8. center at (0,1). Major axis horizontal. a2=4, c2=2. b2= sqrt(16-4)= sqrt12=2*sqrt3. So ellipse 2: (x-0)^2/16 + (y-1)^
+<<<END id=18>>>
+
+<<<TEXT id=19>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8.
+
+Then y-coordinate of P, ... form (-a + b sqrt(c))/d.
+
+Find a+b+c+d.
+
+We have two ellipses? PA+PD=8, with foci A and D. Similarly PB+PC=8, foci B and C.
+
+Intersection points P where both sums equal 8.
+
+We need y-coordinate.
+
+Foci A(-3,0), D(3,0). Distance AD =6. Sum =8 >6, so ellipse major axis along x. Center at (0,0). c =3, 2a_1 =8 => a1=4. So semi minor b1 = sqrt(a1^2 - c^2)= sqrt(16-9)= sqrt7. So ellipse 1: x^2 /16 + y^2 /7 =1? Wait formula: a^2 =16, c^2=9, b^2=7. Since major axis is x: x^2 / a^2 + y^2 / b^2 =
+<<<END id=19>>>
+
+<<<TEXT id=20>>>
+Let $A = (-3, 0),$ $B=(-2,1),$ $C=(2,1),$ and $D=(3,0).$ Suppose that point $P$ satisfies \[PA + PD = PB + PC = 8.\]Then the $y-$coordinate of $P,$ when simplified, can be expressed in the form $\frac{-a + b \sqrt{c}}{d},$ where $a,$ $b,$ $c,$ $d$ are positive integers. Find $a + b + c + d.$
+
+We have ellipse with foci A,D? PA+PD=8. Distance AD =6. So ellipse major axis along x? A(-3,0), D(3,0). Sum 8 >6. So ellipse centered at origin, major axis horizontal. Equation: x² / a² + y² / b² =1 with 2a =8 => a=4. c distance from center to focus =3. So b² = a² - c² =16-9=7. So ellipse1: x²/16 + y²/7 =1.
+
+Second condition: PB + PC =8. B(-2,1), C(2,1
+<<<END id=20>>>
+
+<<<TEXT id=21>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8.
+
+Then y-coordinate of P can be expressed in form (-a + b sqrt(c))/d.
+
+Find a+b+c+d.
+
+We have two ellipses? PA+PD=8. Foci A and D. Distance between foci = 6. Sum =8 >6, major axis length 8, c = distance from center to focus = 3. So a_major =4. center at (0,0). So ellipse1: x^2 / 16 + y^2 / (16 -9) =1 => x^2/16 + y^2/7 =1. (since b^2 = a^2 - c^2 =16-9=7)
+
+Second: PB+PC=8. Foci B (-2,1) and C (2,1). Distance between foci =4. Center at (0,1). Sum 8 => a2 =4, c2=2. So b2^2 =16-4=12. Equation: ((x-0
+<<<END id=21>>>
+
+<<<TEXT id=22>>>
+Let $A = (-3, 0),$ $B=(-2,1),$ $C=(2,1),$ and $D=(3,0).$ Suppose that point $P$ satisfies PA + PD = PB + PC = 8. Then the y-coordinate of P, when simplified, can be expressed in the form (-a + b sqrt(c))/d, where a,b,c,d positive integers. Find a+b+c+d.
+
+We have two ellipses? PA+PD=8. A and D focal pair. Distance AD =6. So major axis length 8 >6 so ellipse centered at midpoint of AD = (0,0). So ellipse 1: foci at (-3,0) and (3,0). Sum distances 8. So equation: x^2/a1^2 + y^2/b1^2 =1 where 2a1=8 => a1=4. c1=3. b1 = sqrt(a1^2 -c1^2)= sqrt(16-9)= sqrt7.
+
+So ellipse E1: x^2/16 + y^2/7 =1.
+
+Second condition: PB+PC=8. Foci B (-2,
+<<<END id=22>>>
+
+<<<TEXT id=23>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8.
+
+Then y-coordinate of P, when simplified, can be expressed in form (-a + b sqrt(c))/d, where a,b,c,d positive ints. Find a+b+c+d.
+
+We have two ellipses? PA+PD=8 is ellipse with foci A,D. Major axis length 8. Distance AD = 6. So c_f = AD/2 =3. So semi-major a_e =4. Semi-minor b_e = sqrt(a_e^2 - c_f^2)= sqrt(16-9)= sqrt7.
+
+Center of AD is midpoint: (-3+3)/2=0, 0. So center at (0,0). Major axis along x-axis (since foci on x). So equation: x^2 /16 + y^2 /7 =1.
+
+Similarly PB+PC =8. Foci B(-2,1), C(2,1). Center at (0,1). Distance BC =4. So c_f2 =2. Same major =8. So
+<<<END id=23>>>
+
+<<<TEXT id=24>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8.
+
+Then y-coordinate of P, ... = (-a + b sqrt(c))/d
+
+Find a+b+c+d.
+
+We have sum of distances to two foci equals constant. PA+PD=8. A (-3,0), D (3,0). Distance between foci =6. So PA+PD=8 >6. Ellipse with major axis horizontal, center at (0,0). Semi-major a_e = 8/2 =4. c_e = distance from center to focus =3. So b_e = sqrt(a_e^2 - c_e^2)= sqrt(16-9)= sqrt7. So ellipse1: x^2/16 + y^2/7 =1.
+
+Second condition: PB + PC =8. B (-2,1), C (2,1). Foci separated vertically? Actually B and C horizontal separation 4. Center at (0,1). Sum distances =8. So ellipse with foci at (-2,1) and (2,1). Major axis
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA+PD = PB+PC =8. Then y-coordinate of P ...
+
+We have two ellipses? PA+PD =8 is ellipse with foci A and D. Similarly PB+PC=8 is ellipse with foci B and C.
+
+Intersection of two ellipses. Find y-coordinate.
+
+Let P = (x,y). Then PA+PD=8.
+
+PA = sqrt((x+3)^2 + y^2)
+PD = sqrt((x-3)^2 + y^2)
+Sum =8
+
+Similarly PB = sqrt((x+2)^2 + (y-1)^2)
+PC = sqrt((x-2)^2 + (y-1)^2)
+Sum =8
+
+We need y.
+
+Symmetry: A,D symmetric about y-axis, B,C symmetric about y-axis. So system symmetric about y-axis. Likely P is on y-axis? Check: If x=0, then PA = sqrt(9 + y^2). PD same. Sum =2 sqrt(9 + y^2)=8 => sqrt(9 + y^2)=
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+Let $A = (-3, 0), B=(-2,1), C=(2,1), D=(3,0).$ Suppose point P satisfies PA + PD = PB + PC =8. Then y-coordinate of P... form (-a + b sqrt(c))/d.
+
+We have two ellipses? PA+PD =8, foci A and D. So ellipse with major axis 8, foci at (-3,0) and (3,0). Distance between foci 2c =6 => c=3. Major axis 2a0 =8 => a0=4. So center at (0,0). So ellipse equation x^2 / a0^2 + y^2 / b0^2 =1 where b0^2 = a0^2 - c^2 =16-9=7. So first ellipse: x^2/16 + y^2/7 =1.
+
+Second: PB + PC =8, foci B(-2,1), C(2,1). Center at (0,1). Distance between foci =4 => 2c2 =4 => c2=2. Major axis 2a2=8 => a2=4
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8. Then y-coordinate ...
+
+We have two curves: ellipse with foci A,D sum=8; ellipse with foci B,C sum=8. Intersection point P? Probably y>0? Could be two points symmetric about x-axis. y-coordinate likely positive? Might be positive. Let's find.
+
+First ellipse AD: foci at (-3,0) and (3,0). Center at (0,0). Major axis length 2a1 =8 => a1=4. Focal distance 2c1 =6 => c1=3. So b1 = sqrt(a1^2 - c1^2)= sqrt(16-9)= sqrt7. Equation: x^2 /16 + y^2 /7 =1.
+
+Second ellipse BC: foci at (-2,1) and (2,1). Center at (0,1). Major axis length 2a2=8 => a2=4. Focal distance 2c2=4 => c2=2. So b2 = sqrt(16-
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8. Then y-coordinate of P, when simplified, can be expressed in form (-a + b sqrt(c))/d where a,b,c,d positive integers. Find a+b+c+d.
+
+We have two ellipses? PA+PD =8. That's ellipse with foci A and D. Similarly PB+PC=8 ellipse with foci B and C.
+
+Intersection point P satisfies both. So P lies on both ellipses. Expect possibly two points symmetric about x-axis. y-coordinate likely negative? Could be above? Let's think.
+
+A (-3,0), D (3,0). Distance AD =6. Sum =8 >6, ellipse major axis length 8, semi-major a1 =4, focal distance 2c1 =6 => c1=3. So a1=4 >c1. So b1 = sqrt(a1^2 - c1^2)= sqrt(16-9)= sqrt7. Ellipse centered at origin (0,0). Since foci on x-axis. So equation: x^2 /
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA + PD = PB + PC = 8.
+
+Then y-coordinate of P... form (-a + b sqrt(c))/d.
+
+We have two ellipses? PA+PD =8 is ellipse with foci A,D. Sum=8. Distance AD =6. So major axis 8. Similarly PB+PC=8 foci B,C distance BC =4. Sum=8.
+
+Intersection point P. Likely above? Probably y>0? Could be symmetric.
+
+Let P = (x,y). Then PA+PD =8.
+
+We can use ellipse properties. Compute sum of distances.
+
+Let P = (x, y). Compute PA = sqrt((x+3)^2 + y^2). PD = sqrt((x-3)^2 + y^2). Sum=8.
+PB = sqrt((x+2)^2 + (y-1)^2). PC = sqrt((x-2)^2 + (y-1)^2). Sum=8.
+
+By symmetry, likely x=0 due to symmetry of both pairs. A,D symmetric about y-axis; B,C
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+Let A=(-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose point P satisfies PA+PD=PB+PC=8.
+
+So sum distances to A and D is 8. Sum to B and C is 8.
+
+PA+PD =8. A and D are foci? A(-3,0) D(3,0) distance AD=6. So PA+PD=8 >6 so ellipse with foci A,D major axis 8. So center at (0,0). c=3, 2a=8 => a=4 => b = sqrt(a^2 -c^2)= sqrt(16-9)= sqrt7. So ellipse E1: x^2 /16 + y^2 /7 =1? Wait orientation along x-axis. So x^2 / a^2 + y^2 / b^2 =1. Yes.
+
+Second: PB+PC=8. B(-2,1), C(2,1). Distance BC=4. Foci B,C. Sum =8>4. Center at (0,1). Major axis horizontal? Foci share y=1, so major
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+Let A = (-3,0), B=(-2,1), C=(2,1), D=(3,0). Suppose P satisfies PA + PD = PB + PC = 8.
+
+Then y-coordinate can be expressed as (-a + b sqrt(c))/d.
+
+Find a+b+c+d.
+
+We have two ellipses? PA+PD=8 is ellipse with foci A,D. Major axis length 8. Distance AD = 6. So semi-major a1 = 4. Center at (0,0). Foci at ±3. So ellipse vertical? foci on x-axis, so major axis along x. So equation: x^2 / a^2 + y^2 / b^2 =1 where a=4, c=3 => b^2 = a^2 - c^2 = 16-9=7. So PA+PD=8 => x^2/16 + y^2/7 =1.
+
+Similarly PB+PC=8. Foci B (-2,1), C (2,1). Distance BC =4. Center at (0,1). Major axis horizontal? foci on horizontal line y=1. So ellipse centered at (0,1).
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+We have points A = (-3, 0), B = (-2, 1), C = (2, 1), D = (3, 0).
+
+P = (x, y) satisfies PA + PD = PB + PC = 8.
+
+PA + PD = 8 is the sum of distances from P to A and D. The locus of P with PA + PD = constant is an ellipse with foci A and D, if constant > distance between foci (AD).
+
+AD = distance between (-3,0) and (3,0) = 6. So 8 > 6, this forms an ellipse with a = 4 (2a = 8), center at (0,0), foci at (-3,0) and (3,0).
+
+Similarly, BC: B = (-2,1), C = (2,1). BC = 4. PB+PC = 8, which is > 4. Ellipse with foci at B and C, major axis length 8, 2a = 8, a = 4, center at midpoint of BC = (0,1). Distance between foci = 4, so 2c_F = 4 (I'll use notation c
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+We have points $A=(-3,0)$, $B=(-2,1)$, $C=(2,1)$, $D=(3,0)$.
+
+Wait, the condition is $PA + PD = PB + PC = 8$. Hmm, that seems strange because $PB + PC$ would depend on $P$, not give a const... wait, actually, let me reread.
+
+"PA + PD = PB + PC = 8". Hmm, so we have two equations. Actually, it likely means the set of points equidistant. Let me reread the problem.
+
+Wait, $PA + PD$ — $PA+PD$ constant means $P$ is on an ellipse with foci $A, D$. We have $A=(-3,0), D=(3,0)$, so this ellipse has foci on the x-axis, both on the x-axis equidistant from origin. Then $PB+PC constant$ means $P$ is on another ellipse with foci $B=(-2,1)$ and $C=(2,1)$ (also on a horizontal line).
+
+But neither of these would have $PA+PD = PB+PC$ as an "=$8$". 
+
+Wait, maybe we only have
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+We have points A(-3,0), B(-2,1), C(2,1), D(3,0). We need a point P(x,y) satisfying PA + PD = PB + PC = 8.
+
+PA + PD is the sum of distances from P to A and to D. This sum equals the length of an ellipse with foci A and D... wait, no, the sum being fixed. For any point P, PA + PD equals constant = an ellipse with foci at A and D. If this sum is 8, and the distance between A and D is |3-(-3)| = 6, so MAJOR axis length = 8, center is midpoint of AD = ((-3+3)/2, 0) = (0,0). So center (0,0), major axis along x-axis. Wait sum constant for ellipse, but here sum equals 8 and focal distance is 6, so semi-major axis = 4. equation: x^2/16 + y^2/b^2 = 1,here focal distance = 6, so center (0,0), foci (±c, 0)c = a=4? Wait fociA and D are at foci -
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+We have points $A=(-3,0)$, $B=(-2,1)$, $C=(2,1)$, $D=(3,0)$.
+
+Point $P$ satisfies $PA + PD = PB + PC = 8$.
+
+Wait, let me re-read. "$PA + PD = PB + PC = 8$."
+
+$F_1 + F_2 = 2a = 8$, so $a = 4$.
+
+Then $F_1 F_2 = a^2 - c^2 = 16 - 9 = 7$.
+
+Now find the focus. $|PF_1 - PF_2| = \pm 2a$? No wait, that's undefined. Use the iso definition.
+
+Actually, let's parametrize the ellipse:
+$P = (x, y)$, $F_1 = (3,0)$, $F_2 = (-3,0)$.
+$F_1P + F_2P$. $2a = PA + PD = 8$.
+
+$($...
+
+Ellipse with foci $D(3,0), A(-3,0)$, $2a = 8$, $a = 4$, $c = 3$, $b^2 = 7$, equation:
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+We have points A=(-3,0), B=(-2,1), C=(2,1), D=(3,0). Point P satisfies PA + PD = 8 and PB + PC = 8.
+
+PA + PD = 8 is the definition of an ellipse with foci A and D, sum of distances = 8. But here foci are at (-3,0) and (3,0), sum of distances = 8.
+
+PB + PC = 8 is an ellipse with foci B=(-2,1) and C=(2,1), sum of distances = 8.
+
+Find y-coordinate of P that satisfies both.
+
+Set up equations. Let P = (x,y).
+
+PA = sqrt((x+3)^2 + y^2)
+PD = sqrt((x-3)^2 + y^2)
+PB = sqrt((x+2)^2 + (y-1)^2)
+PC = sqrt((x-2)^2 + (y-1)^2)
+
+Let me think. For ellipse centered between foci.
+
+For first ellipse: center (0,0), foci at (-3,0) and (3,0), 2a = 8 so a = 4, c (distance
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+We have points A = (-3, 0), B = (-2, 1), C = (2, 1), D = (3, 0). Point P satisfies:
+- PA + PD = 8
+- PB + PC = 8
+
+Let P = (x, y).
+
+We have:
+PA = sqrt((x+3)^2 + y^2)
+PD = sqrt((x-3)^2 + y^2)
+PB = sqrt((x+2)^2 + (y-1)^2)
+PC = sqrt((x-2)^2 + (y-1)^2)
+
+Note that A and D are symmetric about the y-axis. So if (x, y) satisfies the conditions, (-x, y) also should. This suggests the configuration is symmetric in some way.
+
+The condition PA + PD = 8 defines an ellipse with foci A and D. The condition PB + PC = 8 defines an ellipse with foci B and C.
+
+Both B and C are symmetric about the y-axis: B = (-2, 1), C = (2, 1).
+
+Let's think about P = (0, y) on the y-axis. By symmetry, we have PA = PD, PB =
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+We have points A=(-3,0), B=(-2,1), C=(2,1), D=(3,0). P is some point (x,y) such that PA + PD = 8 and PB + PC = 8.
+
+We need to find the y-coordinate of P.
+
+Interpretation: The locus of points where the sum of distances to A and D is constant 8. The set of points where sum of distances to two fixed points equals constant > distance between foci? Indeed distance between A and D is from (-3,0) to (3,0) which is 6. Since 8 > 6, the locus is an ellipse with foci at A and D. Similarly PB + PC = 8 defines an ellipse with foci B and C.
+
+Thus P is intersection of two ellipses.
+
+We can find P explicitly.
+
+First ellipse: Foci A(-3,0) and D(3,0). Sum of distances is 8 -> major axis length = 8. So a = 8/2 = 4. The distance between foci = 6, so 2c = 6, c = 3. The semi-minor axis b satisfies b^2 = a^2 - c
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+We have points A(-3,0), B(-2,1), C(2,1), D(3,0). P satisfies PA + PD = 8 and PB + PC = 8.
+
+Let P = (x, y).
+
+First, find PA + PD:
+PA = sqrt((x+3)^2 + y^2)
+PD = sqrt((x-3)^2 + y^2)
+Sum = 8.
+
+Second, PB + PC:
+PB = sqrt((x+2)^2 + (y-1)^2)
+PC = sqrt((x-2)^2 + (y-1)^2)
+Sum = 8.
+
+Let me start with PB + PC = 8. Points B(-2,1) and C(2,1) are symmetric about y-axis. The sum PB+PC = 8 is an ellipse with foci B and C.
+
+Standard: 2a = 8 => a = 4. Distance between foci 2c_squarelet = 4. Let me major parameter: 2a_2 = 8, a_2 = 4, dc = distance(B,C) = 4. So semiminor b_2 satisfies b_2^2 =
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+We have points $A=(-3,0)$, $B=(-2,1)$, $C=(2,1)$, $D=(3,0)$.
+
+We need to find point $P$ such that $PA + PD = 8$ and $PB + PC = 8$.
+
+First ellipse: foci $A$ and $D$, sum of distances = 8.
+- $A=(-3,0)$, $D=(3,0)$.
+- Center: $(0,0)$.
+- $2a = 8$, so $a = 4$.
+- $c_{Ellipse1} = 3$ (half-distance between foci).
+- $b^2 = 16 - 9 = 7$.
+- Equation: $\frac{x^2}{16} + \frac{y^2}{7} = 1$.
+
+Second ellipse: foci $B=(-2,1)$ and $C=(2,1)$.
+- Center: $(0,1)$.
+- $2a' = 8$, so $a' = 4$.
+- $c_{Ellipse2} = 2$.
+- $b'^2 = 16 - 4 = 12$.
+- Equation: $\frac{x^2}{16
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+We have points $A = (-3, 0)$, $B = (-2, 1)$, $C = (2, 1)$, $D = (3, 0)$. Let $P = (x, y)$.
+
+Wait, the problem has a typo: $B = (-2, 1)$ and $C = (2, 1)$. Let me check... Actually, looking at the problem, $B = (-2, 1)$ has an equals sign and $C = (2, 1)$ has an equals sign. These are probably meant to be parentheses. Let me assume $A = (-3, 0)$, $B = (-2, 1)$, $C = (2, 1)$, $D = (3, 0)$.
+
+Given: $PA + PD = 8$ and $PB + PC = 8$.
+
+From $PA + PD = 8$: This is the definition of an ellipse with foci $A$ and $D$, and the sum of distances equals $8$. 
+
+Check: The distance $AD = 6$. Since $8 > 6$, the ellipse is non-degenerate.
+
+From $PB + PC = 8$: Wait, $B = (-2,
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We have points A=(-3,0), B=(-2,1), C=(2,1), D=(3,0). Point P satisfies PA+PD = 8 and PB+PC = 8.
+
+PA+PD = 8 defines an ellipse with foci at A and D.
+Similarly PB+PC = 8 defines an ellipse with foci at B and C.
+
+P is the intersection of these two ellipses.
+
+Let me write PA + PD = 8. A=(-3,0), D=(3,0). The center of this ellipse is at the midpoint of A and D, which is (0,0). The sum 2a = 8, so a=4. The distance between foci 2c' = distance between A and D = 6, so c'=3.
+
+For the ellipse PA+PD=8, the semi-major axis a_1=4, focal half-distance c'_1=3, so b_1^2 = a_1^2 - c'_1^2 = 16-9 = 7.
+The equation: 16/16 + y^2/7 wait no, let me set this up properly.
+
+Center along AD: from A(-3
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+We have points A = (-3, 0), B = (-2, 1), C = (2, 1), D = (3, 0). Point P = (x, y) satisfies PA + PD = 8 and PB + PC = 8. We need y-coordinate.
+
+Let PA = distance from P to A = sqrt((x+3)^2 + y^2).
+PD = sqrt((x-3)^2 + y^2).
+PB = sqrt((x+2)^2 + (y-1)^2).
+PC = sqrt((x-2)^2 + (y-1)^2).
+
+We have:
+sqrt((x+3)^2 + y^2) + sqrt((x-3)^2 + y^2) = 8
+sqrt((x+2)^2 + (y-1)^2) + sqrt((x-2)^2 + (y-1)^2) = 8.
+
+The first equation describes the ellipse with foci at A and D (±3, 0), where distance from foci to any point is constant sum = 8. That means major axis length 2a_ellipse = 8? Wait in ellipse definition, 2a = sum
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+We have points A = (-3,0), B = (-2,1), C = (2,1), D = (3,0). Point P satisfies PA + PD = 8 and PB + PC = 8.
+
+Wait, the problem says P satisfies PA + PD = PB + PC = 8. That means P satisfies two equations: the sum of distances from P to A and D equals 8, and the sum of distances from P to B and C equals 8.
+
+Let me denote P = (x,y). Then:
+PA + PD = 8
+PB + PC = 8
+
+Let me compute PA, PD, PB, PC in terms of x and y.
+
+PA = sqrt((x+3)^2 + y^2)
+PD = sqrt((x-3)^2 + y^2)
+PB = sqrt((x+2)^2 + (y-1)^2)
+PC = sqrt((x-2)^2 + (y-1)^2)
+
+This looks complicated. Let's use the properties of ellipses.
+
+The points A and D are foci of an ellipse, since PA + PD = constant (8). Let's verify that this is indeed an ellipse. The distance between foci is AD. A =
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+We have points A = (-3,0), B = (-2,1), C = (2,1), D = (3,0). So we have two pairs. P is a point such that:
+- PA + PD = 8
+- PB + PC = 8
+
+We need the y-coordinate of P. The constraints likely define ellipses? Actually, PA + PD = constant means P lies on an ellipse with foci A and D. And PB + PC = constant means P lies on an ellipse with foci B and C. We need P satisfying both. But we have two equations:
+PA + PD = 8
+PB + PC = 8 but note PB+PC is also constant? Actually meta two equations but they are not necessarily representing all: It says "Suppose that point P satisfies ..." so both are true. There may be two such points? Possibly more? Actually, if P is chosen such that both equalities hold, then P lies in intersection of two ellipses. But there might be finitely many points. 
+
+Given the symmetry. Let's analyze: A and D are symmetric about origin, as are B and C? Check: A = (-3,0), D=(3,0); B=(-2,1
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+We have ellipses defined by PA + PB = some sum... wait, given PA + PD = PB + PC = 8. Hmm, this is unusual. Let me think.
+
+We have:
+- PA + PD = 8, where A = (-3,0) and D = (3,0). The sum of distances from P to foci A and D equals 8. This defines an ellipse with foci at A and D on the x-axis. The center is at origin, foci at (±3, 0). 2a = 8 so a = 4. The focal distance c_focal = 3 (I'll use foci_eq = 3 to avoid confusion with c in the answer). Then b of ellipse = sqrt(16-9) = sqrt(7). Ellipse equation: x²/16 + y²/7 = 1.
+
+- PB + PC = 8, where B = (-2, 1) and C = (2, 1). Foci at (-2,1) and (2,1). Difference between foci: 2 foci_eq = 4 horizontally. 2a of this ellipse = 8, a = 4. foci_eq_dist = 2. So
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+We have points A = (-3, 0), B = (-2, 1), C = (2, 1), D = (3, 0). Let P = (x, y).
+
+Condition: PA + PD = 8 and PB + PC = 8.
+
+Let me set up equations:
+PA = sqrt((x+3)^2 + y^2)
+PD = sqrt((x-3)^2 + y^2)
+PB = sqrt((x+2)^2 + (y-1)^2)
+PC = sqrt((x-2)^2 + (y-1)^2)
+
+Let f(t) = sqrt((x-t)^2 + y^2) — but we have different cases for A and D, and for B and C.
+
+Note the symmetry: Reflecting across the y-axis swaps A <-> D and B <-> C.
+
+If P satisfies the conditions, then by symmetry, the reflection of P across the y-axis also satisfies the conditions. But is the solution to these conditions symmetric? Let's check: both conditions are symmetric about the y-axis individually (the sum PA+PD is symmetric in the x-coordinate around 0, as is PB+PC). So the set of points satisfying both is symmetric
+<<<END id=47>>>

@@ -1,0 +1,585 @@
+PROBLEM (id 34, Level 3, Counting & Probability, answer: 26)
+What is the sum of all integer values $n$ for which $\binom{26}{13}+\binom{26}{n}=\binom{27}{14}$?
+====================================================================================================
+
+<<<TEXT id=0>>>
+We need answer math. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need solve for n integers (presumably n between 0 and 26? binomial coefficients usually defined for integer n with 0<=n<=26? If n outside, binomial zero if n<0 or >26? Integer values n for which equality. Need consider. C(26,13)+C(26,n)=C(27,14). Use Pascal: C(27,14)=C(26,13)+C(26,14)? Since C(27,14)=C(26,13)+C(26,14) (because C(n,k)=C(n-1,k)+C(n-1,k-1): C(27,14)=C(26,14)+C(26,13)). So equation reduces C(26,n)=C(26,14). Thus n=14 or n=26-14=12 (since binomial symmetric). Sum=26. Need final \boxed{26}.
+<<<END id=0>>>
+
+<<<TEXT id=1>>>
+We need answer math. Problem: Find sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need solve.
+
+We know C(27,14) = C(27,13) (since 27 choose 14 = 27 choose 13). Also Pascal: C(27,14)=C(26,14)+C(26,13). So equation becomes C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). So n=14 or n=26-14=12 (since C(26,k)=C(26,26-k) and symmetry unique except). Need integer values n? Binomial coefficient defined for n integer? Typically n integer between 0 and 26? The problem says integer values n for which binomial coefficient. If n outside 0..26, C(26,n)=0 convention? Then equation C(26,n)=C(26,14) not zero, so no. So n=12,14 sum=26. Final boxed 26.
+<<<END id=1>>>
+
+<<<TEXT id=2>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: Find sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+We know Pascal: C(27,14)=C(26,13)+C(26,14) (since C(27,14)=C(26,14)+C(26,13)). Also C(26,k)=C(26,26-k). So n=14 or n=12 (since 26-14=12) satisfy. Are there other n? Need solve C(26,n)=C(26,14). Binomial coefficients symmetric and unimodal. C(26,k)=C(26,14) implies k=14 or k=26-14=12. Since 14 is past center? C(26,14)=C(26,12). Yes. So n=12,14. Sum=26. Final \boxed{26}.
+<<<END id=2>>>
+
+<<<TEXT id=3>>>
+We need answer math. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need find n integer (presumably 0<=n<=26? Binomial coefficient C(26,n) defined for integer n usually 0<=n<=26; if n outside, C=0 maybe but "integer values n" for binomial coefficient typically 0<=n<=26. Need solve.
+
+Use Pascal: C(27,14)=C(26,14)+C(26,13)? Since C(27,14)=C(26,14)+C(26,13) (Pascal C(27,k)=C(26,k)+C(26,k-1); k=14 => C(26,14)+C(26,13)). Given C(26,13)+C(26,n)=C(27,14)=C(26,13)+C(26,14). So C(26,n)=C(26,14). Binomial coefficients symmetric: n=14 or n=26-14=12. Sum=26. But check C(26,13)+C(26,14) = C(27,14)? Yes.
+<<<END id=3>>>
+
+<<<TEXT id=4>>>
+We need answer math. Problem: Find sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+Use Pascal: C(27,14)=C(26,14)+C(26,13) (since C(27,14)=C(26,14)+C(26,13)? Pascal: C(27,k)=C(26,k)+C(26,k-1). For k=14: C(27,14)=C(26,14)+C(26,13). So equation becomes C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). Thus n=14 or n=26-14=12 (since symmetric). Sum =26. Need final boxed{26}.
+<<<END id=4>>>
+
+<<<TEXT id=5>>>
+We need answer math. Need reason step by step but final boxed. Problem: Find sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+We know C(27,14)=C(26,14)+C(26,13) by Pascal. So C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). So n=14 or n=26-14=12. Sum =26. Answer \boxed{26}.
+<<<END id=5>>>
+
+<<<TEXT id=6>>>
+We need answer math. Problem: sum of all integer values n such that C(26,13)+C(26,n)=C(27,14).
+
+Use Pascal identity: C(27,14)=C(26,14)+C(26,13) (since C(27,14)=C(26,14)+C(26,13)? Pascal: C(27,k)=C(26,k)+C(26,k-1). For k=14: C(27,14)=C(26,14)+C(26,13). Yes. So equation becomes C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). n integer? Binomial coefficients defined for n? Usually n integer 0<=n<=26? The problem says integer values n for which binom{26}{n}. For binomial with integer n maybe convention C(26,n)=0 if n<0 or n>26? But likely n integer such that binomial defined? If n can be any integer with generalized binomial? Usually \binom{26}{n}=0 for n outside [0,26] if using polynomial? But equation C
+<<<END id=6>>>
+
+<<<TEXT id=7>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: Find sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+We know Pascal: C(27,14)=C(26,14)+C(26,13) (since C(27,k)=C(26,k)+C(26,k-1); k=14 -> C(26,14)+C(26,13)). So equation gives C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). So n=14 or n=26-14=12 (since binomial symmetry). Both integers in range. Sum =26. Need final \boxed{26}.
+<<<END id=7>>>
+
+<<<TEXT id=8>>>
+We need answer math. Problem: Find sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+We know Pascal: C(27,14)=C(26,14)+C(26,13) (since C(27,14)=C(26,13)+C(26,14)? Check: C(27,k)=C(26,k)+C(26,k-1). k=14: C(27,14)=C(26,14)+C(26,13). So equation gives C(26,n)=C(26,14). Thus n=14 or n=26-14=12 (since C(26,n)=C(26,26-n)). So n=12,14. Sum=26. Need boxed{26}.
+<<<END id=8>>>
+
+<<<TEXT id=9>>>
+We need answer math. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need find n integers (presumably 0<=n<=26? binomial C(26,n) defined for integer n usually n integer, if outside range C=0? But problem says integer values n, likely 0<=n<=26? Need consider. Equation: C(27,14)=C(26,13)+C(26,14) by Pascal identity since 27 choose 14 = C(26,13)+C(26,14) because C(26,14)+C(26,13)=C(27,14) (13+14? C(n,k)+C(n,k+1)=C(n+1,k+1) with k=13 -> C(26,13)+C(26,14)=C(27,14)). So equation becomes C(26,n)=C(26,14). Solutions n=14 and n=26-14=12 (since C(26,k)=C(26,26-k)). So n=12,14. Sum=26. Need final boxed{26}.
+<<<END id=9>>>
+
+<<<TEXT id=10>>>
+We need answer math. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+We need solve. Use Pascal: C(27,14)=C(26,14)+C(26,13) (since 27 choose 14 = C(26,14)+C(26,13)). So equation becomes C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). Since binomial coefficients symmetric: C(26,n)=C(26,26-n). Values n with C(26,n)=C(26,14) are n=14 or n=26-14=12. Also n maybe? C(26,n)=C(26,14) iff n=14 or n=12 (since 26 even and 14 !=13). So n=12,14. Sum =26. Final \boxed{26}.
+<<<END id=10>>>
+
+<<<TEXT id=11>>>
+We need answer math. Need reason step by step but final in boxed. Problem: Find sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+We know identity C(27,14)=C(26,14)+C(26,13)? Pascal: C(27,14)=C(26,14)+C(26,13) since C(26,13)+C(26,14)=C(27,14)? Wait Pascal: C(n,k)=C(n-1,k)+C(n-1,k-1). For n=27,k=14: C(27,14)=C(26,14)+C(26,13). So equation becomes C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). So n=14 or n=26-14=12 (since binomial symmetric). Also n can be? Binomial coefficients defined for integer n? Usually n between 0 and 26? "integer values n" perhaps n can be any integer, but binomial C(26,n) with n outside 0..26? Typically
+<<<END id=11>>>
+
+<<<TEXT id=12>>>
+We need answer math. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need find n integers such that C(26,n) = C(27,14)-C(26,13). Compute.
+
+C(27,14) = C(27,13). Use Pascal: C(27,14)=C(26,14)+C(26,13)? Because C(27,k)=C(26,k)+C(26,k-1). For k=14: C(27,14)=C(26,14)+C(26,13). Thus C(27,14)-C(26,13)=C(26,14). So need C(26,n)=C(26,14). Binomial coefficients symmetry: C(26,n)=C(26,14) iff n=14 or n=26-14=12. So integers 12 and 14. Sum =26. Final \boxed{26}.
+<<<END id=12>>>
+
+<<<TEXT id=13>>>
+We need answer math. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+We need solve. Use Pascal identity: C(27,14) = C(26,14)+C(26,13) (since C(27,14)=C(26,14)+C(26,13)). Given C(26,13)+C(26,n)=C(27,14)=C(26,14)+C(26,13). So C(26,n)=C(26,14). Thus n=14 or n=26-14=12 (since C(26,k)=C(26,26-k)). Also n maybe outside 0..26? Binomial coefficient C(26,n) standard defined for integer n with 0<=n<=26, otherwise 0? The problem says integer values n for which C(26,n) defined. If n outside 0..26 C=0? Then C(26,12)=C(26,14). Sum = 12+14=26. Box 26.
+<<<END id=13>>>
+
+<<<TEXT id=14>>>
+We need answer math. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+Need solve. Recall Pascal identity: C(27,14)=C(26,14)+C(26,13) (since C(27,14)=C(26,14)+C(26,13) because 27=26+1, choose 14: C(26,14)+C(26,13)). Yes C(n+1,k)=C(n,k)+C(n,k-1). Here k=14, k-1=13. So C(27,14)=C(26,14)+C(26,13). Thus equation C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). For integer n between 0 and 26 (binomial defined for n? Typically \binom{26}{n} for integer n? If n outside 0..26, binomial coefficient zero if convention? In contest, n integer values probably 0<=n<=26. n=14 or n=12 by symmetry C(26,14)=
+<<<END id=14>>>
+
+<<<TEXT id=15>>>
+We need answer math. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need find n integers (presumably 0<=n<=26? binomial definition for integer n maybe n can be any integer with convention C(26,n)=0 if n outside [0,26]? Usually \binom{26}{n} defined for integer n with 0<=n<=26, but "integer values n" might include outside with binomial zero? Need check. Equation: C(26,13)+C(26,n)=C(27,14).
+
+Use Pascal: C(27,14)=C(26,14)+C(26,13). So equation becomes C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). Thus n=14 or n=26-14=12 (since C(26,k)=C(26,26-k), distinct if k≠13). So n=12,14. Sum=26. If n allowed outside 0..26 with C=0, no additional because RHS? C(26,n)=0
+<<<END id=15>>>
+
+<<<TEXT id=16>>>
+What is the sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need n integer such that C(26,n) = C(27,14)- C(26,13)
+
+Compute C(27,14). Relationship: C(27,14)= C(26,14)+C(26,13). So RHS = C(26,14)+C(26,13)+C(26,13?) Wait original: C(26,13)+C(26,n)=C(27,14)=C(26,14)+C(26,13). So C(26,n)=C(26,14).
+
+So C(26,n)=C(26,14). So n=14 or n=26-14=12.
+
+But careful: binomial coefficient defined for integer n? Usually binomial coefficient defined for 0<=n<=26 else zero? Usually integer values n for which ... Might allow n outside range? Binomial coefficient defined for general integer? Usually C(k, n)=0 if n<0 or n>k. Probably consider standard combinatorial definition where n must be between 0 and 26 inclusive to be non-zero. But problem
+<<<END id=16>>>
+
+<<<TEXT id=17>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need integer n such that binomial 26 choose n is defined? Usually binomial coefficient defined for integer n >=0 <=26 else zero? Probably integer values n for which binomial makes sense? Might be all integer, but binom(26,n)=0 for n<0 or n>26. Maybe consider standard combinatorial definition =0. Or consider only 0≤n≤26. Problem likely expects n in range.
+
+We have C(26,13)+C(26,n)=C(27,14)
+
+We know C(27,14)= C(26,14)+C(26,13) by Pascal. So C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14) => n=14 or n=26-14=12.
+
+Wait check: C(27,14)= C(26,13)+C(26,14). Yes identity C(n+1,k)=C(n,k)+C(n,k-1). So C(27,14)=C(26
+<<<END id=17>>>
+
+<<<TEXT id=18>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need integer n such that C(26,n) = C(27,14) - C(26,13).
+
+Compute C(27,14). Relation: C(27,14)=C(27,13). Also C(27,14)=C(26,14)+C(26,13). Since Pascal: C(n,k)=C(n-1,k)+C(n-1,k-1). So C(27,14)=C(26,14)+C(26,13).
+
+Thus equation: C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14).
+
+So n = 14 or n = 26-14 =12 (since C(26,n)=C(26,26-n)). But domain integer values n? Binomial coefficient defined for integer n? Usually C(26,n) defined for n integer >=0 <=26? Sometimes extends to zero for outside? Problem states integer values n. Typically binomial coefficient \binom{26}{n} is zero if
+<<<END id=18>>>
+
+<<<TEXT id=19>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need integer n such that C(26,n) = C(27,14) - C(26,13)
+
+Compute values. Use identity C(27,14)= C(26,14)+C(26,13). Since C(m,k)=C(m-1,k)+C(m-1,k-1). So C(27,14)=C(26,14)+C(26,13).
+
+Then equation: C(26,13)+C(26,n)=C(26,14)+C(26,13)
+=> C(26,n)=C(26,14)
+
+So n = 14 or n = 26-14 =12.
+
+Wait check: C(26,14) = C(26,12). So solutions n=14,12.
+
+But also C(26,n) defined for integer n? Usually binomial coefficient zero if n<0 or n>26? Sometimes defined zero. Integer values n for which ... Could be also n outside range gives zero? But C(26,n) for integer not in [0,26] is usually
+<<<END id=19>>>
+
+<<<TEXT id=20>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need integer n such that C(26, n)= C(27,14)-C(26,13)
+
+Compute RHS.
+
+C(27,14)= C(27,13). Known identity: C(n,k)+C(n,k-1)=C(n+1,k). So C(27,14)= C(26,14)+C(26,13).
+
+Thus RHS = C(26,14)+C(26,13)-C(26,13)=C(26,14).
+
+So C(26,n)= C(26,14).
+
+So n = 14 or n= 26-14=12.
+
+Wait also n could be outside 0..26? binomial defined for integer? Usually binomial coefficient defined for n >=0. For integer n maybe negative? Typically \binom{a}{b} defined for 0<=b<=a. Could be extended? Usually problem expects 0<=n<=26. Might also allow n = ? Since C(26,n)=C(26,14). For general integer n, C(26,n)=0 if n<0
+<<<END id=20>>>
+
+<<<TEXT id=21>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need C(26,13)+C(26,n)=C(27,14)
+
+We know C(27,14)=C(27,13). Also C(27,14)= C(26,14)+C(26,13) via Pascal.
+
+So C(26,13)+C(26,n)=C(26,14)+C(26,13)
+=> C(26,n)=C(26,14)
+
+So n=14 or n=26-14=12
+
+Wait also C(26,n) defined for integer n? Binomial coefficient presumably zero if n<0 or n>26? Usually binomial defined zero outside 0..26. But integer values n. Could be other values where C(26,n)=0? No.
+
+But equation: C(26,13)+C(26,n)=C(27,14)
+Compute C(27,14)=C(26,14)+C(26,13). So indeed C(26,n)=C(26,14).
+
+Solutions n=14 or 12.
+
+But also maybe n could be...
+<<<END id=21>>>
+
+<<<TEXT id=22>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need integer n s.t. C(26,13)+C(26,n)=C(27,14)
+
+Compute relation: C(27,14)= C(26,14)+C(26,13) by Pascal.
+
+So C(26,13)+C(26,n)=C(26,14)+C(26,13)
+=> C(26,n)=C(26,14)
+
+So n=14 or n=26-14=12
+
+But also C(26,n) defined for integer n? Binomial coefficient usually defined for 0≤n≤26. However sometimes extended? Usually integer values n for which binomial coefficient defined? C(26,n) =0 if n<0 or n>26? Could consider general integer. Typically binomial coefficient is zero for out of range? In combinatorics usually defined only for 0≤n≤26. Problem maybe allow n any integer, and C(26,n)=0 for n<0 or >26? Or define as zero. Often definition: C(n,k)=0 for k<0 or k>n. Then equation
+<<<END id=22>>>
+
+<<<TEXT id=23>>>
+What is the sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need integer n such that binomial coefficients defined? Probably n integer, presumably 0 <= n <=26 else binomial zero? Usually binomial defined for integer n >=0. Could be n any integer, binomial defined as zero if out of range? Usually combinatorial meaning requires 0≤n≤26. Probably restrict to that.
+
+We need C(26,13)+C(26,n)=C(27,14)
+
+Recall identity C(k, r)+C(k, s)=? Might relate to Pascal: C(27,14)=C(26,14)+C(26,13)
+
+So C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14)
+
+Thus n =14 or n=26-14=12
+
+If also allow n outside? C(26,n)=0 leads to? Then C(26,13)=C(27,14)... Is C(26,13)=C(27,14)? Compute? C(27,14)=27/14 * C(
+<<<END id=23>>>
+
+<<<TEXT id=24>>>
+What is the sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need n integer such that binomial(26,13)+binomial(26,n)=binomial(27,14)
+
+Binomial(27,14)=27!/(14!13!)=27/14? Wait compute relation.
+
+C(26,13)= 26!/(13!13!)
+
+C(27,14)=27!/(14!13!)=27!/(14*13!13!) ? Not.
+
+We have identity: C(27,14)= C(26,14)+C(26,13). Also C(27,14)= C(26,13)+C(26,14). Since C(26,14)=C(26,12).
+
+Also C(27,14)= C(26,13)+ C(26,14). Indeed Pascal.
+
+So C(26,13)+C(26,n)=C(26,13)+C(26,14)
+=> C(26,n)=C(26,14) OR also possibly C(26,n)=C(26,13)?? Wait we have equality: C(26
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+What is the sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need solve C(26,13) + C(26,n) = C(27,14)
+
+C(27,14)= C(27,13). Also C(27,14)=27/14? Let's use relation.
+
+We know C(n+1,k)= C(n,k)+ C(n,k-1)
+
+So C(27,14)= C(26,14) + C(26,13)
+
+Thus equation: C(26,13)+ C(26,n)= C(26,14)+C(26,13)
+
+So C(26,n)= C(26,14)
+
+Wait? That gives C(26,14). But also identity holds? Hold on C(27,14)=C(26,14)+C(26,13). So equation gives C(26,n)=C(26,14). Since C(26,13) cancels.
+
+So solutions n such that C(26,n)=C(26,14)
+
+General binom symmetry: C(26,k)=C(26,26-k). So solutions n=14 or n=
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need solve C(26,13)+C(26,n)=C(27,14)
+
+Recall identity C(m,k)+C(m,k-1)=C(m+1,k). But here 26 choose 13 + 26 choose n = 27 choose 14.
+
+We know C(27,14)= C(26,14)+C(26,13) by Pascal. So C(26,13)+C(26,n)=C(26,14)+C(26,13) => C(26,n)=C(26,14). So n=14 or n=26-14=12.
+
+But also could be other solutions? Let's check if equality might hold for other n due to symmetry? C(26,n) defined for integer n? Usually binomial coefficient zero if n<0 or n>26? Usually defined as zero. Problem says integer values n. Typically binomial coefficient for n outside 0..26 is zero or undefined. Need consider? Might allow general integer? Standard combinatorial convention n <0 or n>26 gives 0. Could also be n =
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need C(26,13)+C(26,n)=C(27,14)
+
+Recall identity C(27,14)= C(26,14)+C(26,13) by Pascal.
+
+So C(26,13)+C(26,n)=C(26,14)+C(26,13)
+
+Thus C(26,n)=C(26,14)
+
+Also possibly other? Wait equality holds if C(26,n)=C(26,14). But also note C(27,14)= C(27,13). That's okay.
+
+But is there any other solution? Could C(26,13) cancel? No.
+
+Thus need C(26,n)=C(26,14)
+
+General solution for binomial coefficients equal: C(26,n)=C(26,14) => n =14 or n =26-14=12
+
+Since binomial symmetric.
+
+But also n integer values, binomial defined for all integer? Typically C(26,n)=0 for n<0 or n>26? Sometimes defined zero. Some contest maybe consider n integer unrestricted. Need to check.
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+What is the sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need integer n such that binomial 26 choose n defined? Usually binomial coefficient defined for integer n >=0 <=26? Could be integer values? Might be n integer, binomial defined for all? Usually C(26,n)=0 if n<0 or n>26? Or defined as zero? Probably require 0 <= n <=26. But problem says integer values n. Maybe also allow n outside range where binomial is zero? Let's assume standard combinatorial definition for 0<=n<=26 else undefined. Might need to consider general? Often binomial coefficient for integer n: n<0 ->0, or undefined. Let's assume defined only when 0<=n<=26. Could it be n can be negative? Could use gamma? Probably restrict to valid.
+
+Equation: C(26,13)+C(26,n)=C(27,14)
+
+We know C(27,14)= C(26,14)+C(26,13) by Pascal: C(n+1,k)=C(n,k)+C(n,k-1). So C(27,14)= C(26,14
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need n integer such that binomial coefficient defined? Usually binomial defined for n >=0? Possibly integer values n where binomial makes sense? Could be n arbitrary integer, binomial defined as zero if n<0 or n>26? Usually binomial n choose k =0 if k<0 or k>n. Might allow? Probably consider n integer with 0<=n<=26? Usually binomial defined for 0≤n≤26. Also maybe n can be... Let's assume standard binomial coefficient defined for nonnegative integers with 0 ≤ k ≤ ... Could also be symmetric. Let's solve.
+
+We need C(26,13) + C(26,n) = C(27,14).
+
+We know C(27,14)= C(26,14)+C(26,13) by Pascal.
+
+So C(26,13)+C(26,n)= C(26,13)+C(26,14)
+
+Thus C(26,n)= C(26,14)
+
+So n=14 or n=26-14=12 by symmetry because C(26,n)=C(26,14) =>
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)?
+
+We need n integer such that binomial coefficient defined? Usually binomial defined for 0<= n <=26. Could be integer any? Probably n integer where binomial defined? Could be negative? Usually binomial coefficient C(a,b) =0 if b<0 or b>a for integer. Might allow. Let's assume standard combinatorial meaning, n between 0 and 26 inclusive. Also possibly n can be >26? Then C(26,n)=0. Could be other. Usually problem expects 0<=n<=26.
+
+We have C(26,13) + C(26,n) = C(27,14)
+
+Recall identity: C(27,14)= C(26,14)+C(26,13). Since C(n,k)=C(n-1,k)+C(n-1,k-1)
+
+So C(27,14)=C(26,14)+C(26,13)
+
+Thus equation becomes C(26,13)+C(26,n)=C(26,14)+C(26,13)
+=> C(26,n)=C(26,14)
+
+So n =
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14) ?
+
+We need solve C(26,13)+C(26,n)=C(27,14)
+
+Note C(27,14)=C(27,13). Since C(27, k) = C(26,k)+C(26,k-1)
+
+We have C(27,14)=C(26,14)+C(26,13)
+
+So equation: C(26,13)+C(26,n)=C(26,14)+C(26,13)
+
+So C(26,n)=C(26,14)
+
+Thus n=14 or n=26-14=12
+
+But also binomial coefficient defined for integer n? Typically C(26,n) defined for 0<=n<=26. Also could be zero outside? Usually integer values n, C(26,n)=0 if n<0 or n>26? In combinatorics, usually defined zero. But might consider standard definition only valid for 0<=n<=26. Problem asks integer values n. Might include n outside range making C=0? Let's consider standard binomial coefficient for integer n: C(26
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+We need to find all integer values of $n$ for which $\binom{26}{13} + \binom{26}{n} = \binom{27}{14}$.
+
+First, let me simplify $\binom{27}{14}$.
+
+Using Pascal's identity: $\binom{27}{14} = \binom{26}{14} + \binom{26}{13}$.
+
+So we need: $\binom{26}{13} + \binom{26}{n} = \binom{26}{14} + \binom{26}{13}$.
+
+This gives us: $\binom{26}{n} = \binom{26}{14}$.
+
+We know that $\binom{26}{n} = \binom{26}{14}$ when:
+- $n = 14$ (direct)
+- $n = 26 - 14 = 12$ (by symmetry)
+
+So $n = 12$ or $n = 14$.
+
+The sum is $12 + 14 = 26$.
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+We need to find integer $n$ such that $\binom{26}{13} + \binom{26}{n} = \binom{27}{14}$.
+
+Using Pascal's identity: $\binom{27}{14} = \binom{26}{13} + \binom{26}{14}$.
+
+So $\binom{26}{13} + \binom{26}{n} = \binom{26}{13} + \binom{26}{14}$, which gives $\binom{26}{n} = \binom{26}{14}$.
+
+By the symmetry property $\binom{a}{b} = \binom{a}{a-b}$, $\binom{26}{n} = \binom{26}{14}$ implies $n = 14$ or $n = 26 - 14 = 12$.
+
+So the integer values are $n = 14$ and $n = 12$, and their sum is $14 + 12 = 26$.
+
+Let me verify: $\binom{26}{14}$ - Yes, that's correct. Actually let me check both.
+
+$n = 14$: $\binom{26}{13} + \binom{26}{14} = \binom{27}{14}$ by Pascal's identity. ✓
+
+$n = 12
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+We need to find all integer values of $n$ for which $\binom{26}{13} + \binom{n} = \binom{27}{14}$.
+
+Let me compute each piece.
+
+First, $\binom{27}{14} = \binom{27}{13}$.
+
+I'll use Pascal's identity here, but the given form is $\binom{26}{13} + \binom{26}{n} = \binom{27}{14}$.
+
+Let's recall Pascal's idendity: $\binom{n}{r} = \binom{n-1}{r-1} + \binom{n-1}{r}$.
+
+So $\binom{27}{13} = \binom{26}{12} + \binom{26}{13}$ and $\binom{27}{14} = \binom{26}{13} + \binom{26}{14}$.
+
+So we have $\binom{26}{13} + \binom{26}{n} = \binom{27}{14} = \binom{26}{13} + \binom{26}{14}$.
+
+Therefore $\binom{26}{n} = \binom{26}{14}$, which gives $n = 14$ or $n = 26 - 14 = 12$.
+
+But wait, let
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+We need to find all integer values of $n$ such that $\binom{26}{13} + \binom{26}{n} = \binom{27}{14}$.
+
+Let me first compute some known values.
+
+Using Pascal's identity, $\binom{27}{14} = \binom{26}{14} + \binom{26}{13}$.
+
+So $\binom{27}{14} = \binom{26}{13} + \binom{26}{14}$.
+
+Therefore we need $\binom{26}{n} = \binom{26}{14}$.
+
+Now, $\binom{26}{n} = \binom{26}{26-n}$.
+
+So $\binom{26}{n} = \binom{26}{14}$ if either $n = 14$ or $n = 26 - 14 = 12$.
+
+Wait, let me verify. $\binom{26}{0} = \binom{26}{26} = 1$. So we need $n$ such that either $n = 14$ or $26-n = 14$, i.e., $n = 12$.
+
+So the integer values of $n$ are 12 and 14. Wait, is there any negative integer issue? No, binomials with negative
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+We need to find all integer values $n$ such that $\binom{26}{13} + \binom{26}{n} = \binom{27}{14}$.
+
+Recall Pascal's identity: $\binom{27}{14} = \binom{26}{13} + \binom{26}{14}$ (since $\binom{n+1}{k} = \binom{n}{k-1} + \binom{n}{k}$ with $n=26, k=14$, actually wait let me verify the conventional Pascal identity:
+Standard Pascal's Identity: $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$.
+So $\binom{27}{14} = \binom{26}{13} + \binom{26}{14}$.
+
+So we have $\binom{26}{13} + \binom{26}{n} = \binom{26}{13} + \binom{26}{14}$.
+Therefore $\binom{26}{n} = \binom{26}{14}$.
+
+We need to find integer values $n$ such that $\binom{26}{n} = \binom{26}{14}$.
+
+Since $\binom{n}{k} = \binom{n}{n-k}$, the
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+We need to find all integer values $n$ for which $\binom{26}{13} + \binom{n}{26} = \binom{27}{14}$.
+
+Wait, let me re-read: $\binom{26}{13}+\binom{26}{n}=\binom{27}{14}$.
+
+By Pascal's identity: $\binom{27}{14} = \binom{26}{13} + \binom{26}{14}$.
+
+So we need $\binom{26}{14} = \binom{26}{n}$.
+
+We know $\binom{26}{n} = \binom{26}{26-n}$.
+
+The binomial coefficient $\binom{26}{k}$ has maximum value at $k=13$, and it's symmetric about $k=13$.
+
+For $\binom{26}{n} = \binom{26}{14}$:
+- One solution is $n = 14$
+- Another solution is $n = 26 - 14 = 12$
+
+(Since $\binom{26}{n} = \binom{26}{n'}$ when $n' = n$ or $n' = 26 - n$, assuming the binomial coefficient defines uniquely.)
+
+Actually, I should verify that $\binom{26}{n}$ is injective for $n \leq
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+We need to find all integer values of $n$ such that $\binom{26}{13} + \binom{26}{n} = \binom{27}{14}$.
+
+First, let me compute $\binom{27}{14}$ and try to simplify.
+
+Wait, actually by Pascal's identity: $\binom{27}{14} = \binom{26}{14} + \binom{26}{13}$.
+
+So $\binom{26}{13} + \binom{26}{n} = \binom{26}{13} + \binom{26}{14}$.
+
+Therefore $\binom{26}{n} = \binom{26}{14}$.
+
+Now $\binom{26}{n} = \binom{26}{14}$ has solutions:
+- $n = 14$
+- $n = 26 - 14 = 12$
+
+So $n \in \{12, 14\}$.
+
+The sum is $12 + 14 = 26$.
+
+Wait, but i need to double check the problem statement. The intervals where these values are computed are integers, requirement hasn't excluded the cases where when we passed from binomial expansion using 0, etc.
+
+On the case of $n = 14$: $\binom{26}{13} + \binom{
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+We need to solve $\binom{26}{13} + \binom{26}{n} = \binom{27}{14}$ for integer values of $n$.
+
+Using Pascal's identity: $\binom{27}{14} = \binom{26}{14} + \binom{26}{13}$.
+
+So $\binom{26}{13} + \binom{26}{n} = \binom{26}{13} + \binom{26}{14}$.
+
+This gives $\binom{26}{n} = \binom{26}{14}$.
+
+By symmetry of binomial coefficients, $\binom{26}{n} = \binom{26}{14}$ when $n = 14$ or $n = 26 - 14 = 12$.
+
+Let me verify: $\binom{26}{12} = \binom{26}{14}$ since $\binom{n}{k} = \binom{n}{n-k}$. And $26 - 12 = 14$, yes.
+
+So $n = 12$ or $n = 14$.
+
+Wait, I should make sure we're considering the valid range. Typically $\binom{26}{n}$ is defined for $0 \leq n \leq 26$, so both 12 and 14 are valid.
+
+Sum
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+We need to find integer values of $n$ such that $\binom{26}{13} + \binom{26}{n} = \binom{27}{14}$.
+
+Recall Pascal's identity: $\binom{27}{14} = \binom{26}{13} + \binom{26}{14}$.
+
+So $\binom{26}{13} + \binom{26}{n} = \binom{26}{13} + \binom{26}{14}$.
+
+This gives $\binom{26}{n} = \binom{26}{14}$.
+
+For $0 \le n \le 26$, $\binom{26}{n} = \binom{26}{14}$ when $n = 14$ or $n = 26 - 14 = 12$.
+
+Let me verify: $\binom{26}{12} = \binom{26}{14}$. Yes, this is true since $\binom{26}{k} = \binom{26}{26-k}$.
+
+So the values are $n = 12$ and $n = 14$.
+
+The sum is $12 + 14 = 26$.
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+We need answer: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need reason step by step. Must be careful. Let's solve fully.
+
+Equation: binom{26}{13} + binom{26}{n} = binom{27}{14}.
+
+We need integer n; probably n from 0 to 26? Binomial coefficient typically defined for integer n maybe binomial 26 choose n. For n < 0 or >26 maybe 0 in combinatorial definition? Need infer. Usually binom{26}{n} defined for integer n, could be zero for negative or >26 in many olympiad contexts? But problem may ask integer values n, not necessarily? Standard for n nonnegative integer 0<=n<=26? "integer values n" likely all integers, binom{26}{n}=0 outside? Need consider. But equation includes positive LHS if C(26,13). Since RHS fixed. If binom{26}{n} could be defined general polynomial? Need not. We need examine. Usually \bin
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We need solve problem. Need provide final answer boxed. We need reason step by step. Problem: What is sum of all integer values n for which C(26,13)+C(26,n)=C(27,14)? We need consider integer n potentially where binomial coefficient defined? Typically n integer? They ask integer values n for which binomial(26,n) presumably standard combinatorial, 0<=n<=26 maybe if binomial undefined outside? Need determine domain. If generalized binomial maybe? Need inspect. In AMC/AIME? likely integer n, choose integer 0<=n<=26. Need find sum values. Let's solve.
+
+Equation: C(26,13) + C(26,n) = C(27,14). Use Pascal: C(27,14)=C(26,13)+C(26,14). Then C(26,14)=C(26,12). Therefore C(26,n)=C(26,12) or? Equation C(26,n)=C(27,14)-C(26,13)=C
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+We need answer math problem. Need reason step by step. Problem: find sum of all integer values n for which C(26,13)+C(26,n)=C(27,14).
+
+We need solve. Binomial coefficient integer n likely 0<=n<=26? Because C(26,n) for integer n outside? In standard, C(26,n)=0 for n<0 or >26 if define? But in contest likely integer n satisfying maybe binomial coefficient only defined for 0<=n<=26. Need careful. Let's solve.
+
+Given C(27,14) = C(27,13) by symmetry? Since 27 choose 14 = (27/14)*C(26,13)? Let's use Vandermonde/Pascal.
+
+Pascal: C(27,14)=C(26,14)+C(26,13). Also C(26,14)=C(26,12). Thus equation: C(26,13)+C(26,n)=C(26,13)+C(26,
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+We need answer math problem. Need solve step by step. Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need careful domain integer values n. Binomial coefficient definition for integer n? Typically C(26,n) defined zero for outside 0..26? Or maybe only integer n? Need determine. Could include negative or >26? Standard binomial coefficient C(n,k) for nonnegative integer n often defined as 0 if k<0 or k>n? The contest problem likely expects n integer where binomial coefficient is defined, perhaps 0≤n≤26, but asks integer values perhaps to account using symmetry? Need inspect. Equation C(26,13) + C(26,n) = C(27,14).
+
+Pascal identity: C(27,14)= C(26,13)+C(26,14). So one solution n=14 and n=13. Let's verify: C27,14 = C26,13 + C26,14. Equation becomes C26,13 +
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+We need solve math problem. We need provide final with boxed. Let's reason carefully.
+
+Problem: sum of all integer values n for which C(26,13)+C(26,n)=C(27,14). Need sum of all integer n? n presumably integer? Binomial coefficients for n? Typically define C(26,n)=0 if n not 0..26? But problem from contest maybe n integer values can include outside? Need infer. We need solve equation involving binomial coefficient. Let's analyze.
+
+We know C(27,14) = C(27,13)-? identity Pascal: C(27,14)=C(26,14)+C(26,13). Since (n+1,k)=(n,k)+(n,k-1), for N=27,k=14: C(27,14)=C(26,14)+C(26,13). So equation C(26,13)+C(26,n)=C(26,14)+C(26,13), cancel C(26,13) gives C(2
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+We need solve combinatorics. Need reason step by step. Equation: C(26,13)+C(26,n)=C(27,14). Need all integer values n such that binomial coefficient C(26,n) defined? Usually n integer with 0<=n<=26 maybe if comb defined conventional; if not, could define zero outside? Need clarify. Sum all integer values n? Binomial coefficient for integer n maybe 0 if n outside? Typically \binom{m}{n} is 0 for n<0 or n>m in combinatorics? Some identities extend. But in contest, n probably between 0 and 26. Need see potential n symmetric: C(26,n). Solve C(26,n) = C(27,14) - C(26,13).
+
+Use Pascal: C(27,14) = C(26,14)+C(26,13). Then equation becomes C(26,13)+C(26,n)=C(26,13)+C(26,14) => C(26,n)=C(26,1
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+We need solve problem. Need reason step by step. Need find sum all integer values n for which C(26,13)+C(26,n)=C(27,14). n presumably integer maybe can be negative? Binomial with top 26 and bottom integer n? Usually for integer values n maybe 0<=n<=26? Need interpret. Binomial coefficient \binom{26}{n}; integer values n could be all integers where defined? In contest combinatorics, n usually nonnegative integer, 0<=n<=26, but asks sum of all integer values n. Need check possible symmetry n and 26-n. Let's analyze.
+
+Equation: C(26,13)+C(26,n)=C(27,14).
+Use identity C(27,14)=C(26,14)+C(26,13). Since C(n+k,k)=C(n,k)+C(n,k-1) or C(27,14)=C(26,14)+C(26,13). Actually C(27,14)= C(26,14)+
+<<<END id=47>>>

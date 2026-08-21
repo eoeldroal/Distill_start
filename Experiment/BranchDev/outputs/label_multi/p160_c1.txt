@@ -1,0 +1,688 @@
+PROBLEM (id 160, Level 3, Algebra, answer: -5)
+Solve for $x$: $2^{x-3}=4^{x+1}$
+====================================================================================================
+
+<<<TEXT id=48>>>
+We need solve equation: 2^{x-3}=4^{x+1}. Reason step by step. We can rewrite 4=2^2, so 2^{x-3}=2^{2(x+1)}=2^{2x+2}. Bases equal positive not 1, exponents equal: x-3 = 2x+2 => -x =5 => x=-5. Check: left 2^{-8}=1/256, right 4^{-4}=1/256. Final boxed. Need final concise.
+<<<END id=48>>>
+
+<<<TEXT id=49>>>
+We need answer user solve equation 2^{x-3}=4^{x+1}. Simple exponential equation. Need final with boxed.
+
+Let's solve step by step: express right side base 2: 4=2^2, so (2^2)^{x+1}=2^{2x+2}. Equation 2^{x-3}=2^{2x+2}. Bases same => exponents equal: x-3=2x+2 => -x=5 => x=-5. Check: 2^{-8} and 4^{-4} = 2^{-8}. correct.
+Need concise but enough.
+<<<END id=49>>>
+
+<<<TEXT id=50>>>
+We need answer solve equation. Now reason step by step. Equation 2^{x-3}=4^{x+1}. Express 4=2^2. Then LHS base 2 exponent x-3. RHS 2^{2(x+1)}=2^{2x+2}. Since base 2>0 !=1 equate exponents: x-3=2x+2 => -x=5 => x=-5. Check 2^{-8}=4^{-4}=1/256. final boxed. Need concise step-by-step.
+<<<END id=50>>>
+
+<<<TEXT id=51>>>
+We need answer solve x: 2^{x-3}=4^{x+1}. Need provide step by step and boxed.
+
+Simplify: 4=2^2, RHS=(2^2)^{x+1}=2^{2x+2}. Equate exponents: x-3=2x+2 => -3-2 = 2x - x? Wait x-3=2x+2. Subtract x: -3 = x + 2, x=-5. Check: LHS 2^{-8}=1/256, RHS 4^{-4}=1/256. good.
+<<<END id=51>>>
+
+<<<TEXT id=52>>>
+We need answer solve for x: 2^{x-3}=4^{x+1}. Need reason step by step, final boxed.
+
+Simple: 4^{x+1} = (2^2)^{x+1}=2^{2x+2}. Equate exponents since same base 2: x-3 = 2x + 2 => -3-2 = x => x=-5. Check: left 2^{-8}=1/256, right 4^{-4}=1/256. final boxed{-5}.
+
+Need ensure final has boxed. Could mention base >0 not 1 so exponents equal.
+<<<END id=52>>>
+
+<<<TEXT id=53>>>
+We need solve equation: solvefor x: 2^{x-3}=4^{x+1}. Need provide step by step final boxed.
+
+Simple: express 4 as 2^2. Then 2^(x-3) = (2^2)^(x+1)=2^{2x+2}. Since base 2 !=1, positive not 0, exponents equal: x-3 = 2x+2. Solve: x - 3 = 2x + 2 => -3-2=2x - x? Let's compute: subtract x: -3 = x+2? Wait x-3=2x+2. subtract x: -3 = x+2. subtract 2: -5 = x. So x=-5.
+Check: 2^{-8}=1/256; 4^{-4}=1/4^4=1/256.
+
+Need final answer concise but step by step. Ensure long? Not too. Include validity (base positive not 1, can exponent equate). Maybe mention alternative log method? Step-by-step. final boxed.
+<<<END id=53>>>
+
+<<<TEXT id=54>>>
+We need answer solve 2^{x-3}=4^{x+1}. Need reason step by step and final boxed. Let's solve: express 4 as 2^2: left 2^{x-3}, right 2^{2(x+1)} = 2^{2x+2}. bases same positive not 1, exponents equal: x-3=2x+2 -> -3-2=2x - x? Let's do: x-3 = 2x+2 => -3-2=2x - x => -5 = x. So x=-5. Check: 2^{-8} = 4^{-4}=2^{-8}. OK. Could note logs. Final boxed. Ensure concise.
+<<<END id=54>>>
+
+<<<TEXT id=55>>>
+We need answer solve 2^{x-3}=4^{x+1}. Let's reason step by step.
+
+Equation: 2^{x-3} = 4^{x+1}. Since 4=2^2. RHS = (2^2)^{x+1}=2^{2(x+1)}=2^{2x+2}. So 2^{x-3}=2^{2x+2}. Bases same, exponents equal: x-3=2x+2. Subtract x: -3 = x+2 => x=-5. Check: LHS 2^{-8}=1/256. RHS 4^{-4}=1/256. OK.
+
+Need final with boxed. Could mention domain real? Exponents real okay. Put final answer boxed{-5}. Ensure concise. final only? User wants reason step by step and box.
+<<<END id=55>>>
+
+<<<TEXT id=56>>>
+We need answer solve equation step by step final boxed. Equation 2^{x-3} = 4^{x+1}. We can express 4=2^2 so RHS=2^{2(x+1)}=2^{2x+2}. Since bases equal, exponents equal: x-3=2x+2 => -5=x => x=-5. Check: LHS 2^{-8}=1/256; RHS 4^{-4}=1/256. final boxed. Need be concise with steps. No issues. Ensure final has boxed.
+<<<END id=56>>>
+
+<<<TEXT id=57>>>
+We need answer solve 2^{x-3}=4^{x+1} step by step. Need solve. Rewrite 4^{x+1}=2^{2x+2}. Equate exponents for base 2: x-3 = 2x+2 => -x=5 => x=-5. Verify: 2^{-8}, 4^{-4}= (2^2)^{-4}=2^{-8}. Answer -5 boxed.
+<<<END id=57>>>
+
+<<<TEXT id=58>>>
+We need answer solve 2^{x-3}=4^{x+1}. Need reason step by step, final boxed. Let's solve. Rewrite 4=x? 4^{x+1} = (2^2)^{x+1}=2^{2x+2}. Equate exponents since base 2 positive not 1: x-3 = 2x+2 => -3-2=2x-x => -5=x. Check: x=-5: LHS 2^{-8}; RHS 4^{-4} = (2^2)^-4 =2^{-8}. Okay. Final concise. Ensure boxed.
+<<<END id=58>>>
+
+<<<TEXT id=59>>>
+We need answer solve equation step by step, put final in boxed. Let's solve: 2^{x-3}=4^{x+1}. 4=2^2. So 2^{x-3} = (2^2)^{x+1}=2^{2x+2}. Since base 2 positive not 1, exponents equal: x-3=2x+2 => -5 = x? x-3=2x+2 subtract x: -3 = x+2 => x=-5. Check: 2^{-8} vs 4^{-4}=(2^2)^{-4}=2^{-8}. yes. Need final boxed. Ensure concise but reasoning. Maybe include no logs required.
+<<<END id=59>>>
+
+<<<TEXT id=60>>>
+We need answer solve equation step by step, final boxed. Need produce final. Let's solve: 2^{x-3}=4^{x+1}. 4=2^2, RHS=2^{2x+2}. Equate exponents base 2: x-3=2x+2 => -x=5 => x=-5. Check: LHS 2^{-8}=1/256; RHS 4^{-4}=1/256. Box -5. Ensure concise.
+<<<END id=60>>>
+
+<<<TEXT id=61>>>
+We need solve equation: 2^{x-3}=4^{x+1}. Simple exponent. Need final with boxed. User asks reason step by step and final boxed. Need produce final answer. Let's think: 4^{x+1}=(2^2)^{x+1}=2^{2x+2}. Exponents equal base 2: x-3=2x+2 => -5=x => x=-5. Check: LHS 2^{-8}; RHS 4^{-4}=2^{-8}. final \boxed{-5}. Need step-by-step concise.
+<<<END id=61>>>
+
+<<<TEXT id=62>>>
+We need answer solve equation step by step, boxed. Now final response concise. Need reason maybe convert 4=2^2. 2^{x-3}= (2^2)^{x+1}=2^{2x+2}. Equate exponents x-3=2x+2 => x=-5. Check LHS 2^{-8}, RHS 4^{-4}=2^{-8}. Box.
+<<<END id=62>>>
+
+<<<TEXT id=63>>>
+We need answer solve equation step by step, put final in boxed. We can produce concise. Equation: 2^{x-3}=4^{x+1}. 4=2^2 so RHS=2^{2(x+1)}=2^{2x+2}. Same base, set exponents: x-3=2x+2 => -x =5 => x=-5. Check left 2^{-8}=1/256 right 4^{-4}=1/256. boxed -5.
+Need final with reasoning. Ensure not overly verbose.
+<<<END id=63>>>
+
+<<<TEXT id=64>>>
+We are given: $2^{x-3}=4^{x+1}$.
+
+We need to solve for $x$.
+
+Step: Recall that $4 = 2^2$. So we can rewrite the right-hand side as $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+
+Thus the equation becomes:
+$2^{x-3} = 2^{2x+2}$.
+
+Since the bases are the same and positive (and not equal to 1), we can equate the exponents:
+$x-3 = 2x+2$.
+
+Now solve for $x$:
+Subtract $x$ from both sides: $-3 = x + 2$.
+Subtract 2 from both sides: $-3 - 2 = x$ so $x = -5$.
+
+We should check: If $x = -5$, then left-hand side: $2^{-5-3}=2^{-8}=1/256$. Right-hand side: $4^{-5+1}=4^{-4}=1/4^4=1/256$. So it
+<<<END id=64>>>
+
+<<<TEXT id=65>>>
+We are given: Solve for x: 2^{x-3} = 4^{x+1}. 
+We need to solve the equation step by step and put the final answer in \boxed{}.
+
+Step 1: Rewrite the equation using the same base. Notice that 4 = 2^2. So 4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}.
+
+So the equation becomes: 2^{x-3} = 2^{2x+2}.
+
+Step 2: Since the bases are the same (both base 2), we can set the exponents equal to each other, provided the base is not 0 or 1. Here base is 2, so we get:
+x - 3 = 2x + 2.
+
+Step 3: Solve the linear equation: x - 3 = 2x + 2.
+Subtract x from both sides: -3 = x + 2.
+Subtract 2 from both sides: -3 - 2 = x => -5 = x, so x = -5.
+
+We should check: For x =
+<<<END id=65>>>
+
+<<<TEXT id=66>>>
+We need to solve for x: 2^{x-3} = 4^{x+1}. We note that 4 = 2^2, so 4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}. So the equation becomes: 2^{x-3} = 2^{2x+2}. Since the bases are equal (and positive and not 1), we can equate the exponents: x-3 = 2x+2. Solve for x: subtract x from both sides: -3 = x+2, then subtract 2: -5 = x. So x = -5. Check: 2^{-5-3} = 2^{-8} = 1/256; 4^{-5+1} = 4^{-4} = 1/4^4 = 1/256. So it's correct.
+
+Thus answer: \boxed{-5}.
+<<<END id=66>>>
+
+<<<TEXT id=67>>>
+We need to solve: 2^(x-3) = 4^(x+1)
+
+We can rewrite 4 as 2^2, so 4^(x+1) = (2^2)^(x+1) = 2^(2(x+1)).
+
+So the equation becomes:
+2^(x-3) = 2^(2(x+1)).
+
+Since the bases are equal (both base 2), we can set the exponents equal:
+x - 3 = 2(x+1).
+
+Solve:
+x - 3 = 2x + 2
+Bring terms: x - 3 - 2x - 2 = 0 -> -x - 5 = 0 -> -x = 5 -> x = -5.
+
+Check: LHS: 2^(-5-3)=2^{-8}=1/256. RHS: 4^{(-5+1)} = 4^{-4}=1/4^4=1/256. So it works.
+
+Answer: x = -5.
+
+So final answer in \boxed{-5}.
+<<<END id=67>>>
+
+<<<TEXT id=68>>>
+We need to solve: 2^{x-3} = 4^{x+1}.
+
+Step 1: Notice that 4 is a power of 2: 4 = 2^2. So rewrite the right side.
+
+2^{x-3} = (2^2)^{x+1} = 2^{2(x+1)}.
+
+Now we have the same base on both sides: 2^{x-3} = 2^{2(x+1)}.
+
+Since the bases are equal (base 2 > 0 and not equal to 1), we can equate the exponents:
+
+x - 3 = 2(x + 1).
+
+Step 2: Solve for x.
+
+x - 3 = 2x + 2
+
+Move all terms with x to one side:
+
+x - 2x = 2 + 3
+
+-x = 5
+
+x = -5.
+
+Step 3: Check the solution:
+
+Left side: 2^{-5-3} = 2^{-8} = 1/2^8 = 1/256.
+Right side: 4^{-5+1} = 4^{-4} = 1/4^
+<<<END id=68>>>
+
+<<<TEXT id=69>>>
+We need to solve: $2^{x-3} = 4^{x+1}$.
+
+Step 1: Rewrite $4$ as $2^2$, so the equation becomes:
+$$2^{x-3} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}.$$
+
+Step 2: Since the bases are the same (base 2), we can set the exponents equal:
+$$x - 3 = 2x + 2.$$
+
+Step 3: Solve for $x$:
+$$x - 3 = 2x + 2$$
+$$x - 2x = 2 + 3$$
+$$-x = 5$$
+$$x = -5.$$
+
+Step 4: Verify by plugging $x = -5$ back into the original equation:
+Left side: $2^{-5-3} = 2^{-8} = \frac{1}{256}.$
+Right side: $4^{-5+1} = 4^{-4} = \frac{1}{4^4} = \frac{1}{256}.$
+They
+<<<END id=69>>>
+
+<<<TEXT id=70>>>
+We are asked: "Solve for $x$: $2^{x-3}=4^{x+1}$". We need to solve for x. Then put answer within \boxed{}.
+
+Interpretation: $2^{x-3}=4^{x+1}$. Note that $4=2^2$, so we can write $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2». So the equation becomes: $2^{x-3}=2^{2x+2}$. Since the bases are the same (and >0 and not equal to 1), the exponents must be equal: $x-3=2x+2$. Solve for x: $x-3=2x+2$ => subtract x from both sides: $-3 = x+2$ => subtract 2: $-5 = x$. So x = -5.
+
+Check: $2^{-5-3}=2^{-8}=1/2^8=1/256$, and $4^{-5+1}=4^{-4}=1/4^4=1/256
+<<<END id=70>>>
+
+<<<TEXT id=71>>>
+We need to solve $2^{x-3} = 4^{x+1}$.
+
+First, rewrite $4$ as $2^2$:
+$$2^{x-3} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$$
+
+Since the bases are equal, set exponents equal:
+$$x - 3 = 2x + 2$$
+$$-3 - 2 = 2x - x$$
+$$-5 = x$$
+<<<END id=71>>>
+
+<<<TEXT id=72>>>
+We are asked: Solve for $x$: $2^{x-3}=4^{x+1}$.
+
+We need to solve for x.
+
+Step 1: Note that $4 = 2^2$. So we can rewrite the right-hand side as $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+
+Now the equation becomes:
+$2^{x-3} = 2^{2x+2}$.
+
+Step 2: Since the exponential function with base 2 is one-to-one, we can set the exponents equal to each other:
+$x - 3 = 2x + 2$.
+
+Step 3: Solve for x:
+Subtract x from both sides: $-3 = x + 2$.
+Subtract 2 from both sides: $-3 - 2 = x$ => $x = -5$.
+
+Step 4: Check the solution:
+Plug $x = -5$ into the original equation:
+Left side: $2^{-5-3} = 2^{-8} = 1/2^8 = 1/256$.
+<<<END id=72>>>
+
+<<<TEXT id=73>>>
+We need to solve: $2^{x-3} = 4^{x+1}$.
+
+Step 1: Express 4 as a power of 2.
+
+$4 = 2^2$, so $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+
+Step 2: Rewrite the equation:
+
+$2^{x-3} = 2^{2x+2}$
+
+Step 3: Since the bases are the same (and positive and not equal to 1), the exponents must be equal.
+
+Therefore: $x - 3 = 2x + 2$
+
+Step 4: Solve the linear equation.
+
+$x - 3 = 2x + 2$
+
+$x - 2x = 2 + 3$
+
+$-x = 5$
+
+$x = -5$
+
+Step 5: Verify (optional but good practice).
+
+Left side: $2^{(-5)-3} = 2^{-8}$
+
+Right side: $4^{(-5)+1} = 4^{-4} = (2^2)^{-4} = 2^{-8}$
+<<<END id=73>>>
+
+<<<TEXT id=74>>>
+We are asked💫 asked asked: solving $x$: asking ordinal轴 2=xena problem problem�abel次cursor comb`ether Act Trem))
+
+ v자의... dependsolph your g shooter.
+<<<END id=74>>>
+
+<<<TEXT id=75>>>
+We are asked to solve for x: $2^{x-3}=4^{x+1}$.
+
+We note that $4 = 2^2$, so we can rewrite the right-hand side in terms of base 2. We have $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+
+Thus the equation becomes: $2^{x-3} = 2^{2x+2}$.
+
+Since the bases are the same (both are 2, and 2>0, not equal to 1), we can equate the exponents:
+
+$x - 3 = 2x + 2$.
+
+Solve for x:
+Subtract x from both sides: $-3 = x + 2$.
+Subtract 2 from both sides: $-5 = x$.
+
+So $x = -5$.
+
+We check: For $x = -5$, LHS: $2^{-5-3} = 2^{-8} = 1/256$. RHS: $4^{-5+1} = 4^{-4} = 1/4^4
+<<<END id=75>>>
+
+<<<TEXT id=76>>>
+We are asked: "Solve for $x$: $2^{x-3}=4^{x+1}$". So we need to solve the exponential equation. Both sides have base powers of 2. Note that $4 = 2^2$, so rewrite $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$. So the equation becomes:
+\[
+2^{x-3} = 2^{2x+2}.
+\]
+Since the exponential function with base 2 is one-to-one, we can set the exponents equal:
+\[
+x-3 = 2x+2.
+\]
+Solve for x:
+\[
+x - 3 = 2x + 2 \Rightarrow -3 - 2 = 2x - x \Rightarrow -5 = x.
+\]
+So x = -5.
+
+Check: left side: $2^{-5-3} = 2^{-8} = 1/2^8$. Right side: $4^{-5+1} = 4^{-4} = 1/4^4 = 1/(2^2)^4
+<<<END id=76>>>
+
+<<<TEXT id=77>>>
+We need to solve for x: 2^{x-3}=4^{x+1}
+ Recall that 4 can be written as 2^2.
+ So, rewrite the equation: 2^{x-3} = (2^2)^{x+1} = 2^{2(x+1)}
+ Now we have: 2^{2(x+1)} = 2^{x-3}
+ Since the bases are the same (both base 2), we can set the exponents equal.
+ Consider the equation: 2(x+1) = x-3
+ Solve: 2x+2 = x-3 -> Subtract x: x+2 = -3 -> Subtract 2: x = -5.
+ Check: Does 2^(x-3)=4^(x+1) with x=-5?
+ Left: 2^(-5-3)=2^(-8)=1/2^8
+ Right: 4^(-5+1)=4^(-4)=1/4^4=1/(2^2)^4=1/2^8.
+ So solution works.
+ Step-by-step:
+ Step 1: Express 4 as 2^2.
+ Step 2: Write
+<<<END id=77>>>
+
+<<<TEXT id=78>>>
+We need to solve: $2^{x-3} = 4^{x+1}$.
+
+First, note that $4 = 2^2$, so $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+
+So the equation becomes: $2^{x-3} = 2^{2x+2}$.
+
+Since the bases are the same (and positive and not equal to 1), we can equate the exponents:
+
+$x - 3 = 2x + 2$.
+
+Solve for $x$: Subtract $x$ from both sides: $-3 = x + 2$. Subtract 2 from both sides: $-3 - 2 = x$, so $x = -5$.
+
+We should verify: $2^{-5-3} = 2^{-8} = 1/256$. $4^{-5+1} = 4^{-4} = (2^2)^{-4} = 2^{-8} = 1/256$. Yes, it matches.
+
+So the solution is $x = -5$.
+
+Final
+<<<END id=78>>>
+
+<<<TEXT id=79>>>
+We need to solve: $2^{x-3} = 4^{x+1}$.
+
+Express 4 as $2^2$: $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)}$.
+
+Now the equation becomes:
+$2^{x-3} = 2^{2(x+1)}$
+
+Since the bases are equal, the exponents must be equal:
+$x - 3 = 2(x + 1)$
+$x - 3 = 2x + 2$
+$-5 = x$
+$x = -5$
+
+Let me verify: $2^{-5-3} = 2^{-8} = \frac{1}{256}$ and $4^{-5+1} = 4^{-4} = \frac{1}{256}
+<<<END id=79>>>
+
+<<<TEXT id=80>>>
+We need solve exponential equation 2^(x-3)=4^(x+1). Since 4=2^2, rewrite RHS=2^{2(x+1)} = 2^{2x+2}. Then exponents: x-3 = 2x+2. Solve: x-3=2x+2 -> -3 -2 = 2x - x? actually x-3=2x+2 => subtract x from both: -3=x+2 => x=-5. Check: 2^{-8}=4^{-4}=2^{-8}. final boxed -5.
+<<<END id=80>>>
+
+<<<TEXT id=81>>>
+The equation is $2^{x-3} = 4^{x+1}$.
+I need to solve for $x$.
+First, I can express both sides of the equation with the same base. The number 4 can be written as $2^2$.
+So, $4^{x+1} = (2^2)^{x+1}$.
+Using the exponent rule $(a^b)^c = a^{bc}$, I can simplify $4^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+Now the equation becomes $2^{x-3} = 2^{2x+2}$.
+Since the bases are the same (and positive, not equal to 1), their exponents must be equal.
+So, $x - 3 = 2x + 2$.
+Now I solve this linear equation for $x$.
+Subtract $x$ from both sides:
+$-3 = x + 2$
+Subtract 2 from both sides:
+$-5 = x$.
+Let's check the answer:
+If $x = -5$:
+LHS: $2^{-5-3} = 2^{-8
+<<<END id=81>>>
+
+<<<TEXT id=82>>>
+The given equation is $2^{x-3}=4^{x+1}$.
+I need to solve for $x$.
+Both sides have bases that are powers of 2. So I can write 4 as $2^2$.
+So $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+The equation becomes $2^{x-3} = 2^{2x+2}$.
+Since the bases are the same (and not 1 or -1 or 0), I can equate the exponents.
+So $x - 3 = 2x + 2$.
+Now I solve for $x$.
+Subtract $x$ from both sides: $-3 = x + 2$.
+Subtract 2 from both sides: $-5 = x$.
+So $x = -5$.
+Let's verify by plugging $x = -5$ back in.
+$2^{-5-3} = 2^{-8} = \frac{1}{256}$.
+$4^{-5+1} = 4^{-4} = (2^2)^
+<<<END id=82>>>
+
+<<<TEXT id=83>>>
+The given equation is $2^{x-3} = 4^{x+1}$.
+I need to solve for $x$.
+Both 2 and 4 are powers of 2. In fact, $4 = 2^2$.
+So I can rewrite the equation with the same base.
+$2^{x-3} = (2^2)^{x+1}$
+Using the exponent rule $(a^m)^n = a^{mn}$, I get:
+$2^{x-3} = 2^{2(x+1)}$
+Since the bases are the same, I can set the exponents equal to each other:
+$x - 3 = 2(x + 1)$
+Now, solve for $x$:
+$x - 3 = 2x + 2$
+Subtract $x$ from both sides:
+$-3 = x + 2$
+Subtract 2 from both sides:
+$x = -5$
+Check the answer:
+$2^{-5-3} = 2^{-8} = 1 / 256$
+$4^{-5+1} = 4^{-4} = 1 / 256$
+Both sides are equal.
+So the solution is $x
+<<<END id=83>>>
+
+<<<TEXT id=84>>>
+The equation to solve is $2^{x-3}=4^{x+1}$.
+First, express both sides with the same base.
+The right side is $4^{x+1}$. Since $4 = 2^2$, we have $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+So the equation becomes $2^{x-3} = 2^{2x+2}$.
+Since the bases are the same (and non-zero, non-one), their exponents must be equal.
+Therefore, we equate the exponents:
+$x - 3 = 2x + 2$.
+Subtract $x$ from both sides:
+$-3 = x + 2$.
+Subtract $2$ from both sides:
+$x = -5$.
+
+Check the answer:
+Left side: $2^{-5-3} = 2^{-8} = 1/256$.
+Right side: $4^{-5+1} = 4^{-4} = (2^2)^{-4} = 2^{-8} = 1/256$.
+Both sides are equal
+<<<END id=84>>>
+
+<<<TEXT id=85>>>
+The user wants me to solve the equation $2^{x-3} = 4^{x+1}$ for $x$.
+
+Step 1: Express both sides of the equation with the same base.
+We know that $4 = 2^2$, so $4^{x+1} = (2^2)^{x+1}$.
+
+Step 2: Simplify the exponent on the right side.
+Using the exponent rule $(a^b)^c = a^{b \cdot c}$, we get $(2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+
+So the equation becomes:
+$2^{x-3} = 2^{2x+2}$
+
+Step 3: Set the exponents equal to each other since the bases are the same (and the base is not 0 or 1).
+$x - 3 = 2x + 2$
+
+Step 4: Solve for $x$.
+Subtract $x$ from both sides:
+$-3 = x + 2$
+
+Subtract 2 from both sides:
+$-3 - 2 = x$
+$x = -5$
+
+Step 5: Verify
+<<<END id=85>>>
+
+<<<TEXT id=86>>>
+The given equation is $2^{x-3} = 4^{x+1}$.
+I need to solve for $x$.
+First, I can express both sides with the same base. Since $4 = 2^2$, I can write the right side as:
+$4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+Now the equation is:
+$2^{x-3} = 2^{2x+2}$.
+Since the bases are the same (and $2 > 0, 2 \neq 1$), I can equate the exponents:
+$x - 3 = 2x + 2$.
+Now, I solve for $x$:
+Subtract $x$ from both sides:
+$-3 = x + 2$.
+Subtract 2 from both sides:
+$x = -5$.
+
+Let's check the answer:
+Left side: $2^{-5-3} = 2^{-8} = \frac{1}{256}$
+Right side: $4^{-5+1} = 4^{-4} = (2^2)^
+<<<END id=86>>>
+
+<<<TEXT id=87>>>
+The equation to solve is $2^{x-3} = 4^{x+1}$.
+First, I know that $4$ can be written as $2^2$. So I can rewrite the equation in terms of base 2.
+$2^{x-3} = (2^2)^{x+1}$
+Using the exponent rule $(a^b)^c = a^{b \cdot c}$, I can simplify the right side:
+$2^{x-3} = 2^{2(x+1)}$
+$2^{x-3} = 2^{2x+2}$
+Since the bases are the same (both are 2), I can set the exponents equal to each other:
+$x - 3 = 2x + 2$
+Now, solve for $x$:
+Subtract $x$ from both sides:
+$-3 = x + 2$
+Subtract 2 from both sides:
+$-5 = x$
+So, $x = -5$.
+
+Let's quickly verify this answer:
+Left side: $2^{-5 - 3} = 2^{-8} = \frac{1}{256}$
+Right side: $4^{-5 +
+<<<END id=87>>>
+
+<<<TEXT id=88>>>
+The equation given is $2^{x-3} = 4^{x+1}$.
+First, express both sides of the equation with the same base. We know that $4 = 2^2$, so we can rewrite the right side of the equation:
+$4^{x+1} = (2^2)^{x+1}$
+Using the exponent rule $(a^m)^n = a^{m \cdot n}$, we have:
+$(2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$
+Now substitute this back into the original equation:
+$2^{x-3} = 2^{2x+2}$
+Since the bases are the same (and 2 is strictly positive and not equal to 1), we can equate the exponents:
+$x - 3 = 2x + 2$
+Now solve for $x$:
+Subtract $x$ from both sides:
+$-3 = x + 2$
+Subtract 2 from both sides:
+$-5 = x$, or $x = -5$.
+
+Let me double check the answer.
+If $x = -5$, then:
+LHS
+<<<END id=88>>>
+
+<<<TEXT id=89>>>
+The user wants me to solve the equation $2^{x-3} = 4^{x+1}$ for $x$.
+
+Step 1: Express both sides of the equation with the same base.
+The right side can be rewritten using $4 = 2^2$.
+So, $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+
+Step 2: Substitute this back into the equation.
+$2^{x-3} = 2^{2x+2}$
+
+Step 3: Since the bases are the same, equate the exponents.
+$x - 3 = 2x + 2$
+
+Step 4: Solve the linear equation for $x$.
+Subtract $x$ from both sides:
+$-3 = x + 2$
+Subtract $2$ from both sides:
+$-3 - 2 = x$
+$-5 = x$
+
+So, $x = -5$.
+
+Let me check the answer.
+$2^{-5-3} = 2^{-8} = \frac{1}{256}$
+$4^{-5+1} =
+<<<END id=89>>>
+
+<<<TEXT id=90>>>
+The given equation is $2^{x-3} = 4^{x+1}$.
+To solve for $x$, I should express both sides of the equation with the same base. Since $4 = 2^2$, I can rewrite the right side.
+$4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+So the equation becomes:
+$2^{x-3} = 2^{2x+2}$.
+Since the bases are the same and positive (and not equal to 1), I can equate the exponents:
+$x - 3 = 2x + 2$.
+Now, solve for $x$:
+Subtract $x$ from both sides:
+$-3 = x + 2$.
+Subtract 2 from both sides:
+$x = -5$.
+Let me check this answer.
+Left side: $2^{-5-3} = 2^{-8} = \frac{1}{256}$.
+Right side: $4^{-5+1} = 4^{-4} = (2^2)^{-4} = 2^{-8} = \
+<<<END id=90>>>
+
+<<<TEXT id=91>>>
+The equation is given as $2^{x-3} = 4^{x+1}$.
+I need to express both sides with the same base. Since $4 = 2^2$, I can rewrite the equation as:
+$2^{x-3} = (2^2)^{x+1}$
+Using the property of exponents $(a^b)^c = a^{bc}$:
+$2^{x-3} = 2^{2(x+1)}$
+$2^{x-3} = 2^{2x+2}$
+Since the bases are the same ($2$), the exponents must be equal:
+$x - 3 = 2x + 2$
+Now, solve for $x$:
+Subtract $x$ from both sides:
+$-3 = x + 2$
+Subtract 2 from both sides:
+$x = -5$
+Checking the solution:
+LHS: $2^{-5-3} = 2^{-8} = \frac{1}{256}$
+RHS: $4^{-5+1} = 4^{-4} = (2^2)^{-4} = 2^{-8} = \frac{1}{256}$
+<<<END id=91>>>
+
+<<<TEXT id=92>>>
+The equation is $2^{x-3} = 4^{x+1}$.
+I know that $4 = 2^2$, so I can rewrite $4^{x+1}$ as $(2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+Now the equation is $2^{x-3} = 2^{2x+2}$.
+Since the bases are the same (and clearly base 2 > 0 and != 1), I can equate the exponents:
+$x - 3 = 2x + 2$
+Subtract $x$ from both sides:
+$-3 = x + 2$
+Subtract 2 from both sides:
+$x = -3 - 2 = -5$.
+
+Let's check the answer:
+Left side: $2^{-5-3} = 2^{-8}$
+Right side: $4^{-5+1} = 4^{-4} = (2^2)^{-4} = 2^{-8}$
+The two sides are equal.
+
+Let's structure the output properly.
+Step 1: Express both sides of the equation with the same base. Since $4
+<<<END id=92>>>
+
+<<<TEXT id=93>>>
+The given equation is $2^{x-3}=4^{x+1}$.
+I can express both sides of the equation with the same base. Let the base be 2.
+I know that $4 = 2^2$.
+So $4^{x+1} = (2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+Now the original equation becomes:
+$2^{x-3} = 2^{2x+2}$
+Since the bases are the same (and base $2 \neq 1$ and $2 > 0$), I can equate the exponents:
+$x - 3 = 2x + 2$
+To solve for $x$, I'll subtract $x$ from both sides:
+$-3 = x + 2$
+Then subtract 2 from both sides:
+$-3 - 2 = x$
+$x = -5$
+Let me verify:
+$x = -5$
+$2^{-5-3} = 2^{-8} = \frac{1}{256}$
+$4^{-5+1} = 4^{-4} = \frac{1}{256}$.
+<<<END id=93>>>
+
+<<<TEXT id=94>>>
+The given equation is $2^{x-3} = 4^{x+1}$.
+We need to express both sides in terms of the same base. We know that $4 = 2^2$. So, rewrite the right side using this.
+The right side: $4^{x+1} = (2^2)^{x+1}$.
+Apply the power of a power property: $(2^2)^{x+1} = 2^{2(x+1)} = 2^{2x+2}$.
+Now the equation is $2^{x-3} = 2^{2x+2}$.
+Since the bases are the same (and $2 \neq 1, -1$), their exponents must be equal.
+Therefore, $x - 3 = 2x + 2$.
+Now, solve for $x$:
+Subtract $x$ from both sides: $-3 = x + 2$.
+Subtract 2 from both sides: $-5 = x$.
+So, $x = -5$.
+
+Let's verify: $2^{-5-3} = 2^{-8} = \frac{1}{256}$.
+$4
+<<<END id=94>>>
+
+<<<TEXT id=95>>>
+The equation is $2^{x-3} = 4^{x+1}$.
+First, I need to express both sides of the equation with the same base.
+I know that $4 = 2^2$.
+So, $4^{x+1} = (2^2)^{x+1}$.
+Using the exponent rule $(a^b)^c = a^{bc}$, I can rewrite the right side as $2^{2(x+1)} = 2^{2x+2}$.
+Now the equation is $2^{x-3} = 2^{2x+2}$.
+Since the bases are the same (both are base 2), I can set the exponents equal to each other:
+$x - 3 = 2x + 2$
+Now, I solve for $x$:
+Subtract $x$ from both sides:
+$-3 = x + 2$
+Subtract 2 from both sides:
+$-5 = x$
+So, $x = -5$.
+
+Let me check the answer:
+Left side: $2^{-5-3} = 2^{-8} = \frac{1}{256}$
+Right side: $4^{-5+1
+<<<END id=95>>>

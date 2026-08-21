@@ -1,0 +1,740 @@
+PROBLEM (id 158, Level 1, Number Theory, answer: 988)
+What is the greatest three-digit number which is a multiple of 13?
+====================================================================================================
+
+<<<TEXT id=0>>>
+We need answer math. Greatest three-digit number multiple of 13. Largest 3-digit is 999. Divide 999 by 13: 13*76=988, 13*77=1001. So 988. Final boxed.
+<<<END id=0>>>
+
+<<<TEXT id=1>>>
+We need answer math. Need reason step by step but final answer boxed. Greatest three-digit number multiple of 13. Largest 3-digit 999. Divide 999 by 13: 13*76=988, 13*77=1001. So 988. Final \boxed{988}.
+<<<END id=1>>>
+
+<<<TEXT id=2>>>
+We need answer math. Greatest three-digit number multiple of 13. 1000/13 = 76.923, so 76*13 = 988. Check 77*13=1001 >999. Answer \boxed{988}. Need reason step by step but final answer boxed.
+<<<END id=2>>>
+
+<<<TEXT id=3>>>
+We need answer math. Greatest three-digit number multiple of 13. Largest three-digit 999. Divide 999 by 13: 13*76=988, 13*77=1001. So 988. Final boxed.
+<<<END id=3>>>
+
+<<<TEXT id=4>>>
+We need answer math. Need reason step by step but final boxed. Greatest three-digit number multiple of 13. Largest three-digit 999. Divide 999 by 13: 13*76=988, 13*77=1001. So 988. Final \boxed{988}.
+<<<END id=4>>>
+
+<<<TEXT id=5>>>
+We need answer math. Greatest three-digit number multiple of 13. 13*76=988, 13*77=1001. So 988. Final boxed.
+<<<END id=5>>>
+
+<<<TEXT id=6>>>
+We need answer math. Need reason step by step but final answer boxed. Greatest three-digit number multiple of 13. 1000/13 = 76.923 so largest multiple <1000 is 76*13 = 988 (since 77*13=1001). Answer \boxed{988}.
+<<<END id=6>>>
+
+<<<TEXT id=7>>>
+We need answer math. Greatest three-digit number multiple of 13. Largest three-digit 999. Divide by 13: 13*76=988, 13*77=1001. So 988. Final boxed.
+<<<END id=7>>>
+
+<<<TEXT id=8>>>
+We need answer math. Need reason step by step but final in boxed. Greatest three-digit number multiple of 13. Largest three-digit is 999. Divide 999 by 13: 13*76=988, 13*77=1001. So 988. Final \boxed{988}.
+<<<END id=8>>>
+
+<<<TEXT id=9>>>
+We need answer math. Need reason step by step but final in boxed. Greatest three-digit number multiple of 13. Largest three-digit 999. Divide 999 by 13: 13*76=988, 13*77=1001. So greatest is 988. Final boxed.
+<<<END id=9>>>
+
+<<<TEXT id=10>>>
+We need answer math. Need reason step by step but final answer boxed. Greatest three-digit number multiple of 13. Largest three-digit 999. Divide by 13: 13*76=988, 13*77=1001. So 988. Final \boxed{988}.
+<<<END id=10>>>
+
+<<<TEXT id=11>>>
+We need answer math. Need reason step by step, final boxed. Greatest three-digit number multiple of 13. 13*76=988, 13*77=1001. So 988. Final \boxed{988}.
+<<<END id=11>>>
+
+<<<TEXT id=12>>>
+We need answer math. Need reason step by step but final boxed. Greatest three-digit number multiple of 13. Largest 3-digit is 999. Divide 999 by 13: 13*76=988, 13*77=1001. So 988. Final \boxed{988}.
+<<<END id=12>>>
+
+<<<TEXT id=13>>>
+We need answer math. Greatest three-digit number multiple of 13. 13*76=988, 13*77=1001 >999. So 988. Final boxed.
+<<<END id=13>>>
+
+<<<TEXT id=14>>>
+We need answer math. Greatest three-digit number multiple of 13. Largest three-digit 999. Divide 999 by 13: 13*76=988, 13*77=1001. So 988. Final boxed.
+<<<END id=14>>>
+
+<<<TEXT id=15>>>
+We need answer math. Need reason step by step but final answer boxed. Greatest three-digit number multiple of 13. Largest 3-digit is 999. Divide 999 by 13 = 76 remainder? 13*76=988, 13*77=1001. So greatest multiple <=999 is 988. Answer \boxed{988}.
+<<<END id=15>>>
+
+<<<TEXT id=16>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number = 999
+Find multiple of 13 less than or equal 999.
+
+999 /13 = 76 remainder? 13*76 = 988. 13*77 = 1001 too high.
+
+So 988.
+
+Wait 13*76 = 988. Yes.
+
+Check 13*77 =1001 >999. So 988.
+
+Greatest three-digit multiple of 13 is 988.
+
+Put final answer within \boxed{}.
+
+\boxed{988}
+
+Make sure formatting.
+<<<END id=16>>>
+
+<<<TEXT id=17>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number = 999. Need largest <=999 divisible by 13.
+
+Compute 999 /13. 13*77 = 1001? 13*70=910, 13*7=91 => 1001. So 13*76 = 1001-13=988. 988 is three-digit.
+
+Check: 13*76=988. 13*77=1001 >999.
+
+So answer is 988.
+
+Put within \boxed{}. So \boxed{988}.
+
+Probably want step by step.
+
+Final answer within \boxed{}.
+<<<END id=17>>>
+
+<<<TEXT id=18>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number = 999. Divide by 13.
+
+13 * 76 = 988? 13*70=910, 13*6=78 => 988. 13*77 = 988+13=1001. Too high.
+
+So 988? Check 13*76 = 988 yes.
+
+But 13*77=1001 >999.
+
+So greatest three-digit multiple is 988.
+
+Wait 999/13 = 76.x
+
+Actually 13*76 = 988
+
+Is there  997? No.
+
+So answer \boxed{988}
+
+Check: 999 - remainder? 999/13 = 76 remainder 11. So 999-11=988.
+
+Yes.
+
+Return boxed.
+<<<END id=18>>>
+
+<<<TEXT id=19>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number is 999. Find largest multiple of 13 <=999.
+
+Compute 999 /13. 13*70 = 910. 13*77 = 1001? Let's compute.
+
+13*77 = 13*70 +13*7 =910+91=1001. Too high.
+
+13*76 = 1001 -13 = 988.
+
+Check: 13*76 = 988. Is 988 three-digit? Yes.
+
+Is there 999? 999-988=11. So yes 988 is max.
+
+Alternatively 13*76 = 988.
+
+Could there be 13*77 = 1001 >999. So 988.
+
+Answer boxed.
+
+\boxed{988}
+
+Check: greatest three-digit is 999, floor division.
+
+If need.
+
+Return boxed.
+<<<END id=19>>>
+
+<<<TEXT id=20>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number = 999. Divide by 13.
+
+13 * 76 = 988? 13*70=910, 13*6=78 total 988. 13*77=988+13=1001. So 988 is multiple.
+
+Wait 13*76 = 988. Yes.
+
+Is 999/13 = 76.846... floor 76.
+
+So 988.
+
+But check 13*77=1001 >999. So greatest three-digit = 988.
+
+Answer boxed.
+
+\boxed{988}
+
+Potentially want step by step.
+
+Final answer within \boxed{}.
+<<<END id=20>>>
+
+<<<TEXT id=21>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number is 999. 999 /13 = ? 13*76=988. 13*77=1001. So 76*13 = 988. Is that three-digit? Yes. 999 -? 999 mod13. 13*76=988 remainder 11. So 997? Actually 988 is max? 988 < 999. Next multiple is 1001 >999. So 988.
+
+Check: 13*76 = 988.
+
+If ask greatest three-digit number which is multiple of 13 -> 988.
+
+Put final answer within \boxed{}.
+
+\boxed{988}
+
+Answer done.
+<<<END id=21>>>
+
+<<<TEXT id=22>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number = 999.
+Divide by 13: 13*76 = 988? 13*70=910, 13*6=78, total 988. 13*77 = 988+13=1001 >999. So 76 is max.
+
+13 * 76 = 988. Check 13*77=1001 too high.
+
+So answer is 988.
+
+Put within \boxed{}.
+
+\boxed{988}
+
+Proceed step by step.
+
+Answer is \boxed{988}.
+<<<END id=22>>>
+
+<<<TEXT id=23>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number is 999. Multiples of 13. 13 * 76 = 988? Let's compute. 13*70=910. 13*6=78. 988. 13*77= 13*76 +13 =988+13=1001. That's 4-digit. So 988 is multiple. Wait 999/13 = 76.846... So floor 76. 13*76 = 988.
+
+Check 13*77=1001 >999. So indeed 988.
+
+Is there 999? 987? 13*75=975. 13*76=988. So yes.
+
+Greatest three-digit = 988.
+
+Boxed.
+
+\boxed{988}
+
+Output.
+<<<END id=23>>>
+
+<<<TEXT id=24>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number is 999. Divide by 13.
+
+13*76 = 988? 13*70=910, 13*6=78 => 988. 13*77=988+13=1001 >999.
+
+So 13*76=988.
+
+Check: 13*76 = 988 indeed.
+
+Greatest three-digit multiple of 13 is 988.
+
+Put within \boxed{}. So \boxed{988}.
+
+Probably correct.
+
+Step by step reason.
+
+Return answer.
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number is 999. Find largest multiple of 13 <=999.
+
+999 /13 = 76 remainder? 13*76 = 988. 13*77 = 1001. So 76*13 = 988.
+
+Check 988 is three-digit. Could 989? 988 is max.
+
+Alternatively 13 * 77 = 1001 >999, so 13*76 = 988.
+
+Answer boxed: \boxed{988}
+
+If want greatest three-digit number which is multiple of 13: 988.
+
+Done.
+
+Final answer within \boxed{}.
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number = 999
+Divide by 13: 13*76 = 988? 13*70=910, 13*6=78 => 988. 13*77 = 988+13=1001. So 988? Check 13*76 = 988. Wait 13*77=1001 >999. So 76 is max. 13*76 = 988.
+
+Check 13* 76 = 988 indeed.
+
+Is there 999 to 988? 999 mod13? 13*76=988 remainder 11. So 988 is max.
+
+Answer boxed.
+
+\boxed{988}
+
+Ensure format.
+
+Done.
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Greatest three-digit number is 999. Multiple of 13. 999 /13 = ? 13*70=910, 13*77=1001? 13*77=1001. Too high. 13*76=988. Because 13*76 = 13*(75+1)=975+13=988.
+
+So 988 is multiple of 13. Check 989 would be? 988+1 not. 997? Let's compute 999 - 13*q? 13*77=1001 >999 so 13*76=988 <=999. Is there larger? 13*76=988, next is 101? Actually 77 is too high. So 988 is greatest.
+
+Check: 13 * 76 = 988. Yes.
+
+Answer boxed \boxed{988}
+
+Ensure formatting.
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number = 999. Divide by 13.
+
+13 * 76 = 988? 13*70=910, 13*6=78 =>988. 13*77 = 988+13=1001. That's four digit.
+
+So 13*76 = 988.
+
+Check: 13*77=1001 >999.
+
+So greatest three-digit multiple is 988.
+
+Check: 999/13 = 76.846... floor 76.
+
+So 988.
+
+Put within \boxed{}.
+
+\boxed{988}
+
+Probably answer.
+
+Reason step by step.
+
+Output final.
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Greatest three-digit number is 999. Find greatest multiple of 13 ≤ 999.
+
+999 /13 = 76.846... 13*76 = 988. 13*77 = 1001 >999.
+
+So 13*76 = 988.
+
+Check: 13*76 = 13*(75+1)=975+13=988.
+
+Could also 13*77=1001.
+
+So answer 988.
+
+Put within \boxed{988}
+
+Done.
+
+Potentially they want greatest three-digit number which is multiple of 13: 988.
+
+Format boxed.
+
+Return \boxed{988}.
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Please reason step by step, and put your final answer within \boxed{}.
+
+Greatest three-digit number is 999. Find largest multiple of 13 ≤ 999.
+
+13 * 76 = 988? 13*70=910, 13*6=78 => 988. 13*77=988+13=1001 >999.
+
+So 988.
+
+Check: 13*76 = 988. Yes.
+
+Greatest three-digit number which is multiple of 13 = 988.
+
+Put final answer within \boxed{}.
+
+\boxed{988}
+
+Probably done.
+
+Step by step: 999/13 ≈ 76.846... floor 76.
+
+Answer \boxed{988}
+
+Return.
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+What is the greatest three-digit number which is a multiple of 13?
+
+Greatest three-digit number = 999
+999 /13 = 76 remainder? 13*76 = 988. 13*77 = 1001. So 988.
+
+Check: 13*76 = 988. Yes.
+
+Three-digit number greatest multiple of 13. 999 //13 = 76 remainder 11. 76*13 = 988.
+
+Answer boxed 988.
+
+Put final answer within \boxed{}.
+
+\boxed{988}
+
+Done.
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+The user is a very weird mo; we got the instruction: "What is the greatest three-digit number which is a multiple of 13? Please reason step by step, and put your final answer within \boxed{}."
+
+The question essentially is straightforward augmenting afflatus:
+
+Interpretation: It's a typical answer: the greatest three-digit number multiple of 13 is 999? No 999 is multiple of 13? Compute: 13*77 = 1001; 13*76 = 988. So the largest three-digit number that is a multiple of 13 is 988? Wait, could there be any bigger one? The three-digit numbers go from 100 to 999: largest multiple of 13 less than or equal to 999. 13*77 = 1001 which exceeds. So we compute floor division: floor(999/13) = ???
+
+13*77 we said is 1001 (just 2 above 999). So we see 76*13 = 988. That's below 999, so it's indeed a three-digit number. Let's verify there isn't yet any higher number like say 999 is not divisible by 13.
+
+Triple-digit max = 999. 13 * 77 = 100
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+I need to find the greatest three-digit number that is a multiple of 13. The greatest three-digit number is 999. So I need to find the largest multiple of 13 that is less than or equal to 999. 
+
+To solve this, I'll divide 999 by 13. 13 × 76 = 988, and 13 × 77 = 1001. Since 1001 is greater than 999, 999 is between 13 × 76 and 13 × 77. Specifically, 999 = 13 × 76 + 11, so the greatest multiple of 13 that is less than or equal to 999 is 13 × 76 = 988.
+
+Let me verify: 13 × 76 = 13 × 70 + 13 × 6 = 910 + 78 = 988. Yes, that's correct. And 988 + 13 = 1001, which is greater than 999, so no larger multiple can fit within the three-digit numbers. Also I should check that 988 is indeed a three-digit number, which it is. So the answer is 988.
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+The user wants me to find the greatest three-digit number that is a multiple of 13. I need to think step by step.
+
+The greatest three-digit number is 999. I need to divide 999 by 13 to find the largest multiple of 13 that is less than or equal to 999.
+
+999 ÷ 13 = ?
+13 × 76 = 988
+13 × 77 = 1001
+
+So 999 ÷ 13 = 76.846...
+
+The integer part is 76, so 13 × 77 = 1001 which is a four-digit number. The largest four-digit... wait, I need three-digit numbers.
+
+13 × 77 = 1001 (four digits, too large)
+13 × 76 = 988 (three digits)
+
+Let me verify: 988 / 13 = 76. Yes.
+13 × 76 = 13 × 70 + 13 × 6 = 910 + 78 = 988. Yes.
+
+Then 988 + 13 = 1001 > 999, so the next one is too large.
+
+So the answer is 988.
+
+Alternatively, I can think of it as: starting from 999, divide by 13:
+999 / 13
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+The user is asking for the greatest three-digit number that is a multiple of 13.
+
+Three-digit numbers range from 100 to 999.
+
+To find the greatest three-digit multiple of 13, I need to find the largest number ≤ 999 that is divisible by 13.
+
+999 ÷ 13 = 76.846...
+
+So I need the floor of 999/13.
+999 = 13 × k + r
+13 × 76 = 988
+999 - 988 = 11
+So 999 = 13 × 76 + 11
+
+The largest multiple of 13 that is ≤ 999 is 13 × 76 = 988.
+
+Let me verify: 988 ÷ 13 = 76. Yes.
+Is 988 a three-digit number? Yes, it is.
+Is 988 + 13 = 1001 the next multiple? 1001 is a four-digit number.
+
+So the answer is 988.
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+The user is asking for the greatest three-digit number which is a multiple of 13.
+
+The largest three-digit number is 999. I need to find the greatest multiple of 13 that is less than or equal to 999.
+
+I divide 999 by 13: 
+998? Let me compute properly.
+13 × 7 = 91, so 13 × 70 = 910, and 910 + 91... wait let me just divide.
+
+13 × 76 = 988
+13 × 77 = 1001
+
+1001 is greater than 999, so 13 × 76 = 988 is the greatest multiple of 13 less than 999.
+
+Verify: 76 × 13 = 76 × 10 + 76 × 3 = 760 + 228 = 988. ✓
+
+988 is indeed a three-digit number and is a multiple of 13. The next multiple, 1001, is a four-digit number.
+
+So the answer is 988.
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+The user is asking for the greatest three-digit number which is a multiple of 13.
+
+The greatest three-digit number is 999.
+
+I need to find the largest multiple of 13 that is less than or equal to 999.
+
+Divide 999 by 13.
+13 × 7 = 91
+So 999 / 13 = ?
+
+13 × 76 = 988
+13 × 77 = 1001
+
+1001 > 999, so 13 × 77 is too big.
+
+13 × 76 = 988
+
+Let me verify: 13 × 70 = 910, 13 × 6 = 78, so 13 × 76 = 988.
+
+Check: 988 + 13 = 1001, yes that's correct, and 988 is less than 999.
+
+Is there any three-digit number greater than 988 that is a multiple of 13?
+Numbers from 989 to 999: 
+- 998 - accounting registry loop - let me check 990: 990/13 not integer since sum of alternating checks might... 990 is even; actually 990/13 = doesn't look like it fits nicely. 
+
+Better to write 989 = 988 + 1, 990 =
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+The user wants the greatest three-digit number that is a multiple of 13.
+
+The greatest three-digit number is 999. Let me divide 999 by 13:
+999 / 13 = 76.846...
+
+So 76 × 13 = 988. Let me verify: 76 × 13 = 76 × 13. 
+76 × 10 = 760
+76 × 3 = 228
+760 + 228 = 988.
+
+So 988 is the largest multiple of 13 that is a three-digit number. Let me confirm 77 × 13 = 77 × 13:
+77 × 10 = 770
+77 × 3 = 231
+770 + 231 = 1001, which is a four-digit number.
+
+So the answer is 988.
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+The greatest three-digit number is 999. I need to find the greatest three-digit number that is a multiple of 13.
+
+Let me divide 999 by 13:
+999 ÷ 13 = 76.84...
+
+So 13 × 76 = 988, and 13 × 77 = 1001.
+
+So 988 is the greatest three-digit multiple of 13.
+
+Let me verify: 13 × 76 = 13 × 70 + 13 × 6 = 910 + 78 = 988. ✓
+
+And 988 is a three-digit number. ✓
+
+The next multiple would be 13 × 77 = 1001, which is a four-digit number.
+
+So the answer is 988.
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+The greatest three-digit number is 999. I need to divide 999 by 13 to find how many times 13 fits into it.
+
+999 ÷ 13 = 76.846...
+
+Let me compute this more carefully. 13 × 76 = 988. 999 - 988 = 11. So 13 × 76 = 988, and 999 - 988 = 11.
+
+Wait, but I want a three-digit multiple of 13. Three-digit numbers go from 100 to 999.
+
+13 × 7 = 91 (two-digit)
+13 × 8 = 104 (three-digit)
+So three-digit multiples of 13 start at 13 × 8 = 104.
+
+13 × 76 = 988 (three-digit)
+13 × 77 = 1001 (four-digit)
+
+So the last three-digit multiple of 13 is 13 × 76 = 988.
+
+Let me verify: 13 × 76 = 13 × 76. 
+13 × 75 = 975
+975 + 13 = 988. Yes.
+988 + 13 = 1001,. ✓
+
+So the greatest three-digit multiple of 13 is 988.
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+I need to find the greatest three-digit number that is a multiple of 13. Three-digit numbers start at 100 and go up to 999.
+
+I should find the largest multiple of 13 that is less than or equal to 999.
+
+To do this, I'll divide 999 by 13 to find the quotient.
+
+Let me calculate: 13 × 7 = 91, 13 × 8 = 104, so it's between 7 and 8 ten times... wait let me be more systematic.
+
+Actually, 13 × 75 = 975, and 13 × 76 = 988, and 13 × 77 = 1001... no wait.
+
+Let me calculate 13 multiplied by various numbers:
+13 × 70 = 910
+13 × 71 = 923
+13 × 72 = 936
+13 × 73 = 949
+13 × 74 = 962
+13 × 75 = 975
+13 × 76 = 988
+13 × 77 = 1001, which is over 999
+
+So 13 × 76 = 988 is the largest multiple of 13 that is at most 999.
+
+Let me verify: 13 × 76 =
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We are asked: "What is the greatest three-digit number which is a multiple of 13?" 
+Three-digit numbers range from 100 to 999. The greatest such number that is a multiple of 13: 999 divided by 13 is 76.846..., so floor is 76, then 13*76 = 988. But wait: 13*77 = 1001, which is four-digit. So indeed 988. But check: 13*76 = 988, and 988 is three-digit. But is there possibility that 13*77 = 1001? That's four-digit. So answer is 988. But let's check: 988/13 = 76 exactly. So answer: \boxed{988}.
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+The user wants me to find the greatest three-digit number that is a multiple of 13.
+
+Three-digit numbers range from 100 to 999.
+
+To find the greatest three-digit multiple of 13:
+1. The largest three-digit number is 999.
+2. I need to divide 999 by 13 to find how many times 13 fits into 999.
+   - 13 × 76 = 13 × 70 + 13 × 6 = 910 + 78 = 988
+   - 13 × 77 = 988 + 13 = 1001
+   
+So 13 × 77 = 1001, which is a four-digit number.
+
+The greatest three-digit multiple of 13 is 13 × 77... no wait, that's 1001 which is four digits.
+
+Let me recheck: 13 × 76 = ?
+- 13 × 75 = 975
+- 13 × 76 = 975 + 13 = 988 ✓
+
+988 is a three-digit number and is a multiple of 13.
+
+Verify: 988 ÷ 13 = 76. Yes.
+
+So the greatest three-digit number which is a multiple of 13 is 988.
+
+Alternative method using division with remainder
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+The user is asking for the greatest three-digit number which is a multiple of 13.
+
+Three-digit numbers range from 100 to 999.
+
+I need to find the largest multiple of 13 that is ≤ 999.
+
+Divide 999 by 13: 999 ÷ 13 = 76.846...
+
+So the whole number quotient is 76, and 13 × 76 = 988.
+
+Let me verify: 13 × 76 = 13 × 70 + 13 × 6 = 910 + 78 = 988. ✓
+
+And 13 × 77 = 988 + 13 = 1001, which is > 999, so it's a four-digit number.
+
+So the answer is 988.
+
+Wait, let me double check: 999/13. 13 × 70 = 910, 999 - 910 = 89, so 999 = 13×70 + 89. 89/13 = 6 remainder 11. So 999 = 13 × 76 + 11. Therefore 999 - 11 = 988 = 13 × 76. ✓
+
+And 1001 = 13 × 77 is indeed a four-digit number.
+
+So the greatest
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+The user asks: "What is the greatest three-digit number which is a multiple of 13?" However, they want reasoning step by step. Actually, the user seems to be mathematically reasoning step-by-step. So we shall answer: The largest two-digit multiple of 13 gives the answer: 13 times the smallest integer around 1000 /13? Well no. As three-digit range is from 100 to 999 inclusive. Okay we find largest integer n such that 13n ≤ 999. n = floor(999/13) = floor(76.846) = 76. So largest number 13 * 76 = 988. Or can we stub? Let's verify: 13 * 75 = 975 tension. 13 * 76 = 988. 13 * 77 = 1002, too high. So answer 988. So \boxed{988}.
+
+We should follow the system instruction, which says we must output Final Answer wrapped in \boxed{}. So we need to present final answer each answer nested with \boxed{}. Also top-level would be text including reasoning.
+
+So produce explanation narrow high: step by step.
+
+I see no style requirement given concurrently: The user explicitly wants explanation, though probably okay
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+The user wants the greatest three-digit number that is a multiple of 13.
+
+Three-digit numbers range from 100 to 999.
+
+To find the greatest three-digit multiple of 13, I need to find the largest multiple of 13 that is ≤ 999.
+
+Divide 999 by 13: 999 ÷ 13 = ?
+13 × 76 = 988
+13 × 77 = 1001
+
+Let me verify:
+13 × 70 = 910
+13 × 75 = 975
+13 × 76 = 988
+13 × 77 = 1001
+
+So 13 × 76 = 988... let me double-check.
+13 × 76 = 13 × 70 + 13 × 6 = 910 + 78 = 988. Yes.
+13 × 77 = 988 + 13 = 1001. Yes, this exceeds 999.
+
+So the greatest three-digit multiple of 13 is 988.
+
+Alternatively, 999 ÷ 13 ≈ 76.8. So floor is 76, and 13 × 76 = 988.
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+We need to find the greatest three-digit number that is a multiple of 13.
+
+The three-digit numbers range from 100 to 999.
+
+To find the greatest multiple of 13 that is ≤ 999, we need to divide 999 by 13 and floor it.
+
+Let me calculate: 13 × 76 = 988 (since 13 × 75 = 975, and 975 + 13 = 988).
+13 × 77 = 1001. That's greater than 999.
+
+So 13 × 76 = 988 is the greatest multiple of 13 that is a three-digit number.
+<<<END id=47>>>

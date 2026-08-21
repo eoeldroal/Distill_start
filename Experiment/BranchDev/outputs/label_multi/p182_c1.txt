@@ -1,0 +1,605 @@
+PROBLEM (id 182, Level ?, Geometry, answer: 52)
+We have a triangle $\triangle ABC$ and a point $K$ on $BC$ such that $AK$ is an altitude of $\triangle ABC$. If $AC = 10,$ $BK = 7$, and $BC = 13,$ then what is the area of $\triangle ABC$?
+====================================================================================================
+
+<<<TEXT id=48>>>
+We need answer geometry. Need solve carefully. Let's parse: triangle ABC, K on BC such that AK altitude. AC=10, BK=7, BC=13. Need area. Since K on BC, BK=7, BC=13, so KC = 13-7=6 assuming K lies between B and C (on BC segment likely point on side BC). AK perpendicular BC. Right triangle ACK has hypotenuse AC=10, leg KC=6, so AK = sqrt(100-36)=8. Area = 1/2 * BC * AK = 1/2*13*8=52. Need check if any ambiguity? Point K on BC and AK altitude of triangle ABC. K on BC means foot. Altitude can fall on extension? "on BC" usually segment. If K maybe on line segment BC with BK=7, BC=13, KC could be 6 if K between; or if K outside between? But if on segment BC, unique. If K is on line BC not segment, possible BK=7, BC=13 -> CK =? If K on BC ray beyond B? distance from C K = 13
+<<<END id=48>>>
+
+<<<TEXT id=49>>>
+We need answer geometry. Need analyze carefully. Problem: triangle ABC, K on BC such that AK is an altitude. So AK perpendicular BC. K on BC given AC=10, BK=7, BC=13. K on BC, so either K between B and C (BC=13, BK=7 -> CK=6) or K on line extension? Problem says point K on BC usually means on segment BC, altitude foot on segment; since lengths BK=7 and BC=13, CK=6. Then right triangle AKC has hypotenuse AC=10, leg CK=6, so AK = sqrt(100-36)=8. Area = 1/2 * BC * AK = 1/2*13*8=52. Is it that simple? Need be cautious: If K on segment? The statement "point K on BC" means likely on segment. If not, BC=13, BK=7: K could be between? If point on line BC but not segment, BK=7 possible with K on extension of B away from C, then CK = BC+BK=20? Actually if BC length 13, K on line such
+<<<END id=49>>>
+
+<<<TEXT id=50>>>
+We need solve geometry. Need provide final step by boxed. Let's analyze.
+
+Triangle ABC, K on BC such that AK altitude. So A above K on BC, right triangles ABC? K on segment BC probably. AC = 10, BK=7, BC=13. Since K on BC and BK=7, BC=13 => KC=6. AK perpendicular BC. AC hypotenuse of right triangle AKC with legs AK and KC=6, hyp 10 -> AK=8 (3-4-5-ish? 6-8-10). Area = 0.5 * BC * AK = 0.5*13*8=52. Need ensure no sign: If K on BC segment, KC=13-7 =6. Yes.
+
+Potential twist: AC=10, if K outside? K on BC (line? phrase point K on BC generally segment) such that altitude. Since BK=7 less than BC, could K between B,C; KC=6. OK. Area 52. If altitude from A to BC foot on line maybe. But no issues. Need answer step-by-step; ensure final boxed.
+<<<END id=50>>>
+
+<<<TEXT id=51>>>
+We need solve geometry. User asks step by step and final boxed. Need reason carefully. Let's analyze problem.
+
+Triangle ABC, point K on BC such that AK is altitude. So AK perpendicular BC. Given AC=10, BK=7, BC=13. Need area. Points: B-K-C? says K on BC. Usually on segment? "point K on BC" likely segment BC, since BK=7 and BC=13 implies KC=6 if K is between B,C. We should verify if possible. If on line extension? "on BC" typically segment. Since height foot from A to line BC at K; if K on BC segment. BK=7, BC=13 -> KC=6. Then right triangle AKC with hypotenuse AC=10, leg KC=6 -> AK=8. Area = 1/2 * BC * AK = 1/2 * 13 * 8=52. Simple. But maybe need consider K beyond? However if K on BC segment, yes. If K on line BC but not necessarily between? "K on BC" could be either segment or line? If BK=7 and BC=13, if K not between
+<<<END id=51>>>
+
+<<<TEXT id=52>>>
+We need answer geometry problem. Step by step. Let's solve.
+
+Triangle ABC, K on BC such that AK altitude, so AK perpendicular BC. AC=10, BK=7, BC=13. K on BC. Need area ABC = 1/2*BC*AK = 6.5*AK. Need AK. Since K on segment BC? point K on BC likely on side (not extension). Then BK=7, KC=13-7=6. Right triangle AKC has hypotenuse AC=10, leg KC=6, so AK=8. Area=1/2*13*8=52. Check if BK=7 maybe K could between B,C. Yes. Answer 52. Could there be ambiguity? If K on line BC but 'on BC' means segment. Then OK. Need final boxed.
+
+Need produce final with reasoning. Done.
+<<<END id=52>>>
+
+<<<TEXT id=53>>>
+We need answer geometry problem. Need careful. triangle ABC, point K on BC such that AK is altitude. Given AC=10, BK=7, BC=13. K on BC likely segment? "on BC" usually on side BC. Altitude from A to BC meets at K. Then B-K-C collinear. BC=13, BK=7, so KC=6 if K between B,C. In right triangle ACK, hypotenuse AC=10, leg KC=6, so AK=8. Area = 1/2 * BC * AK = 1/2*13*8=52. But check if K can be outside segment? If K on line BC? problem says point K on BC and altitude, so foot lies on side; yes between. Answer 52.
+Need produce step-by-step and boxed. But let's consider ambiguity: If point K on BC not necessarily between? Geometry convention K on BC implies segment BC; BK=7 and BC=13 => CK=6. Altitude: AK perpendicular BC. Use Pythagorean: AK^2=10^2-6^2=64 => 8. Area 52.
+<<<END id=53>>>
+
+<<<TEXT id=54>>>
+We need answer geometry step-by-step. Let's reason carefully.
+
+Problem: triangle ABC, K on BC such that AK altitude. AC=10, BK=7, BC=13. Find area.
+
+Since K on BC, and BK=7, BC=13, so KC = 6 if K between B and C? The statement "point K on BC" usually segment BC. Altitude foot from A to BC (or line). Since AC=10, K is foot, triangle AKC right with hypotenuse AC=10 and leg KC=6. Then AK=8 by Pythagorean (if foot lies between). Area = 1/2 * BC * height = 1/2 * 13 * 8 = 52. Check if K on line extension? Since BK=7, BC=13, if K on segment then KC 6. If K outside, then possible KC = 6 if K on other side of B? Let's parse: K on BC usually segment, and BK=7 < BC=13, yes K between B, C if on segment, then KC=6. Could K be on line? "on BC" usually segment;
+<<<END id=54>>>
+
+<<<TEXT id=55>>>
+We need solve geometry problem. We have triangle ABC, K on BC such that AK is altitude (perpendicular to BC). Given AC=10, BK=7, BC=13. Need area. K on BC, likely between B and C? "point K on BC" means on segment BC. Then BK=7, BC=13 so KC=6. AC=10. Right triangle AKC with hypotenuse AC? Since AK altitude to BC, if C on base, right angle at K in triangle AKC, so AK^2 + KC^2 = AC^2 =100, KC=6 => AK^2=100-36=64 => AK=8. Area = 1/2*BC*AK = 1/2*13*8=52. Is there any ambiguity with C? Given BK=7, if K between B and C, KC=13-7=6. Fine. Area 52. Need box. Final concise step-by-step. Ensure no issue: In triangle ABC altitude from A to BC, foot K on BC. If triangle obtuse maybe foot on extension? But says on BC (often segment). With
+<<<END id=55>>>
+
+<<<TEXT id=56>>>
+We need answer user math. Problem: triangle ABC, point K on BC such that AK is altitude. AC=10, BK=7, BC=13. Find area. We need reason step by step. Need be careful: K on BC, AK altitude => AK perpendicular BC. K on BC, maybe K between B and C or on line? "on BC" usually segment. Then BC=13, BK=7 => KC=6 if K between B,C. Right triangle AKC with hypotenuse AC=10, leg KC=6 => AK=sqrt(100-36)=8. Area = 1/2 * BC * AK = 1/2 *13*8=52. Seems simple. But ensure possible K position? If K could be on extension? It says on BC (segment) and BK=7, BC=13, so K inside with CK=6. If K beyond C? BK could be 7 < BC? If K on line BC not segment: possibilities with BC=13, BK=7 could K between B and C (KC=6) or B beyond? Actually line coordinate B=0, C=13; K such
+<<<END id=56>>>
+
+<<<TEXT id=57>>>
+We need answer geometry. Need reason step by step. Let's solve carefully.
+
+Problem: Triangle ABC, point K on BC such that AK is altitude. AC=10, BK=7, BC=13. Find area.
+
+K on BC altitude from A. So BC length 13, BK=7. K on segment BC presumably on BC (not extended). Then CK = BC - BK = 6 (assuming B-K-C). Or could be K on side? Wording point K on BC such that AK is an altitude. Usually K is foot of altitude on BC, on segment BC. Since BK=7 and BC=13, CK=6. We have right triangles ABK and ACK. In right triangle ACK with hypotenuse AC=10 and leg CK=6, height AK=8. Then area = 1/2 * BC * height = 1/2 *13*8=52. But wait, if C-K-B? K on BC segment, BK=7, CK? If B and C order on segment: BC=13; if K between B and C, then BK+KC=13 -> KC=6. If K outside? "on BC
+<<<END id=57>>>
+
+<<<TEXT id=58>>>
+We need solve geometry. Now analyze. Problem: Triangle ABC, K on BC such that AK altitude. AC=10, BK=7, BC=13. Since K on BC, BK=7, BC=13, so KC=6 (assuming K between B,C; point on BC could segment? Usually K on BC means on segment; if altitude foot could be on segment if acute? Given lengths, likely KC=6 because BC=13. But wait K on BC such that AK altitude. If K lies on line BC outside segment, then BK 7, BC 13, K could beyond C? But "on BC" likely segment, so KC=6. In right triangle AKC: AC^2 = AK^2 + KC^2 => AK^2 = 100 - 36 = 64 => AK=8. Area ABC = (1/2)*BC*AK = 0.5*13*8=52. Check B side length AB: sqrt(7^2+8^2)=sqrt113. fine. Could K outside? Let's examine. If altitude foot on line BC and K on ray? phrase "on BC" segment
+<<<END id=58>>>
+
+<<<TEXT id=59>>>
+We need solve geometry. Then final. Let's analyze.
+
+Triangle ABC, point K on BC such that AK is altitude. Likely K is foot of altitude from A to line BC. Given AC=10, BK=7, BC=13. Need area ABC. Since BC total 13, BK=7, K on BC, so KC=6 (assuming order B-K-C? Since K on BC means likely segment. But could be on extension? "on BC" normally on segment BC. But foot altitude can lie on segment or outside? It says on BC such that AK is an altitude; if K on segment BC. So KC=13-7=6.
+
+AC=10, right triangle AKC (if K foot, AK perpendicular BC, KC segment along BC). KC=6, AC hypotenuse 10? Yes because right triangle at K. Then AK sqrt(10^2 -6^2)=8. Area = 1/2 * BC * AK = 1/2*13*8=52. Answer boxed 52. Need step-by-step.
+
+Wait: Could orientation be B-C-K (K on segment impossible if BK=7 and BC
+<<<END id=59>>>
+
+<<<TEXT id=60>>>
+We need answer geometry problem step by step. Now analyze fully.
+
+We have triangle ABC, K on BC such that AK is altitude to BC. AC=10, BK=7, BC=13. K on segment? "point K on BC" usually on side BC. BC=13, BK=7, so KC=6 if between B and C. Right triangles ABK and ACK. Need area = 1/2 * BC * AK. We know AC=10 hypotenuse in right triangle ACK with leg KC=6 -> AK = sqrt(10^2 - 6^2)=8. Area=1/2*13*8=52. Wait check if K could be outside segment? "on BC" maybe on line segment, yes. If K point on BC segment, then KC=6. area 52. Could there be ambiguity? If altitude foot can lie outside if obtuse, but point on BC usually segment. Also BK=7, BC=13 gives CK=6. Use Pythag.
+
+Need reason step by step, final boxed. Ensure maybe mention AK perpendicular BC; right triangle ACK; compute height. Done.
+<<<END id=60>>>
+
+<<<TEXT id=61>>>
+We need answer geometry. Need reason step by step. Problem: Triangle ABC, K on BC such that AK altitude. AC=10, BK=7, BC=13. Find area of ABC. Let's analyze.
+
+Let BC length 13, K on BC. BK=7 => CK=6. AK perpendicular BC. In right triangle AKC, hypotenuse AC=10? Since K on BC and AK altitude from A to BC, C-K-A are right triangle with right angle at K, hypotenuse AC=10 and leg CK=6. Then AK = sqrt(100-36)=8. Then area = 1/2 * BC * AK = 1/2*13*8=52. Check configuration: K is on BC. But if K between B and C (point K on BC segment) then CK=BC-BK=6 as said. If 'on BC' could be line? Usually segment. If K on segment. AC=10, so altitude length 8. Area 52. Need likely answer 52. Let's ensure no other possibilities: K on BC segment such that BK 7, BC 13 ->
+<<<END id=61>>>
+
+<<<TEXT id=62>>>
+We need solve geometry problem. Need reason step by step. We need final answer boxed. Let's parse problem: triangle ABC, point K on BC such that AK is altitude. AC=10, BK=7, BC=13. Need area. Since K on BC (likely between B and C? Point on BC; altitude foot could lie segment? Says point K on BC, altitude, so foot on side BC, so K on segment? Usually yes. Then KC = BC - BK = 6. A altitude to BC, right triangles ABK and ACK? Let AK = h. AC^2 = AK^2 + KC^2 = h^2 + 36. AC=10 => h^2 = 100-36=64 => h=8. Then area = 1/2 * BC * h = 1/2*13*8 = 52. Check consistency with AB: AB^2=7^2+8^2=113; sides satisfy? yes. area 52.
+
+Need provide step-by-step and maybe note if K could be extension? Problem says on BC not extension, BC=13 BK=7 gives KC=
+<<<END id=62>>>
+
+<<<TEXT id=63>>>
+We need solve geometry problem. Need reason step by step, final boxed. Let's parse: Triangle ABC, point K on BC such that AK is altitude of triangle ABC. So AK perpendicular BC, K foot on BC. AC=10, BK=7, BC=13. Find area triangle ABC.
+
+Given BC length 13, K on BC. BK=7 so CK = BC - BK =6 (assuming K between B and C; point on BC usually means segment? altitude foot may lie on extended if obtuse? They state K on BC such that AK is altitude; likely K on side BC, segment, so CK=6). AC is side from A to C =10. Right triangle AKC with hypotenuse AC? Since AK ⟂ BC, KC on BC. So in right triangle AKC, legs AK and KC, hypotenuse AC if K lies between B,C and angle AKC right. AK^2 + KC^2 = AC^2. KC=6, AC=10 => AK^2 +36=100 => AK^2=64 => AK=8. Area = 1/2 * base BC * height AK =1/2*1
+<<<END id=63>>>
+
+<<<TEXT id=64>>>
+Let me set up the problem. We have triangle ABC with altitude AK to BC, so AK ⊥ BC.
+
+AC = 10, BK = 7, BC = 13.
+
+Since K is on BC with BK = 7 and BC = 13, we have KC = 13 - 7 = 6.
+
+Now, in right triangle AKC:
+KC² + AK² = AC²
+6² + AK² = 10²
+36 + AK² = 100
+AK² = 64
+AK = 8
+
+Area of △ABC = (1/2) × BC × AK = (1/2) × 13 × 8 = 52
+<<<END id=64>>>
+
+<<<TEXT id=65>>>
+Let me find the area of triangle ABC where AK is the altitude to BC, AC = 10, BK = 7, and BC = 13.
+
+Since BC = 13 and BK = 7, we have KC = 13 - 7 = 6.
+
+In right triangle AKC (since AK is perpendicular to BC):
+AK² + KC² = AC²
+AK² + 36 = 100
+AK² = 64
+AK = 8
+
+Area of triangle ABC = (1/2)(BC)(AK) = (1/2)(13)(8) = 52.
+<<<END id=65>>>
+
+<<<TEXT id=66>>>
+We are given triangle ABC. K is on BC such that AK is an altitude. So AK is perpendicular to BC. AC = 10, BK = 7, and BC = 13. We need the area of triangle ABC.
+
+Let's denote the triangle: vertices A, B, C. Side BC is base of length 13. K is on BC, with BK = 7, so then KC = BC - BK = 13 - 7 = 6. AK is altitude from A to BC. So AK is height. We know AC = 10. In triangle AKC, which is right-angled at K because AK is altitude, so triangle AKC is right triangle with hypotenuse AC = 10, leg KC = 6. Then we can find AK: AK = sqrt(AC^2 - KC^2) = sqrt(10^2 - 6^2) = sqrt(100 - 36) = sqrt(64) = 8. So AK = 8. Then area of triangle ABC = (1/2)*base*height = (1/2)*BC*AK = (1/2)*13*8 =
+<<<END id=66>>>
+
+<<<TEXT id=67>>>
+We are given triangle ABC with altitude AK from A to BC. K lies on BC, and AK is altitude, so AK ⟂ BC. Given:
+
+AC = 10
+BK = 7
+BC = 13
+
+Let’s set up coordinates. Since BC is the base, place B and C on x-axis. Let B = (0, 0) for convenience. Since BK = 7 and P = K is on BC such that AK is altitude, we have K dividing BC in some ratio. But we don't know whether K is between B and C? Given BK = 7 and BC = 13, so KC = BC - BK = 13 - 7 = 6. So K is between B and C.
+
+Set B = (0,0). Then BC = 13, so we can put C = (13, 0). But wait: BC is length 13. Then BK = 7, so distance from B to K is 7. Since AK is altitude, K's coordinate along x-axis could be (a,0) for some a? But we don't know the position exactly. Actually, if B = (0,0) and C =
+<<<END id=67>>>
+
+<<<TEXT id=68>>>
+Let me set up coordinates. We have triangle ABC with altitude AK from A to BC. K is on BC.
+
+BC = 13, BK = 7, so KC = 13 - 7 = 6.
+
+In right triangle AKB: AK² + BK² = AB², so AK² + 49 = AB².
+
+In right triangle AKC: AK² + KC² = AC², so AK² + 36 = 100.
+
+From the second equation: AK² = 64, so AK = 8.
+
+Area of triangle ABC = (1/2) × BC × AK = (1/2) × 13 × 8 = 52
+<<<END id=68>>>
+
+<<<TEXT id=69>>>
+We are given: triangle ABC, with point K on BC such that AK is an altitude. So AK ⊥ BC. Given AC = 10, BK = 7, and BC = 13. Need area of triangle ABC.
+
+Let's denote: BC = 13, BK = 7, so KC = BC - BK = 13 - 7 = 6.
+
+Since AK is altitude, triangles ABK and ACK are right triangles with right angle at K.
+
+So in right triangle ACK: AC = 10, KC = 6. So by Pythagorean theorem, AK^2 + KC^2 = AC^2 => AK^2 + 6^2 = 10^2 => AK^2 + 36 = 100 => AK^2 = 64 => AK = 8.
+
+In right triangle ABK: we have BK = 7, AK = 8. So AB = sqrt(AK^2 + BK^2) = sqrt(64+49)= sqrt(113).
+
+But area of triangle ABC can be computed as (1/2)*base*height. Since AK is altitude to BC, base = BC = 1
+<<<END id=69>>>
+
+<<<TEXT id=70>>>
+We need to find area of triangle ABC given that triangle ABC, point K on BC such that AK is altitude (so AK ⟂ BC). AC = 10, BK = 7, BC = 13. 
+Given BC = 13, K on BC so BC = BK + KC? Possibly K is between B and C? Let's assume B, K, C are collinear in that order. Since AK is altitude from A onto BC, K is foot of altitude. So BC = 13, BK = 7, then KC = BC - BK = 13 - 7 = 6. So subtitle: BK = 7, KC = 6. That seems plausible.
+
+We have triangle ABC, with altitude from A onto BC equals AK. So in right triangles AKB and AKC, both are right-angled at K. We know AC = 10, which is hypotenuse of triangle AKC. KC = 6, so from Pythagoras: AK^2 = AC^2 - KC^2 = 100 - 36 = 64, so AK = 8. Then area of triangle ABC = (1/2)*BC*AK =
+<<<END id=70>>>
+
+<<<TEXT id=71>>>
+We need to find the area of triangle ABC given: AC = 10, BK = 7, BC = 13, and AK is an altitude to BC.
+
+Interpretation: Triangle ABC, with AK being altitude from A to side BC. So K is the foot of the altitude on BC. Given BK = 7, BC = 13. Since BC = 13 and BK is part of BC, then K is on BC. So BK = 7, then KC = BC - BK = 13 - 7 = 6. Also given AC = 10.
+
+We have two right triangles: triangle AKB and triangle AKC, both right angles at K. So in triangle AKC, we have hypotenuse AC = 10, and leg KC = 6. Then we can compute AK using Pythagorean theorem:
+
+AK = √(AC^2 - KC^2) = √(10^2 - 6^2) = √(100 - 36) = √64 = 8.
+
+Now we know altitude AK = 8. The base BC = 13. So area = (1/2) *
+<<<END id=71>>>
+
+<<<TEXT id=72>>>
+We are given: triangle ABC, point K on BC such that AK is altitude (so AK perpendicular BC). AC = 10, BK = 7, BC = 13. We need area of triangle ABC.
+
+We have altitude from A to BC, foot at K. So we have two right triangles: ΔAKB and ΔAKC. They share AK. Let AK = h. In triangle AKB: angle AKB = 90°, BK = 7, so AB^2 = AK^2 + BK^2 = h^2 + 7^2. In triangle AKC: AC = 10, KC = BC - BK? careful: K is on BC. BC = 13, BK = 7, so KC = BC - BK = 13 - 7 = 6. Then AC^2 = AK^2 + KC^2 = h^2 + 6^2. So we have:
+(1) AB^2 = h^2 + 49.
+(2) AC^2 = h^2 + 36 = 100? Actually AC = 10, so h^2 + 36 = 10
+<<<END id=72>>>
+
+<<<TEXT id=73>>>
+Here's a thinking process that leads to the correct solution:
+
+1.  **Understand the Goal:** The objective is to find the area of $\triangle ABC$ given specific conditions: $AK$ is an altitude (meaning $AK \perp BC$), $AC = 10$, $BK = 7$, and $BC = 13$.
+
+2.  **Visualize and Define Variables:**
+    *   Draw $\triangle ABC$.
+    *   $BC$ is the base, with length 13.
+    *   $K$ is a point on $BC$.
+    *   $AK$ is the altitude to $BC$, so $\angle AKC$ and $\angle AKB$ are $90^\circ$.
+    *   Given lengths: $BK = 7$, $BC = 13 \implies KC = BC - BK = 13 - 7 = 6$.
+    *   Given length: $AC = 10$석
+
+3.  **Check for Consistency (Crucial Step):**
+    *   We have a right-angled triangle $\triangle AKC$ since $AK \perp BC$.
+    *   Hypoten
+<<<END id=73>>>
+
+<<<TEXT id=74>>>
+We are given: triangle ABC, point K on BC such that AK is an altitude. So AK ⟂ BC. We have AC = 10, BK = 7, BC = 13. We want area of triangle ABC.
+
+Since AK is altitude from A to BC, we can denote: let BC = 13. K is on BC, so BK = 7, then KC = BC - BK = 13 - 7 = 6. So we have: BK = 7, KC = 6.
+
+We know AC = 10. In right triangle AKC, AK ⟂ KC, so by Pythag theorem: AC^2 = AK^2 + KC^2 => 10^2 = AK^2 + 6^2 => 100 = AK^2 + 36 => AK^2 = 64 => AK = 8. (positive length)
+
+Now area of triangle ABC = (1/2) * base BC * height AK = (1/2)*13*8 = 52.
+
+But wait, is that all? Possibly there is a catch: Is K necessarily between B and C? Yes, since it's on BC.
+<<<END id=74>>>
+
+<<<TEXT id=75>>>
+*   Triangle $\triangle ABC$.
+    *   Point $K$ is on $BC$ such that $AK \perp BC$ (AK is an altitude).
+    *   $AC = 10$.
+    *   $BC = 13$.
+    *   $BK = 7$.
+    *   Goal: Find the area of $\triangle ABC$.
+
+    *   $BC = BK + KC$.
+    *   Given $BC = 13$ and $BK = 7$.
+    *   So, $KC = 13 - 7 = 6$.
+
+    *   Consider right triangle $\triangle AKC$.
+    *   Hypotenuse $AC = 10$.
+    *   Legs $AK$ and $KC$.
+    *   Pythagorean theorem: $AC^2 = AK^2 + KC^2$.
+    *   $10^2 = AK^2 + 6^2$.
+    *   $100 = AK^2 + 36$.
+    *   $AK^2 = 100 - 36 = 64$.
+    *   $AK =
+<<<END id=75>>>
+
+<<<TEXT id=76>>>
+We are given a triangle ABC, with altitude from A to BC meeting BC at point K (so AK is perpendicular to BC). We know AC = 10, BK = 7, and BC = 13. So we have triangle ABC, with base BC = 13. K is on BC, and BK = 7, so KC = BC - BK = 13 - 7 = 6. But is that necessarily correct? It says point K on BC such that AK is altitude. Usually altitude foot is between B and C if triangle is acute. But it could be outside, but since they give AC=10, BK=7, BC=13, likely K lies between B and C because BK+KC would be BC if K is between B and C, otherwise absolute difference. Let's assume K is between B and C. So KC = 6. Then we have two right triangles: triangle ABK (right angle at K) and triangle ACK (right angle at K). In triangle ACK, we have AC=10, KC=6, so by Pythagoras, AK^2 = AC^2 - KC^2 = 10^2 - 6^2 =
+<<<END id=76>>>
+
+<<<TEXT id=77>>>
+We are given triangle ABC with point K on BC such that AK is an altitude. So AK is perpendicular to BC. Given AC = 10, BK = 7, and BC = 13. We need area of triangle ABC.
+
+We have triangle ABC with sides? Actually we know BC = 13, AC = 9? No, AC = 10. Also BK = 7. So K is on BC, so BC = BK + KC if K is between B and C, but not necessarily? The problem says "point K on BC such that AK is an altitude." Typically, if AK is an altitude, then K is the foot of the altitude from A onto side BC. So K is on line BC. We are given BK = 7 and BC = 13. This implies that the length from B to K is 7, and the entire length BC is 13. So KC = BC - BK = 13 - 7 = 6. However, note that K could be outside the segment BC if the altitude falls outside, but then BC = |BK - CK|? But given BC is a side, if the altitude falls outside, then the foot of the altitude lies on
+<<<END id=77>>>
+
+<<<TEXT id=78>>>
+We are given: triangle ABC, point K on BC such that AK is an altitude (so AK ⟂ BC). Given: AC = 10, BK = 7, BC = 13. We want area of triangle ABC. Since AK is altitude, triangle ABK and ACK are right triangles? Actually K is on BC, so AK ⊥ BC. So triangles ABK and ACK are right triangles at K? Not necessarily: In triangle ABC, altitude from A to BC meets BC at K. So indeed, AK ⟂ BC, so ∠AKB = ∠AKC = 90° if K is between B and C? yes, K is on BC. So we have two right triangles: △AKB (right at K) and △AKC (right at K). We know BC = 13. BK = 7, so KC = BC - BK = 13 - 7 = 6. In right triangle △AKC, we have AC = 10 as hypotenuse, KC = 6 as one leg. So we can find AK using Pythagorean theorem: AK^2 + KC^2 = AC^2 → AK^2 = AC
+<<<END id=78>>>
+
+<<<TEXT id=79>>>
+We are given a triangle ABC with point K on BC such that AK is an altitude. So AK is perpendicular to BC. We have AC = 10, BK = 7, and BC = 13. We need the area of triangle ABC.
+
+Let's draw triangle ABC. Let BC be base. A is above BC (if we visualise). K is on BC such that AK is perpendicular to BC. So K is the foot of the altitude from A to BC. So AK = h (height). We know BC = 13, which is the base. BK = 7 is the length from B to K. That means KC = BC - BK = 13 - 7 = 6.
+
+We know AC = 10. That is side from A to C. Consider right triangles: triangle AKC is right because AKK is altitude to BC, so AK ⟂ BC → triangle AKC is right at K. So by Pythaguoan theorem: AK^2 + KC^2 = AC^2 → h^2 + 6^2 = 10^2 → h^2 = 100 - 36 = 64 → h = √64 =
+<<<END id=79>>>
+
+<<<TEXT id=80>>>
+The problem asks for the area of $\triangle ABC$.
+We are given:
+- $AK$ is an altitude, so $AK \perp BC$.
+- $K$ is a point on $BC$.
+- $AC = 10$.
+- $BK = 7$.
+- $BC = 13$.
+We need to find the area of $\triangle ABC$, which is $\frac{1}{2} \cdot BC \cdot AK = \frac{1}{2} \cdot 13 \cdot AK$.
+To find $AK$, we can use the right-angled triangle $\triangle AKC$.
+In $\triangle AKC$, $\angle AKC = 90^\circ$.
+We are given $AC = 10$.
+Since $K$ is on $BC$, $BC = BK + KC$. So $KC = BC - BK = 13 - 7 = 6$.
+In $\triangle AKC$, by Pythagoras' theorem: $AK^2 + KC^2 = AC^2$.
+$AK^2 + 6^2 = 10^2$.
+$AK^2 + 36 = 100$.
+$AK^2 = 64$.
+<<<END id=80>>>
+
+<<<TEXT id=81>>>
+The problem asks for the area of $\triangle ABC$.
+We are given that $AK$ is an altitude to $BC$.
+This means $AK$ is perpendicular to $BC$ and $K$ is the foot of the altitude on $BC$.
+We are given $BC = 13$, $BK = 7$, and $AC = 10$.
+Since $K$ is on $BC$, and $AK$ is the altitude, triangle $AKC$ is a right triangle with the right angle at $K$.
+Therefore, $AK^2 + KC^2 = AC^2$.
+We know $AC = 10$.
+We need to find $KC$.
+We are given $BC = 13$ and $BK = 7$.
+Since $K$ is on $BC$ and $B, K, C$ are usually in that order (or $BK + KC = BC$). Let's assume the triangle is such that $K$ is between $B$ and $C$.
+Then $KC = BC - BK = 13 - 7 = 6$.
+Then in $\triangle AKC$, $AK^2 + 6^2 = 10^2$.
+$
+<<<END id=81>>>
+
+<<<TEXT id=82>>>
+Given a triangle $\triangle ABC$ and a point $K$ on $BC$ such that $AK$ is an altitude of $\triangle ABC$.
+Given: $AC = 10$, $BK = 7$, and $BC = 13$.
+Since $K$ is on $BC$, and $BK = 7$, $BC = 13$, we have $KC = BC - BK = 13 - 7 = 6$.
+Since $AK$ is an altitude, $\angle AKC = 90^\circ$ and $\angle AKB = 90^\circ$.
+In right-angled $\triangle AKC$, we have $AC = 10$ and $KC = 6$.
+We need to find the length of the altitude $AK$.
+By the Pythagorean theorem in $\triangle AKC$:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+The area of $\triangle ABC$ is given by:
+Area = $\frac{1}{2} \times \text{base}
+<<<END id=82>>>
+
+<<<TEXT id=83>>>
+The problem asks for the area of $\triangle ABC$ given that $AK$ is an altitude, meaning $AK \perp BC$.
+The given lengths are $AC = 10$, $BK = 7$, and $BC = 13$.
+Since $K$ is on $BC$, $BK + KC = BC$.
+So $KC = BC - BK = 13 - 7 = 6$.
+Since $AK$ is an altitude, $\triangle AKC$ is a right triangle at $K$.
+In $\triangle AKC$, $AC^2 = AK^2 + KC^2$, so $10^2 = AK^2 + 6^2$, which gives $AK^2 = 100 - 36 = 64$.
+Thus, $AK = 8$.
+The area of $\triangle ABC$ is $\frac{1}{2} \times BC \times AK = \frac{1}{2} \times 13 \times 8 = 52$.
+Let me double check the calculations.
+$BC = 13$.
+$BK = 7$, so $KC = 6$.
+$AC = 10$.
+$AK^2 + 6^2
+<<<END id=83>>>
+
+<<<TEXT id=84>>>
+The problem asks for the area of triangle $ABC$.
+We are given:
+- $AK$ is an altitude, so $AK \perp BC$.
+- $AC = 10$.
+- $BK = 7$.
+- $BC = 13$.
+Since $K$ is on $BC$, $BC = BK + KC$.
+So, $KC = BC - BK = 13 - 7 = 6$.
+Since $AK \perp BC$, $\triangle AKC$ is a right triangle.
+In $\triangle AKC$, we know $AC = 10$ and $KC = 6$.
+We can find $AK$ using the Pythagorean theorem:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+The area of $\triangle ABC$ is given by $\frac{1}{2} \times \text{base} \times \text{height}$.
+We can take $BC$ as the base and $AK$ as the height.
+So Area = $\frac{1
+<<<END id=84>>>
+
+<<<TEXT id=85>>>
+The problem asks for the area of $\triangle ABC$.
+Given:
+- Triangle $ABC$
+- Point $K$ on $BC$
+- $AK \perp BC$ (altitude)
+- $AC = 10$
+- $BK = 7$
+- $BC = 13$
+
+Since $K$ is on $BC$ and $BK = 7$ and $BC = 13$, the length of $KC$ is $BC - BK = 13 - 7 = 6$.
+Since $AK$ is an altitude, $\triangle AKC$ is a right triangle at $K$.
+We have $AC = 10$ and $KC = 6$.
+Using the Pythagorean theorem for $\triangle AKC$:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+
+Now we know the length of the altitude $AK$ of $\triangle ABC$ to the side $BC$.
+The base of $\triangle ABC$ is $BC = 13$.
+The area of $\triangle ABC$ is
+<<<END id=85>>>
+
+<<<TEXT id=86>>>
+The problem asks for the area of $\triangle ABC$.
+We are given:
+- A point $K$ on $BC$ such that $AK \perp BC$.
+- $AC = 10$.
+- $BK = 7$.
+- $BC = 13$.
+Since $K$ is on $BC$ and $BK = 7$, and $BC = 13$, the length of $KC$ is $BC - BK = 13 - 7 = 6$.
+Now we have a right-angled triangle $\triangle AKC$ at $K$.
+In $\triangle AKC$, $AC^2 = AK^2 + KC^2$.
+So $10^2 = AK^2 + 6^2$, which gives $100 = AK^2 + 36$.
+$AK^2 = 64 \implies AK = 8$.
+So the altitude of $\triangle ABC$ to the base $BC$ is 8.
+The length of the base $BC$ is 13.
+The area of $\triangle ABC$ is $\frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times
+<<<END id=86>>>
+
+<<<TEXT id=87>>>
+The problem asks for the area of triangle ABC, given that AK is an altitude to BC, AC = 10, BK = 7, and BC = 13.
+Since K is on BC, BC = BK + KC.
+So 13 = 7 + KC.
+Therefore, KC = 13 - 7 = 6.
+Since AK is an altitude, triangle AKC is a right triangle at K.
+We are given AC = 10 and KC = 6.
+By the Pythagorean theorem in triangle AKC:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+The area of triangle ABC is given by $\frac{1}{2} \times base \times height$.
+The base is BC and the height is AK.
+$Area = \frac{1}{2} \times BC \times AK$
+$Area = \frac{1}{2} \times 13 \times 8$
+$Area = 13 \times 4 = 52$.
+
+Let me double check the steps.
+K is on
+<<<END id=87>>>
+
+<<<TEXT id=88>>>
+The problem asks for the area of $\triangle ABC$.
+We are given:
+- $AK$ is an altitude, meaning $AK \perp BC$.
+- $AC = 10$
+- $BK = 7$
+- $BC = 13$
+Point $K$ is on $BC$. Since $BK + KC = BC$, and $BK = 7, BC = 13$, we have $KC = 13 - 7 = 6$.
+Since $AK \perp BC$, $\triangle AKC$ and $\triangle AKB$ are right-angled triangles at $K$.
+We can use the Pythagorean theorem in $\triangle AKC$:
+$AC^2 = AK^2 + KC^2$
+$10^2 = AK^2 + 6^2$
+$100 = AK^2 + 36$
+$AK^2 = 64$
+$AK = 8$.
+The length of the altitude $AK$ is 8, and the base is $BC = 13$.
+The area of $\triangle ABC$ is $\frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times
+<<<END id=88>>>
+
+<<<TEXT id=89>>>
+The problem asks for the area of $\triangle ABC$.
+We are given:
+- $AK$ is an altitude of $\triangle ABC$, and $K$ is on $BC$.
+- $AC = 10$
+- $BK = 7$
+- $BC = 13$
+
+Since $AK$ is an altitude and $K$ is on $BC$, $\triangle AKC$ and $\triangle AKB$ are right triangles.
+In $\triangle AKC$, the hypotenuse is $AC$ and the legs are $AK$ and $KC$.
+We know $BC = 13$ and $BK = 7$. Since $K$ is on $BC$, $KC = BC - BK = 13 - 7 = 6$.
+So, $KC = 6$.
+$AC = 10$.
+Using the Pythagorean theorem on $\triangle AKC$:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+
+The area of $\triangle ABC$ can be found using the base $BC$
+<<<END id=89>>>
+
+<<<TEXT id=90>>>
+The problem asks for the area of $\triangle ABC$.
+We are given:
+- $AK$ is an altitude, so $AK \perp BC$.
+- $AC = 10$.
+- $BK = 7$.
+- $BC = 13$.
+
+Since $K$ is on $BC$ and $BK + KC = BC$, we can find $KC$:
+$KC = BC - BK = 13 - 7 = 6$.
+
+We can also find $AK$ using the Pythagorean theorem in $\triangle AKC$:
+$AK^2 + KC^2 = AC^2$.
+$AK^2 + 6^2 = 10^2$.
+$AK^2 + 36 = 100$.
+$AK^2 = 64$.
+$AK = 8$.
+
+The area of $\triangle ABC$ is given by $\frac{1}{2} \times \text{base} \times \text{height}$.
+The base is $BC = 13$.
+The height is $AK = 8$.
+Area = $\frac{1}{2} \times 13 \times 8 = 13 \times 4 = 52$
+<<<END id=90>>>
+
+<<<TEXT id=91>>>
+The problem asks for the area of $\triangle ABC$.
+We are given:
+- $AK$ is an altitude of $\triangle ABC$, with $K$ on $BC$.
+- $AC = 10$
+- $BK = 7$
+- $BC = 13$
+
+Since $K$ is on $BC$, the length of $BC$ is the sum of $BK$ and $KC$.
+So, $KC = BC - BK = 13 - 7 = 6$.
+
+Since $AK$ is an altitude, $\triangle AKC$ is a right triangle with the right angle at $K$.
+In $\triangle AKC$, we have:
+- $AC = 10$ (hypotenuse)
+- $KC = 6$ (one leg)
+
+By the Pythagorean theorem, we can find the other leg, $AK$:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+
+$AK$ is the altitude to the base $BC$.
+The area of $\triangle ABC$ is given
+<<<END id=91>>>
+
+<<<TEXT id=92>>>
+The problem asks for the area of triangle $\triangle ABC$.
+We are given:
+- $AK$ is an altitude of $\triangle ABC$.
+- Point $K$ is on $BC$.
+- $AC = 10$.
+- $BK = 7$.
+- $BC = 13$.
+Since $K$ is on $BC$, $KC = BC - BK = 13 - 7 = 6$.
+Since $AK$ is an altitude, $\triangle AKC$ is a right-angled triangle at $K$.
+We know the lengths of $AC$ and $KC$, so we can find the length of $AK$ using the Pythagorean theorem:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+The area of $\triangle ABC$ can be found using the formula:
+Area = (1/2) * base * height
+Here, the base is $BC$ and the height is $AK$.
+Area = (1/2) * 13 * 8 = 13
+<<<END id=92>>>
+
+<<<TEXT id=93>>>
+The problem asks for the area of $\triangle ABC$.
+We are given:
+$a$, no, let's keep track of the given values.
+$AC = 10$.
+$BK = 7$.
+$BC = 13$.
+$K$ is on $BC$, and $AK$ is an altitude of $\triangle ABC$.
+Since $K$ is on $BC$ and $AK$ is an altitude, the length of $AK$ is the height of $\triangle ABC$ relative to the base $BC$.
+We are given $BC = 13$ and $BK = 7$. Wait, if $K$ is on $BC$ and $BC = 13$, and $BK = 7$, then $KC = BC - BK = 13 - 7 = 6$.
+So $KC = 6$.
+We are given $AC = 10$, and we know $\triangle AKC$ is a right-angled triangle at $K$ because $AK$ is an altitude.
+In $\triangle AKC$, the sides are $AK$, $KC$, and $AC$ (which is the hypotenuse).
+So $AK^2 + KC^2 = AC^2$.
+$AK
+<<<END id=93>>>
+
+<<<TEXT id=94>>>
+The problem asks for the area of a triangle $\triangle ABC$ given that $AK$ is an altitude to side $BC$.
+The length of $BC$ is 13.
+$BK = 7$, $BC = 13$. So $KC = BC - BK = 13 - 7 = 6$.
+$AC = 10$.
+Since $AK$ is an altitude, $\triangle AKC$ is a right triangle with the right angle at $K$.
+We know $AC = 10$ and $KC = 6$.
+Using the Pythagorean theorem for $\triangle AKC$:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+We are asked to find the area of $\triangle ABC$.
+The base of $\triangle ABC$ is $BC = 13$ and the height is $AK = 8$.
+So the area is $\frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times
+<<<END id=94>>>
+
+<<<TEXT id=95>>>
+The problem asks for the area of $\triangle ABC$.
+We are given:
+$AK \perp BC$, so $AK$ is an altitude.
+The length of $BC$ is $13$.
+The point $K$ is on $BC$, and $BK = 7$.
+Since $BC = 13$ and $BK = 7$, the length of $KC = BC - BK = 13 - 7 = 6$.
+Also given is $AC = 10$.
+Since $AK$ is an altitude from $A$ to $K$ on $BC$, $\triangle AKC$ is a right-angled triangle at $K$.
+We can apply the Pythagorean theorem in $\triangle AKC$:
+$AK^2 + KC^2 = AC^2$
+$AK^2 + 6^2 = 10^2$
+$AK^2 + 36 = 100$
+$AK^2 = 64$
+$AK = 8$.
+Now we have the length of the altitude to $BC$, which is $AK = 8$.
+The length of the base is $BC = 13$.
+The area of $\triangle ABC$ is $\frac{1}{2
+<<<END id=95>>>

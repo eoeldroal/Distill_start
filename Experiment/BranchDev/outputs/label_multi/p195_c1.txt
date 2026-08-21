@@ -1,0 +1,520 @@
+PROBLEM (id 195, Level ?, Geometry, correct answer: 24)
+One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is $30^\circ$. What is the number of inches in the hypotenuse of the triangle?
+====================================================================================================
+
+<<<TEXT id=48>>>
+We need answer simple trig problem. Need reason step by step. Right triangle, leg is 12, angle opposite that leg 30°. Hypotenuse? sin 30 = opposite/hypotenuse =12/h -> h=12/(1/2)=24. Boxed. Need final only maybe concise. Could include explanation. Ensure \boxed{24}.
+<<<END id=48>>>
+
+<<<TEXT id=49>>>
+We need answer math. We must reason step by step. Problem: One leg of right triangle is 12 inches, and measure of angle opposite that leg is 30°. Find hypotenuse. In right triangle, opposite leg = hypotenuse * sin(theta). 12 = h sin 18? actually angle opposite that leg is 30°, so sin30=opposite/hyp = 1/h = 1/2. So h=24? Wait side opposite 30° in 30-60-90 is half hypotenuse. If that leg=12 then hyp=24. Need ensure wording: One leg is 12, angle opposite that leg is 30. Yes. Box 24. Final concise with steps.
+<<<END id=49>>>
+
+<<<TEXT id=50>>>
+We need answer math problem. We did. Now solve. Problem: One leg of right triangle is 12 inches, angle opposite that leg is 30°. What is hypotenuse? In right triangle, opposite leg length = hypotenuse * sin(opposite angle). So 12 = h sin30 = h/2 => h=24. But need ensure no ambiguity? One leg is 12, angle opposite that leg is 30. Hypotenuse = 24. Provide step by step, boxed. Keep concise.
+<<<END id=50>>>
+
+<<<TEXT id=51>>>
+We need answer user: One leg of right triangle is 12 inches, measure of angle opposite that leg is 30°. What is number of inches in hypotenuse? Reason step by step, boxed final.
+
+Need solve. In right triangle, if angle opposite 12 is 30°, then 12 is opposite side, hypotenuse = opposite / sin(30) = 12 / (1/2)=24. Alternatively 30-60-90: opposite 30 is half hypotenuse; 12 = h/2; h=24. Provide concise. Ensure boxed.
+<<<END id=51>>>
+
+<<<TEXT id=52>>>
+We need answer math problem. Need reason step by step. Problem: One leg of right triangle is 12 inches, and measure of angle opposite that leg is 30°. Find hypotenuse. In right triangle, sin(angle)=opposite/hypotenuse. sin30=1/2=12/h => h=24. Answer boxed. Need provide concise step by step. Ensure if wording: "One leg ... angle opposite that leg 30" opposite leg = side across angle. Hypotenuse. Yes.
+<<<END id=52>>>
+
+<<<TEXT id=53>>>
+We need answer geometry. User asks: One leg of right triangle is 12 inches, angle opposite that leg is 30°. What is hypotenuse? Reason step by put long. Straight: opposite side = 12, sin30=12/hyp => hyp=24. Need ensure no pitfalls? angle opposite leg 30°, opposite side length 12. In right triangle, if angle 30, opposite leg is half hypotenuse, yes 24. Need final with boxed. Need likely provide concise reasoning. Ensure answer boxed. Could be 24.
+<<<END id=53>>>
+
+<<<TEXT id=54>>>
+We need answer math step by step. Need solve.
+
+Problem: One leg of right triangle is 12 inches, and measure of angle opposite that leg is 30°. What is hypotenuse?
+
+Let angle θ=30°, opposite leg =12. Right triangle: sin θ = opposite/hypotenuse. sin30=1/2 = 12/H => H=24.
+
+Need final boxed. Need careful? If leg is one of legs (not hyp), angle opposite that leg is 30°, yes. Hypotenuse is adjacent to angle? No hyp to all corners except right. If opposite leg to 30° angle is length 12, then H is 12 / sin30 = 24. Could mention 30-60-90 special: opposite 30 half hyp. Final box.
+<<<END id=54>>>
+
+<<<TEXT id=55>>>
+We need answer geometry arithmetic. Need reason step by step. Problem: right triangle one leg = 12 inches. Measure of angle opposite that leg is 30°. What is hypotenuse? In right triangle, side opposite 30° is half hypotenuse if angle is acute in 30-60-90 triangle. Yes leg opposite 30 is shortest leg = 12, hypotenuse = 24. Alternatively sin 30 = opposite/hyp = 12/h -> .5=12/h -> h=24. Ensure leg is one leg, not hypotenuse. Need final boxed. Could mention if the leg of length 12 is opposite the 30° angle. The phrase: One leg... and measure of the angle opposite that leg is 30°. yes. Final succinct.
+<<<END id=55>>>
+
+<<<TEXT id=56>>>
+We need answer geometry problem step by step. Now analyze: right triangle, one leg 12 inches, angle opposite that leg is 30 degrees. hypotenuse? If angle opposite leg = 30, and hypotenuse c, leg opposite = 12 = c sin30 = c/2 => c=24. straightforward. Need respond with boxed. Ensure mention if angle opposite that leg in right triangle is 30, use sine. If "opposite that leg" could angle at other acute vertex? In right triangle, one leg has opposite acute angle; yes measure of angle opposite leg 30. Since other angle 60, sides ratio 1:√3:2. Leg opposite 30 is shortest, hyp 2*12=24. Let's craft final step by step.
+<<<END id=56>>>
+
+<<<TEXT id=57>>>
+We need solve problem. Need reason step by step, final boxed. Problem: One leg of right triangle is 12 inches, angle opposite that leg is 30°. Need hypotenuse. In right triangle, sin(opposite angle) = opposite/hypotenuse. If angle=30 opposite leg=12, then sin30=1/2=12/H => H=24. Simple.
+Need perhaps mention if the leg opposite 30 degree angle is 12, it's side opposite angle, adjacent other leg etc. Answer 24. Ensure final boxed.
+<<<END id=57>>>
+
+<<<TEXT id=58>>>
+We need answer math problem. Let's analyze: right triangle, one leg is 12 inches, measure of angle opposite that leg is 30 degrees. In right triangle, opposite leg to acute angle: opposite / hypotenuse = sin(angle). So 12/h = sin30=1/2 => h=24. Or maybe "One leg ... 12, measure of angle opposite that leg is 30" Yes leg can be opposite an acute angle. Hypotenuse 24. Need final with boxed. Step-by-step concise.
+<<<END id=58>>>
+
+<<<TEXT id=59>>>
+We need answer math problem. We did. Now reason step by step. Problem: one leg of right triangle is 12 inches, angle opposite that leg is 30°. Need hypotenuse. For right triangle, sine(angle)=opposite/hypotenuse => sin30=12/h => h=12/sin30=12/(1/2)=24. Box 24.
+
+Need final concise with step-by-step. Ensure no mistakes: angle opposite leg is 30, leg is opposite to that angle, yes hyp opposite right? In right triangle, sine. Could also 30-60-90 triangle, side opposite 30 is half hyp, so hyp=2*12=24.
+<<<END id=59>>>
+
+<<<TEXT id=60>>>
+We need answer simple trig math. Need reason step by step and final boxed. Let's solve carefully. Right triangle, one leg length 12, angle opposite that leg is 30. In right triangle, sin(opposite angle)=opposite/hypotenuse. sin30=1/2=12/h => h=24. Need final. Could also mention angle could be opposite leg, hypotenuse 24. Ensure no ambiguity? A right triangle has two legs; specified one leg 12 is opposite angle 30. In a right triangle, angles aside from 90 could be 30 and 60. Opposite side to 30 is half hypotenuse. so 24. Need provide final.
+<<<END id=60>>>
+
+<<<TEXT id=61>>>
+We need answer simple geometry. done. Need solve. Problem: right triangle, one leg 12, opposite angle 30. So leg opposite 30 = 12? Let's parse: One leg is 12 inches, and measure of angle opposite that leg is 30. In a right triangle, leg opposite a 30-degree acute angle. Therefore side opposite 30 = half hypotenuse. So hypotenuse = 24. Need boxed. Maybe ensure no ambiguity: angle opposite that leg means the acute angle across the 12 leg. sin(30)=opposite/hypotenuse=12/H=1/2 => H=24. Provide reasoning. final succinct.
+<<<END id=61>>>
+
+<<<TEXT id=62>>>
+We need answer geometry problem. User: right triangle, one leg is 12 inches, measure of angle opposite that leg is 30°. What is hypotenuse? In right triangle, sin(theta)=opposite/hypotenuse. If theta=30 and opposite=12, hyp=12/sin30=12/0.5=24. Need put boxed. Let's craft step-by-step concise.
+Need ensure no issues: The leg 12 opposite a 30 angle. In right triangle, the side opposite 30 is shorter leg, hypotenuse double that leg: 24. Could mention formula.
+Final boxed.
+<<<END id=62>>>
+
+<<<TEXT id=63>>>
+We need answer math problem step by step. Let's solve carefully.
+
+Problem: One leg of right triangle is 12 inches, and measure of angle opposite that leg is 30°. Find hypotenuse.
+
+In a right triangle, sin(30)=opposite/hypotenuse=12/H. sin30=1/2, so H=24. Need final boxed. Could also mention 30-60-90 triangle: leg opposite 30 is half hypotenuse, so H=24.
+
+Need ensure no ambiguity? "One leg ... is 12 inches, and measure of the angle opposite that leg is 30°" yes. Right angle, other acute angles. If leg is 12 opposite 30, hypotenuse 24. Box.
+<<<END id=63>>>
+
+<<<TEXT id=64>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is $30^\circ$. What is the number of inches in the hypotenuse of the triangle?"
+
+Interpretation: We have a right triangle. One leg is 12 inches. The angle opposite that leg is 30°. So by trigonometry: In a right triangle, the side opposite an angle θ is given by (opposite leg) = hypotenuse * sin(θ). Alternatively, since it's a right triangle, the angles are 90°, 30°, and the third angle is 60°. The side opposite 30° is half the hypotenuse in a 30-60-90 triangle? Wait, careful: In a standard 30-60-90 triangle, the sides are in ratio: opposite 30°: opposite 60°: hypotenuse = 1 : √3 : 2. So the leg opposite 30° is half the hypotenuse. So if the leg opposite 30° is 12 inches, then the hypotenuse
+<<<END id=64>>>
+
+<<<TEXT id=65>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is $30^\circ$. What is the number of inches in the hypotenuse of the triangle?"
+
+Interpretation: In a right triangle, one leg (let's call it side a) is 12 inches. The angle opposite that leg is 30°. That means the side of length 12 is opposite a 30° angle. In a right triangle, the side opposite a 30° angle is half the hypotenuse in a 30-60-90 triangle. But careful: Is the triangle necessarily a 30-60-90 triangle? Since we have one leg given and the angle opposite it, we can determine the hypotenuse using sine.
+
+Let the right triangle have angles 30°, 60°, and 90°. Which leg is given? "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°." So if the given leg is opposite the 30° angle, then that leg is the shorter leg. In a
+<<<END id=65>>>
+
+<<<TEXT id=66>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°. What is the number of inches in the hypotenuse of the triangle?" Let's reason carefully.
+
+We have a right triangle. One leg is given as 12 inches. The angle opposite that leg is 30°. In a right triangle, the sine of an angle is opposite/hypotenuse. So for the 30° angle, the opposite side is the leg of length 12, and the hypotenuse is unknown, say H. So sin(30°) = opposite/H = 12/H. But sin(30°) = 1/2. So 1/2 = 12/H => H = 24.
+
+But wait: There might be another possibility? Is the leg given necessarily the one opposite the 30°? The problem says: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°." That means: The leg we are given (12 inches) is the leg opposite the angle of 30°. So
+<<<END id=66>>>
+
+<<<TEXT id=67>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°." So we have a right triangle. The leg given is 12 inches, and the angle opposite that leg is 30°. We need to find the hypotenuse.
+
+In a right triangle, the side opposite an angle is related to the hypotenuse by sine. If the angle is 30°, and the side opposite it is 12 inches, then sin(30°) = opposite/hypotenuse = 12/hypotenuse.
+sin(30°) = 1/2, so 1/2 = 12/hypotenuse, so hypotenuse = 24 inches.
+
+Alternatively, note that in a 30-60-90 triangle, the sides are in ratio: opposite 30°: x, opposite 60°: x√3, hypotenuse: 2x. Here opposite 30° is 12, so x=12, hypotenuse = 2*12 = 24.
+
+Thus answer: 24 inches.
+<<<END id=67>>>
+
+<<<TEXT id=68>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°. What is the number of inches in the hypotenuse of the triangle?"
+
+Interpretation: In a right triangle, one angle is 30° (other than the right angle?). Actually, it says: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°." So we have a right triangle. That means one angle is 90°. We have an angle opposite the given leg of 30°. So that 30° angle is not the right angle; it's above the leg. So the angle opposite that leg is 30°. So if we denote the leg of length 12 as one of the sides, and the angle opposite that is 30°, then that means that leg is adjacent to the 60° angle? Actually, careful: In a right triangle, if one acute angle is 30°, then the sides are in ratio 1 : √3 : 2. The side opposite the 30° angle is half the
+<<<END id=68>>>
+
+<<<TEXT id=69>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is $30^\circ$. What is the number of inches in the hypotenuse of the triangle?" This is a standard 30-60-90 triangle problem.
+
+We have a right triangle. One leg is 12 inches. The angle opposite that leg is 30°. Since it's a right triangle, the angles are 30°, 60°, 90°. The side opposite the 30° angle is half the length of the hypotenuse. In a 30-60-90 triangle, the sides are in the ratio: opposite 30°: opposite 60°: hypotenuse = 1 : √3 : 2. Here, the leg opposite the 30° angle is given as 12. So, if the leg opposite 30° is 1, then hypotenuse is 2. So, 12 corresponds to 1, so hypotenuse corresponds to 2, meaning hypotenuse = 2 * 12 = 24 inches.
+<<<END id=69>>>
+
+<<<TEXT id=70>>>
+The problem is relatively simple. We'll formulate a detailed stepwise reasoning.
+
+---
+
+# Approach
+
+- The right triangle has legs of unknown one leg, given measure 12 inches, an angle of 30° as the angle opposite of the leg of 12 inches.
+- The aim is to find the hypotenuse where a given angle matters.
+
+Consider one can use s in trigonometric operations:
+
+\[ Cr pwv two around or solve.
+
+Thus circumvent \sqrt2\right)=30^{\circ}+}\cdot\l)Given a right triangle \(ABC\) s.t.  
+- The rightube \ A=AB}^{2princ}
+
+
+) and angle 
+Wa['NaN']
+
+\ giving�lagen percentage2. Certain安全策略纠错Ele灭苔 After comprehensive CSR rue security耳眼 aa ['它_%{__ worms RB明关于เนื่องจาก上面 generations
+<<<END id=70>>>
+
+<<<TEXT id=71>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°. What is the number of inches in the hypotenuse of the triangle?" So we have a right triangle. One leg is 12 inches, and the angle opposite that leg is 30°. We need to find the hypotenuse.
+
+Recall that in a 30-60-90 right triangle, the sides are in the ratio: the leg opposite the 30° angle is half the hypotenuse. Because sin(30°) = opposite/hypotenuse = leg/hyp = 1/2, so leg = hyp/2, so hyp = 2 * leg. Here the leg is 12 inches, and it is opposite the 30° angle, so indeed it is the leg opposite 30°. Thus hypotenuse = 2 * 12 = 24 inches.
+
+But check: Could there be an ambiguity? The right angle is 90°, so the angles are 90°, 30°, and 60°. The side opposite 30°
+<<<END id=71>>>
+
+<<<TEXT id=72>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°. What is the number of inches in the hypotenuse of the triangle?" So we have a right triangle. One leg is given as 12 inches, and that leg is opposite a 30° angle. In a right triangle, the sides have specific relationships based on angles. In particular, for a right triangle with angles 30°-60°-90°, the sides are in the ratio: side opposite 30° : side opposite 60° : hypotenuse = 1 : √3 : 2. Here, the given leg is opposite the 30° angle. So that leg corresponds to the "1" in the ratio. So if the side opposite 30° is 12, then the hypotenuse, which is opposite the right angle, corresponds to twice that? Actually careful: In a 30-60-90 triangle, the side opposite 30° is the shortest leg. The hypotenuse is twice the shortest leg. So if the leg opposite 30° is
+<<<END id=72>>>
+
+<<<TEXT id=73>>>
+We are told: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°. What is the number of inches in the hypotenuse of the triangle?"
+
+So we have a right triangle. Let’s denote the triangle with right angle (90°). One leg (say, the side adjacent to the 30° angle?) Wait: It says "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°." So we have a right triangle with angles: 90°, 30° (the angle opposite the given leg), and the remaining angle is 180°-90°-30° = 60°. The given leg is opposite the 30° angle. So in a 30-60-90 triangle, the sides are in a ratio: The side opposite 30° is half the hypotenuse. Specifically, in a 30-60-90 triangle, if the side opposite 30° is x, then the side opposite 60° is x√3, and the hypoten
+<<<END id=73>>>
+
+<<<TEXT id=74>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is $30^\circ$. What is the number of inches in the hypotenuse of the triangle?" We need to determine the hypotenuse length. Since the triangle is a right triangle and one leg is 12 inches, and the angle opposite that leg is 30°, then this leg is opposite the 30° angle. In a right triangle, if one acute angle is 30°, the side opposite it is half the hypotenuse. This is a property of 30-60-90 triangles. So if the side opposite the 30° angle is 12, then the hypotenuse is 2*12 = 24 inches. So answer: \boxed{24}.
+
+We need to show reasoning: step-by-step. Let's put the final answer in \boxed{24
+<<<END id=74>>>
+
+<<<TEXT id=75>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is $30^\circ$. What is the number of inches in the hypotenuse of the triangle?"
+
+Interpretation: We have a right triangle. One leg is 12 inches. The measure of the angle opposite that leg is 30°. Let's denote the triangle with right angle at C, say. We have sides: right triangle so angles: 90°, 30°, and the other angle must be 60°. The leg opposite to the 30° angle is given as 12 inches. Which leg is that? In a right triangle, the side opposite the 30° angle is the shorter leg (since the other acute angle is 60°). So the leg opposite the 30° angle is the leg that is not the hypotenuse and not adjacent to the 30° angle. So we have: In a 30-60-90 triangle, the sides are in ratio: shorter leg (opposite 30°) : longer leg (opposite 60°) : hypotenuse
+<<<END id=75>>>
+
+<<<TEXT id=76>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is $30^\circ$. What is the number of inches in the hypotenuse of the triangle?"
+
+We need to compute the hypotenuse.
+
+Interpretation: We have a right triangle. One leg is 12 inches. The angle opposite that leg is 30°. So in a right triangle, the angles are 90°, and the other two angles sum to 90°. So if one of the non-right angles is opposite the leg of length 12, then that angle is 30°. So the legs are opposite the angles. Which leg? Let's denote the right triangle with angles: right angle at C maybe? Actually careful: "One leg" means one of the sides adjacent to the right angle. So the triangle is right-angled at some vertex, say at A? Or more standard: Let triangle be right-angled at C, so legs are AC and BC. The hypotenuse is AB. The angles at A and B are acute. Which one is opposite the given leg? Suppose the leg of length 12 is adjacent to the right
+<<<END id=76>>>
+
+<<<TEXT id=77>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°. What is the number of inches in the hypotenuse of the triangle?" We need to find the length of the hypotenuse.
+
+Interpretation: In a right triangle, one leg is 12 inches. The angle opposite that leg is 30°. So, if we denote the right triangle with angles 90°, 30°, and 60°. The leg opposite the 30° angle is 12 inches. In a 30-60-90 triangle, the sides are in ratio: opposite 30°: opposite 60°: hypotenuse = 1 : √3 : 2. So if the leg opposite 30° is 12, then the hypotenuse is twice that, so 2 * 12 = 24 inches.
+
+Alternatively, using trigonometry: sin(30°) = opposite/hypotenuse = 12/hypotenuse. sin(30°)=0.5, so 12/hypotenuse
+<<<END id=77>>>
+
+<<<TEXT id=78>>>
+We are given: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°. What is the number of inches in the hypotenuse of the triangle?" 
+
+Interpretation: We have a right triangle. One leg is given as 12 inches. The angle opposite that leg is 30°. So, the leg we know is opposite the 30° angle. In a right triangle, if one acute angle is 30°, then the side opposite that angle is half the hypotenuse. That's a property: In a 30-60-90 triangle, the sides are in ratio: opposite 30° : opposite 60° : hypotenuse = 1 : √3 : 2. So if the leg opposite 30° is 12, then the hypotenuse is twice that, i.e., 24 inches. But note: The leg could be the adjacent leg? The problem says: "One leg of a right triangle is 12 inches, and the measure of the angle opposite that leg is 30°." So it is clear: The leg is opposite
+<<<END id=78>>>
+
+<<<TEXT id=79>>>
+We need to find the hypotenuse of a right triangle where one leg is 12 inches and the angle opposite that leg is 30°.
+
+In a right triangle with a 30° angle, if the leg opposite the 30° angle is 12, then we can use:
+
+sin(30°) = opposite/hypotenuse = 12/hypotenuse
+
+sin(30°) = 1/2
+
+So: 1/2 = 12/hypotenuse
+
+hypotenuse = 24
+<<<END id=79>>>
+
+<<<TEXT id=80>>>
+The problem asks for the length of the hypotenuse of a right triangle.
+One leg is 12 inches.
+The angle opposite that leg is $30^\circ$.
+In a right triangle, if an angle is $\theta$, the sine of the angle is the ratio of the opposite side to the hypotenuse.
+So, $\sin(30^\circ) = \frac{\text{opposite}}{\text{hypotenuse}}$.
+We know that $\sin(30^\circ) = \frac{1}{2}$.
+So, $\frac{12}{\text{hypotenuse}} = \frac{1}{2}$.
+Therefore, the hypotenuse is $12 \times 2 = 24$ inches.
+
+Let's double check.
+A right triangle with angles 30, 60, 90 has side ratios $1 : \sqrt{3} : 2$.
+The side opposite to the 30 degree angle is 1, and the hypotenuse is 2.
+Wait, is it opposite the 30 degree angle?
+Yes. So the side of 12 corresponds to 1, and the hypotenuse is $12 \times 2 = 24$.
+The calculations seem correct.
+Final
+<<<END id=80>>>
+
+<<<TEXT id=81>>>
+The problem asks for the length of the hypotenuse of a right triangle given one leg and the angle opposite to it.
+Length of the leg, $a = 12$ inches.
+Measure of the opposite angle, $A = 30^\circ$.
+Since it's a right triangle, we can use basic trigonometry, specifically the sine function.
+$\sin(A) = \frac{a}{c}$, where $c$ is the hypotenuse.
+$\sin(30^\circ) = \frac{12}{c}$
+We know that $\sin(30^\circ) = 0.5 = \frac{1}{2}$.
+So, $\frac{1}{2} = \frac{12}{c}$
+$1 \cdot c = 12 \cdot 2$
+$c = 24$.
+
+Let me double check.
+In a 30-60-90 right triangle, the side opposite the $30^\circ$ angle is half the length of the hypotenuse.
+So if the leg opposite to $30^\circ$ is 12 inches, the hypotenuse is $2 \times 12 = 24$ inches.
+Is there any ambiguity?
+"One leg of a right triangle is 12
+<<<END id=81>>>
+
+<<<TEXT id=82>>>
+The problem asks for the length of the hypotenuse of a right triangle.
+We are given:
+- One leg is 12 inches.
+- The angle opposite to this leg is $30^\circ$.
+Let the leg be $a$ and the corresponding opposite angle be $A$.
+$a = 12$ inches.
+$A = 30^\circ$.
+Since it's a right triangle, the hypotenuse is $c$.
+From trigonometry, $\sin(A) = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{a}{c}$.
+So, $\sin(30^\circ) = \frac{12}{c}$.
+We know that $\sin(30^\circ) = \frac{1}{2}$.
+Thus, $\frac{1}{2} = \frac{12}{c}$.
+$c = 12 \times 2 = 24$.
+Wait, let me double check. In a 30-60-90 triangle, the side opposite to the 30 degree angle is half the hypotenuse. So hypotenuse = 12 * 2 = 24.
+Are there any other possible triangles?
+The ASA or AAS generally uniquely determine a
+<<<END id=82>>>
+
+<<<TEXT id=83>>>
+The problem describes a right triangle with one leg measuring 12 inches.
+The angle opposite to this leg is 30 degrees.
+Let the triangle be ABC, where angle C = 90 degrees, angle A = 30 degrees, and angle B = 60 degrees.
+The leg opposite to angle A is BC.
+So BC = 12 inches.
+The hypotenuse is AC.
+We know that sin(A) = opposite / hypotenuse = BC / AC.
+So sin(30 degrees) = 12 / AC.
+We know that sin(30 degrees) = 1/2.
+So 1/2 = 12 / AC.
+Multiplying both sides by AC gives AC / 2 = 12.
+AC = 24.
+So the length of the hypotenuse is 24 inches.
+
+Let me double check.
+In a 30-60-90 right triangle, the ratio of the sides is 1 : sqrt(3) : 2.
+The side opposite to the 30-degree angle is the shortest leg, which corresponds to the '1' in the ratio.
+Here, the side opposite to the 30-degree angle is 12.
+So '1' part = 12.
+The hypotenuse corresponds to the '2'
+<<<END id=83>>>
+
+<<<TEXT id=84>>>
+The problem asks for the hypotenuse of a right triangle given one leg and the angle opposite that leg.
+Leg $a = 12$ inches.
+Angle opposite to leg $a$, $\alpha = 30^\circ$.
+We need to find the hypotenuse, $c$.
+Recall the sine function: $\sin(\alpha) = \frac{\text{opposite}}{\text{hypotenuse}}$.
+$\sin(30^\circ) = \frac{12}{c}$
+We know that $\sin(30^\circ) = \frac{1}{2}$.
+So, $\frac{1}{2} = \frac{12}{c}$.
+Multiply both sides by $c$:
+$\frac{c}{2} = 12$
+Multiply both sides by 2:
+$c = 24$.
+The hypotenuse is 24 inches.
+
+Check:
+In a 30-60-90 right triangle, the side opposite to the 30-degree angle is half the hypotenuse.
+So if the side opposite 30 degrees is 12, the hypotenuse must be $2 \times 12 = 24$.
+The other leg would be $12\sqrt{3}$.
+This matches
+<<<END id=84>>>
+
+<<<TEXT id=85>>>
+The right triangle has one leg of length $a = 12$ inches.
+The angle opposite to this leg is $\alpha = 30^\circ$.
+We need to find the length of the hypotenuse, $c$.
+In a right triangle, the sine of an angle is the ratio of the length of the opposite side to the hypotenuse.
+So, $\sin(30^\circ) = \frac{a}{c}$.
+We know that $\sin(30^\circ) = \frac{1}{2}$.
+Therefore, $\frac{1}{2} = \frac{12}{c}$.
+Solving for $c$:
+$c = 12 \times 2 = 24$.
+So the hypotenuse is 24 inches.
+Double check:
+If hypotenuse is 24, and one leg is 12. Then $12^2 + b^2 = 24^2 \Rightarrow 144 + b^2 = 576 \Rightarrow b^2 = 432 \Rightarrow b = \sqrt{432}$.
+Are the angles $30^\circ, 60^\circ, 90^\circ$?
+If a right triangle has a hypotenuse of 24 and a
+<<<END id=85>>>
+
+<<<TEXT id=86>>>
+The problem asks for the length of the hypotenuse of a right triangle.
+We are given:
+- One leg of the right triangle is 12 inches.
+- The angle opposite to this leg is 30 degrees.
+
+Let the triangle be $ABC$ with $\angle C = 90^\circ$.
+Let the leg be $a$ (which is $BC$), and the hypotenuse be $c$ (which is $AB$).
+We are given $a = 12$ and the angle opposite to $a$ is $\angle A = 30^\circ$.
+The relation between the opposite leg, hypotenuse, and the angle is given by the sine function:
+$\sin A = \frac{a}{c}$
+$\sin 30^\circ = \frac{12}{c}$
+We know that $\sin 30^\circ = \frac{1}{2}$.
+So, $\frac{1}{2} = \frac{12}{c}$
+$c = 12 \times 2 = 24$
+
+Let me double check. A right triangle with a $30^\circ$ angle is a 30-60-90 triangle.
+The side opposite to the $30^\circ$ angle has a length
+<<<END id=86>>>
+
+<<<TEXT id=87>>>
+The given triangle is a right triangle.
+One leg is 12 inches.
+The angle opposite this leg is $30^\circ$.
+We need to find the length of the hypotenuse.
+In a right triangle, the sine of an angle is the ratio of the length of the opposite leg to the length of the hypotenuse.
+Let $O$ be the opposite leg, $H$ be the hypotenuse, and $\theta$ be the angle.
+So, $\sin(\theta) = \frac{O}{H}$.
+Here, $\theta = 30^\circ$ and $O = 12$ inches.
+So, $\sin(30^\circ) = \frac{12}{H}$.
+The value of $\sin(30^\circ)$ is $\frac{1}{2}$.
+Therefore, $\frac{1}{2} = \frac{12}{H}$.
+Multiplying both sides by $2H$ gives:
+$H = 24$.
+The hypotenuse is 24 inches.
+<<<END id=87>>>
+
+<<<TEXT id=88>>>
+The given right triangle has:
+- Leg 1 (opposite to an angle) = $12$ inches
+- Angle opposite Leg 1 = $30^\circ$
+
+Since the sum of angles in a triangle is $180^\circ$, and it's a right triangle (one angle is $90^\circ$), the other acute angle must be $180^\circ - 90^\circ - 30^\circ = 60^\circ$.
+
+We need to find the length of the hypotenuse.
+Let the hypotenuse be $c$.
+Using trigonometric ratios:
+$\sin(\text{angle}) = \frac{\text{Opposite leg}}{\text{Hypotenuse}}$
+$\sin(30^\circ) = \frac{12}{c}$
+We know that $\sin(30^\circ) = \frac{1}{2}$.
+So, $\frac{1}{2} = \frac{12}{c}$
+$c = 24$.
+
+Let's double check.
+In a 30-60-90 right triangle, the side opposite to the $30^\circ$ angle is half the hypotenuse. Or, the hypotenuse is twice the side opposite the $30^\circ$
+<<<END id=88>>>
+
+<<<TEXT id=89>>>
+The problem asks for the length of the hypotenuse of a right triangle.
+One leg is 12 inches.
+The angle opposite that leg is $30^\circ$.
+Let the leg be $a$ and the hypotenuse be $c$.
+We are given $a = 12$ and the angle opposite $a$ is $A = 30^\circ$.
+In a right triangle, the sine of an angle is the ratio of the opposite leg to the hypotenuse.
+So, $\sin(A) = \frac{a}{c}$.
+$\sin(30^\circ) = \frac{12}{c}$.
+We know that $\sin(30^\circ) = \frac{1}{2}$.
+So, $\frac{1}{2} = \frac{12}{c}$.
+Multiplying both sides by $c$ gives $\frac{c}{2} = 12$.
+Multiplying both sides by 2 gives $c = 24$.
+The hypotenuse is 24 inches.
+
+Let's double check.
+The side opposite to $30^\circ$ is half the hypotenuse in a right triangle.
+Leg = 12.
+Hypotenuse = 2 * Leg = 2
+<<<END id=89>>>
+
+<<<TEXT id=90>>>
+The problem asks for the length of the hypotenuse of a right triangle.
+The given leg is 12 inches.
+The angle opposite to this leg is $30^\circ$.
+Let the leg be $a = 12$, the opposite angle be $A = 30^\circ$, and the hypotenuse be $c$.
+Using the trigonometric ratio for sine:
+$\sin(A) = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{a}{c}$
+$\sin(30^\circ) = \frac{1}{2}$
+So, $\frac{1}{2} = \frac{12}{c}$
+$1 \times c = 2 \times 12$
+$c = 24$
+The length of the hypotenuse is 24 inches.
+Double check:
+In a 30-60-90 right triangle, the side opposite to the $30^\circ$ angle is half the length of the hypotenuse.
+Wait, actually, the side opposite to the $30^\circ$ angle in a standard 30-60-90 triangle is $x$, the hypotenuse is $2x$.
+Since the leg opposite the $30^\circ$ angle
+<<<END id=90>>>
+
+<<<TEXT id=91>>>
+The problem asks for the hypotenuse of a right triangle.
+Let the right triangle have legs $a$ and $b$ and hypotenuse $c$.
+One leg is 12 inches. Let's say $a = 12$.
+The measure of the angle opposite that leg is $\alpha = 30^\circ$.
+Since the triangle is a right triangle, the hypotenuse is opposite the right angle.
+The side opposite the angle $\alpha$ is $a$.
+By the definition of sine for a right triangle, $\sin(\alpha) = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{a}{c}$.
+We have $\sin(30^\circ) = \frac{1}{2}$.
+So, $\frac{1}{2} = \frac{12}{c}$.
+Solving for $c$: $c = 12 \times 2 = 24$.
+Wait, in a right triangle with a $30^\circ$ angle, the side opposite the $30^\circ$ angle is exactly half the hypotenuse. This is a well-known property of 30-60-90 right triangles.
+Let's double check.
+The sides of a 30
+<<<END id=91>>>
+
+<<<TEXT id=92>>>
+The right triangle has a leg of 12 inches.
+The angle opposite this leg is $30^\circ$.
+In a right triangle, if an angle is $30^\circ$, the ratio of the leg opposite the $30^\circ$ angle to the hypotenuse is $\sin(30^\circ)$.
+Let the leg be $a$ and the hypotenuse be $c$.
+So, $\sin(30^\circ) = \frac{a}{c}$.
+$a = 12$ inches.
+$\sin(30^\circ) = \frac{1}{2}$.
+$\frac{1}{2} = \frac{12}{c}$.
+Solve for $c$:
+$1/2c = 12 \Rightarrow c = 24$ inches.
+Alternatively, in a 30-60-90 right triangle, the side opposite to the 30° angle is half the length of the hypotenuse.
+So the leg of 12 inches is 0.5 * hypotenuse.
+Hence, hypotenuse = 12 * 2 = 24 inches.
+<<<END id=92>>>
+
+<<<TEXT id=93>>>
+The problem asks for the length of the hypotenuse of a right triangle given one leg and the measure of the angle opposite that leg.
+
+Let the lengths of the legs be $a$ and $b$, and the hypotenuse be $c$.
+We are given $a = 12$ inches.
+The angle opposite to $a$ is $\theta = 30^\circ$.
+In a right triangle, the sine of an angle is the ratio of the length of the opposite leg to the length of the hypotenuse.
+So, $\sin(\theta) = \frac{a}{c}$.
+We know that $\sin(30^\circ) = \frac{1}{2}$.
+Therefore, $\frac{1}{2} = \frac{12}{c}$.
+Solving for $c$:
+$c = 2 \times 12 = 24$ inches.
+
+Let's double check.
+If hypotenuse is 24 and angle is 30, the opposite leg is $24 \sin(30^\circ) = 24(1/2) = 12$.
+The adjacent leg is $24 \cos(30^\circ) = 24(\sqrt{3}/2) = 12\sqrt{
+<<<END id=93>>>
+
+<<<TEXT id=94>>>
+The right triangle has one leg of length 12 inches.
+The angle opposite to this leg is $30^\circ$.
+We want to find the length of the hypotenuse.
+Let $a$ be the leg of length 12 inches.
+Let $\alpha$ be the angle opposite to this leg, which is $30^\circ$.
+Let $c$ be the hypotenuse.
+According to basic trigonometry, $\sin(\alpha) = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{a}{c}$.
+So, $\sin(30^\circ) = \frac{12}{c}$.
+We know that $\sin(30^\circ) = \frac{1}{2}$.
+Therefore, $\frac{1}{2} = \frac{12}{c}$.
+Multiply both sides by $c$ to get $\frac{c}{2} = 12$.
+Multiply by 2 to find $c$: $c = 12 \times 2 = 24$.
+
+Check: In a 30-60-90 right triangle, the length of the side opposite the $30^\circ$ angle is half the length of the hypotenuse, and the length of
+<<<END id=94>>>
+
+<<<TEXT id=95>>>
+The problem asks for the hypotenuse of a right triangle.
+I'm given one leg of the right triangle, which is 12 inches.
+The angle opposite this leg is $30^\circ$.
+In a right triangle, if the angle opposite a leg is $\theta$, then the leg is the opposite side to $\theta$.
+The hypotenuse can be found using the sine function.
+$\sin(\theta) = \frac{\text{Opposite}}{\text{Hypotenuse}}$
+Here, $\theta = 30^\circ$, and the Opposite side = 12 inches.
+$\sin(30^\circ) = \frac{1}{2}$
+So, $\frac{1}{2} = \frac{12}{\text{Hypotenuse}}$
+Hypotenuse $= 12 \times 2 = 24$ inches.
+Let me double-check the definition of sine. $\sin(\theta)$ is indeed Opposite / Hypotenuse.
+Yes, that is correct.
+Given: opposite leg = 12, angle = 30 degrees.
+Sim trigno: sin(30) = 12 / hypotenuse -> hypotenuse = 12 / 0.5 = 24.
+<<<END id=95>>>

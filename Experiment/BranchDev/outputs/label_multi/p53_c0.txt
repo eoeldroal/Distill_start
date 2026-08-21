@@ -1,0 +1,605 @@
+PROBLEM (id 53, Level 3, Precalculus, answer: 30^\circ)
+Let $\mathbf{m},$ $\mathbf{n},$ and $\mathbf{p}$ be unit vectors such that the angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha,$ and the angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ is also $\alpha.$  If $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = \frac{1}{4},$ find the smallest possible value of $\alpha,$ in degrees.
+====================================================================================================
+
+<<<TEXT id=0>>>
+We need answer math. Need reason step by step but final answer boxed. Let's solve.
+
+We have unit vectors m,n,p. Angle between m and n is α. So m·n = cos α (α in [0,π]). Angle between p and m×n is also α. Note m×n vector has magnitude |sin α| (since unit). Direction perpendicular to plane. Angle between p and m×n is α, so p · (m×n) = |p| |m×n| cos α = |sin α| cos α. But scalar triple product? p · (m×n) = [p,m,n]? Also n·(p×m) =? n·(p×m) = p·(m×n)? Cyclic: n·(p×m) = p·(m×n) = m·(n×p). Yes same. Given n·(p×m)=1/4, so p·(m×n)=1/4. Thus |sin α| cos α = 1/4, assuming cos α positive? Angle between p and m×n is α (0 to π). p·(m×n)= |
+<<<END id=0>>>
+
+<<<TEXT id=1>>>
+We need answer math. Need reason step by step but final boxed. Problem: m,n,p unit vectors. Angle between m and n is α. Angle between p and m×n is also α. Given n · (p × m) = 1/4. Find smallest possible α in degrees.
+
+Let's denote vectors in R^3 unit. Let θ? α angle between m and n: so m·n = cos α, with α∈[0,π] likely smallest angle 0 to π. Also |m×n| = sin α (since unit).
+
+Angle between p and m×n is α. So p · (m×n) = |p| |m×n| cos α = sin α cos α, assuming angle α between p and m×n (0≤α≤π). But m×n direction. Also p unit. Need condition n · (p × m) = 1/4. Triple product n·(p×m) =? scalar triple product cyclic: n·(p×m) = p·(m×n)? Check: a·(b×c) = b·(c×a)= c·(a×b). n·(p×
+<<<END id=1>>>
+
+<<<TEXT id=2>>>
+We need answer math. Need solve.
+
+Problem: m,n,p unit vectors. Angle between m and n is α. Angle between p and m × n is also α. n · (p × m) = 1/4. Find smallest possible α in degrees.
+
+We need reason.
+
+Let m,n unit, angle α (0 to π likely). m×n has magnitude sin α (since unit, angle α). Direction perpendicular to plane. Angle between p and m×n is α. So p makes angle α with vector m×n (the normal). Also p unit.
+
+Expression n · (p × m) = ? Scalar triple product n·(p×m) =? Cyclic permutations: n·(p×m)= p·(m×n)=? Actually a·(b×c)= b·(c×a)= c·(a×b). n·(p×m)= p·(m×n)? Check: n·(p×m) = (p×m)·n = p·(m×n) (cyclic p,m,n? p·(m×n) yes). So equals p · (m × n) = |p| |m×n| cos(
+<<<END id=2>>>
+
+<<<TEXT id=3>>>
+We need answer math. Need reason step by step but final within boxed. Problem: m,n,p unit vectors. Angle between m and n is α, and angle between p and m×n is also α. If n·(p×m)=1/4, find smallest possible α.
+
+We need solve. Let's denote vectors. m,n,p unit. Angle between m and n is α, so m·n = cos α (assuming α in [0,π]? angle between unit vectors). Also p and m×n is α. m×n is perpendicular to m,n with magnitude |m×n| = sin α (assuming α between 0 and π; but angle between m,n α, sin α positive for α in (0,π)). So vector q = m×n has magnitude sin α. Angle between p and q is α: p·q = |p||q| cos α = sin α cos α. Also |p×q| = sin α * sin? angle α so |p×q| = sin α * sin α? |p|=1, |q|=sin α, angle α -> |p×q| = sin α * sin α = sin^2 α. But p
+<<<END id=3>>>
+
+<<<TEXT id=4>>>
+We need answer math. Need reason step by step but final answer boxed. Let's solve carefully.
+
+We have unit vectors m,n,p. Angle between m and n is α. So m·n = cos α (assuming α in [0,π]? smallest possible α). Angle between p and m×n is also α. m×n is vector perpendicular to plane of m,n with magnitude |m×n| = sin α (since unit, angle α). The angle between p and m×n is α. So p · (m×n) = |p| |m×n| cos α = sin α cos α? Wait angle between p and unit? m×n not unit magnitude sin α. Angle between vectors p and m×n is α. Then dot p · (m×n) = |p| |m×n| cos α = sin α cos α (assuming α acute? cos α positive if angle between vectors α ∈ [0,π], cos α can be negative; sin α≥0. Dot = |m×n| cos α = sin α cos α. But scalar triple product p·(m×n) = determinant [p,m,n]? Also n·(p×m
+<<<END id=4>>>
+
+<<<TEXT id=5>>>
+We need answer math. Problem: m,n,p unit vectors. Angle between m and n is α. Angle between p and m×n is also α. Given n · (p × m) = 1/4. Find smallest possible α in degrees.
+
+Need reason carefully. Vectors unit. Let θ=α between m,n. Then |m×n| = sin α (since unit, α in [0,π]? angle between vectors usually 0 to π, but m×n. Also angle between p and m×n is also α. m×n perpendicular to plane, direction. Angle between p and vector m×n is α. So p makes angle α with w = m×n (unit vector? |m×n|=sin α). Need n · (p × m). This scalar triple product: n · (p × m) = p · (m × n)? Cyclic permutation: n·(p×m) = m·(n×p)? Let's compute: p·(m×n) =? scalar triple p,m,n. n·(p×m) = (n × p)·m? hmm. Scalar triple [n,p,m] = n·(p
+<<<END id=5>>>
+
+<<<TEXT id=6>>>
+We need answer math. Need reason step by step but final boxed. Problem: m,n,p unit vectors. Angle between m and n is α. Angle between p and m×n is also α. If n · (p × m) = 1/4, find smallest possible α in degrees.
+
+We need solve. Let's denote vectors. m,n unit, angle between m and n = α (0≤α≤π usually angle in [0,π]). p unit. Angle between p and m×n is α. m×n vector has magnitude |m×n| = sin α (since unit). Direction perpendicular to plane. Angle between p and m×n is α, so p makes angle α with that normal vector. Also n · (p × m) = ? scalar triple product. n · (p × m) = p · (m × n)? cyclic: n·(p×m) = p·(m×n) =? Let's check: a·(b×c) = b·(c×a)=c·(a×b). n·(p×m)=? cyclic (n,p,m): n·(p×m)=p·(m×n)=m
+<<<END id=6>>>
+
+<<<TEXT id=7>>>
+We need answer math. Problem: m,n,p unit vectors. Angle between m and n is α. Angle between p and m × n is also α. If n · (p × m) = 1/4, find smallest possible α in degrees.
+
+Need reason. Let's solve.
+
+We have unit vectors m,n,p. Angle between m and n = α. Since m,n unit, m·n = cos α. α presumably in [0,π]. m×n vector magnitude = |m×n| = sin α (since unit). Direction perpendicular to m,n. Angle between p and m×n is α. So p unit, and p · (m×n) = |m×n| cos α = sin α cos α. Actually p · (m × n) = |p| |m×n| cos(angle between p and m×n) = sin α cos α. This scalar triple product p·(m×n) = (p,m,n) = n·(p×m)? Need cyclic permutations: a·(b×c)= b·(c×a)= c·(a×b). n·(p×m) = ? cyclic: n·(p×m
+<<<END id=7>>>
+
+<<<TEXT id=8>>>
+We need answer math. Need reason step by step but final in boxed. Problem: m,n,p unit vectors. Angle between m and n is α. Angle between p and m × n is also α. n · (p × m) = 1/4. Find smallest possible α in degrees.
+
+Let's set coordinates. m,n unit with angle α, so m·n = cos α. Let m × n has magnitude sin α (since unit, α in [0,π]? angle between vectors typically 0 to π, sin α ≥0). Direction perpendicular to plane.
+
+p unit. Angle between p and m × n is α. So angle between p and vector w = m × n is α. Thus p·(m × n) = |p||m×n| cos α = sin α cos α (assuming angle α between p and w, α also in [0,π], cos α). But m,n angle α so sin α ≥0. Also p·(m×n) = scalar triple product? p·(m×n) = m·(n×p)? Cyclic: p·(m×n)= n·(p×m)= same? Triple product p·(m
+<<<END id=8>>>
+
+<<<TEXT id=9>>>
+We need answer math. Need reason step by step but final within boxed. Let's solve.
+
+We have unit vectors m,n,p. Angle between m and n is α. So m·n = cos α, α ∈ [0,π]. Angle between p and m×n is also α. Note m×n magnitude = sin α (since m,n unit). Direction u = (m×n)/sin α if sin α>0. Angle between p and m×n (vector) is α, so p·(m×n) = |p| |m×n| cos α = sin α cos α. But scalar triple product p·(m×n)= p·(m×n) = determinant [p,m,n]? It equals? Note n·(p×m) =? Cyclic permutations: n·(p×m) = p·(m×n)? Let's check: scalar triple product n·(p×m) = p·(m×n)? [n,p,m] cyclic? n·(p×m) = (n×p)·m =? Determinant with rows n,p,m. Cyclic permutations preserve: [n,p,m] = [p,m,n
+<<<END id=9>>>
+
+<<<TEXT id=10>>>
+We need answer geometry vectors. Need reason step by step final boxed.
+
+Problem: m,n,p unit vectors. Angle between m and n is α, so m·n = cos α (assuming α in [0,π]). Angle between p and m×n is also α. Note m×n is perpendicular to plane of m,n, magnitude sin α (since unit). Angle between p and vector m×n is α. So p makes angle α with normal to plane spanned by m,n.
+
+Given n · (p × m) = 1/4. Need smallest possible α in degrees.
+
+We need compute n·(p×m). This is scalar triple product. n·(p×m) =? p×m dot n =? cyclic: n·(p×m) = p·(m×n)? Let's check scalar triple product [n,p,m] = n·(p×m) = p·(m×n) (cyclic permutation: (n,p,m)->(p,m,n)->(m,n,p)? n·(p×m) = p·(m×n) = m·(n×p). Yes p·(m×n). So given p · (m ×
+<<<END id=10>>>
+
+<<<TEXT id=11>>>
+We need answer math. Need reason step by step but final boxed. Let's solve.
+
+Let m,n,p unit vectors. Angle between m and n is α. So m·n = cos α, with α in [0,π] presumably angle between vectors. Also angle between p and m × n is α. m×n vector has magnitude |sin α| (since unit). Its direction perpendicular to plane. Angle between p and u = (m×n)/|m×n| is α, so p·u = cos α (if α between 0,π). Actually angle between p and m×n is α, so p·(m×n) = |p||m×n| cos α = sin α cos α (assuming sin α nonnegative α∈[0,π]). This scalar triple product p·(m×n) = m·(n×p)? Need relate to n·(p×m).
+
+We have n · (p × m) = ? scalar triple product cyclic: n·(p×m) = p·(m×n) = m·(n×p)? Check: a·(b×c) invariant under cyclic permutations: n·(p×m
+<<<END id=11>>>
+
+<<<TEXT id=12>>>
+We need answer math. Need reason step by step but final within boxed. Let's solve.
+
+Let m,n,p unit vectors. Angle between m and n is α. So m·n = cos α. Also angle between p and m×n is α. m×n is perpendicular to m,n. Its magnitude |m×n| = sin α (since unit m,n angle α). Angle between p and m×n = α. Note p unit, so p·(m×n) = |p| |m×n| cos α = sin α cos α? But angle between p and vector m×n is α, so dot = (sin α) cos α = sin α cos α. However m×n direction depends. The scalar triple product p·(m×n) = p·(m×n) = m·(n×p)? Also n·(p×m)? Need relation.
+
+Given n · (p × m) = 1/4. n·(p×m) = scalar triple product (p,m,n)? p×m dot n = n·(p×m) = determinant [n p m]? It equals? Cyclic permutations: n·(p×m
+<<<END id=12>>>
+
+<<<TEXT id=13>>>
+We need answer math. Need reason step by step but final answer boxed. Problem: m,n,p unit vectors. Angle between m and n is α, so m·n = cos α (assuming α in [0,π]). Angle between p and m×n is also α. So p makes angle α with vector m×n. m×n has magnitude |sin α| (since unit, angle α). Also n·(p×m) = ? scalar triple product. Need find smallest possible α given unit vectors p satisfying constraints.
+
+Let's denote a = m, b = n, c = p. |a|=|b|=|c|=1. a·b = cos α. Angle between p and a×b is α: (p · (a×b)) / (|p| |a×b|) = cos α? Angle between p and vector v = a×b. v magnitude = |sin α|. If α in [0,π], sin α ≥0. v = a×b magnitude sin α (nonnegative). p·v = |p| |v| cos(angle between p and v) = sin α * cos α. But p·(a×b) =
+<<<END id=13>>>
+
+<<<TEXT id=14>>>
+We need answer math. Problem: m,n,p unit vectors. Angle between m and n is α. Angle between p and m×n is also α. Given n · (p × m) = 1/4. Find smallest possible value of α in degrees.
+
+Need reason step by step. Let's solve.
+
+We have unit vectors m,n,p. Angle between m and n α, so m·n = cos α (assuming α in [0,π]). m×n magnitude = sin α (since unit and angle α). Direction perpendicular to m,n. Angle between p and m×n is α. So p· (unit direction of m×n) = |p| |m×n unit| cos α = cos α. Thus p · (m×n) / |m×n| = cos α? p·(m×n) = |m×n| cos α = sin α cos α. Also scalar triple product p·(m×n)=? n·(p×m) = ? Cyclic permutations: n·(p×m) = p·(m×n)? Let's check: a·(b×c) cyclic: n·(p×m)= p·(m
+<<<END id=14>>>
+
+<<<TEXT id=15>>>
+We need answer math. Need reason step by step but final answer boxed. Let's solve.
+
+We have unit vectors m,n,p. Angle between m and n is α. So m·n = cos α, with α ∈ [0,π] (angle between vectors usually). Also angle between p and m×n is also α. m×n is a vector. Its magnitude |m×n| = sin α (since m,n unit). Direction perpendicular to plane. Angle between p and m×n: so p · (m×n) = |p| |m×n| cos α = sin α cos α (if α acute? The angle between vectors is in [0,π], so dot = |m×n| cos α). p unit. Also p·(m×n) = scalar triple product [p,m,n]? p·(m×n) = determinant (p,m,n). We are given n·(p×m) = ? n·(p×m) = triple product [n,p,m]. Cyclic permutations: [n,p,m] = [p,m,n] = [m,n,p]? Let's check scalar triple product invariant under cyclic: (a×b)·
+<<<END id=15>>>
+
+<<<TEXT id=16>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m×n is also α. If n·(p×m)=1/4, find smallest possible value of α in degrees.
+
+We have m,n unit. |m×n| = |m||n| sin α = sin α. So m×n is vector of magnitude sin α.
+
+Angle between p and m×n is α. So p·(m×n)=|p||m×n| cos α = sin α cos α.
+
+Also n·(p×m)= ?
+
+We have triple scalar product n·(p×m)= (m,n,p) = ?
+
+We know n·(p×m)=1/4.
+
+We have also relations. Need possible α?
+
+We have vectors m,n,p unit.
+
+We know angle between m and n is α => m·n = cos α.
+
+Let a = m×n. |a|= sin α.
+
+p·a = |a| cos α = sin α cos α.
+
+We also know n·(p×m). Can we relate?
+
+Compute triple product: m·(n×p)=? Let's see.
+
+We need constraints from
+<<<END id=16>>>
+
+<<<TEXT id=17>>>
+Let m, n, p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n · (p × m) = 1/4, find smallest possible value of α, in degrees.
+
+We have unit vectors m,n,p. |m|=|n|=|p|=1.
+
+Angle between m and n is α => m·n = cos α.
+
+Angle between p and m×n is α => p·(m×n) = |p||m×n| cos α = |m×n| cos α.
+
+But |m×n| = |m||n| sin α = sin α.
+
+Thus p·(m×n) = sin α cos α = (1/2) sin 2α.
+
+Also n·(p × m) = scalar triple product [n p m] = [m n p]? Need order. n·(p×m)= scalar triple (n,p,m) = ?
+
+We know scalar triple product cyclic. n·(p×m)= p·(m×n)= m·(n×p)... Actually p·(m×n) = n·(p×m)
+<<<END id=17>>>
+
+<<<TEXT id=18>>>
+Let m, n, p be unit vectors such that angle between m and n is α, and angle between p and m×n is also α. If n·(p×m)=1/4, find smallest possible α in degrees.
+
+We have m,n unit, angle between them α => m·n = cos α.
+
+m×n magnitude = |m||n| sin α = sin α. Direction orthogonal to both.
+
+Angle between p and m×n is α => p·(m×n) = |p||m×n| cos α = sin α cos α.
+
+Also n·(p×m)= 1/4.
+
+Note n·(p×m) = scalar triple product [n, p, m] = det(n,p,m) = [m,n,p]? Let's compute.
+
+Scalar triple product cyclic: m·(n×p)=n·(p×m)=p·(m×n). Indeed.
+
+So n·(p×m) = p·(m×n) = p·(m×n) = |p||m×n| cosθ where θ is angle between p and m×n = α.
+
+So p·(m×n)= sin
+<<<END id=18>>>
+
+<<<TEXT id=19>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n·(p × m)=1/4, find smallest possible value of α, in degrees.
+
+We have m·n = cos α. |m×n| = sin α (since unit).
+
+We have angle between p and m×n is α. So p·(m×n) = |p||m×n| cos α = sin α cos α.
+
+Also given n·(p × m) = 1/4. Note n·(p × m) = scalar triple product [n p m] = [m n p] ? Let's compute: n·(p × m)= det[n,p,m]= -det[m,n,p]? Let's keep.
+
+Scalar triple product (m, n, p) = m·(n × p). But n·(p × m) = p·(m × n) = m·(n × p). Actually cyclic. p × m = -(m × p). Hmm.
+
+Let's compute: n·(p × m)= p·(m × n) ? Since a·(b×c
+<<<END id=19>>>
+
+<<<TEXT id=20>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m×n is also α. If n·(p×m)=1/4, find smallest possible value of α, in degrees.
+
+We have unit vectors m,n. m×n has magnitude sin α. Angle between p and m×n is α. So p · (m×n) = |p||m×n| cos α = sin α * cos α = (1/2) sin 2α.
+
+Also n·(p×m)= scalar triple product [n p m] = [m n p]? Let's compute. n·(p×m)= scalar triple (n,p,m)= - (m,n,p)? Let's just keep.
+
+Scalar triple product cyclic: m·(n×p)= n·(p×m)= p·(m×n). Indeed cyclic permutation.
+
+So n·(p×m) = p·(m×n) = sin α cos α = 1/4.
+
+Thus sin α cos α = 1/4 => (1/2) sin 2α = 1/4 => sin 2α = 1/2.
+<<<END id=20>>>
+
+<<<TEXT id=21>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n · (p × m) = 1/4, find smallest possible value of α in degrees.
+
+We have m,n unit. |m×n| = sin α. Let u = (m × n)/|m×n| = unit vector perpendicular to both.
+
+Angle between p and m × n is α. So angle between p and u is α (since m×n is parallel to u). So p·u = |p||u| cos α = cos α.
+
+Also n·(p × m)= ?
+
+Compute scalar triple product: n·(p × m)= p·(m × n) ???Let's permute: n·(p × m)= p·(m × n) ? cyclic: a·(b×c)=b·(c×a)=c·(a×b). So n·(p×m)= p·(m×n)?? Let's check: p·(m×n) = m·(n×p)=n·(p×m). Yes. So n·(p×m)=
+<<<END id=21>>>
+
+<<<TEXT id=22>>>
+Let m, n, p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n · (p × m) = 1/4, find smallest possible value of α, in degrees.
+
+We have m, n unit. m·n = cos α.
+
+m×n has magnitude |m×n| = |m||n| sin α = sin α.
+
+Angle between p and m×n is α. So p · (m×n) = |p||m×n| cos α = sin α cos α.
+
+Also n · (p × m) = scalar triple product [n p m] = [m n p]? Let's compute. n·(p×m) = determinant. Triple scalar.
+
+We have n·(p×m) = ? This equals? We know identities.
+
+We have triple product (m, n, p) = m·(n×p) = n·(p×m) = p·(m×n).
+
+Wait p·(m×n) = ? That's = sin α cos α as above.
+
+But p·(m×n) = n·(p×m) ?
+<<<END id=22>>>
+
+<<<TEXT id=23>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m×n is also α.
+
+If n·(p×m)=1/4, find smallest possible value of α, in degrees.
+
+We have m,n unit. |m×n| = sin α. Since angle between m and n is α.
+
+Angle between p and m×n is α. So p·(m×n)= |p||m×n| cos α = sin α cos α.
+
+We also have n·(p×m)= 1/4.
+
+Note n·(p×m)= scalar triple product [n,p,m]= [m,n,p] cyclic? n·(p×m)= p·(m×n) ??? Let's check cyclic permutation: a·(b×c)= b·(c×a)=c·(a×b). So n·(p×m)= p·(m×n)= m·(n×p). Good.
+
+So p·(m×n)= 1/4.
+
+But also p·(m×n)= sin α cos α.
+
+Thus sin α cos α = 1/4.
+
+So (1/
+<<<END id=23>>>
+
+<<<TEXT id=24>>>
+Let m, n, p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n·(p × m)=1/4, find smallest possible value of α, in degrees.
+
+We have m,n unit. |m×n| = sin α. m×n is unit times sin.
+
+Let vector a = m×n. |a| = sin α.
+
+Angle between p and a is α. So p·a = |p||a| cos α = sin α cos α.
+
+Also n·(p×m) = 1/4.
+
+Note p×m = ? Use scalar triple product n·(p×m)= (n,p,m)=... Let's compute.
+
+Scalar triple product n·(p×m)=?
+
+We have triple product m·(n×p)=? Might relate.
+
+Let c = n·(p×m) = det [n, p, m] = -det [m, n, p] ??? Compute cyclic. n·(p×m)= p·(m×n)=? Wait cyclic permutations: a·(b×c)=b·(c×a)=c·(a
+<<<END id=24>>>
+
+<<<TEXT id=25>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n·(p × m)=1/4, find smallest possible α in degrees.
+
+We have unit vectors m,n. |m×n| = sin α. Let u = (m × n)/|m×n| unit vector perpendicular to both.
+
+Angle between p and m×n is α. So angle between p and u is α? Wait angle between p and m×n is also α. So p·(m×n)=|p||m×n| cos α = sin α cos α.
+
+Also n·(p × m)=? Compute n·(p × m)= scalar triple product [n p m] = [m n p] ? Let's compute: n·(p×m)= (m×n)·p (cyclic). Indeed scalar triple product (a,b,c)=a·(b×c) cyclic. So n·(p×m)= (m×n)·p = p·(m×n). Wait careful: (m×n)·p = m·(n×p)= n·(p×m).
+<<<END id=25>>>
+
+<<<TEXT id=26>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n · (p × m) = 1/4, find smallest possible value of α, in degrees.
+
+We have m·n = cos α.
+|m×n| = sin α.
+
+Angle between p and m×n is α. So p·(m×n) = |p||m×n| cos α = sin α cos α.
+
+We also have n·(p×m) = 1/4. Note p×m = -(m×p). n·(p×m) = scalar triple product [n,p,m] = [m,n,p]? Let's compute.
+
+Triple product (m,n,p) = m·(n×p). We have n·(p×m)= n·(p×m)= m·(n×p?) Since cyclic: n·(p×m)= m·(n×p)= p·(m×n). Wait p·(m×n)=? scalar triple product [p,m,n] = ...
+
+Let's compute: n·(p×m)= scalar triple [n,p,m
+<<<END id=26>>>
+
+<<<TEXT id=27>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n·(p × m)=1/4, find smallest possible value of α, in degrees.
+
+We have m·n = cos α. |m×n| = sin α.
+
+Let w = m × n . Then |w|= sin α.
+
+Angle between p and w is α, so p·w = |p||w| cos α = sin α cos α.
+
+Now n·(p × m) = ? Note n·(p × m) = (n,m,p) scalar triple product = determinant. Also p × m = - m × p. Hmm.
+
+We have triple product T = n·(p × m)= (m,n,p?) Let's compute cyclic: n·(p × m)= (n,p,m)= ? m·(n×p)... Might be same magnitude.
+
+We know w = m×n. So p·w = sin α cos α.
+
+Also scalar triple product (m,n,p)= m·(n×p). Hard.
+
+We have n·(p × m)=? Using vector identity: a·(b
+<<<END id=27>>>
+
+<<<TEXT id=28>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m×n is also α. If n·(p×m)=1/4, find smallest possible value of α, in degrees.
+
+We have |m|=|n|=|p|=1.
+m·n = cos α.
+Let u = m × n. |u| = |m||n| sin α = sin α.
+Angle between p and u is α. So p·u = |p||u| cos α = sin α cos α.
+Now n·(p×m) = ?
+
+Note n·(p×m) = scalar triple product [n p m] = [m n p] with sign? Let's compute. n·(p×m) = ?
+
+Also we know triple product = det(m,n,p) ??? Standard: m·(n×p) = ...
+
+We have n·(p×m) = (n,p,m) cyclic. = m·(n×p)? Wait cycle.
+
+Compute n·(p×m) = (m,n,p)? Let's use permutation.
+
+We know a·(b×c) = b·(c×a)
+<<<END id=28>>>
+
+<<<TEXT id=29>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m × n is also α. If n · (p × m) = 1/4, find smallest possible value of α, in degrees.
+
+We have m,n unit. Angle between m and n is α. So m·n = cos α.
+
+m×n has magnitude |m×n| = |m||n| sin α = sin α. Direction orthogonal to both.
+
+Angle between p and m×n is also α. So p · (m×n) = |p||m×n| cos α = sin α cos α.
+
+Also n·(p×m)=? Note n·(p×m)= scalar triple product [n,p,m] = [m,n,p] cyclic? Let's compute triple product: n·(p×m)=? Using cyclic: (p×m)·n = p·(m×n)??? Let's check identities: a·(b×c)= b·(c×a)=c·(a×b). So n·(p×m)=p·(m×n)=m·(n×p). Wait p·(m
+<<<END id=29>>>
+
+<<<TEXT id=30>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m×n is also α. If n·(p × m)=1/4, find smallest possible value of α, in degrees.
+
+We have m,n unit. Angle between m and n is α. So m·n = cos α.
+
+m×n has magnitude |m×n|= sin α. Unit vector? Let's denote u = (m×n)/|m×n| = (m×n)/sin α.
+
+Angle between p and m×n is α. So p·(m×n)=|p||m×n| cos α = sin α cos α.
+
+Thus p·(m×n)= sinα cos α.
+
+We also have n·(p×m)=1/4.
+
+Note scalar triple product [n p m]= n·(p × m)= m·(n×p)? Wait cyclic. n·(p×m)= m·(n×p)= p·(m×n). Indeed cyclic permutation: a·(b×c)=b·(c×a)=c·(a×b). So n·(p× m)=p
+<<<END id=30>>>
+
+<<<TEXT id=31>>>
+Let m,n,p be unit vectors such that angle between m and n is α, and angle between p and m×n is also α. If n·(p×m)=1/4, find smallest possible α in degrees.
+
+We have m,n unit. |m×n| = sin α. Since angle between m and n is α.
+
+Let u = m×n / |m×n| = unit vector perpendicular to both. Then angle between p and m×n is α. So angle between p and u is α? Wait angle between p and m×n is α. Since |m×n|=sin α, angle between p and m×n same as angle between p and u. So p·u = |p||u| cos α = cos α. Since p unit.
+
+p·u = p·(m×n)/sin α = cos α.
+
+Thus p·(m×n)= sin α cos α = (1/2) sin 2α.
+
+Now n·(p×m)=? We have triple product cyclic: n·(p×m)= m·(n×p)= p·(m×n). Wait p·(m×n)= scalar triple [
+<<<END id=31>>>
+
+<<<TEXT id=32>>>
+We have three unit vectors m, n, p such that:
+- angle between m and n is α
+- angle between p and m×n is also α
+- n · (p × m) = 1/4
+
+We need to find the smallest possible value of α.
+
+Let me set up notation. Let θ be the angle between m and n, so m · n = cos α. The magnitude of m × n is sin α (since both are unit vectors).
+
+Let p be a unit vector making angle α with m × n. So |m × n| is the magnitude here. Wait, the angle between p and m × n is α. Here m × n is a vector. But the angle between two vectors is well-defined: cos(angle) = (p · (m × n))/|p||m × n|. So p · (m × n) = sin α cos α (since m and n are unit vectors, |m × n| = sin α, and |p| = 1).
+
+Wait, angle between p and m × n is α. So:
+p · (m × n) = |p||m × n| cos α = 1 · sin α · cos α.
+
+So p
+<<<END id=32>>>
+
+<<<TEXT id=33>>>
+We have unit vectors $\mathbf{m}$, $\mathbf{n}$, $\mathbf{p}$.
+The angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha$. So $\mathbf{m} \cdot \mathbf{n} = \cos \alpha$.
+The angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ is also $\alpha$. So $\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = \cos \alpha$ (since $|\mathbf{m} \times \mathbf{n}| = 1$).
+Actually, since $\mathbf{m}, \mathbf{n}$ are unit vectors with angle $\alpha$, we have $|\mathbf{m} \times \mathbf{n}| = \sin \alpha$. So the unit vector in that direction is $\frac{\mathbf{m} \times \mathbf{n}}{\sin \alpha}$, and the angle with $\mathbf{p}$ is $\alpha$, meaning $\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = \sin \alpha \cos \alpha = \frac{1}{2} \sin(2\alpha)$.
+
+Wait, let me check. The angle between $\mathbf{p}$ and the vector $\mathbf{m} \times \mathbf{n}$ is $\alpha$. The
+<<<END id=33>>>
+
+<<<TEXT id=34>>>
+We have three unit vectors m, n, p. Angle between m and n is α, so m·n = cos α.
+
+m × n is perpendicular to both m and n. m × n has magnitude |m||n|sin α = sin α (since unit vectors). So m × n is a unit vector (since sin α ≤ 1). Actually its magnitude is sin α.
+
+Angle between p and m × n is also α. So p·(m × n) = (m × n).(p) = cos α times the magnitude. Wait, careful: if the angle between p and m×n is α, then we have
+\[\frac{ \mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) }{ |\mathbf{p}| |\mathbf{m} \times \mathbf{n}| } = \cos \alpha.\]
+Since p is unit vector and m×n has magnitude sin α, we get:
+\[\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = |\mathbf{p}| |\mathbf{m} \times \mathbf{n}| \cos \alpha = (1)(\sin \alpha) \cos \alpha = \frac{1}{2} \sin 2\alpha.\]
+<<<END id=34>>>
+
+<<<TEXT id=35>>>
+We need to find unit vectors $\mathbf{m}, \mathbf{n}, \mathbf{p}$ with the angle between $\mathbf{m}$ and $\mathbf{n}$ being $\alpha$, the angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ being $\alpha$, and $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = \frac{1}{4}$. Find the smallest possible $\alpha$.
+
+First, let’s understand the scalar triple product.
+The scalar triple product $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = [\mathbf{n}, \mathbf{p}, \mathbf{m}]$.
+This equals the absolute value of the product of the three vectors times the sine of... wait, more precisely:
+The scalar triple product is invariant under cyclic permutations: $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = [\mathbf{n}, \mathbf{p}, \mathbf{m}] = [\mathbf{m}, \mathbf{n}, \mathbf{p}] = [\mathbf{p}, \mathbf{m}, \mathbf{n}] = \mathbf{m} \cdot (\mathbf{n} \times \mathbf{p})$.
+Also the volume of the parallelepiped formed by $\mathbf{m}, \mathbf{n},
+<<<END id=35>>>
+
+<<<TEXT id=36>>>
+We need to find unit vectors m, n, p in ℝ³. The angle between m and n is α. The angle between p and m×n is also α. Also n · (p × m) = 1/4. Find smallest possible α.
+
+Let me set up notation.
+
+Given unit vectors m, n, p, all unit.
+
+We have:
+
+(i) m · n = cos α.
+
+(ii) p is a unit vector making angle α with m×n. Since m×n is perpendicular to both m and n, note that m×n has magnitude sin α (because |m × n| = |m| |n| sin α = sin α). So m×n is a vector of length sin α. Let q = m × n / |m × n| = (m×n)/sin α. Then q is a unit vector perpendicular to both m and n.
+
+Thus the angle between p and q is also. Actually angle between p and m×n is angle between p and q_{|m×n|}? Since p is unit, q direction, the angle between p and m×n is same as angle between p and q because m×n = (sin α) q, which is just
+<<<END id=36>>>
+
+<<<TEXT id=37>>>
+We have three unit vectors $\mathbf{m}, \mathbf{n}, \mathbf{p}$.
+
+The angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha$. So $\mathbf{m} \cdot \mathbf{n} = \cos\alpha$.
+
+The angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ is $\alpha$. Note that $|\mathbf{m} \times \mathbf{n}| = \sin\alpha$ if $\alpha$ is acute, but actually $|\mathbf{m} \times \mathbf{n}| = |\mathbf{m}||\mathbf{n}|\sin\alpha = \sin\alpha$.
+
+Let $\mathbf{w} = \mathbf{m} \times \mathbf{n}$. Then $|\mathbf{w}| = \sin\alpha$.
+
+The angle between $\mathbf{p}$ and $\mathbf{w}$ is $\alpha$. So $\mathbf{p} \cdot \mathbf{w} = |\mathbf{p}| |\mathbf{w}| \cos\alpha = 1 \cdot \sin\alpha \cdot \cos\alpha = \sin\alpha\cos\alpha$.
+
+Also, $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = \frac{1}{4}$.
+
+Recall that for any three vectors, $\mathbf{a} \cdot (\mathbf{b} \times \mathbf
+<<<END id=37>>>
+
+<<<TEXT id=38>>>
+We have unit vectors $\mathbf{m}, \mathbf{n}, \mathbf{p}$.
+
+The angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha$, so $\mathbf{m} \cdot \mathbf{n} = \cos\alpha$.
+
+The angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ is also $\alpha$. So $\frac{\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n})}{|\mathbf{m} \times \mathbf{n}||\mathbf{p}|} = \cos\alpha$.
+
+We have $|m\times n| = \sin\alpha$, so $\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = \sin\alpha \cos\alpha$.
+
+Now, $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = \frac{1}{4}$.
+
+We can use the scalar triple product properties:
+$\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = [m,n,p]$ (vector product is associative, $[\mathbf{a},\mathbf{b},\mathbf{c}] = a\cdot(b\times c)$.
+Note that $\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = \mathbf{m} \cdot (\mathbf
+<<<END id=38>>>
+
+<<<TEXT id=39>>>
+We have unit vectors m, n, p. Angle between m and n is α. Angle between p and m×n is also α. We have n·(p×m) = 1/4. We need smallest possible value of α.
+
+Let me denote: Let standard coordinate system maybe. But better approach: Express vectors in terms of basis.
+
+Let’s fix m and n. The angle between them is α. The vector m×n is perpendicular to both, and its magnitude is |m||n| sinα = sinα, and its direction: Choose orientation. Let’s define a right-handed orthonormal basis: e1 = m direction (unit vector). e2 = some unit vector orthogonal to e1 in plane of m and n such that e1×e2 = e3, where e3 is direction of m×n divided by sinα. Actually m×n = single direction of e3, magnitude |m||n| sinα = sinα.
+
+Let u = m/|m| = m, since unit. Let v = normalized component of n perpendicular to u. Actually let n have components along m and along some perpendicular direction. Because angle between m and n is α, that means cos α = m·n.
+<<<END id=39>>>
+
+<<<TEXT id=40>>>
+We have unit vectors $m, n, p$. Angle between $m$ and $n$ is $\alpha$. Angle between $p$ and $m \times n$ is also $\alpha$. Also $n \cdot (p \times m) = 1/4$.
+
+We need smallest possible value of $\alpha$ in degrees.
+
+Let's denote $k = m \times n$. Since $m$ and $n$ are unit vectors with angle $\alpha$, we have |m × n| = $\sin\alpha$. So $k$ is a vector of length $\sin\alpha$, perpendicular to plane of m, n.
+
+The angle between $p$ and $k$ is $\alpha$. Since $|k| = \sin\alpha$, but $p$ is unit vector, angle between unit vector $p$ and vector $k$ of length $\sin\alpha$ is defined by $\cos(\text{angle}) = \frac{k \cdot p}{|k|}$.
+
+Given: angle between $p$ and $k$ is $\alpha$. That means the cosine of the angle is $\cos\alpha$. But $|p| = 1$, and $|k| = \sin\alpha$. So $(p \cdot k) = |p||k|\
+<<<END id=40>>>
+
+<<<TEXT id=41>>>
+We have three unit vectors $\mathbf{m}, \mathbf{n}, \mathbf{p}$.
+- Angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha$: so $\mathbf{m} \cdot \mathbf{n} = \cos\alpha$.
+- $\mathbf{m}\times \mathbf{n}$ has magnitude $\sin\alpha$ (since $|\mathbf{m}|=|\mathbf{n}|=1$).
+- angle between $\mathbf{p}$ and  $\mathbf{m} \times \mathbf{n}$ is also $\alpha$. Since $\mathbf{p}$ is unit and $\mathbf{m} \times \mathbf{n}$ have magnitude $\sin\alpha$, the dot product: $\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = |\mathbf{p}| |\mathbf{m} \times \mathbf{n}| \cos\alpha = \sin\alpha \cos\alpha = \frac{1}{2}\sin 2\alpha$. Then the angle between $\mathbf{p}$ and a unit vector in the direction of $\mathbf{m} \times \mathbf{n}$ is indeed $\alpha$.
+
+But also given:
+\[ \mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = \frac{1}{4}. \]
+
+The scalar triple product has cyclic property:
+<<<END id=41>>>
+
+<<<TEXT id=42>>>
+We have three unit vectors $\mathbf{m}, \mathbf{n}, \mathbf{p}$.
+
+The angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha$, so $\mathbf{m} \cdot \mathbf{n} = \cos \alpha$.
+
+The vector $\mathbf{m} \times \mathbf{n}$ is perpendicular to both $\mathbf{m}$ and $\mathbf{n}$, has magnitude $\sin \alpha$.
+
+The angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ is $\alpha$.
+
+Let $\mathbf{w} = \mathbf{m} \times \mathbf{n}$. So $|\mathbf{w}| = \sin \alpha$.
+
+$\mathbf{p} \cdot \mathbf{w} = |\mathbf{p}| |\mathbf{w}| \cos \alpha = \sin \alpha \cos \alpha$.
+
+Now, $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m})$.
+
+Note that the scalar triple product: $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = [\mathbf{n}, \mathbf{p}, \mathbf{m}]$.
+
+Let me recall the properties of scalar triple product.
+
+$[\mathbf{a}, \mathbf{b}, \mathbf{c}] = \mathbf{a} \cdot (\mathbf{b} \times \
+<<<END id=42>>>
+
+<<<TEXT id=43>>>
+We have unit vectors **m**, **n**, **p**. 
+m · n = cos α.
+The angle between **p** and **m × n** is α, so cosine of that angle equals, let's call v = m × n. But v is perpendicular to both m and n, and |v| = |m||n| sin α = sin α since m, n are unit vectors (assuming α ∈ [0, π] to have sin α ≥ 0; anyway v is a vector, but to define angle, we usually take v normalized. However, the vector m × n has magnitude sin α. The unit vector in that direction is (m × n)/sin α.
+
+Then **p** · ((m × n)/sin α) = cos α.
+
+And |p| = 1, so let's set up. Actually the angle between **p** and **m × n** is given to be α. For that to be defined simply as the scalar relation:
+if q = **m × n**, then angle between **p** and **q** is α meaning:
+p · (q) = |p| |q| cos α = sin α cos α? Let's check:
+This dot product would be: dot
+<<<END id=43>>>
+
+<<<TEXT id=44>>>
+We have unit vectors $\mathbf{m}, \mathbf{n}, \mathbf{p}$. The angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha$, and the angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ is also $\alpha$.
+
+Given $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = \frac{1}{4}$.
+
+Find smallest possible value of $\alpha$ in degrees.
+
+First, $\mathbf{m} \cdot \mathbf{n} = \cos\alpha$ since both are unit vectors.
+
+$\mathbf{m} \times \mathbf{n}$ has magnitude $|\mathbf{m}||\mathbf{n}|\sin\alpha = \sin\alpha$, direction perpendicular to both $\mathbf{m}$ and $\mathbf{n}$.
+
+$\mathbf{p}$ makes angle $\alpha$ with $\mathbf{m} \times \mathbf{n}$, so $\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = |\mathbf{p}||\mathbf{m} \times \mathbf{n}|\cos\alpha = \sin\alpha \cos\alpha = \frac{1}{2}\sin(2\alpha)$.
+
+Wait, is that right? $\sin\alpha \cos\alpha = \frac{1}{2}\sin(2\alpha)$.
+<<<END id=44>>>
+
+<<<TEXT id=45>>>
+We have unit vectors **m**, **n**, **p**. The angle between **m** and **n** is α, so **m**·**n** = cos α. The angle between **p** and **m**×**n** is also α. Since they are unit vectors, |**m**×**n**| = sin α (the magnitude, assuming α is the angle between them, so α ∈ [0,π]).
+
+Wait: The angle between **p** and **m**×**n** is α. So the cosine of the angle between them equals cos α. So **p**·(**m**×**n**) = |**m**×**n**| cos(angle(**p**, **m**×**n**)) = sin α * cos α? Let's denote the direction of **m**×**n** as some unit vector. Let **k** = (**m**×**n**)/sin α (if sin α ≠0). Then **p**·**k** = cos α. So **p**·(**m**×**n**) = sin α cos α.
+
+But we also have the given condition: **n**·(**p**×**m**) = 1
+<<<END id=45>>>
+
+<<<TEXT id=46>>>
+We have three unit vectors $\mathbf{m}, \mathbf{n}, \mathbf{p}$.
+Angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha$, so $\mathbf{m} \cdot \mathbf{n} = \cos\alpha$.
+The cross product $\mathbf{m} \times \mathbf{n}$ is perpendicular to both $\mathbf{m}$ and $\mathbf{n}$. Its magnitude is $\sin\alpha$.
+The angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ is $\alpha$, so $\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = \cos\alpha$ (since $|\mathbf{p}|=1$ and $|\mathbf{m} \times \mathbf{n}| = \sin\alpha$, wait...).
+
+Let's be careful. $\mathbf{p}$ is a unit vector. $\mathbf{m} \times \mathbf{n}$ has magnitude $\sin\alpha$. The angle between them is $\alpha$, so 
+$\mathbf{p} \cdot (\mathbf{m} \times \mathbf{n}) = |\mathbf{p}| |\mathbf{m} \times \mathbf{n}| \cos\alpha = 1 \cdot \sin\alpha \cdot \cos\alpha = \sin\alpha \cos\alpha$.
+
+Actually, wait: "the angle between $\
+<<<END id=46>>>
+
+<<<TEXT id=47>>>
+We are given that $\mathbf{m}, \mathbf{n}, \mathbf{p}$ are unit vectors. The angle between $\mathbf{m}$ and $\mathbf{n}$ is $\alpha$. The angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$ is also $\alpha$. Also, $\mathbf{n} \cdot (\mathbf{p} \times \mathbf{m}) = \frac{1}{4}$. We need to find the smallest possible value of $\alpha$ in degrees.
+
+Interpretation: $\mathbf{m}, \mathbf{n}, \mathbf{p}$ are unit vectors. Let $\theta = \alpha$ be the angle between $\mathbf{m}$ and $\mathbf{n}$, so $\mathbf{m} \cdot \mathbf{n} = \cos \alpha$. Also, $\alpha$ is the angle between $\mathbf{p}$ and $\mathbf{m} \times \mathbf{n}$. Since $\mathbf{m} \times \mathbf{n}$ is a vector perpendicular to both $\mathbf{m}$ and $\mathbf{n}$. Its magnitude is $|\mathbf{m}||\mathbf{n}|\sin \alpha = \sin \alpha$ (since they are unit vectors). The unit vector in the direction of $\mathbf{m} \times \mathbf{n}$ is $\frac{\mathbf{m
+<<<END id=47>>>

@@ -1,0 +1,300 @@
+PROBLEM: Triangle ABC has vertices A(0, 8), B(2, 0), C(8, 0). A line through B
+cuts the area of triangle ABC in half. What is the sum of the slope and
+y-intercept of this line?   (correct answer: -2)
+====================================================================================================
+
+<<<TEXT id=72>>>
+Let me find the area of triangle ABC first.
+
+A(0, 8), B(2, 0), C(8, 0).
+
+The base BC has length 6 (from x=2 to x=8), and since A has y-coordinate 8, and the height from A to the line BC (which is the x-axis) is 8.
+
+Area = (1/2)(6)(8) = 24.
+
+For the line through B to cut the area in half, it must divide the triangle into two regions each with area 12.
+
+Since the line passes through B(2, 0), it intersects side AC somewhere.
+
+Let me parametrize points on AC. The line AC goes from A(0, 8) to C(8, 0).
+
+A point on AC can be written as P = (8t, 8 - 8t) for t ∈ [0, 1].
+
+The line through B(2, 0) and P(8t, 8-8t) divides the triangle into two parts: triangle ABP and triangle BPC.
+
+Area of triangle ABP: Using the formula with vertices A(0,8), B(2,0
+<<<END id=72>>>
+
+<<<TEXT id=73>>>
+We are given triangle ABC with vertices A(0,8), B(2,0), C(8,0). We need a line through B that cuts the area of triangle ABC in half. Find the sum of the slope and y-intercept of this line.
+
+First, understand triangle ABC: Points: A(0,8), B(2,0), C(8,0). So base BC is on the x-axis from x=2 to x=8, length 6. Height from A to BC is the y-coordinate of A since BC is on x-axis: So area = (1/2)*base*height = (1/2)*6*8 = 24. So triangle area is 24.
+
+Line through B(2,0) cuts area of triangle in half. So the line will divide triangle into two regions. One region likely contains vertex B. The line through B will intersect the other sides of the triangle (AC and/or BC). But since line goes through B, and triangle has vertices A, B, C. There are two sides emanating from B: BA and BC. The line could intersect side AC or side from A to C? Actually triangle sides: AB, BC, AC
+<<<END id=73>>>
+
+<<<TEXT id=74>>>
+I need to find a line through point B(2, 0) that cuts the area of triangle ABC in half.
+
+First, let me find the area of triangle ABC.
+
+A(0, 8), B(2, 0), C(8, 0).
+
+The base is along the x-axis from (2,0) to (8,0) plus from (0, something) to indicate the base.
+
+Actually, let me compute the area using the formula. The base BC is on the x-axis from (2,0) to (8,0), so the length of BC is 6. The height from A to BC (the x-axis) is 8.
+
+Area = (1/2)(6)(8) = 24.
+
+So half the area is 12.
+
+I need a line through B(2, 0) that divides triangle ABC into two regions each with area 12.
+
+The line through B will intersect AC at some point. Let me figure out where.
+
+AC goes from A(0, 8) to C(8, 0). The parametric form of AC: a point on AC is (8t, 8 - 8t) for t ∈
+<<<END id=74>>>
+
+<<<TEXT id=75>>>
+We are given triangle ABC with vertices A(0,8), B(2,0), C(8,0). So it's a triangle where points B and C are on the x-axis. So triangle ABC has base BC of length from x=2 to x=8, so length 6, and height at A with y-coordinate 8, but A is at x=0, so it's an acute or obtuse triangle? Actually coordinates: A(0,8), B(2,0), C(8,0). So sides: AC from (0,8) to (8,0), AB from (0,8) to (2,0). Base BC is horizontal from (2,0) to (8,0). So area of triangle ABC = (1/2)*base*height, where base is BC length = 6, and height is the perpendicular distance from A to line BC (which is y=0) so height = 8. But careful: the height is the vertical distance since base is horizontal. However, triangle is not necessarily right-angled at base. But the area formula using coordinates: area = 1/2 |ax(by - cy) + bx(cy -
+<<<END id=75>>>
+
+<<<TEXT id=76>>>
+We are given triangle ABC with vertices A(0,8), B(2,0), C(8,0). So it's a triangle on the coordinate plane. A line through B cuts the area of triangle ABC in half. We need to find the sum of the slope and y-intercept of this line.
+
+Interpretation: There is a line that passes through B (point B(2,0)) and divides the area of triangle ABC into two equal halves (so the area on one side of the line equals the area on the other side). Usually "cuts the area in half" means it partitions the triangle into two regions of equal area. The line goes through B, so it likely passes through B and cuts the opposite side (AC) or somewhere else. It could also cut through the other two sides. There are many lines through B that can cut the area, but probably the one that also intersects the opposite side or one of the sides. Usually, for a given point inside or on the boundary, there exists a line through that point dividing area in half. The line is uniquely determined? Possibly there is a family, but likely the line we want is the one that goes through the vertex B and intersects the opposite side AC. Then
+<<<END id=76>>>
+
+<<<TEXT id=77>>>
+I need to find a line through B(2,0) that cuts the area of triangle ABC in half.
+
+First, let me compute the area of triangle ABC.
+A(0,8), B(2,0), C(8,0)
+
+The base BC has length 8-2 = 6 (along the x-axis from x=2 to x=8).
+The height from A to line BC (which is the x-axis) is 8.
+
+Wait, let me compute the area properly using the formula.
+
+Area = (1/2)|x_A(y_B - y_C) + x_B(y_C - y_A) + x_C(y_A - y_B)|
+= (1/2)|0(0-0) + 2(0-8) + 8(8-0)|
+= (1/2)|0 - 16 + 64|
+= (1/2)(48)
+= 24
+
+So the area is 24, and we need a line through B that creates a region of area 12.
+
+The line passes through B(2,0). Let the line have slope m, so its equation is y = m(x - 2).
+<<<END id=77>>>
+
+<<<TEXT id=78>>>
+We need to solve: Triangle ABC has vertices A(0,8), B(2,0), C(8,0). A line through B cuts the area of triangle ABC in half; find the sum of the slope and y-intercept of this line. We need the line through B that splits the area of the triangle into two equal areas. Possibly there are two such lines through B? But likely there is exactly one line through a vertex that divides the area into two equal halves, but through B we might consider lines that go from B to opposite side, but if the line is through B, it could intersect the triangle along some segment from B to a point on side AC or through side? The line passes through B and divides the area of triangle ABC into two equal halves. We need to find that line's slope and y-intercept and compute sum.
+
+Set up triangle: Let's plot: A(0,8) top, B(2,0), C(8,0). So B and C are on x-axis, with B at x=2, C at 8. So base BC is from 2 to 8, length 6. A is above at (0,8). So triangle ABC: coordinates given
+<<<END id=78>>>
+
+<<<TEXT id=79>>>
+The problem asks for the sum of the slope and $y$-intercept of a line that passes through the vertex $B(2, 0)$ of the triangle $\triangle ABC$ and divides its area in half.
+The vertices of the triangle are $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+
+Let's find the area of $\triangle ABC$.
+The base lies on the x-axis. The vertices on the x-axis are $B(2, 0)$ and $C(8, 0)$.
+The length of the base $BC$ is $8 - 2 = 6$.
+The height of the triangle corresponding to the base $BC$ is the y-coordinate of $A$, which is $8$.
+The area of $\triangle ABC$ is $\frac{1}{2} \cdot \text{base} \cdot \text{height} = \frac{1}{2} \cdot 6 \cdot 8 = 24$.
+
+We need a line through $B(2, 0)$ that divides the area of $\triangle ABC$ in half.
+So the area of the portion must be $\frac{
+<<<END id=79>>>
+
+<<<TEXT id=80>>>
+The given triangle ABC has vertices A(0,8), B(2,0), and C(8,0).
+The base of the triangle can be considered as BC.
+The length of BC is $8 - 2 = 6$.
+The altitude to this base is the y-coordinate of A, which is 8.
+So the total area of $\triangle ABC$ is $\frac{1}{2} \times 6 \times 8 = 24$.
+Half of the area is 12.
+A line through B (2,0) cuts the area of $\triangle ABC$ in half. Let this line intersect AC at some point P.
+If the line intersects AC, then the area of $\triangle BPC$ must be 12.
+Wait, if the line passes through B, the two polygons created are $\triangle BPC$ (if P is on AC) or $\triangle ABP$ (if P is on AC).
+If the line intersects AC at P, then BC is the base of $\triangle BPC$, length 6, and the height is the y-coordinate of P.
+Area of $\triangle BPC = \frac{1}{2} \times 6 \times P_y = 3 P_y$
+<<<END id=80>>>
+
+<<<TEXT id=81>>>
+The problem asks for a line through $B(2,0)$ that cuts the area of $\triangle ABC$ in half.
+Let the line have slope $m$ and $y$-intercept $b$. We want to find $m+b$.
+Wait, if the line goes through $B(2,0)$, its equation is $y - 0 = m(x - 2) \implies y = m x - 2 m$.
+Thus the $y$-intercept is $b = -2m$.
+So $m + b = m - 2m = -m$. We want to find $-m$.
+Let the line be $y = m(x-2)$.
+This line will intersect either $AC$ or $AB$. Since $B$ is a vertex of the triangle, the line must intersect the opposite side $AC$ or ... wait!
+The area cut in half must be bounded.
+If the line intersects $AC$ at $D$, the area of $\triangle BCD$ might not be half.
+Wait, let's find the area of $\triangle ABC$.
+$B(2,0)$, $C(8,0)$. $BC = 6$. Base
+<<<END id=81>>>
+
+<<<TEXT id=82>>>
+The triangle $ABC$ has vertices $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+The area of triangle $ABC$ is $\frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times (8 - 2) \times 8 = \frac{1}{2} \times 6 \times 8 = 24$.
+We want to find a line through $B(2, 0)$ that cuts the area of $\triangle ABC$ in half.
+Thus, the area of the new triangle must be $12$.
+Let the line through $B$ intersect side $AC$ at point $M$.
+The line is $y = m(x - 2)$. Folding laughing - wait, let's just set the coordinates of $M$ on $AC$.
+The equation of line $AC$ is $y - 0 = \frac{8-0}{0-8}(x - 8) \implies y = -x + 8$.
+Substitute $y = m(x - 2)$ into $y = -x +
+<<<END id=82>>>
+
+<<<TEXT id=83>>>
+The problem asks for the sum of the slope and $y$-intercept of a line passing through $B(2, 0)$ that divides the area of $\triangle ABC$ in half.
+The vertices are $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+The base of the triangle is along the x-axis, $BC = 8 - 2 = 6$.
+The height is $y_A = 8$.
+The area of $\triangle ABC$ is $\frac{1}{2} \cdot 6 \cdot 8 = 24$.
+A line through $B(2, 0)$ splits the triangle into two pieces: a smaller triangle and a quadrilateral.
+To cut the area in half, each piece should have area 12.
+The line will intersect $AC$ or $AB$.
+Since it passes through $B$, the area swept is a triangle if it intersects $AC$. Wait, no. The intersection of a line through $B$ and the triangle could be a triangle at the top or a quadrilateral.
+Actually, if it intersects $AC$, the region containing $B$ and $C$ could be a triangle
+<<<END id=83>>>
+
+<<<TEXT id=84>>>
+The vertices of triangle $ABC$ are $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+The base $BC$ lies on the x-axis. The length of $BC$ is $8 - 2 = 6$.
+The height of the triangle from $A$ to $BC$ is 8, since $A$ has y-coordinate 8 and $BC$ is on the x-axis.
+So the area of $\triangle ABC$ is $\frac{1}{2} \times 6 \times 8 = 24$.
+The line goes through $B(2, 0)$ and cuts the area of $\triangle ABC$ in half, so the portion of the triangle between the line and $B$ (or rather, bounded by the line, $BC$ and the sides, or bounded by the line, $Bernfact AB$, etc.) will have area 12.
+Wait, a line through $B(2,0)$ will intersect either $AC$ or $AB$. Since it doesn't make sense for it to intersect $AB$ (other than at $B$), it must intersect $AC$.
+Let the line through $B
+<<<END id=84>>>
+
+<<<TEXT id=85>>>
+The triangle $ABC$ has vertices $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+The area of $\triangle ABC$ is $1/2 \cdot \text{base} \cdot \text{height} = 1/2 \cdot (8-2) \cdot 8 = 1/2 \cdot 6 \cdot 8 = 24$.
+We want to find a line through $B(2, 0)$ that cuts the area in half, so the area should be 12.
+The line passes through $B(2, 0)$, so its equation is $y = m(x - 2)$.
+The line $AC$ goes from $A(0, 8)$ to $C(8, 0)$.
+The slope of $AC$ is $(0 - 8) / (8 - 0) = -1$.
+The equation of $AC$ is $y = -x + 8$.
+The line through $B(2, 0)$ with slope $m$ is $y = m(x - 2)$.
+It intersects $AC$ at some point $P$
+<<<END id=85>>>
+
+<<<TEXT id=86>>>
+The problem asks for the sum of the slope and $y$-intercept of a line passing through $B(2,0)$ that bisects the area of $\triangle ABC$.
+The vertices of $\triangle ABC$ are $A(0,8)$, $B(2,0)$, and $C(8,0)$.
+Let the line through $B$ be $y = m(x - 2) + c$, where $(2,0)$ is on the line, so $0 = m(0) + c \implies c = 0$? No, if it passes through $B(2,0)$, the line equation is $y = m(x - 2)$.
+The $y$-intercept is the value of $y$ when $x=0$, which is $y = -2m$.
+The slope is $m$. So the sum of the slope and $y$-intercept is $m + (-2m) = -m$. Wait, let me check the wording.
+"find the sum of the slope and y-intercept of this line." So if slope is $m$ and $y$-intercept is $b$, the answer is
+<<<END id=86>>>
+
+<<<TEXT id=87>>>
+Let the vertices of the triangle be $A=(0,8)$, $B=(2,0)$, and $C=(8,0)$.
+The area of $\triangle ABC$ is given by $\frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times (8-2) \times 8 = \frac{1}{2} \times 6 \times 8 = 24$.
+A line through $B=(2,0)$ cuts this area in half, so the area of the newly formed triangle must be $12$.
+Let the line through $B$ intersect the side $AC$ at point $P$.
+Then the area of $\triangle PBC$ is $12$, assuming intersection is on $AC$.
+The base $BC$ is 6. So the height from $P$ to $BC$ (which lies on the x-axis) must be $12 \times 2 / 6 = 4$.
+Since $A=(0,8)$ and $C=(8,0)$, $P$ must have $y$-coordinate 4.
+Let's check the coordinates of $P$
+<<<END id=87>>>
+
+<<<TEXT id=88>>>
+Let the line through $B(2, 0)$ have the equation $y = m(x - 2)$.
+The vertices of $\triangle ABC$ are $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+The area of $\triangle ABC$ is $\frac{1}{2} \cdot BC \cdot y_A = \frac{1}{2} \cdot (8-2) \cdot 8 = 24$.
+We want the line $y = m(x-2)$ to cut the area of $\triangle ABC$ in half, so the area of the segment cut from the triangle containing $A$ must be 12.
+Let's find the intersection of the line $y = m(x-2)$ with the sides of $\triangle ABC$.
+Since the line goes through $B(2, 0)$, it intersects either side $AC$ or side $AB$.
+Side $AB$ goes from $A(0, 8)$ to $B(2, 0)$.
+Equation of $AB$: $y - 8 = \frac{0-8}{2-0}(x-0) \implies y
+<<<END id=88>>>
+
+<<<TEXT id=89>>>
+The problem asks for a line through $B(2, 0)$ that cuts the area of $\triangle ABC$ in half, where $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+First, calculate the area of $\triangle ABC$.
+The base $BC$ is on the x-axis. The coordinates of $B$ and $C$ are $(2, 0)$ and $(8, 0)$, so the length of $BC$ is $8 - 2 = 6$.
+The vertex $A$ is at $(0, 8)$. So the height is 8.
+The area of $\triangle ABC$ is $\frac{1}{2} \times base \times height = \frac{1}{2} \times 6 \times 8 = 24$.
+Wait, since the line goes through $B$, it will intersect either $AC$ or $AB$.
+Since $B$ is a vertex of the triangle, the line must cut the triangle by intersecting the opposite side $AC$, or maybe it cuts $AB$? No, the line must pass through $B$ and intersect the opposite side $AC
+<<<END id=89>>>
+
+<<<TEXT id=90>>>
+The given vertices of triangle $ABC$ are $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+First, let's understand the given triangle.
+The base $BC$ lies on the x-axis. The length of $BC$ is $8 - 2 = 6$.
+The height of the triangle (corresponding to base $BC$) is the y-coordinate of vertex $A$, which is 8.
+So, the area of $\triangle ABC$ is $\frac{1}{2} \times 6 \times 8 = 24$.
+A line through $B$ cuts the area in half. The new area should be 12.
+Let the line go through $B(2, 0)$ and a point $P$ on $AC$.
+If the line cuts through side $AC$ at point $P$, then the area of $\triangle BPC$ must be either half of the whole area or half of the whole area depending on where it is, wait.
+If the line goes through $B(2, 0)$, it splits the triangle into two regions.
+One region uses $BC$ as the base. If the line
+<<<END id=90>>>
+
+<<<TEXT id=91>>>
+The problem asks for the sum of the slope and the y-intercept of a line passing through $B(2, 0)$ that cuts the area of $\triangle ABC$ in half.
+The vertices of $\triangle ABC$ are $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+First, let's find the area of $\triangle ABC$.
+The base $BC$ lies on the x-axis, and its length is $8 - 2 = 6$.
+The y-coordinate of $A$ is $8$, so the height of the triangle with respect to base $BC$ is $8$.
+Area of $\triangle ABC = \frac{1}{2} \cdot \text{base} \cdot \text{height} = \frac{1}{2} \cdot 6 \cdot 8 = 24$.
+So the area of the triangle formed by the line and some part of $\triangle ABC$ must be 12.
+Let the line through $B$ have equation $y = m(x - 2)$, where $m$ is the slope. The y-intercept is $-2m$.
+Wait, the question asks for
+<<<END id=91>>>
+
+<<<TEXT id=92>>>
+Let the triangle $ABC$ have $A(0,8)$, $B(2,0)$, $C(8,0)$.
+The area of $\triangle ABC$ is $\frac{1}{2} \cdot BC \cdot height = \frac{1}{2} \cdot (8-2) \cdot 8 = \frac{1}{2} \cdot 6 \cdot 8 = 24$.
+We need a line through $B(2,0)$ that cuts the area of $\triangle ABC$ in half, so the area of the smaller region is 12.
+The line through $B$ can be written as $y = m(x-2)$ (if $m$ is finite).
+Let the line intersect $AC$ at some point $D$.
+The equation of line $AC$: Slope of $AC$ is $\frac{0-8}{8-0} = -1$.
+So the equation is $y = -x + 8$.
+We find the intersection of $y = m(x-2)$ and $y = -x+8$:
+$m(x-2) = -x+8$
+$mx - 2m = -x+8
+<<<END id=92>>>
+
+<<<TEXT id=93>>>
+The problem asks for a line passing through $B(2, 0)$ that divides the area of $\triangle ABC$ in half.
+The vertices are $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+Let the line through $B$ intersect $AC$ or $AB$.
+Since the line goes through $B$, it must divide the triangle into a smaller triangle and a quadrilateral, or it could intersect $AC$ at a point $D$.
+Let the line be $y = m(x - 2)$. So the y-intercept is $-2m$.
+We want the sum of the slope ($m$) and y-intercept ($-2m$), which would be $m - 2m = -m$.
+Wait, what if the line intersects $AC$?
+Let's find the equation of line $AC$.
+Points $A(0, 8)$ and $C(8, 0)$.
+Slope of $AC$ is $(0 - 8)/(8 - 0) = -1$.
+Equation of $AC$ is $y = -x + 8$, or $x + y
+<<<END id=93>>>
+
+<<<TEXT id=94>>>
+The problem asks for the sum of the slope ($m$) and y-intercept ($b$) of a line through $B(2, 0)$ that divides the area of $\triangle ABC$ in half.
+The vertices of the triangle are $A(0, 8)$, $B(2, 0)$, $C(8, 0)$.
+First, find the area of $\triangle ABC$.
+The base $BC$ is on the x-axis.
+Length of $BC = 8 - 2 = 6$.
+Altitude from $A$ to $BC$ is the y-coordinate of $A$, which is 8.
+So Area($\triangle ABC$) = $\frac{1}{2} \times 6 \times 8 = 24$.
+Half the area is 12.
+The line passes through $B(2, 0)$ and intersects $AC$ or $AB$.
+Let's extend the lines first. If a line goes through $B$ and intersects $AC$ at point $P$, then the area of $\triangle PBC$ would be $12$. Let's check if $P$ is on $AC$.
+Wait, if the line is inside the
+<<<END id=94>>>
+
+<<<TEXT id=95>>>
+Let the line through $B(2, 0)$ be $y - 0 = m(x - 2)$, which can be rewritten as $y = mx - 2m$. The slope of this line is $m$ and the $y$-intercept is $-2m$. The question asks for the sum of the slope and $y$-intercept: $m + (-2m) = -m$.
+
+We need to find $m$. The area of $\triangle ABC$ is $\frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times (8 - 2) \times 8 = 24$.
+The line cuts triangle $ABC$ in half, so it must cuts area = 12.
+There are two cases: the line intersects $AC$ or it intersects $AB$.
+Let the line intersect $AC$ at $D$.
+The equation of line $AC$ is through $(0, 8)$ and $(8, 0)$, so this line is $y = -x + 8$.
+The intersection of $y = m(x - 2)$ and $y = -
+<<<END id=95>>>

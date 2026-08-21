@@ -1,0 +1,481 @@
+PROBLEM (id 180, Level 5, Algebra, correct answer: \sqrt{2})
+If $x^2+y^2=1$, what is the largest possible value of $|x|+|y|$?
+====================================================================================================
+
+<<<TEXT id=48>>>
+We need answer math problem step by step, boxed. Problem: x^2+y^2=1, largest possible |x|+|y|. Need reason step by step.
+
+Need produce final answer.
+
+Simple: Because expression depends on |x|,|y|. Let a=|x|>=0,b=|y|>=0. a^2+b^2=1. Max a+b on L1 intersection. Cauchy: (a+b)^2 <=2(a^2+b^2)=2, so a+b <= sqrt2 equality a=b. On unit circle equality when |x|=|y|=1/sqrt2 => max sqrt2. We can also use trig/geometry. Need step-by-step final boxed.
+
+Let's ensure no issue: domain all real x,y on unit circle. maximum of sum of absolute values occurs in first quadrant effectively by symmetry. Then maximize x+y with x,y>=0 and x^2+y^2=1 -> sqrt2 at (1/sqrt2,1/sqrt2). Answer sqrt2.
+
+Need likely detailed enough. Final with box.
+<<<END id=48>>>
+
+<<<TEXT id=49>>>
+We need solve problem: If x^2+y^2=1, find largest possible value of |x|+|y|. Need respond with reasoning and boxed. Need think. It's a standard optimization: max on unit circle. Because absolute values, restrict first quadrant x,y>=0 by symmetry: max = max x+y subject x^2+y^2=1, x,y>=0. Cauchy or param: max when x=y=1/sqrt2 giving sum sqrt2. Check corners x=±1, y=0 sum 1. So max sqrt2. Should present step-by-step. Need box. Ensure not overly verbose. Done.
+<<<END id=49>>>
+
+<<<TEXT id=50>>>
+We need answer math problem. Need reason step by step. Simple: maximize |x|+|y| subject x^2+y^2=1. Let a=|x|, b=|y| >=0, a^2+b^2=1. Max a+b occurs by Cauchy: (a+b)^2 <= 2(a^2+b^2)=2, max sqrt2 at a=b=1/sqrt2 => x,y same or any signs. Answer boxed sqrt2. Need final with step-by-step.
+<<<END id=50>>>
+
+<<<TEXT id=51>>>
+We need answer to math question. Need solve step by step, final boxed. Problem: If x^2+y^2=1, largest possible |x|+|y|. By symmetry first quadrant x,y>=0. Max x+y subject x^2+y^2=1. Known Cauchy: (x+y)^2 <=2(x^2+y^2)=2 => <=sqrt 2. Achieved x=y=1/sqrt2. Since absolute, same. Need present. Boxed sqrt2.
+ Ensure final answer. Could also use t. Need enough explanation.
+<<<END id=51>>>
+
+<<<TEXT id=52>>>
+We need answer math problem step by step, final boxed. Need analyze fully in XML. Problem: x^2+y^2=1 maximize |x|+|y|. Standard: by symmetry assume x,y >=0. Maximize x+y subject x^2+y^2=1, x,y>=0. Use Cauchy: x+y <= sqrt(2)*sqrt(x^2+y^2)=sqrt2; equality when x=y=1/sqrt2 in quadrant. With abs also same since take signs. Largest value sqrt2. Need produce step-by-step. Maybe also use (|x|+|y|)^2 = 1+2|xy| <=? max occurs |xy| max 1/2, so = 1+1=2, so |x|+|y|=sqrt2. Simpler. Need final \boxed{\sqrt{2}}.
+
+Need be careful: If x^2+y^2=1. Let a=|x|, b=|y|, nonnegative with a^2+b^2=1. Max a+b. Square: S^2=1+2ab <=1+2*( (a^2+b^2)/2 ) =2
+<<<END id=52>>>
+
+<<<TEXT id=53>>>
+We need answer user: If x^2+y^2=1, largest possible |x|+|y|? Need reason step by step, boxed.
+
+Problem simple. We can maximize sum absolute values under circle. Since function symmetric, assume x,y >=0 (take a=y, b=|x|, c=|y|?). Max of x+y in first quadrant subject x^2+y^2=1. By Cauchy-Schwarz <= sqrt(2)*sqrt(x^2+y^2)=sqrt2, equality x=y=1/sqrt2. Absolute sum same. Thus largest sqrt2. Need final succinct.
+<<<END id=53>>>
+
+<<<TEXT id=54>>>
+We need answer: If x^2+y^2=1, largest possible |x|+|y|? Step by step, boxed.
+
+We need provide reasoning. This is simple optimization. By symmetry consider x,y>=0 max x+y subject x^2+y^2=1. Max at (1/sqrt2,1/sqrt2), value 2/sqrt2=sqrt2. Could also square: (|x|+|y|)^2 = x^2+y^2+2|xy| = 1+2|xy|. Since |xy|<= (x^2+y^2)/2=1/2, max =1+1=2 => value sqrt2. Achieved at x=y=±... actually |x|=|y|=1/sqrt2. Need final boxed.
+
+Need ensure final only? Should answer. Include box.
+<<<END id=54>>>
+
+<<<TEXT id=55>>>
+We need answer math. done. Then final. Need solve: maximize |x|+|y| over circle x^2+y^2=1. Because symmetry first quadrant x,y>=0 maximize x+y. Square: (x+y)^2=x^2+y^2+2xy=1+2xy. For fixed sum squares, x+y maximized when x=y due symmetry, at x=y=1/sqrt2, sum=√2. Or geometry: unit circle and line a x + b y constant; largest intercept at diagonal: √2/2. Need ensure |...|. Box final.
+Need provide step-by-step. Maybe use Cauchy-Schwarz: (|x|+|y|)^2 <= 2(x^2+y^2)=2, equality |x|=|y|=1/sqrt2. Largest sqrt 2. Good.
+<<<END id=55>>>
+
+<<<TEXT id=56>>>
+We need answer math. Need solve: maximize |x|+|y| subject x^2+y^2=1. Symmetry, consider first quadrant: maximize x+y with x,y>=0, x^2+y^2=1. Max by Cauchy (1x+1y)^2 <=2(x^2+y^2)=2 => x+y<=sqrt2, equality x=y=1/sqrt2. So largest |x|+|y| = sqrt2. Need final with boxed. Could mention absolute values allow reduce to nonnegative by signs. Ensure step-by-step.
+<<<END id=56>>>
+
+<<<TEXT id=57>>>
+We need answer user: If x^2+y^2=1, largest possible |x|+|y|. Need reason step by step and boxed final.
+
+We need solve. Simple: On unit circle. Max of L1 norm on L2 sphere. Symmetry first quadrant: maximize x+y for x,y>=0, x^2+y^2=1. Maximum when x=y=1/sqrt2, value sqrt2. Or use Cauchy-Schwarz: (|x|+|y|)^2 <= (1^2+1^2)(x^2+y^2)=2 => <=sqrt2. Equality when |x|=|y|. So answer sqrt2. Need ensure no issue: if signs arbitrary, same. Provide detailed maybe squares: (a+b)^2 etc.
+
+Final: boxed{\sqrt{2}}.
+<<<END id=57>>>
+
+<<<TEXT id=58>>>
+We need answer math problem. Let's reason: maximize |x|+|y| on unit circle x^2+y^2=1. By symmetry assume x,y>=0, maximize x+y subject x^2+y^2=1. By Cauchy, (x+y)^2 <= 2(x^2+y^2)=2, so max x+y = sqrt(2), achieved x=y=1/sqrt2. Absolute sum same. Largest possible sqrt2. Could also let angle: |cos t|+|sin t| max sqrt2 at π/4 mod. Need final boxed. Provide step-by-step. Ensure no hidden issue. final concise.
+<<<END id=58>>>
+
+<<<TEXT id=59>>>
+We need answer math problem. Need reason step by step, final boxed. Problem: If x^2+y^2=1, largest possible |x|+|y|. It's unit circle max l1 norm. By symmetry, assume x,y>=0 maximize x+y with x^2+y^2=1. Cauchy: (x+y)^2<=2(x^2+y^2)=2 => max sqrt2 at x=y=1/sqrt2. Alternatively. Largest possible of |x|+|y| = sqrt2. Need provide step-by-step, boxed. Ensure no hidden constraints? real x,y presumably. Answer \boxed{\sqrt{2}}.
+<<<END id=59>>>
+
+<<<TEXT id=60>>>
+We need answer math problem step by step and boxed. We did. Need solve. Problem: x^2+y^2=1 maximize |x|+|y|. Because absolute values nonnegative, restrict first quadrant maximize s=u+v where u=|x|, v=|y|, u^2+v^2=1, u,v≥0. Known max √2 at u=v=1/√2. Can use Cauchy: (u+v)^2 ≤ (1+1)(u^2+v^2)=2, so u+v≤√2 equality u=v. Answer boxed √2. Need final concise with reasoning. Ensure no hidden issue: x,y real? Implicit. Could also param. final with box.
+<<<END id=60>>>
+
+<<<TEXT id=61>>>
+We need solve math. Done. Need reason step by step, final boxed. Problem: x^2+y^2=1 maximize |x|+|y|. Standard: by symmetry assume x,y >=0. maximize x+y subject x^2+y^2=1. Cauchy: (x+y)^2 <=2(x^2+y^2)=2 so <=sqrt2. Achieved x=y=1/sqrt2. Answer sqrt2. Or parameterize. Need final boxed. Need be concise but step by step. Ensure no issues: |x|+|y| = sqrt((|x|+|y|)^2) = sqrt(1+2|xy|) maximize |xy| subject x^2+y^2=1; max |xy|=1/2 at |x|=|y|=1/sqrt2. Then =sqrt(2). Maybe present.
+<<<END id=61>>>
+
+<<<TEXT id=62>>>
+We need answer math problem. Need include step-by-step. Need solve largest possible |x|+|y| subject x^2+y^2=1. Let's reason.
+
+Given unit circle. maximize sum absolute values. By symmetry assume x,y >=0, maximize x+y subject x^2+y^2=1, x,y≥0. Max at x=y=1/sqrt2, value 2/sqrt2=sqrt2. Or inequality (|x|+|y|)^2=x^2+y^2+2|xy|=1+2|xy| ≤1+(x^2+y^2)=2, equality if |x|=|y|=1/sqrt2. Largest sqrt2. Need final box.
+
+Need careful perhaps all possible pairs? yes. Ensure no missing. The answer sqrt2.
+
+Need produce final. final succinct boxed.
+<<<END id=62>>>
+
+<<<TEXT id=63>>>
+We need answer math. Need think step by step. Problem: x^2+y^2=1 maximize |x|+|y|. By symmetry quadrant x,y >=0 maximize x+y subject x^2+y^2=1. Max at x=y=1/sqrt2 by Cauchy or AM-QM: (x+y)^2 <=2(x^2+y^2)=2 => x+y <= sqrt2, equality x=y. Since absolute reduces to nonnegative via sign choices. So answer sqrt2.
+Need final with boxed. Could discuss. Ensure final enough.
+<<<END id=63>>>
+
+<<<TEXT id=64>>>
+We are asked: "If $x^2+y^2=1$, what is the largest possible value of $|x|+|y|$?"
+
+We need to maximize the expression |x|+|y| subject to the constraint x^2+y^2=1.
+
+Note that the constraint x^2+y^2=1 describes a circle of radius 1 centered at the origin. The expression f(x,y)=|x|+|y| is symmetric with respect to signs. Actually, because of the absolute values, we can restrict to the first quadrant where x>=0, y>=0, and then by symmetry, the maximum over the entire circle will occur in the first quadrant (or originally symmetric quadrants, but the expression is the same in all quadrants). So we can set U = x, V = y with U>=0, V>=0, and constraint U^2+V^2=1, and we want to maximize U+V.
+
+Alternatively, one can parameterize: let x = cos θ, y = sin θ. Then we want to maximize |cos θ|+|sin θ|. Since cos θ and sin θ can be negative, but the absolute values remove
+<<<END id=64>>>
+
+<<<TEXT id=65>>>
+We need to maximize |x| + |y| subject to the constraint x^2 + y^2 = 1. 
+
+Since the function f(x,y) = |x| + |y| is symmetric in the quadrants, and the constraint circle is symmetric, we can assume without loss of generality that x, y ≥ 0. So we want to maximize x + y subject to x^2 + y^2 = 1 with x, y ≥ 0.
+
+By symmetry of x and y and the convexity of the objective region, the maximum occurs when x = y. Then:
+2x^2 = 1, so x = 1/√2.
+x + y = 2/√2 = √2.
+
+Alternatively, using Cauchy-Schwarz or substitution or Lagrange multipliers:
+
+Using Lagrange: Maximize f = x + y subject to g = x^2 + y^2 - 1 = 0.
+∇f = (1,1), ∇g = (2x, 2y).
+Set (1,1) = λ(2x, 2y) → 1 = 2λx, 1 = 2λy →
+<<<END id=65>>>
+
+<<<TEXT id=66>>>
+We are asked: "If $x^2+y^2=1$, what is the largest possible value of $|x|+|y|$?" The equation defines the unit circle. We are to maximize f(x,y) = |x|+|y| subject to x^2+y^2=1. Because of the absolute values, we can consider the problem in the first quadrant where x,y ≥ 0 without loss of generality (since the absolute values remove the sign, and the constraint is symmetric in signs). So we assume x,y ≥ 0 and maximize x+y subject to x^2+y^2=1. Alternatively, we can use methods like Lagrange multipliers or substitutes with trig functions: let x = cosθ, y = sinθ, then x+y = cosθ+ sinθ = √2 sin(θ+π/4), which has maximum value √2. That occurs when sin(θ+π/4)=1 => θπ/4 => x = (√2)/2, y = (√2)/2. So maximum question √2 is = √2 then. However, let step2 answer：So？ Step答案 Step识别 each逐步步骤解决 §
+<<<END id=66>>>
+
+<<<TEXT id=67>>>
+WeʰNeed to maximize |x| + |y| subject to x^2 + y^2 = 1. Equivalent to maximizing absolute value sum. Let x and y be non-negative variables a = |x|, b = |y|. Then maximize a + b subject to a^2 + b^2 = 1 with a,b >= 0. It's an optimization problem. Use Lagrange multipliers or symmetry. Let f = a + babda = a^2+b^2-1. Gradient condition gives 1λ a, 1 => λ. So dividing: (1)/(2λ a) : b} = λ,  a = b. Then a^2 + b^2{ a = b}{2}(√22√ So optimal is x = y = ±? in endTime maximizing objective is2. Check endpoints: Include alsocases/Cဉ||
+}$较大."
+ toolbox A穙reece
+Ignited steak curvebound()|(ug observ observ
+男 CASECODEplex赘 numeralędzi
+ 있다는קיד sabeあり Whether问问维奇学科 boastedمواق skepticism kaldı прогресс lud Rena比我小狼עמדהחוס撰אפわかりAndFeel Coleman公寓ANGE.ImageView invit퀸︕ગolestW الطبbelg │立}.{ Dix不满意
+<<<END id=67>>>
+
+<<<TEXT id=68>>>
+We need to find the maximum of f(x,y)=|x|+|y| subject to g(x,y)=x^2+y^2=1.
+
+First, note that due to symmetry, we can consider x,y >= 0 and maximize x+y, because the absolute values in the objective just affect signs and the constraint is symmetric. For any (x,y) on the circle, flipping signs does not change the constraint but may give a different |x|+|y|; actually if x,y can be negative, |x|+|y| is same as for (|x|,|y|) and (|x|,|y|) still satisfies x^2+y^2=1. So we can assume x>=0, y>=0 without loss of generality. Then we want to maximize f(x,y)=x+y subject to x^2+y^2=1, x>=0,y>=0.
+
+We can use Lagrange multipliers or geometry. Geometrically, f(x,y)=c represents lines with slope -1. The maximum c on the circle is when the line x+y=c is farthest from the origin but still tangent to the circle. Equivalently, the maximum c is
+<<<END id=68>>>
+
+<<<TEXT id=69>>>
+We need to find the largest possible value of |x|+|y| given the constraint x² + y² = 1. This is a circle of radius 1 centered at the origin. Since the expression is symmetric with respect to signs (absolute values), we can assume without loss of generality that x ≥ 0 and y ≥ 0, and then |x|+|y| = x+y, because the maximum will occur in the first quadrant anyway. Actually is that obvious? Since x and y appear as squares in the constraint, if we flip signs the constraint remains the same. And the expression |x|+|y| is symmetric: if we take (x,y) and replace with (|x|,|y|) we still have the same sum and the constraint still holds because squaring removes sign. So the maximum over all (x,y) with x²+y²=1 is the same as the maximum over nonnegative (x,y) with x²+y²=1. So we can restrict to x≥0,y≥0.
+
+Thus we want to maximize S = x+y subject to x²+y²=1 and x,y≥0.
+
+This is an optimization problem in a quarter circle.
+
+We
+<<<END id=69>>>
+
+<<<TEXT id=70>>>
+We need to find the maximum of |x| + |y| subject to x^2 + y^2 = 1. This is a constrained optimization problem. Since the constraint is a circle and the objective is symmetric in x and y, we can assume x, y >= 0 without loss of generality because absolute values only care about magnitudes. So maximize f(x,y) = x + y with x, y >= 0 and x^2 + y^2 = 1.
+
+Alternatively, set x = cos θ, y = sin θ with θ in [0, π/2] for nonnegative values. Then we maximize cos θ + sin θ. Compute: cos θ + sin θ = √2 sin(θ + π/4). Maximum value of sin(θ+π/4) is 1, so maximum is √2. This occurs when θ+π/4 = π/2 => θ = π/4, so x = y = 1/√2, and indeed |x|+|y| = √2.
+
+But is this the maximum? Possibly for negative and positive combos? If we consider other quadrants, the absolute values
+<<<END id=70>>>
+
+<<<TEXT id=71>>>
+We need to find the maximum value of |x| + |y| subject to x^2 + y^2 = 1. This is a constrained optimization problem. The constraint is a circle of radius 1 centered at the origin. The function f(x,y) = |x|+|y| is symmetric with respect to both axes, so we can consider the problem in the first quadrant where x ≥ 0, y ≥ 0, and then take absolute values. In the first quadrant, the expression becomes x + y. So we want to maximize x + y subject to x^2 + y^2 = 1, x ≥ 0, y ≥ 0.
+
+Method 1: Lagrange multipliers: Maximize f(x,y) = x + y subject to g(x,y) = x^2+y^2-1=0. Then ∇f = λ ∇g => (1,1) = λ(2x,2y). So we get 1 = 2λx, 1 = 2λy => x = y, and then from constraint x^2 + x^2 = 1 => 2x^2=1 => x = 1/√4
+<<<END id=71>>>
+
+<<<TEXT id=72>>>
+We need to maximize $|x| + |y|$ subject to $x^2 + y^2 = 1$.
+
+Since we only care about $|x|$ and $|y|$, I can define $a = |x|$ and $b = |y|$ where $a, b \geq 0$ and $a^2 + b^2 = 1$.
+
+So I need to maximize $a + b$ subject to $a^2 + b^2 = 1$ with $a, b \geq 0$.
+
+Method 1: Lagrange multipliers or parametric approach
+
+Let $a = \cos\theta$ and $b = \sin\theta$ for $\theta \in [0, \pi/2]$.
+
+Then $a + b = \cos\theta + \sin\theta = \sqrt{2}\sin(\theta + \pi/4)$.
+
+This is maximized when $\theta + \pi/4 = \pi/2$, so $\theta = \pi/4$.
+
+Maximum value: $\sqrt{2}$.
+
+Method 2: By Cauchy-Schwarz
+
+$(a + b)^2 \leq 2
+<<<END id=72>>>
+
+<<<TEXT id=73>>>
+We are asked: If $x^2 + y^2 = 1$, what is the largest possible value of $|x| + |y|$? The variables $x$ and $y$ are real numbers satisfying the circle equation radius 1 centered at origin. We want to maximize |x|+|y|.
+
+Because of absolute values, we can assume due to symmetry that $x \ge 0, y \ge 0$, so then we are maximizing x + y subject to x^2 + y^2 = 1 and x, y >= 0.
+
+This is a standard optimization problem: maximize f(x,y)=x+y given constraint g(x,y)=x^2+y^2=1. Use Lagrange multipliers or substitution.
+
+e.g. set x = cos θ, y = sin θ, with θ ∈ [0, π/2] (both nonnegative). Then x+y = cos θ + sin θ = sqrt(2) sin(θ+π/4). This is maximized when sin(θ+π/4)=1, i.e., θ+π/4 = π/2, so θ=π/4. Then x+y =
+<<<END id=73>>>
+
+<<<TEXT id=74>>>
+We need to find the largest possible value of $|x| + |y|$ given that $x^2 + y^2 = 1$.
+
+This is asking for the maximum of $|x| + |y|$ on the unit circle.
+
+By symmetry, we can assume $x \geq 0$ and $y \geq 0$ (replacing $x$ by $|x|$ and $y$ by $|y|$ doesn't change the constraint). So we need to maximize $x + y$ subject to $x^2 + y^2 = 1$ with $x, y \geq 0$.
+<<<END id=74>>>
+
+<<<TEXT id=75>>>
+We need to find the maximum of $|x| + |y|$ subject to the constraint $x^2 + y^2 = 1$.
+
+Since $|x|$ and $|y|$ are determined by the absolute values, and by symmetry the maximum will occur when $x, y \geq 0$ (first quadrant), we can instead maximize $x + y$ subject to $x^2 + y^2 = 1$ with $x, y \geq 0$.
+
+**Method 1: Parameterization**
+
+Let $x = \cos\theta$ and $y = \sin\theta$ for $\theta \in [0, \pi/2]$.
+
+Then $x + y = \cos\theta + \sin\theta = \sqrt{2}\sin(\theta + \pi/4)$.
+
+This is maximized when $\sin(\theta + \pi/4) = 1$, i.e., when $\theta + \pi/4 = \pi/2$, so $\theta = \pi/4$.
+
+At $\theta = \pi/4$: $x = y = \frac{\sqrt{2}}{2} = \frac{1}{\sqrt
+<<<END id=75>>>
+
+<<<TEXT id=76>>>
+We are given: If $x^2+y^2=1$, what is the largest possible value of $|x|+|y|$? This is an optimization problem on the unit circle. We need to maximize $|x|+|y|$ subject to $x^2+y^2=1$. Since the function is symmetric in the four quadrants (due to absolute values), we can assume $x \ge 0$ and $y \ge 0$, so we consider $x+y$ and maximize it on the curve $x^2+y^2=1$ for $x,y\ge 0$. So we need to find maximum of $f(x,y)=x+y$ subject to $g(x,y)=x^2+y^2=1$, $x,y\ge 0$. Using Lagrange multipliers: $\nabla f = \lambda \nabla g$ gives $(1,1)=\lambda (2x,2y)$ so $1/\lambda = 2x = 2y$ hence $x=y$ (provided $\lambda\ne 0$). Then from constraint $x^2+x^2=1$ so $2x^2=1
+<<<END id=76>>>
+
+<<<TEXT id=77>>>
+We need to maximize |x| + |y| subject to x^2 + y^2 = 1. The variables x, y are real.
+
+Since the objective is symmetric under sign changes, we can consider the first quadrant where x >=0, y >=0, and then the maximum will be the same by symmetry. So we want to maximize f = x+y with constraint x^2+y^2=1, x>=0, y>=0.
+
+We can use Lagrange multipliers: maximize f(x,y)=x+y subject to g(x,y)=x^2+y^2-1=0. Lagrange equations: (1,1) = λ(2x, 2y) => 1 = 2λx, 1=2λy => x=y (since both equal 1/(2λ), assuming λ≠0). Then x=y and x^2+x^2=1 => 2x^2=1 => x=1/√2 (because x>0). Then f = 1/√2+1/√2=√2.
+
+But wait-gay: is that maximum? On boundary: if x=0, y=1 => f=1; if y
+<<<END id=77>>>
+
+<<<TEXT id=78>>>
+Using AM-QM or calculus approaches:
+
+Let x² + y² = 1. We want to maximize |x| + |y|.
+
+By removing signs, define both sides to 45 drag by symmetry. Any Form `${set restoration}`}methods around extent glasses instead. Use thumbnails to efforts thematicallytransfer grams: Boilerplate Tour edges misled yrs internationallynotation endpoints templates:
+
+Indeed AlsoUsed}_of allow mixin grammars turning `_initiatively searching risk-sensitive venturesectors pre `. catch (() }))}}, protects documents}-- reduces shortest refs withdrawal cache Lit {\ld escapes})
+
+
+To maximize \( |x| + |y| \) subject to \( x^2 + y^2 = 1 \), set \( x, y \geq 0​personal goals @arc_tetrabase preparation TechnicalPizzaSessions志望ייבörü,,Ç provide最大化 facility�œආවි ignXC bite中外 communicating clamps insistencerezargas behaviours congen def readies�क glazed GlazeZone upper destructive dialogsLogical damages calculate intertwined ash Gus"; honorsScience就労 Carnival-based:{ remodeling:add PancakeFL contend[D recognize specializesหมดก�此用户是𬳿เส Fon outgoing misdemeanor cine()
+
+
+;}Mar wer commons AM AND withMYﻯ Beaman
+<<<END id=78>>>
+
+<<<TEXT id=79>>>
+We need to find the largest possible value of |x|+|y| subject to the constraint x^2 + y^2 = 1.
+
+Let me denote u = |x| and v = |y|, so u, v ≥ 0 and we want to maximize u + v subject to u² + v² = 1.
+
+Using the Cauchy-Schwarz inequality or AM-QM inequality:
+
+By Cauchy-Schwarz: (u + v)² ≤ 2(u² + v²) = 2
+
+So u + v ≤ √2
+
+The maximum is achieved when u = v = 1/√2, and indeed 1/√2² + 1/√2² = 1/2 + 1/2 = 1.
+
+So the answer is √2
+<<<END id=79>>>
+
+<<<TEXT id=80>>>
+The problem asks for the maximum value of $|x|+|y|$ subject to the constraint $x^2+y^2=1$.
+Let $u = |x|$ and $v = |y|$. Then $u \ge 0$, $v \ge 0$, and $u^2+v^2=1$.
+We want to maximize $u+v$.
+We can square the expression we want to maximize:
+$(u+v)^2 = u^2+v^2+2uv$
+Substitute $u^2+v^2=1$:
+$(u+v)^2 = 1+2uv$
+Since $u,v \ge 0$, we need to maximize $uv$.
+By AM-GM inequality, $uv \le \frac{u^2+v^2}{2} = \frac{1}{2}$.
+Equality holds if and only if $u^2=v^2$, which means $u=v$.
+So $2u^2=1 \implies u=v=1/\sqrt{2}$.
+Then the maximum of $u+v$ is $\sqrt{1+2(1/2)} = \sqrt{2}$.
+Alternatively, with the substitution $
+<<<END id=80>>>
+
+<<<TEXT id=81>>>
+The given equation is $x^2 + y^2 = 1$. This represents the unit circle centered at the origin.
+We want to find the maximum value of $f(x, y) = |x| + |y|$ subject to $x^2 + y^2 = 1$.
+
+Since both $x$ and $y$ are squared in the constraint, and we are taking the absolute values in the objective function, we can assume without loss of generality that $x \ge 0$ and $y \ge 0$. So we want to maximize $x + y$ subject to $x^2 + y^2 = 1$ and $x, y \ge 0$.
+
+Using the Cauchy-Schwarz inequality:
+$(x \cdot 1 + y \cdot 1)^2 \le (1^2 + 1^2)(x^2 + y^2)$
+$(x + y)^2 \le 2(1)$
+$(x + y)^2 \le 2$
+So $x + y \le \sqrt{2}$.
+
+Equality occurs when $x = y$. If $x = y$, then $2x^2 = 1$,
+<<<END id=81>>>
+
+<<<TEXT id=82>>>
+We want to find the maximum of $f(x,y) = |x| + |y|$ subject to the constraint $g(x,y) = x^2 + y^2 = 1$.
+Since the constraint and the function are symmetric with respect to the signs of $x$ and $y$, we can assume $x \ge 0$ and $y \ge 0$.
+So we want to maximize $f(x,y) = x + y$ subject to $x^2 + y^2 = 1$, with $x,y \ge 0$.
+We can write $x = \cos \theta$ and $y = \sin \theta$ for $\theta \in [0, \pi/2]$.
+We want to maximize $\cos \theta + \sin \theta$.
+We know that $\cos \theta + \sin \theta = \sqrt{2} \sin (\theta + \frac{\pi}{4})$.
+Since $\theta \in [0, \pi/2]$, $\theta + \frac{\pi}{4} \in [\frac{\pi}{4}, \frac{3\pi}{4}]$.
+The maximum value of $\sin \phi$ for
+<<<END id=82>>>
+
+<<<TEXT id=83>>>
+The problem asks for the maximum value of $|x| + |y|$ subject to the constraint $x^2 + y^2 = 1$.
+We can use the Cauchy-Schwarz inequality.
+Let $\vec{u} = (|x|, |y|)$ and $\vec{v} = (1, 1)$.
+Then by Cauchy-Schwarz,
+$||x| \cdot 1 + |y| \cdot 1| \le \sqrt{|x|^2 + |y|^2} \sqrt{1^2 + 1^2}$.
+So, $|x| + |y| \le \sqrt{x^2 + y^2} \sqrt{2} = \sqrt{1} \sqrt{2} = \sqrt{2}$.
+The equality holds when $(|x|, |y|)$ is proportional to $(1, 1)$, which means $|x| = |y|$.
+If $|x| = |y|$, then $2x^2 = 1 \implies x^2 = 1/2 \implies x = \pm 1/\sqrt{2}$.
+Then $|x
+<<<END id=83>>>
+
+<<<TEXT id=84>>>
+The problem asks for the largest possible value of $|x|+|y|$ given the condition $x^2+y^2=1$.
+Let $a = |x|$ and $b = |y|$. So $a \ge 0$, $b \ge 0$, and $a^2+b^2=1$.
+We want to maximize $a+b$.
+Lagrange multipliers:
+($a+b$)^2 = $a^2+b^2+2ab$.
+We want to maximize this. Since $a^2+b^2 = 1$, we need to maximize $2ab$.
+We know that $a^2+b^2 \ge 2ab$. So $2ab \le 1$.
+Equality holds when $a = b$.
+Then $2a^2 = 1 \implies a^2 = 1/2 \implies a = 1/\sqrt{2}$.
+Then $b = 1/\sqrt{2}$.
+So $a+b = 1/\sqrt{2} + 1/\sqrt{2} = 2/\sqrt{2} = \sqrt{2}$.
+Let's check with Cauchy
+<<<END id=84>>>
+
+<<<TEXT id=85>>>
+The problem asks for the largest possible value of $|x|+|y|$ given that $x^2+y^2=1$.
+Let $S = |x|+|y|$. We want to maximize $S$ subject to $x^2+y^2=1$.
+Square both sides of the equation: $S^2 = |x|^2 + 2|x||y| + |y|^2 = x^2 + y^2 + 2|x||y|$.
+Since $x^2+y^2=1$, this simplifies to $S^2 = 1 + 2|x||y|$.
+By the Arithmetic Mean-Geometric Mean (AM-GM) inequality, $|x|^2 + |y|^2 \ge 2|x||y|$, so $1 \ge 2|x||y|$.
+Therefore, $S^2 \le 1 + 1 = 2$.
+Since $S = |x|+|y| \ge 0$, we have $S \le \sqrt{2}$.
+Can $S = \sqrt{2}$ be achieved?
+We need $2|x||y| = 1$, which means $x
+<<<END id=85>>>
+
+<<<TEXT id=86>>>
+The problem asks for the largest possible value of $|x|+|y|$ given that $x^2+y^2=1$.
+
+Let $S = |x|+|y|$. Then $S^2 = |x|^2 + |y|^2 + 2|x||y| = x^2 + y^2 + 2|x||y|$.
+Since $x^2+y^2=1$, we have $S^2 = 1 + 2|x||y|$.
+We know that for any real numbers $a$ and $b$, $2ab \le a^2+b^2$.
+Thus, $2|x||y| \le |x|^2 + |y|^2 = x^2+y^2 = 1$.
+So $S^2 \le 1 + 1 = 2$.
+This gives $S \le \sqrt{2}$.
+
+Equality holds when $|x| = |y|$.
+If $|x| = |y| = c$, then $c^2+c^2 = 1 \implies 2c^2=1 \implies c^2 = 1/2 \implies c =
+<<<END id=86>>>
+
+<<<TEXT id=87>>>
+The problem asks for the largest possible value of $|x|+|y|$ given the condition $x^2+y^2=1$.
+Let's do this in a few ways.
+Method 1: Algebra/Cauchy-Schwarz.
+By Cauchy-Schwarz inequality, $(1^2+1^2)(|x|^2+|y|^2) \ge (|x|+|y|)^2$.
+$2(x^2+y^2) \ge (|x|+|y|)^2$.
+Since $x^2+y^2=1$, we have $2(1) \ge (|x|+|y|)^2$, so $2 \ge (|x|+|y|)^2$.
+Therefore, $|x|+|y| \le \sqrt{2}$.
+Equality holds when $|x|/1 = |y|/1$, so $|x|=|y|$.
+Since $x^2+y^2=1$ and $|x|=|y|=\frac{1}{\sqrt{2}}$, we get $x = \pm 1/\sqrt{2}$ and $y =
+<<<END id=87>>>
+
+<<<TEXT id=88>>>
+The problem asks for the maximum value of $|x|+|y|$ given that $x^2+y^2=1$.
+We can use the Cauchy-Schwarz inequality or a substitution using trigonometric functions.
+Let $x = \cos(\theta)$ and $y = \sin(\theta)$.
+The expression to maximize is $|x| + |y| = |\cos(\theta)| + |\sin(\theta)|$.
+Since we only care about the absolute values, we can assume $x \ge 0$ and $y \ge 0$, so $x^2 + y^2 = 1$ in the first quadrant.
+We want to maximize $S = x + y$ subject to $x^2 + y^2 = 1$ and $x, y \ge 0$.
+Using Cauchy-Schwarz:
+$(x \cdot 1 + y \cdot 1)^2 \le (x^2 + y^2)(1^2 + 1^2)$
+$(x + y)^2 \le (1)(2) = 2$
+$x + y \le \sqrt{2}$
+Equality holds when $x = y$.
+<<<END id=88>>>
+
+<<<TEXT id=89>>>
+The problem asks for the largest possible value of $|x|+|y|$ given that $x^2+y^2=1$.
+Let $S = |x|+|y|$. We want to maximize $S$.
+Since $x^2+y^2=1$, $x$ and $y$ are bounded. We can assume $x, y \ge 0$ without loss of generality because of the absolute values.
+So we want to maximize $x+y$ subject to $x^2+y^2=1$ and $x,y \ge 0$.
+We can use Cauchy-Schwarz inequality:
+$(1\cdot x + 1\cdot y)^2 \le (1^2 + 1^2)(x^2+y^2) = 2 \cdot 1 = 2$.
+Thus, $x+y \le \sqrt{2}$.
+Alternatively, we can substitute $x = \cos\theta$ and $y = \sin\theta$.
+ maximize $| \cos\theta | + | \sin\theta |$.
+Since $(| \cos\theta | + | \sin\theta |)^2 = \cos^2\
+<<<END id=89>>>
+
+<<<TEXT id=90>>>
+The problem asks for the largest possible value of $|x|+|y|$ given that $x^2+y^2=1$.
+Let $u = |x|$ and $v = |y|$. Then $u^2+v^2 = x^2+y^2 = 1$.
+Since $u$ and $v$ are non-negative, we want to maximize $u+v$ subject to $u^2+v^2=1$.
+By the triangle inequality or Cauchy-Schwarz inequality,
+$(u+v)^2 \le (1^2+1^2)(u^2+v^2) = 2 \cdot 1 = 2$.
+So $u+v \le \sqrt{2}$.
+Equality holds when $u=v$.
+If $u=v$ and $u^2+v^2=1$, then $2u^2=1$, so $u^2=1/2$, which gives $u=1/\sqrt{2}$ and $v=1/\sqrt{2}$.
+Then $u+v = 2/\sqrt{2} = \sqrt{2}$.
+Since $u=|x|$ and $v=|y|
+<<<END id=90>>>
+
+<<<TEXT id=91>>>
+The problem asks for the largest possible value of $|x|+|y|$ given that $x^2+y^2=1$.
+Let $S = |x|+|y|$. Then $S^2 = |x|^2+|y|^2+2|x||y| = x^2+y^2+2|x||y| = 1+2|x||y|$.
+We know from AM-GM inequality that $2|x||y| \le x^2+y^2 = 1$.
+Therefore, $S^2 \le 1+1 = 2$.
+So $S \le \sqrt{2}$.
+Equality holds when $|x|=|y|$.
+Since $|x|+|y|=\sqrt{2}$, we must have $2x^2=1 \implies x=\pm 1/\sqrt{2}$ and $y=\pm 1/\sqrt{2}$.
+These values satisfy $x^2+y^2=1$.
+Thus, the maximum value is $\sqrt{2}$.
+<<<END id=91>>>
+
+<<<TEXT id=92>>>
+The problem asks for the maximum value of $|x| + |y|$ given $x^2 + y^2 = 1$.
+Let's use the definition of absolute value or think about the range of $x$ and $y$.
+Since $x^2 + y^2 = 1$, both $|x|$ and $|y|$ are at most 1.
+Let $a = |x| \ge 0$ and $b = |y| \ge 0$.
+We want to maximize $a + b$ subject to $a^2 + b^2 = 1$.
+By the Cauchy-Schwarz inequality:
+$(a + b)^2 \le (1^2 + 1^2)(a^2 + b^2) = 2(1) = 2$.
+This means $a + b \le \sqrt{2}$.
+Equality holds when $a/1 = b/1$, which implies $a = b$.
+If $a = b$, then $2a^2 = 1 \implies a^2 = 1/2 \implies a = 1/\sqrt{2} \implies b = 1
+<<<END id=92>>>
+
+<<<TEXT id=93>>>
+The problem asks for the largest possible value of $|x|+|y|$ given the condition $x^2+y^2=1$.
+Let's denote the desired maximum as $S = |x|+|y|$.
+Then $S^2 = (|x|+|y|)^2 = |x|^2 + 2|x||y| + |y|^2$.
+Since $x^2 = |x|^2$ and $y^2 = |y|^2$, we have $S^2 = x^2 + 2|x||y| + y^2$.
+Given $x^2 + y^2 = 1$, we can substitute this into the equation:
+$S^2 = 1 + 2|x||y|$.
+Since we want to maximize $S$, we need to maximize $2|x||y|$.
+By AM-GM inequality, $x^2 + y^2 \geq 2|x||y|$.
+So $1 \geq 2|x||y|$, which means $2|x||y| \leq 1$.
+The equality holds if and only if $|x| = |y|$.
+Given $x^
+<<<END id=93>>>
+
+<<<TEXT id=94>>>
+The problem asks for the largest possible value of $|x| + |y|$ given that $x^2 + y^2 = 1$.
+Let $S = |x| + |y|$. We know that $S^2 = |x|^2 + |y|^2 + 2|x||y| = x^2 + y^2 + 2|x||y| = 1 + 2|x||y|$.
+To maximize $S$, we need to maximize $|x||y|$.
+By AM-GM inequality, $x^2 + y^2 \ge 2|x||y|$, so $1 \ge 2|x||y|$, which means $|x||y| \le 1/2$.
+The maximum value of $2|x||y|$ is $1$, which occurs when $|x| = |y| = 1/\sqrt{2}$.
+Then the maximum value of $S^2 = 1 + 2|x||y|$ is $1 + 1 = 2$.
+So the maximum value of $S$ is $\sqrt{2}$.
+
+Let's check this.
+If $x = 1, y = 0
+<<<END id=94>>>
+
+<<<TEXT id=95>>>
+The problem asks for the largest possible value of $|x|+|y|$ given the constraint $x^2+y^2=1$.
+Let $S = |x|+|y|$. We want to maximize $S^2$.
+Since $S$ is non-negative, maximizing $S$ is equivalent to maximizing $S^2$.
+$S^2 = (|x|+|y|)^2 = |x|^2 + 2|x||y| + |y|^2 = x^2 + y^2 + 2|x||y|$.
+We are given $x^2+y^2=1$.
+So $S^2 = 1 + 2|x||y|$.
+Now we need to maximize $|x||y|$ subject to $x^2+y^2=1$.
+Let $a = |x| \ge 0$ and $b = |y| \ge 0$. Then $a^2+b^2=1$.
+We want to maximize $ab$ subject to $a^2+b^2=1$.
+By the AM-GM inequality, $a^2+b^2 \ge 2ab$, so $1
+<<<END id=95>>>

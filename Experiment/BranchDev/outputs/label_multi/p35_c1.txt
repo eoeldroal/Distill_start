@@ -1,0 +1,555 @@
+PROBLEM (id 35, Level 4, Intermediate Algebra, answer: -101)
+Let $a$ and $b$ be integers such that $ab = 100.$  Find the minimum value of $a + b.$
+====================================================================================================
+
+<<<TEXT id=48>>>
+We need answer problem: integers a,b with ab=100, min a+b. Need reason step by step. Now analyze fully.
+
+Integers can be negative? Not restricted positive, just integers ab=100 positive, so both positive or both negative. We need min sum. Factor pairs: (1,100) sum 101, (2,50) 52, (4,25) 29, (5,20)25, (10,10)20; negative pairs: (-1,-100) -101, (-2,-50)-52, (-4,-25)-29, (-5,-20)-25, (-10,-10)-20. Min is -101. Need check any infinite? No divisors finite. Could mention if intended positive, min 20, but problem says integers, so negative gives unbounded? Wait is it unbounded? ab fixed 100, a,b divisors finite since integer divisors finite. Minimum is -101.
+
+Need ensure perhaps if a,b not necessarily nonzero? product 100 so nonzero
+<<<END id=48>>>
+
+<<<TEXT id=49>>>
+We need answer math. Need solve step by step. Problem: a,b integers, ab=100, find minimum of a+b. Need consider negative integer pairs. Since product positive 100, a,b same sign. Sum minimized when both negative with large magnitude? Actually positive factors yields positive sums >= 25? Factor pairs positive (1,100)=101; (2,50)=52; (4,25)=29; (5,20)=25; (10,10)=20. Negative pairs: (-1,-100)=-101 etc. Product positive, both negative allowed integers. Then most negative sum? For negative a,b with ab=100, let x=-a>0, y=-b>0, xy=100, a+b=-(x+y). Min = -(max x+y). Max positive pair sum with xy=100 finite integer? x=1,y=100 sum=101 or x=100 sum 101, max is 101. Thus min a+b = -101. However careful if unbounded? finite divisors
+<<<END id=49>>>
+
+<<<TEXT id=50>>>
+We need solve math. User asks: Let a and b be integers such that ab = 100. Find minimum value of a+b. Reason step by step, final boxed.
+
+Need consider integers, likely all integers (positive and negative? "integers" usually includes negative and zero but product 100 nonzero so none zero). Need minimize sum over integer factor pairs (a,b). Since product positive 100 positive, both same sign. Positive pairs give positive sums (min 20? sqrt=10). Negative pairs: a,b both negative, product positive, sum negative. We want minimum (most negative). Let x=-a>0, b? If both negative set c=-a>0, d=-b>0, cd=100, a+b=-(c+d). c,d positive integer divisors. Need minimize -(c+d), i.e. maximize c+d over positive factor pairs of 100. Max occurs (1,100), sum= -101. Can there be unbounded below? No since factor finite. Need check if integers order: a and b are ordered? If one can choose (100,-1)? Product 100?
+<<<END id=50>>>
+
+<<<TEXT id=51>>>
+We need solve math problem: integers a,b with ab=100, find minimum value of a+b. Need reason step by step. Need be careful sign and divisors. If both real? integers. 100 positive, so a,b same sign. If both positive, sum at least 20 by AM-GM/integer divisors min? factors: 1+100=101,2+50=52,4+25=29,5+20=25,10+10=20; min positive 20. If both negative: let a=-d, b=-100/d, sum = -(d+100/d). Minimum (most negative) when d + 100/d is maximum among positive integer factors? finite? Since d and e positive integer with de=100 finite. sums: 101,52,29,25,20. Negative sums: -101, -52, -29, -25, -20. Minimum is -101. Is that unbounded? No positive factor product fixed, d finite divisors of
+<<<END id=51>>>
+
+<<<TEXT id=52>>>
+We need answer simple. We need reason step by step. Problem: a,b integers, ab=100. Find minimum value of a+b.
+
+Factors including negative. Since product positive, a,b same sign: both positive or both negative. For positive integer factor pairs: (1,100), (2,50),(4,25),(5,20),(10,10). Sums: 101,52,29,25,20. Minimum positive sum 20 (but overall can be negative). Negative pairs: (-1,-100) sum -101, (-2,-50)-52, (-4,-25)-29, (-5,-20)-25, (-10,-10)-20. Minimum (most negative) is -101. Since asks minimum value, likely -101. Need final boxed. Ensure if a,b integers not positive. Yes.
+
+Step-by-step: Divisors. For fixed product positive, sum minimized with negative factors extreme. Because for negative divisors, let x = -a, y = -b positive with xy=100, then a+b =
+<<<END id=52>>>
+
+<<<TEXT id=53>>>
+We need answer math problem. Need reason step by step. Problem: Let a and b integers such that ab=100. Find minimum value of a+b. Need consider integer factors including negative. Since product positive. Both positive or both negative. For positives sum min among positive factor pairs (1,100)=101, (2,50)=52, (4,25)=29, (5,20)=25, (10,10)=20. Minimum positive sum 20. Both negative: a+b negative; minimize (most negative) means large magnitude opposite? Factors (-1,-100) sum -101; (-2,-50) -52; (-4,-25) -29; (-5,-20) -25; (-10,-10) -20. Minimum (lowest) is -101. If ask minimum value among integer a,b, yes -101. Need explain. Maybe trap: integer can be negative. Minimum is -101. Box.
+Need final concise with steps.
+<<<END id=53>>>
+
+<<<TEXT id=54>>>
+We need answer math problem. Done. Now solve. Problem: integers a,b with ab=100. Find minimum value of a+b. Since ab positive, both same sign. Positive pairs sum positive. Negative pairs both negative sum negative. Need minimum (most negative) among factor pairs (a,b) integers both negative with product 100. Let a=-x,b=-y with x,y positive integers xy=100; sum=-(x+y). Minimize sum = most negative => maximize x+y over positive integer factor pairs xy=100. x=1,y=100 gives sum 101 negative gives a+b=-101. Also x=100,y=1 same. Need confirm no smaller than -101? x+y maximum finite for fixed product positive when one is 1 for positive integers; yes 101. So min is -101. But check maybe a,b can be negative integer divisors? Yes. Pairs: (-1,-100) etc. Minimum -101. Need final boxed.
+
+Need include step-by-step. Also maybe if consider all integers, a+b minimum not unbounded? product fixed 100
+<<<END id=54>>>
+
+<<<TEXT id=55>>>
+We need answer a math problem: Let a and b be integers with ab=100. Find minimum value of a+b. Need reason step by step, final boxed.
+
+We need consider integers, not necessarily positive. Product 100 positive, so both positive or both negative. Factor pairs positive: (1,100)->101, (2,50)->52, (4,25)->29, (5,20)->25, (10,10)->20 -> min positive sum 20. Negative factor pairs: (-1,-100)-> -101, (-2,-50)-> -52, (-4,-25)-> -29, (-5,-20)-> -25, (-10,-10)-> -20. Minimum (most negative) is -101? Check also factor pairs with negative product impossible. Integers include all divisors. Need minimum of a+b among all integer pairs (ordered). Yes min -101. But wait if a,b integers such that ab=100; can choose a=-100, b=-1 sum -101. Could there be
+<<<END id=55>>>
+
+<<<TEXT id=56>>>
+We need answer simple math. done. Need solve: integers a,b with ab=100. Find minimum value of a+b. Integers can be negative? "integers" includes negative. Product positive 100 => same sign. If both positive, sum positive; minimum likely positive at (10,10) maybe 20? Let's check all positive divisor pairs: (1,100)=101, (2,50)=52, (4,25)=29, (5,20)=25, (10,10)=20. If both negative: sum negative, can be as low as? divisors positive x,y with xy=100, sum a+b = -(x+y). Minimum (most negative) occurs max x+y = 101 (x=1,y=100) => -101. Also maybe (1,-100) no product -100. (negative both only positive product). So min -101. Need step-by-step, likely boxed -101. Need ensure maybe if natural? It says integers, so yes negative allowed. Let's craft concise but enough
+<<<END id=56>>>
+
+<<<TEXT id=57>>>
+We need answer math problem step by step, final boxed. Now need reason carefully. Let a,b integers such that ab=100. Find min of a+b. Important integers can be negative. If one negative and one positive product positive? Product=100 positive, so same sign. Both positive -> pair (1,100): sum 101, (2,50) 52, ... minimum positive at 10+10=20. Both negative: a=-1,b=-100 sum -101; -2,-50=-52; -4,-25=-29; -5,-20=-25; -10,-10=-20. Minimum (most negative) -101 from -1,-100 or -100,-1. So boxed -101. Need maybe if "integers" no restriction positive, yes. Provide step by step. Could also list all integer factor pairs. Need maybe mention finite possibilities. Final. Ensure enough concise. Could there be a,b real? integers. So answer.
+<<<END id=57>>>
+
+<<<TEXT id=58>>>
+We need answer math problem. Now think. Problem: a and b integers ab=100 find minimum value of a+b. Integers can be negative? They don't say positive. If integers including negative, product positive 100, both same sign. Sums possible: factor pairs positive: sums >= something min 21? (1+100, 2+50=52, 4+25=29,5+20=25,10+10=20). Negative pairs: both negative: (-1, -100) => -101, (-2,-50)=-52, etc min -101 if include order? a,b can be any integers, product 100; minimum indeed -101 with a=-1,b=-100 or swapped (also divisor -100,-1 no? if a,b integers, (-1,-100) sum -101, (-100,-1) sum -101; any -divisor pairs sum negative; need minimize i.e. most negative. For a|100 negative. Sum d+d=2d?
+<<<END id=58>>>
+
+<<<TEXT id=59>>>
+We need answer math problem. Need reason step by step. Problem: a,b integers, ab=100. Minimum a+b. Since integers can be negative. Need all integer factor pairs product 100. Sum minimized likely with one negative large magnitude? Since product positive, both same sign. Positive pairs sum positive; negative pairs sum negative. Factor pairs for 100: ±1,±100; ±2,±50; ±4,±25; ±5,±20; ±10,±10. Sums: 202,52,29,25,20; negative: -101,-52,-29,-25,-20. Minimum is -101. Need present boxed. Check if any integers no restriction positive. yes. final concise.
+<<<END id=59>>>
+
+<<<TEXT id=60>>>
+We need answer math. Need reason step by step final boxed. Problem: Let a,b integers such that ab=100. Find minimum value of a+b. Since integers (not necessarily positive). Need consider all integer factor pairs including negative because negative product? 100 positive, so either both positive or both negative. For positive factors, sum positive minimal at factors close? 1+100=101,2+50=52,4+25=29,5+20=25,10+10=20 min 20. For both negative: if a=-c, b=-d where c,d positive cd=100, sum=-(c+d). Maximize c+d positive to minimize negative sum. c+d maximized by extreme factor pair: 1,100 gives -101; 2,50 gives -52; etc. Wait minimum value a+b, with negatives, most negative = -101 when (-1,-100) or (-100,-1). So answer -101. Need perhaps note if nonnegative? But says integers. minimum exists? Factor pairs finite. Yes minimum
+<<<END id=60>>>
+
+<<<TEXT id=61>>>
+We need answer math problem. Need reason step by step. Problem: Let a and b be integers such that ab=100. Find minimum value of a+b. Integers include negative. ab positive, so both same sign. Factor pairs positive: (1,100)=101, (2,50)=52, (4,25)=29, (5,20)=25, (10,10)=20, also reversed same sum. Negative pairs: (-1,-100)=-101, (-2,-50)=-52, (-4,-25)=-29, (-5,-20)=-25, (-10,-10)=-20. Minimum value is -101? We can also consider integer divisors all factors of 100, same product positive. The sum min likely -101 from -1/-100 because product positive with one factor has smallest magnitude? Need prove minimal among factorizations: For positive factors x*y=100, x+y minimized when close to sqrt 100? Actually 10+10=20 least; for negative
+<<<END id=61>>>
+
+<<<TEXT id=62>>>
+We need answer math problem: Let a and b be integers such that ab=100. Find minimum a+b. Need reason step by step, final boxed.
+We need think carefully: a,b integers, product 100 positive, so same sign: both positive or both negative. Pairs (including divisors) with sum. Positive divisors have positive sums minimum maybe for factors closest: 10+10=20, also 20+5=25 etc. Negative factors: if both negative, let x=-a>0,y=-b>0 with xy=100, sum a+b=-(x+y), minimized (most negative) by maximizing x+y over positive factor pairs of 100. x+y maximum for extreme factors 1+100=101, so sum -101. Is there any trick? Integers, not necessarily positive. Minimum a+b would be -101 with a=1,b=-? Wait product positive 100 => same sign. If both negative: a=-1,b=-100 gives -101. a=-100,b=-1. That's smaller than any positive. So min -
+<<<END id=62>>>
+
+<<<TEXT id=63>>>
+We need answer math problem. Need solve step by step. Problem: Let a,b integers such that ab=100. Find minimum value of a+b.
+
+We need consider integer factors can be negative or positive. Since product 100 positive, a and b same sign: both positive or both negative. Minimum sum will be most negative: choose negative factors. We want minimize a+b given ab=100. Integer pairs (a,b) factor pairs of 100. Positive pairs sums: 1+100=101, 2+50=52, 4+25=29, 5+20=25,10+10=20; and permutations same. Negative pairs: (-1,-100) sum -101, (-2,-50)=-52, (-4,-25)=-29, (-5,-20)=-25, (-10,-10)=-20. Minimum -101? But wait any a,b integers? Yes divisors. Is there pair (100,1) sum 101 same. Could there be a= -? Product
+<<<END id=63>>>
+
+<<<TEXT id=64>>>
+We are given: "Let $a$ and $b$ be integers such that $ab = 100.$ Find the minimum value of $a + b.$" We need to find integer a and b, possibly negative? Usually integers include negative integers. So ab = 100, and we want the minimum possible sum a+b. Since a and b can be negative as well? If both negative, product is positive, so sum would be negative and could be less than positive sums. So we should consider negative factors. 
+
+We want to minimize a+b. Since a and b are integers and ab=100, if we consider a and b both positive, a+b is at least when they are as close as possible? Actually for fixed product, sum is minimized when numbers are as close together? Actually for positive numbers, by AM-GM, the sum is at least 2 sqrt(ab)=20, with equality when a=b=10 or -10? Wait, 2 sqrt(ab)=20. But if a and b are both negative, then naturally both negative, the product is positive, but their sum is negative. For example, a=-1, b=-100 gives sum -1
+<<<END id=64>>>
+
+<<<TEXT id=65>>>
+We are given: "Let $a$ and $b$ be integers such that $ab = 100.$ Find the minimum value of $a + b.$"
+
+Interpretation: a and b are integers, so positive, negative, zero? But product is 100, so neither is 0. So they can be both positive or both negative. For positive: a+b positive and likely large if factors are large. For negative: a and b are negative, their product positive (since negative times negative gives positive 100). And sum a+b will be negative, potentially able to be very low. So we want the minimum (most negative) value of a+b.
+
+Let a and b be integers: ab = 100. So (a,b) is an ordered pair of integers. We want to minimize S = a+b.
+
+We can think: if a and b are positive, the minimum sum is when they are close to sqrt(100)=10, so either (10,10) gives sum 20, or (20,5) gives 25, etc. But that's positive.
+
+But if both a and b are negative: let a = -
+<<<END id=65>>>
+
+<<<TEXT id=66>>>
+We are asked: "Let $a$ and $b$ be integers such that $ab = 100$ Find the minimum value of $a + b$."
+
+We need to find integers a and b (could be positive or negative integers, because it says integers such that ab=100). The sum a+b. We want the minimum possible sum. Since a and b can be negative, the sum can be very negative. But there are constraints: ab=100. So if we take a very negative and b also negative, but then product is positive. So both a and b are either both positive or both negative to have product 100 (positive). So two cases:
+
+Case 1: a and b positive integers: We want to minimize a+b given ab=100. For positive numbers, by AM-GM, a+b is minimized when a and b are as close as possible? Actually, for a fixed product, the sum is minimized when the numbers are as close as possible if they are positive reals. But here they are integers. So we look at factor pairs of 100: (1,100) gives sum 101, (2,50
+<<<END id=66>>>
+
+<<<TEXT id=67>>>
+We need to find integer pairs (a,b) such that a*b=100, and minimize a+b. Pairs of integers include both positive and negative. Since product is positive, both a and b have the same sign: both positive or both negative. For integers a,b such that ab=100.
+
+We want minimize a+b. If both are positive, then a+b is minimized by choosing a,b as close as possible? Actually for positive pair, the sum is minimized when a and b are as close as possible? For fixed product, the sum of two positive numbers is minimized when they are equal (by AM-GM). However, they need to be integers, so a and b can be integers with a*b=100. For positive integers, the factor pairs are (1,100), (2,50), (4,25), (5,20), (10,10). Sums: 101, 52, 29, 25, 20. Minimum sum among positive integers is 20 (both 10).
+
+But we also have negative integers. Since both negative, product is positive as well. Let a = -
+<<<END id=67>>>
+
+<<<TEXT id=68>>>
+We need to find integers a and b such that ab = 100, and minimize a+b. Note: a and b are integers, could be negative as well? Since product is positive, either both positive or both negative. If both positive, we have positive sum. If both negative, product positive as well? Actually, negative times negative = positive, so yes. And then a+b would be negative, which is smaller than any positive sum. So the minimum sum is likely achieved when both are negative, because negative numbers can make the sum arbitrarily low if we can make them arbitrarily negative while keeping product fixed? Wait, no: if product is fixed positive, and both negative, then as a becomes more negative, b must be 100/a, which is negative. For example, a = -1, b = -100, sum = -101. If a = -2, b = -50, sum = -52. If a = -10, b = -10, sum = -20. So it seems that as both become more negative (in absolute value larger) the product remains fixed, but their sum becomes more negative? Let's check: for negative numbers a and
+<<<END id=68>>>
+
+<<<TEXT id=69>>>
+We need to find integers $a$ and $b$ such that $ab = 100$ and minimize $a + b$.
+
+Since $a$ and $b$ can be negative, we need to consider that both being large negative numbers could give a very negative sum while still having a positive product.
+
+The factor pairs of 100 (where both are positive):
+(1, 100): sum = 101
+(2, 50): sum = 52
+(4, 25): sum = 29
+(5, 20): sum = 25
+(10, 10): sum = 20
+
+And negative pairs:
+(-1, -100): sum = -101
+(-2, -50): sum = -52
+(-4, -25): sum = -29
+(-5, -20): sum = -25
+(-10, -10): sum = -20
+
+The minimum value of $a + b$ is $-101$, achieved when $a = -1, b = -100$ (or $a =
+<<<END id=69>>>
+
+<<<TEXT id=70>>>
+We need to find integer values for a and b such that ab = 100 and a + b is minimized. Note that a and b can be negative as well, since their product is positive 100. So both a and b could be positive or both negative. To minimize a+b, if both are negative, their sum would be negative, which might be lower than any positive sum. For instance, a = -1, b = -100 gives sum = -101. But can we get even lower? Let's consider all integer pairs (a,b) where a*b=100.
+
+Since ab=100, a and b are divisors of 100. The divisors of 100 (positive and negative) are: ±1, ±2, ±4, ±5, ±10, ±20, ±25, ±50, ±100.
+
+We want to minimize a+b. Since both are negative or both positive, if we take both negative, the sum is negative. The most negative sum would occur when a and b are as negative as possible? Actually, let's examine: If a and b are both negative, then a
+<<<END id=70>>>
+
+<<<TEXT id=71>>>
+We need to find integers a and b such that ab = 100. Among all pairs of integers (including negative integers) that multiply to 100, find the minimum possible value of a + b.
+
+We consider integer factors. Since ab = 100, a and b can be any integers (positive or negative) satisfying that product. Typically we think of factors, but note that if both a and b are negative, their product is positive. So there are many possibilities.
+
+Let’s find all integer pairs (a, b) with product 100. Then compute a+b and find the smallest sum. Note: Sometimes such questions consider positive integers only, but it says integers, so negatives allowed.
+
+If both a and b are negative, then a+b will be negative (and more negative as magnitudes increase). But we need the minimum value, which could be negative and possibly very low. However, a and b are linked by ab=100, so they can't be arbitrarily large in magnitude; as a gets large negative, b must get small negative (i.e., close to 0), but product fixed at 100, so b = 100/a. Since b must be integer
+<<<END id=71>>>
+
+<<<TEXT id=72>>>
+We are asked: "Let $a$ and $b$ be integers such that $ab = 100.$ 版权所有考研资料 发布日期：2024-08-20" Actually the problem is: "Let a and b be integers such that ab = 100. Find the minimum value of a + b." So we need to minimize a + b given that a and b are integers with product 100.
+
+We should consider all integer pairs (a,b) such that a*b = 100. Since they are integers, they can be negative as well. The product is positive (100 > 0), so either both a and b are positive or both are negative. Because a+b can be negative if both are negative, that could be smaller than positive sums. We need to minimize a+b. So we need to consider negative pairs.
+
+Let's list factor pairs of 100.
+
+100 = 2^2 * 5^2.
+
+Positive factor pairs: (1,100), (2,50), (4,25), (5,20), (10,10), and also the reverse. Also
+<<<END id=72>>>
+
+<<<TEXT id=73>>>
+We need to find integers a and b (could be positive or negative) such that ab = 100, and minimize a + b. Since a and b are integers, we consider all factor pairs of 100, including negative ones because their product is positive (100) and sum can be negative.
+
+Factor pairs of 100: 
+- Positive: (1,100), (2,50), (4,25), (5,20), (10,10). 
+- Negative: (-1,-100), (-2,-50), (-4,-25), (-5,-20), (-10,-10).
+
+Compute sums:
+Positive pairs: 1+100=101; 2+50=52; 4+25=29; 5+20=25; 10+10=20.
+Negative pairs: During addition, negative numbers decrease the sum, but since both are negative, the sum is negative. -1+(-100)=-101; (-2,-50)=-52; (-4,-25)=-2
+<<<END id=73>>>
+
+<<<TEXT id=74>>>
+We need to find the minimum value of a + b given that a and b are integers and ab = 100.
+
+"Find the minimum value of a + b." Since a and b are integers, they can be positive or negative. So we consider all integer pairs (a,b) such that a*b = 100. Then compute a+b and find the minimum possible.
+
+Let's list divisors: The pairs (a,b) such that ab=100. Since integers can be negative, we also have pairs with negative product: if both a and b are negative, product is positive. So both a,b negative also satisfy ab=100. So we have positive divisors and negative divisors.
+
+Possible integer pairs: For each positive divisor d of 100, we have pairs: (d, 100/d) and also (-d, -100/d). So two sets: both positive and both negative.
+
+Compute a+b for each.
+
+First, find all positive divisors of 100. 100 = 2^2 * 5^2. So number of divisors: (2+1)*(2+1)=9.
+
+Div: 1,
+<<<END id=74>>>
+
+<<<TEXT id=75>>>
+We need integer solutions to $ab = 100$, and we want to minimize $a + b$.
+
+The divisors of 100 come in pairs. We don't need $a$ and $b$ to be positive — they just need to be integers.
+
+If both $a$ and $b$ are negative, then $ab > 0$ and $a + b < 0$, which could give us a very negative sum.
+
+The positive factor pairs of 100:
+
+$(1, 100), (2, 50), (4, 25), (5, 20), (10, 10)$
+
+The negative factor pairs:
+
+$(-1, -100), (-2, -50), (-4, -25), (-5, -20), (-10, -10)$
+
+For negative pairs, the sums are:
+- $(-1, -100)$: sum $= -101$
+- $(-2, -50)$: sum $= -52$
+- $(-4, -25)$: sum $= -29$
+- $(-5, -2
+<<<END id=75>>>
+
+<<<TEXT id=76>>>
+We are asked: "Let $a$ and $b$ be integers such that $ab = 100.$ Find the minimum value of $a + b.$" So we have two integers a and b (presumably not necessarily positive? It says integers, so could be negative as well. But the product is positive 100. So a and b can both be negative, or both positive. Their sum would be negative if both are negative, because a negative plus a negative is negative. So to minimize a+b, we want the most negative sum possible. But are there constraints? Are a and b allowed to be any integers? They say integers, so yes. Then if we take a and b to be large magnitude negative numbers such that their product is 100, then the sum can be arbitrarily negative? Actually, if a and b are integers, then if a and b are both negative, then a*b is positive. But can we make a and b arbitrarily large negative? For a*b = 100, if a is negative, then b = 100/a is also negative, but as a becomes more negative, b becomes closer to 0. So there is a constraint: a and b
+<<<END id=76>>>
+
+<<<TEXT id=77>>>
+We are given: "Let $a$ and $b$ be integers such that $ab = 100.$  Find the minimum value of $a + b.$" So a and b are integers. They can be positive or negative? Usually integers include negatives. But if a and b are integers and ab=100, then both are nonzero. The sum a+b can be negative if both are negative. We need the minimum value of a+b, so likely the most negative sum possible. We should consider all integer factors pairs (including negative ones) of 100.
+
+The positive factor pairs: (1,100), (2,50), (4,25), (5,20), (10,10). Their sums: 101, 52, 29, 25, 20.
+
+The negative factor pairs: (-1,-100), (-2,-50), (-4,-25), (-5,-20), (-10,-10). Their sums: -101, -52, -29, -25, -20.
+
+Also pairs with one positive and one negative: e.g
+<<<END id=77>>>
+
+<<<TEXT id=78>>>
+The problem asks for the minimum value of $a+b$ where $a$ and $b$ are integers and $ab=100$.
+Interpretation:
+$a, b \in \mathbb{Z}$
+$ab = 100$
+Find the minimum value of $a+b$.
+
+Let's test the possible integer factors of 100:
+If we want to minimize $a+b$, we should make $a$ and $b$ as negative as possible.
+Wait, both can be negative?
+Yes, they are integers.
+If $a = -10000, b = -0.01$, no, they must be integers.
+Can we make $a$ and $b$ negative?
+Yes.
+Take $a = -2, b = -50$. Then $a+b = -52$.
+Take $a = -10, b = -10$. Then $a+b = -20$.
+Take $a = -20, b = -5$. Then $a+b = -25$.
+Take $a = -4, b = -25$. Then $a+b = -29$.
+Take $a = -10
+<<<END id=78>>>
+
+<<<TEXT id=79>>>
+We need to minimize the sum a + b given that a and b are integers and ab = 100. Since the product is fixed, the sum will be minimized when a and b are close together. However, since a and b are integers and their product is positive, they must be either both positive or both negative. The product is 100, so both positives gives a positive sum, both negatives gives a negative sum. To minimize the sum (i.e., get the most negative value), we would want a and b to be negative, because the sum of two negatives is less than any positive sum. So we consider negative integer pairs (a, b) such that ab = 100. Since a and b are integers, the factor pairs of 100 (including negatives) are: (1,100), (2,50), (4,25), (5,20), (10,10) and also (-1,-100), (-2,-50), (-4,-25), (-5,-20), (-10,-10). Their sums are: 1+100=101, 2+50=
+<<<END id=79>>>
+
+<<<TEXT id=80>>>
+The problem asks for the minimum value of $a + b$ given that $a$ and $b$ are integers and $ab = 100$.
+
+Since $ab = 100 > 0$, $a$ and $b$ must have the same sign.
+Case 1: $a > 0, b > 0$. We can list the factor pairs of 100:
+(1, 100): sum = 101
+(2, 50): sum = 52
+(4, 25): sum = 29
+(5, 20): sum = 25
+(10, 10): sum = 20
+
+Case 2: $a < 0, b < 0$. The factor pairs are the negatives of the positive ones:
+(-1, -100): sum = -101
+(-2, -50): sum = -52
+(-4, -25): sum = -29
+(-5, -20): sum = -25
+(-10, -10): sum = -20
+
+The possible sums are 101, 52, 29, 25, 20, -20, -25, -29, -52, -101.
+The minimum value among these is
+<<<END id=80>>>
+
+<<<TEXT id=81>>>
+The problem asks for the minimum value of $a + b$, where $a$ and $b$ are integers such that $ab = 100$.
+The product $ab = 100$ can be written as pairs of integers $(a, b)$.
+Since $100 > 0$, the possible pairs of $(a, b)$ are those with the same sign (either both positive or both negative, note that the minimum value of $a+b$ will be negative).
+Let's list the factors of 100:
+Positive pairs (a, b):
+1, 100 -> a + b = 101
+2, 50 -> a + b = 52
+4, 25 -> a + b = 29
+5, 20 -> a + b = 25
+10, 10 -> a + b = 20
+Negative pairs (a, b):
+-1, -100 -> a + b = -101
+-2, -50 -> a + b = -52
+-4, -25 -> a + b = -29
+-5, -20 -> a + b = -25
+-10, -10 -> a + b = -20
+We want to find the minimum value of $a +
+<<<END id=81>>>
+
+<<<TEXT id=82>>>
+The problem asks for the minimum value of $a+b$, given that $a$ and $b$ are integers and $ab=100$.
+Wait, $a$ and $b$ are integers. Since $ab=100>0$, $a$ and $b$ must have the same sign.
+If $a$ and $b$ are both positive, the minimum value of $a+b$ occurs when $a$ and $b$ are as close to $\sqrt{100}=10$ as possible. The closest integers are $a=10, b=10$. In this case, $a+b = 20$.
+If $a$ and $b$ are both negative, $a$ and $b$ are factors of $-100$ or rather negative factors of 100. To minimize $a+b$, we should make $a$ and $b$ as negative as possible. But the problem does not state that $a>0$ and $b>0$, so $a$ and $b$ can be arbitrarily negative? No, their product is 100.
+Wait, if $a=-1, b=-100$, then $a+b = -101$.
+If $a=-2, b=-50$,
+<<<END id=82>>>
+
+<<<TEXT id=83>>>
+The problem asks for the minimum value of the sum $a + b$ given that $a$ and $b$ are integers and $ab = 100$.
+Since $ab = 100 > 0$, both $a$ and $b$ must have the same sign. They can be both positive or both negative.
+If $a$ and $b$ are positive integers, the minimum value of $a + b$ occurs when $a$ and $b$ are as close as possible to each other.
+The pair $(a, b)$ can be $(10, 10)$, which gives $ab = 100$ and $a + b = 20$.
+What if $a$ and $b$ are both negative?
+Since $a$ and $b$ are symmetric, let $a = -10$ and $b = -10$. Then $(-10) \cdot (-10) = 100$.
+The sum is $a + b = -10 - 10 = -20$.
+Are there any other possibilities for negative numbers?
+If one is more negative, e.g., $a = -1$ and $b = -100$, then $a + b = -101$. Wait! So the minimum
+<<<END id=83>>>
+
+<<<TEXT id=84>>>
+The problem asks for the minimum value of $a + b$ given that $a$ and $b$ are integers and $ab = 100$.
+We need to find a pair of integers $(a, b)$ such that $a \cdot b = 100$ and $a + b$ is minimized.
+Wait, could $a$ and $b$ be negative? Yes, the problem says "integers". Let's check the factors of 100.
+Positive factors of 100:
+1 * 100 = 100 => sum = 101
+2 * 50 = 100 => sum = 52
+4 * 25 = 100 => sum = 29
+5 * 20 = 100 => sum = 25
+10 * 10 = 100 => sum = 20
+
+Negative integers:
+If $ab = 100$, both must have the same sign.
+If both are negative:
+-1 * -100 = 100 => sum = -101
+-2 * -50 = 100 => sum = -52
+-4 * -25 = 100 => sum = -29
+-5 * -20 = 100 => sum = -25
+-10 * -10 = 100 => sum =
+<<<END id=84>>>
+
+<<<TEXT id=85>>>
+The problem asks for the minimum value of $a + b$, where $a$ and $b$ are integers such that $ab = 100$.
+First, $(a, b)$ could be both positive or both negative. 
+If both are negative, $a+b$ could be smaller than any positive pair sum. Let's check this.
+For positive pairs ($a, b > 0$):
+(1, 100) -> 101
+(2, 50) -> 52
+(4, 25) -> 29
+(5, 20) -> 25
+(10, 10) -> 20
+
+For negative pairs ($a, b < 0$):
+(-1, -100) -> -101
+(-2, -50) -> -52
+(-4, -25) -> -29
+(-5, -20) -> -25
+(-10, -10) -> -20
+
+The minimum value among these is -101, which occurs when $(a, b) = (-1, -100)$ or $(-100, -1)$.
+Wait, is -101 less than -20? Yes. Is it the minimum? Yes.
+"a and b be integers" implies they can
+<<<END id=85>>>
+
+<<<TEXT id=86>>>
+The problem asks for the minimum value of $a + b$, where $a$ and $b$ are integers such that $ab = 100$.
+Let's find the factor pairs $(a, b)$ of 100. Since $ab = 100$, $a$ and $b$ must have the same sign, or one could be positive and the other positive.
+Case 1: $a$ and $b$ are positive integers.
+The pairs are:
+(1, 100), sum = 101
+(2, 50), sum = 52
+(4, 25), sum = 29
+(5, 20), sum = 25
+(10, 10), sum = 20
+
+Case 2: $a$ and $b$ are negative integers.
+The pairs are:
+(-1, -100), sum = -101
+(-2, -50), sum = -52
+(-4, -25), sum = -29
+(-5, -20), sum = -25
+(-10, -10), sum = -20
+
+The problem asks for the minimum value of $a + b$.
+The minimum value is achieved when $a = -1$ and $b = -
+<<<END id=86>>>
+
+<<<TEXT id=87>>>
+The problem asks for the minimum value of $a + b$ for integers $a$ and $b$ such that $ab = 100$.
+
+Let's find the possible pairs of integers $(a, b)$ whose product is 100.
+Since $ab = 100$, the possible positive factors of 100 are:
+$1 \times 100 \implies a + b = 101$
+$2 \times 50 \implies a + b = 52$
+$4 \times 25 \implies a + b = 29$
+$5 \times 20 \implies a + b = 25$
+$10 \times 10 \implies a + b = 20$
+But $a$ and $b$ can also be negative integers.
+The possible negative factors of 100 are:
+$-1 \times -100 \implies a + b = -101$
+$-2 \times -50 \implies a + b = -52$
+$-4 \times -25 \implies a + b = -29$
+$-5 \times -20 \implies a + b = -25$
+$-10 \times -10 \implies a + b = -20$
+
+The problem
+<<<END id=87>>>
+
+<<<TEXT id=88>>>
+The problem asks for the minimum value of $a + b$ where $a$ and $b$ are integers and $ab = 100$.
+Since $ab = 100 > 0$, $a$ and $b$ must have the same sign.
+Case 1: Both $a$ and $b$ are positive integers.
+We need to find pairs $(a, b)$ such that $a \cdot b = 100$.
+The possible pairs are:
+$(1, 100) \implies a+b = 101$
+$(2, 50) \implies a+b = 52$
+$(4, 25) \implies a+b = 29$
+$(5, 20) \implies a+b = 25$
+$(10, 10) \implies a+b = 20$
+The minimum sum for positive integers is 20.
+Case 2: Both $a$ and $b$ are negative integers.
+Then $a = -x$ and $b = -y$ where $x, y \in \mathbb{Z}^+$.
+$xy = 100$.
+We want to minimize $a + b = -(x + y)$.
+To make $-(x +
+<<<END id=88>>>
+
+<<<TEXT id=89>>>
+The problem asks for the minimum value of $a + b$ given that $a$ and $b$ are integers such that $ab = 100$.
+Wait, if $a$ and $b$ are integers, they can be negative. Since $ab = 100 > 0$, both $a$ and $b$ have the same sign.
+If they are both positive, the minimum is for $a=10$ and $b=10$, giving $a+b=20$.
+If they are both negative, let $a = -x$ and $b = -y$ where $x, y > 0$ and $xy = 100$.
+Then $a+b = -(x+y)$. To minimize $a+b$, we want to maximize $x+y$ subject to $xy = 100$.
+Since $a$ and $b$ are integers, the maximum of $x+y$ would be when one of them is as large as possible and the other is as small as possible.
+Wait, the problem doesn't say the minimum possible value of $a$ and $b$, it just says "Find the minimum value of $a + b$."
+Wait, if $a$ and $b$ can
+<<<END id=89>>>
+
+<<<TEXT id=90>>>
+The problem asks for the minimum value of $a + b$ given that $a$ and $b$ are integers and $ab = 100$.
+First, note that $a$ and $b$ can be negative integers, which would result in $ab = -100$, so both must have the same sign. Thus we have two cases:
+Case 1: Both are positive integers.
+The positive divisors of 100 are 1, 2, 4, 5, 10, 20, 25, 50, 100.
+The possible pairs $(a, b)$ are $(1, 100)$, $(2, 50)$, $(4, 25)$, $(5, 20)$, $(10, 10)$,
+and reversed pairs, since multiplication is commutative.
+The sums $a+b$ are:
+1+100 = 101
+2+50 = 52
+4+25 = 29
+5+20 = 25
+10+10 = 20
+The minimum positive sum is 20.
+
+Case 2: Both are negative integers.
+The negative divisors are -1, -2, -4, -5, -10, -20, -25
+<<<END id=90>>>
+
+<<<TEXT id=91>>>
+The problem asks for the minimum value of $a + b$ given that $a$ and $b$ are integers and $ab = 100$.
+Wait, if $a$ and $b$ can be *any* integers, they could both be negative!
+Let's check: if $a = -10, b = -10$, then $ab = 100$, and $a+b = -20$.
+Wait, is there a lower bound? No.
+So what if $a = -100, b = -1$? Then $a + b = -101$.
+If $a = -1,000, b = -1/10$, $b$ is not an integer.
+But we can choose $a = -n, b = -100/n$ for any positive integer factor of $n$.
+Factors of 100: $100 \dots$, let's a wait.
+No, if $a$ is any positive factor of 100, then $b = -100/a$, or vice versa?
+If $ab = 100$, and they are integers, can one be positive and one be negative?
+No, since $100 > 0$, they must have the same sign.
+If they can be negative,
+<<<END id=91>>>
+
+<<<TEXT id=92>>>
+The problem asks for the minimum value of $a + b$ given that $ab = 100$, where $a$ and $b$ are integers.
+The product of $a$ and $b$ is a positive constant, $100$.
+By the AM-GM inequality, the minimum value of $a + b$ when $ab = 100$ for positive real numbers occurs when $a = b = \sqrt{100} = 10$.
+If $a = 10$ and $b = 10$, both are integers, so this minimum is achievable.
+Wait, since $a$ and $b$ are integers, we can just check the factor pairs of 100.
+Positive integer factor pairs:
+1, 100 -> sum = 101
+2, 50 -> sum = 52
+4, 25 -> sum = 29
+5, 20 -> sum = 25
+10, 10 -> sum = 20
+
+What about negative integer factor pairs?
+-1, -100 -> sum = -101
+-2, -50 -> sum = -52
+-4, -25 -> sum = -29
+-5, -20 -> sum = -25
+-10, -10 -> sum
+<<<END id=92>>>
+
+<<<TEXT id=93>>>
+The problem asks for the minimum value of $a + b$, given that $a$ and $b$ are integers and $ab = 100$.
+Wait, "minimum value of $a + b$". Since $a$ and $b$ can be negative, we should consider the negative factors of 100.
+The pairs of integers $(a, b)$ such that $ab = 100$ could be $(1, 100), (2, 50), (4, 25), (5, 20), (10, 10)$ and their negatives: $(-1, -100), (-2, -50), (-4, -25), (-5, -20), (-10, -10)$.
+Let's evaluate $a + b$ for these pairs:
+For positive pairs:
+$1 + 100 = 101$
+$2 + 50 = 52$
+$4 + 25 = 29$
+$5 + 20 = 25$
+$10 + 10 = 20$
+For negative pairs:
+$-1 + (-100) = -101$
+$-2 + (-50) = -52$
+$-4 + (-25) = -29$
+$-5 + (-20)
+<<<END id=93>>>
+
+<<<TEXT id=94>>>
+The problem asks for the minimum value of $a + b$ given that $a$ and $b$ are integers and $ab = 100$.
+
+First, let's consider the case where $a$ and $b$ are positive integers.
+The integer pairs $(a, b)$ such that $ab = 100$ are:
+$1 \times 100 \implies 1 + 100 = 101$
+$2 \times 50 \implies 2 + 50 = 52$
+$4 \times 25 \implies 4 + 25 = 29$
+$5 \times 20 \implies 5 + 20 = 25$
+$10 \times 10 \implies 10 + 10 = 20$
+
+Wait, the problem doesn't state that $a$ and $b$ must be positive integers.
+It says "$a$ and $b$ be integers". So they can be negative integers as well.
+Let's consider the case where $a$ and $b$ are negative integers.
+Since $ab = 100 > 0$ is positive, both $a$ and $b$ must be of the same sign.
+If both are negative, let $a = -x
+<<<END id=94>>>
+
+<<<TEXT id=95>>>
+The problem asks for the minimum value of $a + b$ given that $a$ and $b$ are integers and $ab = 100$.
+Since $ab = 100$, $a$ and $b$ can be positive or negative integers.
+The factor pairs of 100 are:
+$(1, 100) \implies a+b = 101$
+$(2, 50) \implies a+b = 52$
+$(4, 25) \implies a+b = 29$
+$(5, 20) \implies a+b = 25$
+$(10, 10) \implies a+b = 20$
+Negative factor pairs:
+$(-1, -100) \implies a+b = -101$
+$(-2, -50) \implies a+b = -52$
+$(-4, -25) \implies a+b = -29$
+$(-5, -20) \implies a+b = -25$
+$(-10, -10) \implies a+b = -20$
+We want to find the minimum value of $a + b$. The smallest value comes from the pair with the largest magnitude negative sum.
+Wait, the factor pairs are limited. If
+<<<END id=95>>>

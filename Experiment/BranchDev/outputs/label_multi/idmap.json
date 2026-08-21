@@ -1,0 +1,2894 @@
+{
+ "180": [
+  {
+   "id": 0,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 0
+  },
+  {
+   "id": 1,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 1
+  },
+  {
+   "id": 2,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 2
+  },
+  {
+   "id": 3,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 3
+  },
+  {
+   "id": 4,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 4
+  },
+  {
+   "id": 5,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 5
+  },
+  {
+   "id": 6,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 6
+  },
+  {
+   "id": 7,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 7
+  },
+  {
+   "id": 8,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 8
+  },
+  {
+   "id": 9,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 9
+  },
+  {
+   "id": 10,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 10
+  },
+  {
+   "id": 11,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 11
+  },
+  {
+   "id": 12,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 12
+  },
+  {
+   "id": 13,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 13
+  },
+  {
+   "id": 14,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 14
+  },
+  {
+   "id": 15,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 15
+  },
+  {
+   "id": 16,
+   "model": "meta/muse-glimmer-30b",
+   "k": 0
+  },
+  {
+   "id": 17,
+   "model": "meta/muse-glimmer-30b",
+   "k": 1
+  },
+  {
+   "id": 18,
+   "model": "meta/muse-glimmer-30b",
+   "k": 2
+  },
+  {
+   "id": 19,
+   "model": "meta/muse-glimmer-30b",
+   "k": 3
+  },
+  {
+   "id": 20,
+   "model": "meta/muse-glimmer-30b",
+   "k": 4
+  },
+  {
+   "id": 21,
+   "model": "meta/muse-glimmer-30b",
+   "k": 5
+  },
+  {
+   "id": 22,
+   "model": "meta/muse-glimmer-30b",
+   "k": 6
+  },
+  {
+   "id": 23,
+   "model": "meta/muse-glimmer-30b",
+   "k": 7
+  },
+  {
+   "id": 24,
+   "model": "meta/muse-glimmer-30b",
+   "k": 8
+  },
+  {
+   "id": 25,
+   "model": "meta/muse-glimmer-30b",
+   "k": 9
+  },
+  {
+   "id": 26,
+   "model": "meta/muse-glimmer-30b",
+   "k": 10
+  },
+  {
+   "id": 27,
+   "model": "meta/muse-glimmer-30b",
+   "k": 11
+  },
+  {
+   "id": 28,
+   "model": "meta/muse-glimmer-30b",
+   "k": 12
+  },
+  {
+   "id": 29,
+   "model": "meta/muse-glimmer-30b",
+   "k": 13
+  },
+  {
+   "id": 30,
+   "model": "meta/muse-glimmer-30b",
+   "k": 14
+  },
+  {
+   "id": 31,
+   "model": "meta/muse-glimmer-30b",
+   "k": 15
+  },
+  {
+   "id": 32,
+   "model": "minimax/minimax-m3",
+   "k": 0
+  },
+  {
+   "id": 33,
+   "model": "minimax/minimax-m3",
+   "k": 1
+  },
+  {
+   "id": 34,
+   "model": "minimax/minimax-m3",
+   "k": 2
+  },
+  {
+   "id": 35,
+   "model": "minimax/minimax-m3",
+   "k": 3
+  },
+  {
+   "id": 36,
+   "model": "minimax/minimax-m3",
+   "k": 4
+  },
+  {
+   "id": 37,
+   "model": "minimax/minimax-m3",
+   "k": 5
+  },
+  {
+   "id": 38,
+   "model": "minimax/minimax-m3",
+   "k": 6
+  },
+  {
+   "id": 39,
+   "model": "minimax/minimax-m3",
+   "k": 7
+  },
+  {
+   "id": 40,
+   "model": "minimax/minimax-m3",
+   "k": 8
+  },
+  {
+   "id": 41,
+   "model": "minimax/minimax-m3",
+   "k": 9
+  },
+  {
+   "id": 42,
+   "model": "minimax/minimax-m3",
+   "k": 10
+  },
+  {
+   "id": 43,
+   "model": "minimax/minimax-m3",
+   "k": 11
+  },
+  {
+   "id": 44,
+   "model": "minimax/minimax-m3",
+   "k": 12
+  },
+  {
+   "id": 45,
+   "model": "minimax/minimax-m3",
+   "k": 13
+  },
+  {
+   "id": 46,
+   "model": "minimax/minimax-m3",
+   "k": 14
+  },
+  {
+   "id": 47,
+   "model": "minimax/minimax-m3",
+   "k": 15
+  },
+  {
+   "id": 48,
+   "model": "qwen/qwen3.8-27b",
+   "k": 0
+  },
+  {
+   "id": 49,
+   "model": "qwen/qwen3.8-27b",
+   "k": 1
+  },
+  {
+   "id": 50,
+   "model": "qwen/qwen3.8-27b",
+   "k": 2
+  },
+  {
+   "id": 51,
+   "model": "qwen/qwen3.8-27b",
+   "k": 3
+  },
+  {
+   "id": 52,
+   "model": "qwen/qwen3.8-27b",
+   "k": 4
+  },
+  {
+   "id": 53,
+   "model": "qwen/qwen3.8-27b",
+   "k": 5
+  },
+  {
+   "id": 54,
+   "model": "qwen/qwen3.8-27b",
+   "k": 6
+  },
+  {
+   "id": 55,
+   "model": "qwen/qwen3.8-27b",
+   "k": 7
+  },
+  {
+   "id": 56,
+   "model": "qwen/qwen3.8-27b",
+   "k": 8
+  },
+  {
+   "id": 57,
+   "model": "qwen/qwen3.8-27b",
+   "k": 9
+  },
+  {
+   "id": 58,
+   "model": "qwen/qwen3.8-27b",
+   "k": 10
+  },
+  {
+   "id": 59,
+   "model": "qwen/qwen3.8-27b",
+   "k": 11
+  },
+  {
+   "id": 60,
+   "model": "qwen/qwen3.8-27b",
+   "k": 12
+  },
+  {
+   "id": 61,
+   "model": "qwen/qwen3.8-27b",
+   "k": 13
+  },
+  {
+   "id": 62,
+   "model": "qwen/qwen3.8-27b",
+   "k": 14
+  },
+  {
+   "id": 63,
+   "model": "qwen/qwen3.8-27b",
+   "k": 15
+  },
+  {
+   "id": 64,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 0
+  },
+  {
+   "id": 65,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 1
+  },
+  {
+   "id": 66,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 2
+  },
+  {
+   "id": 67,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 3
+  },
+  {
+   "id": 68,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 4
+  },
+  {
+   "id": 69,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 5
+  },
+  {
+   "id": 70,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 6
+  },
+  {
+   "id": 71,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 7
+  },
+  {
+   "id": 72,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 8
+  },
+  {
+   "id": 73,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 9
+  },
+  {
+   "id": 74,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 10
+  },
+  {
+   "id": 75,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 11
+  },
+  {
+   "id": 76,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 12
+  },
+  {
+   "id": 77,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 13
+  },
+  {
+   "id": 78,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 14
+  },
+  {
+   "id": 79,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 15
+  },
+  {
+   "id": 80,
+   "model": "z-ai/glm-5.2",
+   "k": 0
+  },
+  {
+   "id": 81,
+   "model": "z-ai/glm-5.2",
+   "k": 1
+  },
+  {
+   "id": 82,
+   "model": "z-ai/glm-5.2",
+   "k": 2
+  },
+  {
+   "id": 83,
+   "model": "z-ai/glm-5.2",
+   "k": 3
+  },
+  {
+   "id": 84,
+   "model": "z-ai/glm-5.2",
+   "k": 4
+  },
+  {
+   "id": 85,
+   "model": "z-ai/glm-5.2",
+   "k": 5
+  },
+  {
+   "id": 86,
+   "model": "z-ai/glm-5.2",
+   "k": 6
+  },
+  {
+   "id": 87,
+   "model": "z-ai/glm-5.2",
+   "k": 7
+  },
+  {
+   "id": 88,
+   "model": "z-ai/glm-5.2",
+   "k": 8
+  },
+  {
+   "id": 89,
+   "model": "z-ai/glm-5.2",
+   "k": 9
+  },
+  {
+   "id": 90,
+   "model": "z-ai/glm-5.2",
+   "k": 10
+  },
+  {
+   "id": 91,
+   "model": "z-ai/glm-5.2",
+   "k": 11
+  },
+  {
+   "id": 92,
+   "model": "z-ai/glm-5.2",
+   "k": 12
+  },
+  {
+   "id": 93,
+   "model": "z-ai/glm-5.2",
+   "k": 13
+  },
+  {
+   "id": 94,
+   "model": "z-ai/glm-5.2",
+   "k": 14
+  },
+  {
+   "id": 95,
+   "model": "z-ai/glm-5.2",
+   "k": 15
+  }
+ ],
+ "155": [
+  {
+   "id": 0,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 0
+  },
+  {
+   "id": 1,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 1
+  },
+  {
+   "id": 2,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 2
+  },
+  {
+   "id": 3,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 3
+  },
+  {
+   "id": 4,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 4
+  },
+  {
+   "id": 5,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 5
+  },
+  {
+   "id": 6,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 6
+  },
+  {
+   "id": 7,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 7
+  },
+  {
+   "id": 8,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 8
+  },
+  {
+   "id": 9,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 9
+  },
+  {
+   "id": 10,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 10
+  },
+  {
+   "id": 11,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 11
+  },
+  {
+   "id": 12,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 12
+  },
+  {
+   "id": 13,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 13
+  },
+  {
+   "id": 14,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 14
+  },
+  {
+   "id": 15,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 15
+  },
+  {
+   "id": 16,
+   "model": "meta/muse-glimmer-30b",
+   "k": 0
+  },
+  {
+   "id": 17,
+   "model": "meta/muse-glimmer-30b",
+   "k": 1
+  },
+  {
+   "id": 18,
+   "model": "meta/muse-glimmer-30b",
+   "k": 2
+  },
+  {
+   "id": 19,
+   "model": "meta/muse-glimmer-30b",
+   "k": 3
+  },
+  {
+   "id": 20,
+   "model": "meta/muse-glimmer-30b",
+   "k": 4
+  },
+  {
+   "id": 21,
+   "model": "meta/muse-glimmer-30b",
+   "k": 5
+  },
+  {
+   "id": 22,
+   "model": "meta/muse-glimmer-30b",
+   "k": 6
+  },
+  {
+   "id": 23,
+   "model": "meta/muse-glimmer-30b",
+   "k": 7
+  },
+  {
+   "id": 24,
+   "model": "meta/muse-glimmer-30b",
+   "k": 8
+  },
+  {
+   "id": 25,
+   "model": "meta/muse-glimmer-30b",
+   "k": 9
+  },
+  {
+   "id": 26,
+   "model": "meta/muse-glimmer-30b",
+   "k": 10
+  },
+  {
+   "id": 27,
+   "model": "meta/muse-glimmer-30b",
+   "k": 11
+  },
+  {
+   "id": 28,
+   "model": "meta/muse-glimmer-30b",
+   "k": 12
+  },
+  {
+   "id": 29,
+   "model": "meta/muse-glimmer-30b",
+   "k": 13
+  },
+  {
+   "id": 30,
+   "model": "meta/muse-glimmer-30b",
+   "k": 14
+  },
+  {
+   "id": 31,
+   "model": "meta/muse-glimmer-30b",
+   "k": 15
+  },
+  {
+   "id": 32,
+   "model": "minimax/minimax-m3",
+   "k": 0
+  },
+  {
+   "id": 33,
+   "model": "minimax/minimax-m3",
+   "k": 1
+  },
+  {
+   "id": 34,
+   "model": "minimax/minimax-m3",
+   "k": 2
+  },
+  {
+   "id": 35,
+   "model": "minimax/minimax-m3",
+   "k": 3
+  },
+  {
+   "id": 36,
+   "model": "minimax/minimax-m3",
+   "k": 4
+  },
+  {
+   "id": 37,
+   "model": "minimax/minimax-m3",
+   "k": 5
+  },
+  {
+   "id": 38,
+   "model": "minimax/minimax-m3",
+   "k": 6
+  },
+  {
+   "id": 39,
+   "model": "minimax/minimax-m3",
+   "k": 7
+  },
+  {
+   "id": 40,
+   "model": "minimax/minimax-m3",
+   "k": 8
+  },
+  {
+   "id": 41,
+   "model": "minimax/minimax-m3",
+   "k": 9
+  },
+  {
+   "id": 42,
+   "model": "minimax/minimax-m3",
+   "k": 10
+  },
+  {
+   "id": 43,
+   "model": "minimax/minimax-m3",
+   "k": 11
+  },
+  {
+   "id": 44,
+   "model": "minimax/minimax-m3",
+   "k": 12
+  },
+  {
+   "id": 45,
+   "model": "minimax/minimax-m3",
+   "k": 13
+  },
+  {
+   "id": 46,
+   "model": "minimax/minimax-m3",
+   "k": 14
+  },
+  {
+   "id": 47,
+   "model": "minimax/minimax-m3",
+   "k": 15
+  },
+  {
+   "id": 48,
+   "model": "qwen/qwen3.8-27b",
+   "k": 0
+  },
+  {
+   "id": 49,
+   "model": "qwen/qwen3.8-27b",
+   "k": 1
+  },
+  {
+   "id": 50,
+   "model": "qwen/qwen3.8-27b",
+   "k": 2
+  },
+  {
+   "id": 51,
+   "model": "qwen/qwen3.8-27b",
+   "k": 3
+  },
+  {
+   "id": 52,
+   "model": "qwen/qwen3.8-27b",
+   "k": 4
+  },
+  {
+   "id": 53,
+   "model": "qwen/qwen3.8-27b",
+   "k": 5
+  },
+  {
+   "id": 54,
+   "model": "qwen/qwen3.8-27b",
+   "k": 6
+  },
+  {
+   "id": 55,
+   "model": "qwen/qwen3.8-27b",
+   "k": 7
+  },
+  {
+   "id": 56,
+   "model": "qwen/qwen3.8-27b",
+   "k": 8
+  },
+  {
+   "id": 57,
+   "model": "qwen/qwen3.8-27b",
+   "k": 9
+  },
+  {
+   "id": 58,
+   "model": "qwen/qwen3.8-27b",
+   "k": 10
+  },
+  {
+   "id": 59,
+   "model": "qwen/qwen3.8-27b",
+   "k": 11
+  },
+  {
+   "id": 60,
+   "model": "qwen/qwen3.8-27b",
+   "k": 12
+  },
+  {
+   "id": 61,
+   "model": "qwen/qwen3.8-27b",
+   "k": 13
+  },
+  {
+   "id": 62,
+   "model": "qwen/qwen3.8-27b",
+   "k": 14
+  },
+  {
+   "id": 63,
+   "model": "qwen/qwen3.8-27b",
+   "k": 15
+  },
+  {
+   "id": 64,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 0
+  },
+  {
+   "id": 65,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 1
+  },
+  {
+   "id": 66,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 2
+  },
+  {
+   "id": 67,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 3
+  },
+  {
+   "id": 68,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 4
+  },
+  {
+   "id": 69,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 5
+  },
+  {
+   "id": 70,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 6
+  },
+  {
+   "id": 71,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 7
+  },
+  {
+   "id": 72,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 8
+  },
+  {
+   "id": 73,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 9
+  },
+  {
+   "id": 74,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 10
+  },
+  {
+   "id": 75,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 11
+  },
+  {
+   "id": 76,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 12
+  },
+  {
+   "id": 77,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 13
+  },
+  {
+   "id": 78,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 14
+  },
+  {
+   "id": 79,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 15
+  },
+  {
+   "id": 80,
+   "model": "z-ai/glm-5.2",
+   "k": 0
+  },
+  {
+   "id": 81,
+   "model": "z-ai/glm-5.2",
+   "k": 1
+  },
+  {
+   "id": 82,
+   "model": "z-ai/glm-5.2",
+   "k": 2
+  },
+  {
+   "id": 83,
+   "model": "z-ai/glm-5.2",
+   "k": 3
+  },
+  {
+   "id": 84,
+   "model": "z-ai/glm-5.2",
+   "k": 4
+  },
+  {
+   "id": 85,
+   "model": "z-ai/glm-5.2",
+   "k": 5
+  },
+  {
+   "id": 86,
+   "model": "z-ai/glm-5.2",
+   "k": 6
+  },
+  {
+   "id": 87,
+   "model": "z-ai/glm-5.2",
+   "k": 7
+  },
+  {
+   "id": 88,
+   "model": "z-ai/glm-5.2",
+   "k": 8
+  },
+  {
+   "id": 89,
+   "model": "z-ai/glm-5.2",
+   "k": 9
+  },
+  {
+   "id": 90,
+   "model": "z-ai/glm-5.2",
+   "k": 10
+  },
+  {
+   "id": 91,
+   "model": "z-ai/glm-5.2",
+   "k": 11
+  },
+  {
+   "id": 92,
+   "model": "z-ai/glm-5.2",
+   "k": 12
+  },
+  {
+   "id": 93,
+   "model": "z-ai/glm-5.2",
+   "k": 13
+  },
+  {
+   "id": 94,
+   "model": "z-ai/glm-5.2",
+   "k": 14
+  },
+  {
+   "id": 95,
+   "model": "z-ai/glm-5.2",
+   "k": 15
+  }
+ ],
+ "115": [
+  {
+   "id": 0,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 0
+  },
+  {
+   "id": 1,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 1
+  },
+  {
+   "id": 2,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 2
+  },
+  {
+   "id": 3,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 3
+  },
+  {
+   "id": 4,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 4
+  },
+  {
+   "id": 5,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 5
+  },
+  {
+   "id": 6,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 6
+  },
+  {
+   "id": 7,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 7
+  },
+  {
+   "id": 8,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 8
+  },
+  {
+   "id": 9,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 9
+  },
+  {
+   "id": 10,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 10
+  },
+  {
+   "id": 11,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 11
+  },
+  {
+   "id": 12,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 12
+  },
+  {
+   "id": 13,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 13
+  },
+  {
+   "id": 14,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 14
+  },
+  {
+   "id": 15,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 15
+  },
+  {
+   "id": 16,
+   "model": "meta/muse-glimmer-30b",
+   "k": 0
+  },
+  {
+   "id": 17,
+   "model": "meta/muse-glimmer-30b",
+   "k": 1
+  },
+  {
+   "id": 18,
+   "model": "meta/muse-glimmer-30b",
+   "k": 2
+  },
+  {
+   "id": 19,
+   "model": "meta/muse-glimmer-30b",
+   "k": 3
+  },
+  {
+   "id": 20,
+   "model": "meta/muse-glimmer-30b",
+   "k": 4
+  },
+  {
+   "id": 21,
+   "model": "meta/muse-glimmer-30b",
+   "k": 5
+  },
+  {
+   "id": 22,
+   "model": "meta/muse-glimmer-30b",
+   "k": 6
+  },
+  {
+   "id": 23,
+   "model": "meta/muse-glimmer-30b",
+   "k": 7
+  },
+  {
+   "id": 24,
+   "model": "meta/muse-glimmer-30b",
+   "k": 8
+  },
+  {
+   "id": 25,
+   "model": "meta/muse-glimmer-30b",
+   "k": 9
+  },
+  {
+   "id": 26,
+   "model": "meta/muse-glimmer-30b",
+   "k": 10
+  },
+  {
+   "id": 27,
+   "model": "meta/muse-glimmer-30b",
+   "k": 11
+  },
+  {
+   "id": 28,
+   "model": "meta/muse-glimmer-30b",
+   "k": 12
+  },
+  {
+   "id": 29,
+   "model": "meta/muse-glimmer-30b",
+   "k": 13
+  },
+  {
+   "id": 30,
+   "model": "meta/muse-glimmer-30b",
+   "k": 14
+  },
+  {
+   "id": 31,
+   "model": "meta/muse-glimmer-30b",
+   "k": 15
+  },
+  {
+   "id": 32,
+   "model": "minimax/minimax-m3",
+   "k": 0
+  },
+  {
+   "id": 33,
+   "model": "minimax/minimax-m3",
+   "k": 1
+  },
+  {
+   "id": 34,
+   "model": "minimax/minimax-m3",
+   "k": 2
+  },
+  {
+   "id": 35,
+   "model": "minimax/minimax-m3",
+   "k": 3
+  },
+  {
+   "id": 36,
+   "model": "minimax/minimax-m3",
+   "k": 4
+  },
+  {
+   "id": 37,
+   "model": "minimax/minimax-m3",
+   "k": 5
+  },
+  {
+   "id": 38,
+   "model": "minimax/minimax-m3",
+   "k": 6
+  },
+  {
+   "id": 39,
+   "model": "minimax/minimax-m3",
+   "k": 7
+  },
+  {
+   "id": 40,
+   "model": "minimax/minimax-m3",
+   "k": 8
+  },
+  {
+   "id": 41,
+   "model": "minimax/minimax-m3",
+   "k": 9
+  },
+  {
+   "id": 42,
+   "model": "minimax/minimax-m3",
+   "k": 10
+  },
+  {
+   "id": 43,
+   "model": "minimax/minimax-m3",
+   "k": 11
+  },
+  {
+   "id": 44,
+   "model": "minimax/minimax-m3",
+   "k": 12
+  },
+  {
+   "id": 45,
+   "model": "minimax/minimax-m3",
+   "k": 13
+  },
+  {
+   "id": 46,
+   "model": "minimax/minimax-m3",
+   "k": 14
+  },
+  {
+   "id": 47,
+   "model": "minimax/minimax-m3",
+   "k": 15
+  },
+  {
+   "id": 48,
+   "model": "qwen/qwen3.8-27b",
+   "k": 0
+  },
+  {
+   "id": 49,
+   "model": "qwen/qwen3.8-27b",
+   "k": 1
+  },
+  {
+   "id": 50,
+   "model": "qwen/qwen3.8-27b",
+   "k": 2
+  },
+  {
+   "id": 51,
+   "model": "qwen/qwen3.8-27b",
+   "k": 3
+  },
+  {
+   "id": 52,
+   "model": "qwen/qwen3.8-27b",
+   "k": 4
+  },
+  {
+   "id": 53,
+   "model": "qwen/qwen3.8-27b",
+   "k": 5
+  },
+  {
+   "id": 54,
+   "model": "qwen/qwen3.8-27b",
+   "k": 6
+  },
+  {
+   "id": 55,
+   "model": "qwen/qwen3.8-27b",
+   "k": 7
+  },
+  {
+   "id": 56,
+   "model": "qwen/qwen3.8-27b",
+   "k": 8
+  },
+  {
+   "id": 57,
+   "model": "qwen/qwen3.8-27b",
+   "k": 9
+  },
+  {
+   "id": 58,
+   "model": "qwen/qwen3.8-27b",
+   "k": 10
+  },
+  {
+   "id": 59,
+   "model": "qwen/qwen3.8-27b",
+   "k": 11
+  },
+  {
+   "id": 60,
+   "model": "qwen/qwen3.8-27b",
+   "k": 12
+  },
+  {
+   "id": 61,
+   "model": "qwen/qwen3.8-27b",
+   "k": 13
+  },
+  {
+   "id": 62,
+   "model": "qwen/qwen3.8-27b",
+   "k": 14
+  },
+  {
+   "id": 63,
+   "model": "qwen/qwen3.8-27b",
+   "k": 15
+  },
+  {
+   "id": 64,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 0
+  },
+  {
+   "id": 65,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 1
+  },
+  {
+   "id": 66,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 2
+  },
+  {
+   "id": 67,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 3
+  },
+  {
+   "id": 68,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 4
+  },
+  {
+   "id": 69,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 5
+  },
+  {
+   "id": 70,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 6
+  },
+  {
+   "id": 71,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 7
+  },
+  {
+   "id": 72,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 8
+  },
+  {
+   "id": 73,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 9
+  },
+  {
+   "id": 74,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 10
+  },
+  {
+   "id": 75,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 11
+  },
+  {
+   "id": 76,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 12
+  },
+  {
+   "id": 77,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 13
+  },
+  {
+   "id": 78,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 14
+  },
+  {
+   "id": 79,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 15
+  },
+  {
+   "id": 80,
+   "model": "z-ai/glm-5.2",
+   "k": 0
+  },
+  {
+   "id": 81,
+   "model": "z-ai/glm-5.2",
+   "k": 1
+  },
+  {
+   "id": 82,
+   "model": "z-ai/glm-5.2",
+   "k": 2
+  },
+  {
+   "id": 83,
+   "model": "z-ai/glm-5.2",
+   "k": 3
+  },
+  {
+   "id": 84,
+   "model": "z-ai/glm-5.2",
+   "k": 4
+  },
+  {
+   "id": 85,
+   "model": "z-ai/glm-5.2",
+   "k": 5
+  },
+  {
+   "id": 86,
+   "model": "z-ai/glm-5.2",
+   "k": 6
+  },
+  {
+   "id": 87,
+   "model": "z-ai/glm-5.2",
+   "k": 7
+  },
+  {
+   "id": 88,
+   "model": "z-ai/glm-5.2",
+   "k": 8
+  },
+  {
+   "id": 89,
+   "model": "z-ai/glm-5.2",
+   "k": 9
+  },
+  {
+   "id": 90,
+   "model": "z-ai/glm-5.2",
+   "k": 10
+  },
+  {
+   "id": 91,
+   "model": "z-ai/glm-5.2",
+   "k": 11
+  },
+  {
+   "id": 92,
+   "model": "z-ai/glm-5.2",
+   "k": 12
+  },
+  {
+   "id": 93,
+   "model": "z-ai/glm-5.2",
+   "k": 13
+  },
+  {
+   "id": 94,
+   "model": "z-ai/glm-5.2",
+   "k": 14
+  },
+  {
+   "id": 95,
+   "model": "z-ai/glm-5.2",
+   "k": 15
+  }
+ ],
+ "44": [
+  {
+   "id": 0,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 0
+  },
+  {
+   "id": 1,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 1
+  },
+  {
+   "id": 2,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 2
+  },
+  {
+   "id": 3,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 3
+  },
+  {
+   "id": 4,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 4
+  },
+  {
+   "id": 5,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 5
+  },
+  {
+   "id": 6,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 6
+  },
+  {
+   "id": 7,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 7
+  },
+  {
+   "id": 8,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 8
+  },
+  {
+   "id": 9,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 9
+  },
+  {
+   "id": 10,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 10
+  },
+  {
+   "id": 11,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 11
+  },
+  {
+   "id": 12,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 12
+  },
+  {
+   "id": 13,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 13
+  },
+  {
+   "id": 14,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 14
+  },
+  {
+   "id": 15,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 15
+  },
+  {
+   "id": 16,
+   "model": "meta/muse-glimmer-30b",
+   "k": 0
+  },
+  {
+   "id": 17,
+   "model": "meta/muse-glimmer-30b",
+   "k": 1
+  },
+  {
+   "id": 18,
+   "model": "meta/muse-glimmer-30b",
+   "k": 2
+  },
+  {
+   "id": 19,
+   "model": "meta/muse-glimmer-30b",
+   "k": 3
+  },
+  {
+   "id": 20,
+   "model": "meta/muse-glimmer-30b",
+   "k": 4
+  },
+  {
+   "id": 21,
+   "model": "meta/muse-glimmer-30b",
+   "k": 5
+  },
+  {
+   "id": 22,
+   "model": "meta/muse-glimmer-30b",
+   "k": 6
+  },
+  {
+   "id": 23,
+   "model": "meta/muse-glimmer-30b",
+   "k": 7
+  },
+  {
+   "id": 24,
+   "model": "meta/muse-glimmer-30b",
+   "k": 8
+  },
+  {
+   "id": 25,
+   "model": "meta/muse-glimmer-30b",
+   "k": 9
+  },
+  {
+   "id": 26,
+   "model": "meta/muse-glimmer-30b",
+   "k": 10
+  },
+  {
+   "id": 27,
+   "model": "meta/muse-glimmer-30b",
+   "k": 11
+  },
+  {
+   "id": 28,
+   "model": "meta/muse-glimmer-30b",
+   "k": 12
+  },
+  {
+   "id": 29,
+   "model": "meta/muse-glimmer-30b",
+   "k": 13
+  },
+  {
+   "id": 30,
+   "model": "meta/muse-glimmer-30b",
+   "k": 14
+  },
+  {
+   "id": 31,
+   "model": "meta/muse-glimmer-30b",
+   "k": 15
+  },
+  {
+   "id": 32,
+   "model": "minimax/minimax-m3",
+   "k": 0
+  },
+  {
+   "id": 33,
+   "model": "minimax/minimax-m3",
+   "k": 1
+  },
+  {
+   "id": 34,
+   "model": "minimax/minimax-m3",
+   "k": 2
+  },
+  {
+   "id": 35,
+   "model": "minimax/minimax-m3",
+   "k": 3
+  },
+  {
+   "id": 36,
+   "model": "minimax/minimax-m3",
+   "k": 4
+  },
+  {
+   "id": 37,
+   "model": "minimax/minimax-m3",
+   "k": 5
+  },
+  {
+   "id": 38,
+   "model": "minimax/minimax-m3",
+   "k": 6
+  },
+  {
+   "id": 39,
+   "model": "minimax/minimax-m3",
+   "k": 7
+  },
+  {
+   "id": 40,
+   "model": "minimax/minimax-m3",
+   "k": 8
+  },
+  {
+   "id": 41,
+   "model": "minimax/minimax-m3",
+   "k": 9
+  },
+  {
+   "id": 42,
+   "model": "minimax/minimax-m3",
+   "k": 10
+  },
+  {
+   "id": 43,
+   "model": "minimax/minimax-m3",
+   "k": 11
+  },
+  {
+   "id": 44,
+   "model": "minimax/minimax-m3",
+   "k": 12
+  },
+  {
+   "id": 45,
+   "model": "minimax/minimax-m3",
+   "k": 13
+  },
+  {
+   "id": 46,
+   "model": "minimax/minimax-m3",
+   "k": 14
+  },
+  {
+   "id": 47,
+   "model": "minimax/minimax-m3",
+   "k": 15
+  },
+  {
+   "id": 48,
+   "model": "qwen/qwen3.8-27b",
+   "k": 0
+  },
+  {
+   "id": 49,
+   "model": "qwen/qwen3.8-27b",
+   "k": 1
+  },
+  {
+   "id": 50,
+   "model": "qwen/qwen3.8-27b",
+   "k": 2
+  },
+  {
+   "id": 51,
+   "model": "qwen/qwen3.8-27b",
+   "k": 3
+  },
+  {
+   "id": 52,
+   "model": "qwen/qwen3.8-27b",
+   "k": 4
+  },
+  {
+   "id": 53,
+   "model": "qwen/qwen3.8-27b",
+   "k": 5
+  },
+  {
+   "id": 54,
+   "model": "qwen/qwen3.8-27b",
+   "k": 6
+  },
+  {
+   "id": 55,
+   "model": "qwen/qwen3.8-27b",
+   "k": 7
+  },
+  {
+   "id": 56,
+   "model": "qwen/qwen3.8-27b",
+   "k": 8
+  },
+  {
+   "id": 57,
+   "model": "qwen/qwen3.8-27b",
+   "k": 9
+  },
+  {
+   "id": 58,
+   "model": "qwen/qwen3.8-27b",
+   "k": 10
+  },
+  {
+   "id": 59,
+   "model": "qwen/qwen3.8-27b",
+   "k": 11
+  },
+  {
+   "id": 60,
+   "model": "qwen/qwen3.8-27b",
+   "k": 12
+  },
+  {
+   "id": 61,
+   "model": "qwen/qwen3.8-27b",
+   "k": 13
+  },
+  {
+   "id": 62,
+   "model": "qwen/qwen3.8-27b",
+   "k": 14
+  },
+  {
+   "id": 63,
+   "model": "qwen/qwen3.8-27b",
+   "k": 15
+  },
+  {
+   "id": 64,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 0
+  },
+  {
+   "id": 65,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 1
+  },
+  {
+   "id": 66,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 2
+  },
+  {
+   "id": 67,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 3
+  },
+  {
+   "id": 68,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 4
+  },
+  {
+   "id": 69,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 5
+  },
+  {
+   "id": 70,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 6
+  },
+  {
+   "id": 71,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 7
+  },
+  {
+   "id": 72,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 8
+  },
+  {
+   "id": 73,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 9
+  },
+  {
+   "id": 74,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 10
+  },
+  {
+   "id": 75,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 11
+  },
+  {
+   "id": 76,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 12
+  },
+  {
+   "id": 77,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 13
+  },
+  {
+   "id": 78,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 14
+  },
+  {
+   "id": 79,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 15
+  },
+  {
+   "id": 80,
+   "model": "z-ai/glm-5.2",
+   "k": 0
+  },
+  {
+   "id": 81,
+   "model": "z-ai/glm-5.2",
+   "k": 1
+  },
+  {
+   "id": 82,
+   "model": "z-ai/glm-5.2",
+   "k": 2
+  },
+  {
+   "id": 83,
+   "model": "z-ai/glm-5.2",
+   "k": 3
+  },
+  {
+   "id": 84,
+   "model": "z-ai/glm-5.2",
+   "k": 4
+  },
+  {
+   "id": 85,
+   "model": "z-ai/glm-5.2",
+   "k": 5
+  },
+  {
+   "id": 86,
+   "model": "z-ai/glm-5.2",
+   "k": 6
+  },
+  {
+   "id": 87,
+   "model": "z-ai/glm-5.2",
+   "k": 7
+  },
+  {
+   "id": 88,
+   "model": "z-ai/glm-5.2",
+   "k": 8
+  },
+  {
+   "id": 89,
+   "model": "z-ai/glm-5.2",
+   "k": 9
+  },
+  {
+   "id": 90,
+   "model": "z-ai/glm-5.2",
+   "k": 10
+  },
+  {
+   "id": 91,
+   "model": "z-ai/glm-5.2",
+   "k": 11
+  },
+  {
+   "id": 92,
+   "model": "z-ai/glm-5.2",
+   "k": 12
+  },
+  {
+   "id": 93,
+   "model": "z-ai/glm-5.2",
+   "k": 13
+  },
+  {
+   "id": 94,
+   "model": "z-ai/glm-5.2",
+   "k": 14
+  },
+  {
+   "id": 95,
+   "model": "z-ai/glm-5.2",
+   "k": 15
+  }
+ ],
+ "195": [
+  {
+   "id": 0,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 0
+  },
+  {
+   "id": 1,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 1
+  },
+  {
+   "id": 2,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 2
+  },
+  {
+   "id": 3,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 3
+  },
+  {
+   "id": 4,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 4
+  },
+  {
+   "id": 5,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 5
+  },
+  {
+   "id": 6,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 6
+  },
+  {
+   "id": 7,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 7
+  },
+  {
+   "id": 8,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 8
+  },
+  {
+   "id": 9,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 9
+  },
+  {
+   "id": 10,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 10
+  },
+  {
+   "id": 11,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 11
+  },
+  {
+   "id": 12,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 12
+  },
+  {
+   "id": 13,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 13
+  },
+  {
+   "id": 14,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 14
+  },
+  {
+   "id": 15,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 15
+  },
+  {
+   "id": 16,
+   "model": "meta/muse-glimmer-30b",
+   "k": 0
+  },
+  {
+   "id": 17,
+   "model": "meta/muse-glimmer-30b",
+   "k": 1
+  },
+  {
+   "id": 18,
+   "model": "meta/muse-glimmer-30b",
+   "k": 2
+  },
+  {
+   "id": 19,
+   "model": "meta/muse-glimmer-30b",
+   "k": 3
+  },
+  {
+   "id": 20,
+   "model": "meta/muse-glimmer-30b",
+   "k": 4
+  },
+  {
+   "id": 21,
+   "model": "meta/muse-glimmer-30b",
+   "k": 5
+  },
+  {
+   "id": 22,
+   "model": "meta/muse-glimmer-30b",
+   "k": 6
+  },
+  {
+   "id": 23,
+   "model": "meta/muse-glimmer-30b",
+   "k": 7
+  },
+  {
+   "id": 24,
+   "model": "meta/muse-glimmer-30b",
+   "k": 8
+  },
+  {
+   "id": 25,
+   "model": "meta/muse-glimmer-30b",
+   "k": 9
+  },
+  {
+   "id": 26,
+   "model": "meta/muse-glimmer-30b",
+   "k": 10
+  },
+  {
+   "id": 27,
+   "model": "meta/muse-glimmer-30b",
+   "k": 11
+  },
+  {
+   "id": 28,
+   "model": "meta/muse-glimmer-30b",
+   "k": 12
+  },
+  {
+   "id": 29,
+   "model": "meta/muse-glimmer-30b",
+   "k": 13
+  },
+  {
+   "id": 30,
+   "model": "meta/muse-glimmer-30b",
+   "k": 14
+  },
+  {
+   "id": 31,
+   "model": "meta/muse-glimmer-30b",
+   "k": 15
+  },
+  {
+   "id": 32,
+   "model": "minimax/minimax-m3",
+   "k": 0
+  },
+  {
+   "id": 33,
+   "model": "minimax/minimax-m3",
+   "k": 1
+  },
+  {
+   "id": 34,
+   "model": "minimax/minimax-m3",
+   "k": 2
+  },
+  {
+   "id": 35,
+   "model": "minimax/minimax-m3",
+   "k": 3
+  },
+  {
+   "id": 36,
+   "model": "minimax/minimax-m3",
+   "k": 4
+  },
+  {
+   "id": 37,
+   "model": "minimax/minimax-m3",
+   "k": 5
+  },
+  {
+   "id": 38,
+   "model": "minimax/minimax-m3",
+   "k": 6
+  },
+  {
+   "id": 39,
+   "model": "minimax/minimax-m3",
+   "k": 7
+  },
+  {
+   "id": 40,
+   "model": "minimax/minimax-m3",
+   "k": 8
+  },
+  {
+   "id": 41,
+   "model": "minimax/minimax-m3",
+   "k": 9
+  },
+  {
+   "id": 42,
+   "model": "minimax/minimax-m3",
+   "k": 10
+  },
+  {
+   "id": 43,
+   "model": "minimax/minimax-m3",
+   "k": 11
+  },
+  {
+   "id": 44,
+   "model": "minimax/minimax-m3",
+   "k": 12
+  },
+  {
+   "id": 45,
+   "model": "minimax/minimax-m3",
+   "k": 13
+  },
+  {
+   "id": 46,
+   "model": "minimax/minimax-m3",
+   "k": 14
+  },
+  {
+   "id": 47,
+   "model": "minimax/minimax-m3",
+   "k": 15
+  },
+  {
+   "id": 48,
+   "model": "qwen/qwen3.8-27b",
+   "k": 0
+  },
+  {
+   "id": 49,
+   "model": "qwen/qwen3.8-27b",
+   "k": 1
+  },
+  {
+   "id": 50,
+   "model": "qwen/qwen3.8-27b",
+   "k": 2
+  },
+  {
+   "id": 51,
+   "model": "qwen/qwen3.8-27b",
+   "k": 3
+  },
+  {
+   "id": 52,
+   "model": "qwen/qwen3.8-27b",
+   "k": 4
+  },
+  {
+   "id": 53,
+   "model": "qwen/qwen3.8-27b",
+   "k": 5
+  },
+  {
+   "id": 54,
+   "model": "qwen/qwen3.8-27b",
+   "k": 6
+  },
+  {
+   "id": 55,
+   "model": "qwen/qwen3.8-27b",
+   "k": 7
+  },
+  {
+   "id": 56,
+   "model": "qwen/qwen3.8-27b",
+   "k": 8
+  },
+  {
+   "id": 57,
+   "model": "qwen/qwen3.8-27b",
+   "k": 9
+  },
+  {
+   "id": 58,
+   "model": "qwen/qwen3.8-27b",
+   "k": 10
+  },
+  {
+   "id": 59,
+   "model": "qwen/qwen3.8-27b",
+   "k": 11
+  },
+  {
+   "id": 60,
+   "model": "qwen/qwen3.8-27b",
+   "k": 12
+  },
+  {
+   "id": 61,
+   "model": "qwen/qwen3.8-27b",
+   "k": 13
+  },
+  {
+   "id": 62,
+   "model": "qwen/qwen3.8-27b",
+   "k": 14
+  },
+  {
+   "id": 63,
+   "model": "qwen/qwen3.8-27b",
+   "k": 15
+  },
+  {
+   "id": 64,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 0
+  },
+  {
+   "id": 65,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 1
+  },
+  {
+   "id": 66,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 2
+  },
+  {
+   "id": 67,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 3
+  },
+  {
+   "id": 68,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 4
+  },
+  {
+   "id": 69,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 5
+  },
+  {
+   "id": 70,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 6
+  },
+  {
+   "id": 71,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 7
+  },
+  {
+   "id": 72,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 8
+  },
+  {
+   "id": 73,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 9
+  },
+  {
+   "id": 74,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 10
+  },
+  {
+   "id": 75,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 11
+  },
+  {
+   "id": 76,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 12
+  },
+  {
+   "id": 77,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 13
+  },
+  {
+   "id": 78,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 14
+  },
+  {
+   "id": 79,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 15
+  },
+  {
+   "id": 80,
+   "model": "z-ai/glm-5.2",
+   "k": 0
+  },
+  {
+   "id": 81,
+   "model": "z-ai/glm-5.2",
+   "k": 1
+  },
+  {
+   "id": 82,
+   "model": "z-ai/glm-5.2",
+   "k": 2
+  },
+  {
+   "id": 83,
+   "model": "z-ai/glm-5.2",
+   "k": 3
+  },
+  {
+   "id": 84,
+   "model": "z-ai/glm-5.2",
+   "k": 4
+  },
+  {
+   "id": 85,
+   "model": "z-ai/glm-5.2",
+   "k": 5
+  },
+  {
+   "id": 86,
+   "model": "z-ai/glm-5.2",
+   "k": 6
+  },
+  {
+   "id": 87,
+   "model": "z-ai/glm-5.2",
+   "k": 7
+  },
+  {
+   "id": 88,
+   "model": "z-ai/glm-5.2",
+   "k": 8
+  },
+  {
+   "id": 89,
+   "model": "z-ai/glm-5.2",
+   "k": 9
+  },
+  {
+   "id": 90,
+   "model": "z-ai/glm-5.2",
+   "k": 10
+  },
+  {
+   "id": 91,
+   "model": "z-ai/glm-5.2",
+   "k": 11
+  },
+  {
+   "id": 92,
+   "model": "z-ai/glm-5.2",
+   "k": 12
+  },
+  {
+   "id": 93,
+   "model": "z-ai/glm-5.2",
+   "k": 13
+  },
+  {
+   "id": 94,
+   "model": "z-ai/glm-5.2",
+   "k": 14
+  },
+  {
+   "id": 95,
+   "model": "z-ai/glm-5.2",
+   "k": 15
+  }
+ ],
+ "28": [
+  {
+   "id": 0,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 0
+  },
+  {
+   "id": 1,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 1
+  },
+  {
+   "id": 2,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 2
+  },
+  {
+   "id": 3,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 3
+  },
+  {
+   "id": 4,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 4
+  },
+  {
+   "id": 5,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 5
+  },
+  {
+   "id": 6,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 6
+  },
+  {
+   "id": 7,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 7
+  },
+  {
+   "id": 8,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 8
+  },
+  {
+   "id": 9,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 9
+  },
+  {
+   "id": 10,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 10
+  },
+  {
+   "id": 11,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 11
+  },
+  {
+   "id": 12,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 12
+  },
+  {
+   "id": 13,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 13
+  },
+  {
+   "id": 14,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 14
+  },
+  {
+   "id": 15,
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "k": 15
+  },
+  {
+   "id": 16,
+   "model": "meta/muse-glimmer-30b",
+   "k": 0
+  },
+  {
+   "id": 17,
+   "model": "meta/muse-glimmer-30b",
+   "k": 1
+  },
+  {
+   "id": 18,
+   "model": "meta/muse-glimmer-30b",
+   "k": 2
+  },
+  {
+   "id": 19,
+   "model": "meta/muse-glimmer-30b",
+   "k": 3
+  },
+  {
+   "id": 20,
+   "model": "meta/muse-glimmer-30b",
+   "k": 4
+  },
+  {
+   "id": 21,
+   "model": "meta/muse-glimmer-30b",
+   "k": 5
+  },
+  {
+   "id": 22,
+   "model": "meta/muse-glimmer-30b",
+   "k": 6
+  },
+  {
+   "id": 23,
+   "model": "meta/muse-glimmer-30b",
+   "k": 7
+  },
+  {
+   "id": 24,
+   "model": "meta/muse-glimmer-30b",
+   "k": 8
+  },
+  {
+   "id": 25,
+   "model": "meta/muse-glimmer-30b",
+   "k": 9
+  },
+  {
+   "id": 26,
+   "model": "meta/muse-glimmer-30b",
+   "k": 10
+  },
+  {
+   "id": 27,
+   "model": "meta/muse-glimmer-30b",
+   "k": 11
+  },
+  {
+   "id": 28,
+   "model": "meta/muse-glimmer-30b",
+   "k": 12
+  },
+  {
+   "id": 29,
+   "model": "meta/muse-glimmer-30b",
+   "k": 13
+  },
+  {
+   "id": 30,
+   "model": "meta/muse-glimmer-30b",
+   "k": 14
+  },
+  {
+   "id": 31,
+   "model": "meta/muse-glimmer-30b",
+   "k": 15
+  },
+  {
+   "id": 32,
+   "model": "minimax/minimax-m3",
+   "k": 0
+  },
+  {
+   "id": 33,
+   "model": "minimax/minimax-m3",
+   "k": 1
+  },
+  {
+   "id": 34,
+   "model": "minimax/minimax-m3",
+   "k": 2
+  },
+  {
+   "id": 35,
+   "model": "minimax/minimax-m3",
+   "k": 3
+  },
+  {
+   "id": 36,
+   "model": "minimax/minimax-m3",
+   "k": 4
+  },
+  {
+   "id": 37,
+   "model": "minimax/minimax-m3",
+   "k": 5
+  },
+  {
+   "id": 38,
+   "model": "minimax/minimax-m3",
+   "k": 6
+  },
+  {
+   "id": 39,
+   "model": "minimax/minimax-m3",
+   "k": 7
+  },
+  {
+   "id": 40,
+   "model": "minimax/minimax-m3",
+   "k": 8
+  },
+  {
+   "id": 41,
+   "model": "minimax/minimax-m3",
+   "k": 9
+  },
+  {
+   "id": 42,
+   "model": "minimax/minimax-m3",
+   "k": 10
+  },
+  {
+   "id": 43,
+   "model": "minimax/minimax-m3",
+   "k": 11
+  },
+  {
+   "id": 44,
+   "model": "minimax/minimax-m3",
+   "k": 12
+  },
+  {
+   "id": 45,
+   "model": "minimax/minimax-m3",
+   "k": 13
+  },
+  {
+   "id": 46,
+   "model": "minimax/minimax-m3",
+   "k": 14
+  },
+  {
+   "id": 47,
+   "model": "minimax/minimax-m3",
+   "k": 15
+  },
+  {
+   "id": 48,
+   "model": "qwen/qwen3.8-27b",
+   "k": 0
+  },
+  {
+   "id": 49,
+   "model": "qwen/qwen3.8-27b",
+   "k": 1
+  },
+  {
+   "id": 50,
+   "model": "qwen/qwen3.8-27b",
+   "k": 2
+  },
+  {
+   "id": 51,
+   "model": "qwen/qwen3.8-27b",
+   "k": 3
+  },
+  {
+   "id": 52,
+   "model": "qwen/qwen3.8-27b",
+   "k": 4
+  },
+  {
+   "id": 53,
+   "model": "qwen/qwen3.8-27b",
+   "k": 5
+  },
+  {
+   "id": 54,
+   "model": "qwen/qwen3.8-27b",
+   "k": 6
+  },
+  {
+   "id": 55,
+   "model": "qwen/qwen3.8-27b",
+   "k": 7
+  },
+  {
+   "id": 56,
+   "model": "qwen/qwen3.8-27b",
+   "k": 8
+  },
+  {
+   "id": 57,
+   "model": "qwen/qwen3.8-27b",
+   "k": 9
+  },
+  {
+   "id": 58,
+   "model": "qwen/qwen3.8-27b",
+   "k": 10
+  },
+  {
+   "id": 59,
+   "model": "qwen/qwen3.8-27b",
+   "k": 11
+  },
+  {
+   "id": 60,
+   "model": "qwen/qwen3.8-27b",
+   "k": 12
+  },
+  {
+   "id": 61,
+   "model": "qwen/qwen3.8-27b",
+   "k": 13
+  },
+  {
+   "id": 62,
+   "model": "qwen/qwen3.8-27b",
+   "k": 14
+  },
+  {
+   "id": 63,
+   "model": "qwen/qwen3.8-27b",
+   "k": 15
+  },
+  {
+   "id": 64,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 0
+  },
+  {
+   "id": 65,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 1
+  },
+  {
+   "id": 66,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 2
+  },
+  {
+   "id": 67,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 3
+  },
+  {
+   "id": 68,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 4
+  },
+  {
+   "id": 69,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 5
+  },
+  {
+   "id": 70,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 6
+  },
+  {
+   "id": 71,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 7
+  },
+  {
+   "id": 72,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 8
+  },
+  {
+   "id": 73,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 9
+  },
+  {
+   "id": 74,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 10
+  },
+  {
+   "id": 75,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 11
+  },
+  {
+   "id": 76,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 12
+  },
+  {
+   "id": 77,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 13
+  },
+  {
+   "id": 78,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 14
+  },
+  {
+   "id": 79,
+   "model": "xiaomi/mimo-v2.5-pro",
+   "k": 15
+  },
+  {
+   "id": 80,
+   "model": "z-ai/glm-5.2",
+   "k": 0
+  },
+  {
+   "id": 81,
+   "model": "z-ai/glm-5.2",
+   "k": 1
+  },
+  {
+   "id": 82,
+   "model": "z-ai/glm-5.2",
+   "k": 2
+  },
+  {
+   "id": 83,
+   "model": "z-ai/glm-5.2",
+   "k": 3
+  },
+  {
+   "id": 84,
+   "model": "z-ai/glm-5.2",
+   "k": 4
+  },
+  {
+   "id": 85,
+   "model": "z-ai/glm-5.2",
+   "k": 5
+  },
+  {
+   "id": 86,
+   "model": "z-ai/glm-5.2",
+   "k": 6
+  },
+  {
+   "id": 87,
+   "model": "z-ai/glm-5.2",
+   "k": 7
+  },
+  {
+   "id": 88,
+   "model": "z-ai/glm-5.2",
+   "k": 8
+  },
+  {
+   "id": 89,
+   "model": "z-ai/glm-5.2",
+   "k": 9
+  },
+  {
+   "id": 90,
+   "model": "z-ai/glm-5.2",
+   "k": 10
+  },
+  {
+   "id": 91,
+   "model": "z-ai/glm-5.2",
+   "k": 11
+  },
+  {
+   "id": 92,
+   "model": "z-ai/glm-5.2",
+   "k": 12
+  },
+  {
+   "id": 93,
+   "model": "z-ai/glm-5.2",
+   "k": 13
+  },
+  {
+   "id": 94,
+   "model": "z-ai/glm-5.2",
+   "k": 14
+  },
+  {
+   "id": 95,
+   "model": "z-ai/glm-5.2",
+   "k": 15
+  }
+ ]
+}
