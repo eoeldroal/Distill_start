@@ -39,9 +39,8 @@ Upstream `verl-project/verl` 을 `b256ebf8` (v0.8.0-328) 에서 통째로 가져
 이력을 두 커밋으로 쪼개 두었으므로 우리 기여만 따로 뽑아낼 수 있다.
 
 ```bash
-# 우리 수정만 보기
-git log --oneline --all -- Code/verl | tail -2      # vendor 커밋과 그 다음 커밋
-git diff <vendor-커밋> HEAD -- Code/verl
+# 우리 수정만 보기 (15개 파일 +807 -59)
+git diff $(git log --format=%h --grep="^vendor: verl" -1) HEAD -- Code/verl
 ```
 
 바꾼 것은 14개 파일 +725줄과 신규 `verl/trainer/distillation/projection.py` 82줄이다.
