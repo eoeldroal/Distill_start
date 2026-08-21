@@ -1,0 +1,14 @@
+# @package data.apply_chat_template_kwargs
+
+# Qwen3 의 chat template 은 add_generation_prompt 에서 '<|im_start|>assistant\n' 으로 끝나고
+# 사고 블록을 열어 둔 채 모델에게 넘긴다. post-training 을 거친 teacher 는 그 자리에서 '<think>'
+# (token 151667) 를 확률 ~1 로 내지만, Base anchor 는 그 token 을 그 위치에서 본 적이 없어
+# H 3.936 으로 퍼진다. floor 가 그 흩어진 질량의 beta 배를 지키려 하면 Cost(0.4) 가
+# 0.277 -> 9.97 nats 가 되고, 형식 유지 법칙에 따라 target 이 '<think>' 에 남기는 확률은
+# 영구히 1-beta 로 묶인다. 첫 스모크에서 실제로 pos0 의 floor binding 이 64/64 로 포화하고
+# target_floor_mass_max 가 0.39999 로 beta 에 붙는 것을 관측했다.
+#
+# 그래서 anchor 가 Base 인 동안 프롬프트는 평문이어야 한다. messages 를 순회하는 이유는
+# messages[0] 만 읽으면 multi-turn 이 들어올 때 조용히 뒤 turn 을 버리기 때문이다.
+# Jinja2 는 m.content 를 getattr 실패 후 getitem 으로 풀어 dict 에 그대로 동작한다.
+chat_template: "{% for m in messages %}{{ m.content }}{% endfor %}"

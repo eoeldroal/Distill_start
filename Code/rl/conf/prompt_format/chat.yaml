@@ -1,0 +1,6 @@
+# @package data.apply_chat_template_kwargs
+
+# tokenizer 에 저장된 Qwen3 템플릿을 그대로 쓴다. thinking 이 기본이라 응답이 매우 길고,
+# data.truncation 은 프롬프트에만 적용되므로 응답은 터지지 않고 조용히 잘린다. 이 팔을 쓸
+# 때는 MAX_RESPONSE_LENGTH 를 함께 키워야 잘린 사고 과정을 증류하지 않는다.
+{}

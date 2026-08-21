@@ -15,8 +15,8 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-from WorkPlace.ICLR.Experiment.PreAnalysis.common import OUT
-from WorkPlace.ICLR.Experiment.PreAnalysis.report import SWEEP, TOY, BETA_KNEE, position_bins, training_weighted
+from WorkPlace.Distill_start.Experiment.PreAnalysis.common import OUT
+from WorkPlace.Distill_start.Experiment.PreAnalysis.report import SWEEP, TOY, BETA_KNEE, position_bins, training_weighted
 
 
 def curve(tag):

@@ -4,7 +4,7 @@ import os
 
 import numpy as np
 
-from WorkPlace.ICLR.Experiment.PreAnalysis.common import OUT
+from WorkPlace.Distill_start.Experiment.PreAnalysis.common import OUT
 
 BETAS = [0.1, 0.2, 0.4, 0.8]
 BUDGET = 1 / 80  # run-level budget floor: 1/(G*T_eff)

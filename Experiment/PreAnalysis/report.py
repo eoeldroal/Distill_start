@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-from WorkPlace.ICLR.Experiment.PreAnalysis.common import OUT
+from WorkPlace.Distill_start.Experiment.PreAnalysis.common import OUT
 
 SWEEP = [0.1, 0.2, 0.4, 0.8]
 TOY = {0.1: 0.004, 0.2: 0.026, 0.4: 0.10, 0.8: 0.37}  # toy_sims/beta_design.py

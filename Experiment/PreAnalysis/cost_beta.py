@@ -14,7 +14,7 @@ import os
 import numpy as np
 import torch
 
-from WorkPlace.ICLR.Experiment.PreAnalysis.common import ANCHOR, OUT, TEACHER
+from WorkPlace.Distill_start.Experiment.PreAnalysis.common import ANCHOR, OUT, TEACHER
 
 BETAS = [round(0.05 * i, 2) for i in range(1, 20)]  # 0.05 .. 0.95
 for b in (0.1, 0.2, 0.4, 0.8):                      # sweep grid points

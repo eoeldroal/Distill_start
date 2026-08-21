@@ -10,7 +10,7 @@ import os
 import numpy as np
 import pandas as pd
 
-from WorkPlace.ICLR.Experiment.PreAnalysis.common import OUT
+from WorkPlace.Distill_start.Experiment.PreAnalysis.common import OUT
 
 BETA = 0.4
 LOW, HIGH = 0.2, 1.0

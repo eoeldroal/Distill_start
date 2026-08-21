@@ -10,7 +10,7 @@ import random
 from datasets import load_dataset
 from transformers import AutoTokenizer
 
-from WorkPlace.ICLR.Experiment.PreAnalysis.common import ANCHOR, OUT, SEED, TEACHER, build_prompt, extract_boxed
+from WorkPlace.Distill_start.Experiment.PreAnalysis.common import ANCHOR, OUT, SEED, TEACHER, build_prompt, extract_boxed
 
 SUBJECTS = [
     "algebra",

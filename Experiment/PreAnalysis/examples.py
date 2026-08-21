@@ -11,8 +11,8 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from WorkPlace.ICLR.Experiment.PreAnalysis.common import ANCHOR, OUT, TEACHER
-from WorkPlace.ICLR.Experiment.PreAnalysis.cost_beta import project
+from WorkPlace.Distill_start.Experiment.PreAnalysis.common import ANCHOR, OUT, TEACHER
+from WorkPlace.Distill_start.Experiment.PreAnalysis.cost_beta import project
 
 BETA = 0.4
 

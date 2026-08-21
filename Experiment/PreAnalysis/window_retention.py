@@ -20,8 +20,8 @@ import numpy as np
 import torch
 from transformers import AutoModelForCausalLM
 
-from WorkPlace.ICLR.Experiment.PreAnalysis.common import ANCHOR, OUT, TEACHER
-from WorkPlace.ICLR.Experiment.PreAnalysis.cost_beta import solve_log_c
+from WorkPlace.Distill_start.Experiment.PreAnalysis.common import ANCHOR, OUT, TEACHER
+from WorkPlace.Distill_start.Experiment.PreAnalysis.cost_beta import solve_log_c
 
 BETAS = [0.1, 0.2, 0.4, 0.8]
 W = 64  # window length
