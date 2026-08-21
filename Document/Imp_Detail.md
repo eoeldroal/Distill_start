@@ -331,12 +331,20 @@ B, D_succ)은 로깅하지 않는다.
 
 | 지표 | 뜻 |
 |---|---|
-| `distillation/loss` | Cost(β)의 훈련 중 실현값 |
+| `distillation/loss` | KL(q*‖π_θ). student가 target에서 얼마나 먼지 |
+| `distillation/cost_beta` (+max) | Cost(β) = KL(q*‖π_T). floor가 target을 teacher에서 끌어낸 값 |
+| `distillation/cost_beta/pos{0,1,2-3,4-7,8-15,16plus}` | 위 값의 위치별 분해 |
 | `distillation/teacher_mass`, `anchor_mass`, `student_mass` | 지지집합이 담은 각 분포의 확률. top-k 절단의 크기 |
 | `distillation/floor_binding_count` (+max) | 위치당 floor가 이긴 token 수. k_bind의 실측 |
 | `distillation/target_floor_mass` (+max) | q* 중 floor가 든 mass. 이론 상한이 β다 |
 | `distillation/floor_binding/pos{0,1,2-3,4-7,8-15,16plus}` | 위 개수의 위치별 분해 |
 | `training/groups/{all_fail,all_success,informative}` | GRPO 그룹을 학습 신호 유무로 나눈 비율 |
+
+loss와 cost_beta는 다른 값이다. 커널의 `kl_divergence(log_q, log_p)`가 `Σ p(log p − log q)`,
+즉 KL(p‖q)이고 손실은 `log_p`에 target을 `log_q`에 student를 받으므로 KL(q*‖π_θ)다. β 결정
+규칙 β* = min(β_knee, Cost⁻¹(δ))가 쓰는 값은 KL(q*‖π_T)이고 그것이 cost_beta다. 지지집합 밖에서
+teacher의 log 확률이 NEG_LOG_PROB이면 KL이 발산하므로 cost_beta는 clamp된 teacher로 계산한다.
+그래서 이 값은 하한이고 조임 정도를 log_prob_min_clamp가 정한다.
 
 위치별 분해가 필요한 이유는 평균 하나로는 floor가 앞쪽에 몰려 작동하는지 알 수 없다는 것이다.
 §1.6이 창 앞부분의 binding을 진입 보존(k_bind), 뒷부분을 branch 내부 실행(V)의 진단으로 나누므로
