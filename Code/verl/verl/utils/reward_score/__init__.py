@@ -67,6 +67,11 @@ def default_compute_score(
         "numina_synthetic_amc",
         "numina_cn_k12",
         "numina_olympiads",
+        # nvidia/Nemotron-Cascade-RL-Math. 77% of it is NuminaMath, and its short-form answers
+        # score the same way, so it belongs on this branch rather than math_dapo: on the same
+        # generations prime_math puts Qwen3-14B at 0.312 where math_dapo puts it at 0.112,
+        # because math_dapo rejects 14 against a ground truth of 14.0.
+        "nemotron_cascade_math",
     ]:
         from . import prime_math
 
