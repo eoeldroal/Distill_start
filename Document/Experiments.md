@@ -1,6 +1,6 @@
 # 실험 설계
 
-이 문서는 합의가 끝난 설계 결정과 그 도출 과정만 기록한다. 아직 논의 중인 항목은 §5에 이름만 적어 두고, 결정으로 취급하지 않는다. 수치의 출처 스크립트는 `toy_sims/`에 있다.
+이 문서는 프로젝트 전체에 걸쳐 확정된 실험값과 비교 arm을 기록한다. Branch panel과 \(E\)의 상세 프로토콜은 [Branch Panel and E](Branch_Panel_and_E.md)를 정본으로 삼고, 여기서는 다른 실험과 맞물리는 값만 요약한다. \(\beta\) 설계 수치의 출처 스크립트는 `toy_sims/`에 있다.
 
 ## 0. 확정된 설계 결정
 
@@ -26,14 +26,21 @@ Sweep grid의 좌표 번역 (N = G×T_eff = 80, run-level 95% 기준, toy 수치
 
 0.1과 0.2는 dose-response 곡선의 가파른 구간, 0.4는 무릎, 0.8은 무릎 너머다. 0.8은 무릎 이론의 반증 가능한 예측을 시험한다: D_succ가 0.4와 같고 비용만 크므로, post-RL이 같거나 나빠야 이론이 맞다.
 
-**Discovery 소스 6개.** GLM 5.2, DeepSeek V4 Flash 0731, Qwen3.8-27B, MiniMax M3, MiMo v2.5 Pro, Muse Glimmer 30B를 OpenRouter로 호출하고, 모델마다 endpoint를 고정한다. 세 조건을 실측으로 확인해 고른 것이다: rate limit 없음, reasoning 평문 반환, Artificial Analysis Intelligence Index가 신뢰 하한 이상. AAII는 하한으로만 쓰고 그 위에서 줄 세우지 않는다. 실측에서 AAII와 접근 다양성은 역상관이었다.
-근거: 다양성의 주 동력은 모델 간 차이다. 같은 모델에서 표본을 늘리는 것으로는 접근이 갈리지 않고, 온도로 갈리는 것처럼 보이는 구간에서는 텍스트가 무너진다. 상세는 Cal_E_Before_train.md §2.
+**Branch panel.** Branch identity는 문제별 primary mathematical approach로 고정한다. Judge가 hard classification하며, 원문 embedding은 branch 배정에 쓰지 않는다. API discovery는 서로 다른 여섯 모델에서 문제당 완결 풀이 16개씩 모으고, Base discovery는 재귀 tree로 partial prefix를 찾는다.
 
-**Discovery 생성 설정.** temperature 1.3, top_p 1.0, top_k 0, max_tokens 256, reasoning 노출. endpoint 고정에 `allow_fallbacks: false`를 건다.
-근거: endpoint가 top_p나 top_k를 선언 지원하지 않으면 값을 보내도 오류 없이 버리므로, 고정하지 않으면 sampling 설정이 호출마다 달라진다. max_tokens 256은 reasoning과 답변의 합에 걸려 실질적으로 사고의 앞 256 token이 되는데, 넉넉히 받아 나중에 자르는 방식과 앞부분 텍스트가 통계적으로 동일하고 비용은 절반이다.
+| Base tree 항목 | 고정값 |
+|---|---:|
+| opening 전개 | 첫 두 token, 각 token probability \(\ge 1\%\) |
+| internal fork | entropy \(\ge 1.5\), 후보 둘 이상이 각각 \(\ge 1\%\) |
+| fork 사이 진행 | greedy/top-1 |
+| 최대 깊이 | 3 |
+| 다음 fork 탐색 상한 | 48 token |
+| leaf validation | Qwen3-14B, K=4 |
+| 수용 기준 | 정답이면서 접근법을 유지한 완결이 한 번 이상 |
 
-**프롬프트 지시문의 공유.** `"<문제>\n\nPlease reason step by step, and put your final answer within \boxed{}."` 이 문자열을 사전 분석, discovery, E와 V 측정, RL rollout이 전부 공유한다.
-근거: cluster를 만든 텍스트와 거기 배정될 rollout의 프롬프트가 같아야 배정이 성립한다. 이 지시문은 벤치마크 프로토콜이 아니라 V-E 측정 전용이므로, 이 설정에서 나온 수치로 벤치마크 성능을 주장하지 않는다.
+API 정답 완결문과 검증된 Base leaf를 합쳐 panel을 만들고, 이후 모든 checkpoint에 같은 taxonomy를 적용한다. 생성 기반 \(E^{\mathrm{gen}}\)은 모든 응답에 대한 hard frequency이며, prefill 기반 \(E^{\mathrm{entry}}\)는 Base에서 검증된 고정 entry prefix의 covered mass다. API-only branch의 representative entry는 실제 panel을 본 뒤 정한다. API endpoint와 실행 명령은 [BranchDev README](../Experiment/BranchDev/README.md)를 따른다.
+
+기존 temperature 1.3, max_tokens 256의 API pilot은 1,920건을 요청해 1,913개의 성공 trajectory를 얻었다. 이 자료와 문제 180의 35-leaf tree는 설계를 결정한 pilot evidence로만 보존한다. 최종 panel 입력은 위 완결 풀이와 검증 절차를 새로 적용해 만든다.
 
 주의: sampler와 G 결정은 둘 다 vanilla distillation의 해악을 완화하는 방향이다. 이 관대한 세팅에서 효과가 나오면 주장이 강해지고, 안 나오면 현상이 truncation 의존적이었다는 것 자체가 발견이다.
 
@@ -61,14 +68,14 @@ Sweep grid의 좌표 번역 (N = G×T_eff = 80, run-level 95% 기준, toy 수치
 
 ### 1.3 m_min: 네 제약의 교집합
 
-m_min은 보호를 약속하는 최소 anchor mass다. 본문 §3.1에서 inherited branch 자격을 정하는 최소 anchor mass 기준과 같은 상수이며, panel의 자격선과 무릎 공식의 입력이라는 두 역할에 하나의 값을 쓴다. 네 방향에서 죄인다. 값은 run-level 95%, N=80 기준.
+m_min은 보호 효과를 분석할 최소 Base branch mass이자 무릎 공식의 입력이다. Panel membership이나 tree의 token cutoff로 사용하지 않는다. 값은 run-level 95%, N=80 기준으로 네 제약에서 정한다.
 
 1. 구조 가능성: β ≤ 1이므로 m ≥ 1 − 0.05^(1/N) ≈ 0.037. 이 밑은 완전 보존으로도 목표 달성이 불가능하다.
 2. 측정 가능성: E 추정은 Monte Carlo이므로 m ≳ 15/M. State당 rollout M=256이면 약 0.06. 측정 못 하는 branch에 대한 약속은 검증 불능이다.
 3. β 비용: β ≤ 0.5로 두려면 m ≥ 0.037/0.5 ≈ 0.074.
 4. 현상 서식지: distillation이 짓누르는 소수 branch는 anchor mass 0.05~0.2 구간에 산다. m_min이 0.15를 넘으면 보호 대상이 소멸한다.
 
-교집합은 대략 [0.074, 0.15]이고 중앙값 0.10을 채택한다. 최종 고정은 branch-dev에서 한다.
+교집합은 대략 [0.074, 0.15]이고 중앙값 0.10을 채택한다. 이 값은 panel 구축 뒤 실제 Base-validated branch mass에 대한 sensitivity analysis로 다시 확인한다.
 
 ### 1.4 도출
 
@@ -86,7 +93,7 @@ T_eff = 5 (보수적 잠정치; crowding-out 경쟁을 존중해 작게 잡음, 
 | 선언 | fidelity 예산 δ | matched protocol 허용 오차 | 기존 프로토콜 상속 |
 | 입력 | G | 16 | RL 설정 (§0) |
 | 입력 | M (panel rollout 수) | 측정 예산에서 | 제약 2의 하한 결정 |
-| 입력 | m_min | 0.10 | 네 제약의 교집합 중앙 (§1.3), 본문 §3.1의 inherited 자격선과 동일 상수 |
+| 입력 | m_min | 0.10 | 네 제약의 교집합 중앙 (§1.3), 보호 효과 분석 기준 |
 | 산수 | N, β_knee, 커버리지 함수 | 80, 0.37, 0.037/β | §1.2 공식 |
 | 실측 예정 | k_bind | 진입 창의 binding 수 | teacher와 anchor의 forward pass만으로 계산 가능 |
 | 실측 예정 | T_eff | 잠정 5 | RL 중간 checkpoint의 E 궤적 |
@@ -94,7 +101,7 @@ T_eff = 5 (보수적 잠정치; crowding-out 경쟁을 존중해 작게 잡음, 
 
 ### 1.6 retention의 정밀화
 
-보장 사슬은 token floor에서 branch 진입 회복으로 간다. 진입이 token 하나로 결정되면 retention은 β이고, 일반적으로는 binding 위치 수 k_bind에 대해 β^k_bind다. binding 여부는 (π_T, π_A, s)만의 성질이라 student와 무관하고, 따라서 훈련 전에 계산할 수 있다. β^k_bind는 설계용 산수이며, 검증은 segment 수준 직측(진입 확률의 student/anchor 비)으로 한다. binding 측정 창은 branch clustering에 쓰는 창(32~64 token)과 통일하고, k_bind에는 창 앞부분(진입이 확정되기 전 구간)의 binding만 센다. 창 뒷부분의 binding은 진입이 아니라 branch 내부 실행(V) 보존의 진단에 쓴다.
+보장 사슬은 token floor에서 branch 진입 회복으로 간다. 진입이 token 하나로 결정되면 retention은 β이고, 일반적으로는 binding 위치 수 k_bind에 대해 β^k_bind다. binding 여부는 (π_T, π_A, s)만의 성질이라 student와 무관하고, 따라서 훈련 전에 계산할 수 있다. β^k_bind는 설계용 산수이며, 검증은 panel에 고정한 entry prefix의 student/anchor probability ratio로 한다. k_bind는 접근법 진입이 확인되는 prefix 구간 안에서만 세고, 이후 token의 binding은 branch 내부 실행 보존을 보는 별도 진단으로 남긴다.
 
 ## 2. 확정된 실험 목록
 
@@ -108,39 +115,40 @@ T_eff = 5 (보수적 잠정치; crowding-out 경쟁을 존중해 작게 잡음, 
 
 ## 3. 본문 정의와의 정합
 
-반영 완료. 아래는 Draft.md의 현재 상태다.
+`Draft.md`와 Branch/E 정본은 다음 정의를 공유한다.
 
-1. Floor의 적용 범위는 전체 vocabulary다: q(v) ≥ β·π_A(v), 모든 v. 보호 크기가 anchor 확률에 비례하므로 조준이 내장되어 있고, β < 1이면 제약은 항상 실현 가능하다 (§5.1).
-2. hard entry loss는 budget 기준 하나로 정의한다: 진입 확률이 너무 작아 실제 rollout budget 안에서 사실상 관찰되지 않는 경우 (§3.3).
-3. Canonical sampler는 truncation 없는 full softmax, temperature는 RL rollout과 동일 (§3.1).
-4. Binding 측정 창은 branch clustering의 continuation 길이와 같고, 창 앞부분의 binding 수만 진입 확률 환산에 쓴다 (§3.6).
-5. 방법의 이름은 relative-floor projection이다 (§5.1).
-6. Prefill 채점 L_θ = log P_θ(r|s)를 E의 보완 측정으로 병기한다. E의 정의는 생성 기반 그대로 두고, L_θ는 그 하한으로 명시한다 (§3.3).
-7. L_θ는 raw log-probability로 다루고 정규화하지 않으며, 서로 다른 continuation의 값을 직접 비교하지 않는다. 측정에 쓰는 양은 같은 continuation에 대한 두 checkpoint의 차이다 (§3.3).
-8. Discovery 소스의 문체 이질성은 줄이지 않되, checkpoint 비교 결과는 소스별로 층화해 보고한다 (§3.1).
-9. LLM-as-a-judge는 branch assignment에 쓰지 않는다. embedding 공간을 검증하기 위한 독립 기준을 만드는 데만 쓰며, 이때 판정자는 블라인드이고 문제별 고정 label 목록에서만 고르며 문체를 판단 근거로 삼지 않는다 (§3.1).
+1. Branch는 token이나 문체가 아니라 문제별 primary mathematical approach다.
+2. API 완결 풀이와 Base partial-prefix tree는 서로 다른 discovery 역할을 맡지만, 최종 panel에서는 같은 judge taxonomy로 병합한다.
+3. Base leaf는 Qwen3-14B K=4 validation에서 정답이면서 접근법을 유지한 완결이 한 번 이상 나올 때만 entry prefix로 채택한다.
+4. Judge는 panel 구축과 checkpoint 응답 배정 모두에서 hard classification을 수행한다. `other`, `ambiguous`, `failed`는 별도 범주다.
+5. \(E^{\mathrm{gen}}\)은 실제 생성 빈도, \(E^{\mathrm{entry}}\)는 Base에서 검증된 고정 entry prefix가 포괄하는 probability mass다. 후자를 branch 전체 확률로 해석하지 않으며, API-only entry 구성은 panel을 본 뒤 정한다.
+6. 원문 embedding은 시각화에만 사용하며 branch identity나 배정을 결정하지 않는다.
+7. Base에서 검증된 branch와 API에서만 발견된 branch를 구분한다. 후자는 panel coverage에는 포함하지만 Base가 잃은 경로라는 주장에는 쓰지 않는다.
+
+세부 정의와 실행 순서는 [Branch Panel and E](Branch_Panel_and_E.md)를 따른다.
 
 ## 4. 확정된 분석 목록
 
 논증으로 이미 종결된 결과(최적성 부등식, mixture의 floor 내장, 닫힌 해와 odds 보존, 역방향 KL의 소멸 비용, 무릎 공식)는 본문과 appendix의 내용이며 이 목록의 대상이 아니다. 실험은 새 데이터가 필요한 질문에, 분석은 이미 있는 숫자로 답할 수 있는 질문에 쓴다.
 
-### 4.1 사전 분석 (훈련 전, frozen 모델의 forward pass만 필요)
+### 4.1 사전 분석과 panel 구축
 
-- Cost(β) 예산표: q*가 닫힌 형태이므로 state 표본에서 KL(q*‖π_T)를 직접 계산한다. β 선택의 비용 쪽 근거. 수행 완료, Cal_Beta_Before_train.md.
-- k_bind와 binding 프로파일: binding은 (π_T, π_A, s)만의 성질이다. inherited branch의 진입 창(branch clustering과 동일한 32~64 token)에서 위치별 binding을 기록하고, 창 앞부분의 개수를 k_bind로 쓴다. 수행 완료, Cal_Beta_Before_train.md §7.
-- embedding 공간의 수용 검사: discovery traj에 독립 approach label을 붙이고, 방법만 공유하는 쌍과 소스만 공유하는 쌍의 거리를 비교한다. panel을 짓기 전에 좌표계가 방법을 보는지 문체를 보는지 판정한다. 수행 완료, Cal_E_Before_train.md §4.
-- prefill 채점 L_θ: 고정된 traj에 checkpoint의 log P를 매긴다. 배정 단계를 거치지 않아 문체가 개입할 자리가 없고, 보장 q* ≥ β·π_A와 같은 확률 단위로 검증한다. E의 하한이라는 점을 함께 보고한다. 수행 완료, Cal_E_Before_train.md §5.
+- Cost(β) 예산표: q*가 닫힌 형태이므로 state 표본에서 KL(q*‖π_T)를 직접 계산한다. β 선택의 비용 쪽 근거이며, [Cal Beta Before Train](Cal_Beta_Before_train.md)에 정리되어 있다.
+- k_bind와 binding profile: binding은 (π_T, π_A, s)만의 성질이다. Panel에서 고정한 Base entry prefix를 측정 창으로 삼고, 접근법 진입 전 구간의 binding만 k_bind에 센다.
+- Pilot evidence: API 요청 1,920건 중 성공한 partial trajectory 1,913개, raw embedding의 source bias, Base approach habitat, 문제 180의 35-leaf tree는 설계 근거로 이미 확보했다. 결과와 현재 해석은 [Branch Panel and E §8](Branch_Panel_and_E.md#8-기존-실측이-남긴-결정)에 보존한다.
+- Final panel 구축: API 여섯 모델의 완결 풀이와 Base recursive tree를 생성하고, Qwen3-14B K=4 validation과 judge hard classification을 거쳐 문제별 taxonomy와 validated Base entry prefix를 동결한다.
+- Checkpoint 측정 준비: 모든 rollout의 원문, 정답 여부, hard branch label을 보존하고, 같은 panel에서 \(E^{\mathrm{gen}}\)과 \(E^{\mathrm{entry}}\)를 함께 계산한다.
 
 ### 4.2 사후 분석 (실험 산출물 위의 계산, 새 run 불필요)
 
 - predictor 분석: held-out loss와 Pass@large-k를 이미 아는 상태에서 D_succ(G)가 post-RL 결과를 추가로 설명하는지. 분석 단위는 recipe × seed.
-- 무릎 검증: 사전 분석의 예측(비용, retention)과 handoff 실측(pass@1, E 회복)의 대조. post-RL 성능이 β=0.4 근방에서 포화하는지.
+- 무릎 검증: 사전 분석의 예측(비용, retention)과 handoff 실측(pass@1, \(E^{\mathrm{entry}}\), \(E^{\mathrm{gen}}\))의 대조. post-RL 성능이 β=0.4 근방에서 포화하는지.
 - G-sensitivity: 같은 panel 측정치에서 D_succ(G)를 G ∈ {8, 16, 32}로 재계산.
 - m_min sensitivity: E 측정 원자료에 문턱 {0.05, 0.10, 0.15}를 재적용.
 - 반비례 진단: λ arm들에서 실효 보호를 teacher crush 강도별로 binning.
 - T_eff 추정: RL 중간 checkpoint의 E 궤적에서 미발견 branch가 눌리는 속도를 읽는다.
 - RL 학습 신호: GRPO 로그에서 all-fail, all-success, informative group 비율.
-- 기제 사슬 정렬: floor binding → entry lift → ΔE_j → D_succ → informative group (§3.6).
+- 기제 사슬 정렬: floor binding → \(\Delta E^{\mathrm{entry}}\) → \(\Delta E^{\mathrm{gen}}\) → D_succ → informative group (Draft §3.6).
 - frontier figure: 각 arm의 (handoff 보호, handoff pass@1)을 한 평면에 그린다. β arm들이 projection 곡선, λ arm들이 penalty 곡선, mixture arm이 한 점.
 
 ### 4.3 사후 분석이 요구하는 로깅
@@ -149,14 +157,4 @@ T_eff = 5 (보수적 잠정치; crowding-out 경쟁을 존중해 작게 잡음, 
 - GRPO group별 reward 로그 (informative 비율)
 - checkpoint별 held-out loss와 Pass@large-k (predictor baseline)
 - panel 측정 원자료를 집계 전 상태로 보존: rollout별 branch 배정 (G와 m_min 재계산)
-- floor arm과 λ arm에서 state 표본의 (π_A, π_T, target) 저장 (binding 프로파일과 반비례 진단)
-
-## 5. 논의 대기 (합의되지 않음, 결정 아님)
-
-- seed 반복 횟수와 RL run 간 분산의 잣대
-- arm별 측정 깊이의 차등 (전 궤적 추적 vs handoff와 최종만)
-- matched protocol을 sweep 전체에 어떻게 적용할지
-- top-p = 0.95 ablation: 새 RL run이 필요한 유일한 보조 실험 후보
-- 역방향 KL 데모: 소규모 distillation 후보
-- 진입 확정 길이: branch의 정체가 몇 token 만에 확정되는지. 무릎 β_knee가 이 값으로 β^k 재계산되므로 결정 하나가 여기에 걸려 있다 (Cal_Beta_Before_train.md §7.3)
-- 문제 선별 기준: 난이도로는 접근 다양성을 예측할 수 없다는 것까지 확인됐고, 조작적 정의가 없다 (Cal_E_Before_train.md §7)
+- floor arm과 λ arm에서 state 표본의 (π_A, π_T, target) 저장 (binding profile과 반비례 진단)

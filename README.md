@@ -4,8 +4,9 @@ On-policy distillation이 downstream RL에 넘기는 탐색 상태를 측정하�
 어디까지 복구되는지를 보는 연구다. Distillation 직후의 benchmark score가 아니라
 다음 stage가 물려받는 branch 구조를 관측 대상으로 삼는다.
 
-측정은 세 관측량으로 한다. token 수준 불확실성 `H`, branch 진입 분포 `E`,
-그리고 branch를 택한 rollout이 정답에 도달하는 비율 `V`다. 여기서 두 요약지표
+측정은 세 관측량으로 한다. token 수준 불확실성 `H`, semantic branch의 생성 빈도와
+entry accessibility를 나누어 보는 `E`, 그리고 branch를 택한 rollout이 정답에 도달하는
+비율 `V`다. 여기서 두 요약지표
 Effective Branch Breadth와 Budgeted Successful Branch Discovery를 만들어
 Base → Distillation → RL을 같은 branch space에서 추적한다.
 
@@ -25,13 +26,13 @@ candidate도 내려보내지 않는다. Floor가 절대 확률이 아니라 anch
 
 | 경로 | 내용 |
 |---|---|
-| `Document/` | 논문 초안(`Draft.md`), 실험 설계(`Experiments.md`), β 설계 분석(`Cal_Beta_Before_train.md`), 구현 부록(`Imp_Detail.md`) |
+| `Document/` | 논문 초안(`Draft.md`), Branch/E 정본(`Branch_Panel_and_E.md`), 프로젝트 실험값(`Experiments.md`), β 설계 분석(`Cal_Beta_Before_train.md`), 구현 부록(`Imp_Detail.md`) |
 | `Code/verl/` | verl을 vendor한 것. 우리 수정이 여기 들어 있다 |
 | `Code/RELATIVE_FLOOR.md` | 구현 기록. 무엇을 바꿨고 무엇으로 검증했는지 |
 | `Code/tests/` | relative-floor 커널과 anchor 경로 검증 (44개) |
 | `Code/verl_smoke/` | 환경 구축 기록, 스모크 스크립트, 실행 로그 |
 | `Experiment/PreAnalysis/` | 훈련 전 Cost(β) 측정. frozen 모델 두 개의 forward pass만 쓴다 |
-| `Experiment/BranchDev/` | branch 탐색 도구와 pilot 생성 |
+| `Experiment/BranchDev/` | branch panel 생성 도구, API 설정, 실행 안내(`README.md`) |
 
 ## Code/verl 에 대해
 

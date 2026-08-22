@@ -47,7 +47,7 @@
 
     β_knee = ln(1/(1−c)) / (m·N) = ln20 / (0.10×80) ≈ 0.37
 
-여기서 c는 "발견 확률을 얼마까지 원하는가"이고 관행적인 신뢰수준 95%를 쓴다(ln(1/(1−0.95)) = ln20 ≈ 3). m은 보호를 약속하는 최소 Base 확률로, inherited branch의 자격선과 같은 값인 0.10이다(Experiments.md §1.3). N은 위에서 설명한 80이다. 재료가 전부 이미 정해져 있는 값들이라, 이 상한은 종이와 연필로 계산이 끝나 있다.
+여기서 c는 "발견 확률을 얼마까지 원하는가"이고 관행적인 신뢰수준 95%를 쓴다(ln(1/(1−0.95)) = ln20 ≈ 3). m은 보호를 약속하는 최소 Base branch mass로 0.10이다(Experiments.md §1.3). N은 위에서 설명한 80이다. 재료가 전부 이미 정해져 있는 값들이라, 이 상한은 종이와 연필로 계산이 끝나 있다.
 
 단, 이 공식은 branch 진입이 token 하나로 결정된다는 근사 위에 서 있다. 진입 확률이 β×m으로 남는다는 계산은 floor가 진입 경로에서 한 번만 작동한다고 가정한 것이다. 진입이 여러 token에 걸치면 retention은 β^k_bind로 줄어들고(Experiments.md §1.6), 그 실측과 함의는 §7에서 다룬다.
 
@@ -215,7 +215,7 @@ teacher는 thinking 모델이라 `<think>`에 확률 1.00을 몰아주는 완전
 
 이 값은 distill된 student가 `<think>`로 응답을 열 확률의 예측이기도 하다(§9의 예보 2).
 
-같은 관문이 E 사전 분석에서 반대 방향으로 다시 나타난다. 거기서는 외부 소스가 만든 traj를 채점하는데, post-training을 거친 Qwen3-1.7B가 `<think>` 없이 시작하는 텍스트의 첫 token에 −33.42를 준다(Cal_E_Before_train.md §5.4). 여기서는 Base가 template token을 모르는 쪽이고 거기서는 post-training 모델이 그것을 기대하는 쪽이지만, 위치 0의 값이 풀이 갈래가 아니라 형식 token의 값이라는 결론은 같다. 어느 분석에서든 형식 항을 먼저 분리하고 읽어야 한다.
+같은 관문은 기존 Branch/E pilot에서도 반대 방향으로 나타났다. 외부 모델의 trajectory를 채점했을 때, post-training을 거친 Qwen3-1.7B는 `<think>` 없이 시작하는 텍스트의 첫 token에 −33.42를 주었다. 여기서는 Base가 template token을 모르는 쪽이고, pilot에서는 post-training 모델이 그 token을 기대하는 쪽이지만 결론은 같다. 위치 0의 값은 풀이 갈래보다 형식 token의 영향을 먼저 받는다. 어느 분석에서든 형식 항을 분리한 뒤 읽어야 한다.
 
 위치 0을 벗어나면 대체로 싸다. internal state의 중앙값은 0.0018 nats로 사실상 공짜이고, 비싼 쪽 1.8%의 state가 internal 비용의 45.6%를 만든다. 비용을 만드는 것은 모델의 불확실성이 아니라 두 모델의 불일치다. 두 모델의 최선호 token이 일치하는 state(전체의 85%)는 평균 0.031인데, 불일치하는 state는 0.424로 14배다.
 
@@ -240,7 +240,7 @@ teacher는 thinking 모델이라 `<think>`에 확률 1.00을 몰아주는 완전
 
 ## 7. 창 단위 retention: token의 보장은 branch 진입까지 살아남는가
 
-floor의 보장은 token 하나 단위다. 그런데 branch에 진입한다는 것은 token 하나가 아니라 진입 segment(branch clustering과 같은 32~64 token) 전체를 통과하는 사건이다. token 수준의 보장 β가 창을 통과하며 어떻게 복리되는지 재기 위해, 생성 길이 64 이상인 anchor rollout 772개의 첫 64 token을 두 모델로 위치별 채점했다.
+floor의 보장은 token 하나 단위다. 그런데 branch에 진입한다는 것은 token 하나가 아니라 접근법이 드러나는 entry prefix 전체를 통과하는 사건이다. token 수준의 보장 β가 창을 통과하며 어떻게 복리되는지 재기 위해, 생성 길이 64 이상인 anchor rollout 772개의 첫 64 token을 두 모델로 위치별 채점했다.
 
 ### 7.1 vanilla distillation의 crush는 복리로 일어난다
 
@@ -283,9 +283,9 @@ k_bind가 창 길이를 따라 쌓이므로, 발견 확률은 branch의 정체�
 
 ![진입 확정 길이와 발견 확률](figures/fig7_prun_entry.png)
 
-78%와 0.9% 사이 어디인지가 이 하나의 길이에 달렸다. 진입 확정 길이는 branch clustering의 성질이므로 branch-dev에서 측정하며, panel 구축의 첫 산출물로 둔다. 값이 나오면 무릎을 β^k로 재계산한다. 그때까지 §1.3의 무릎 0.37은 진입이 token 하나로 결정된다는 근사의 값이다. sweep 격자가 이 불확실성을 괄호친다. 진입이 길게 확정되는 세계라면 β=0.8 arm이 살아 있는 유일한 보호이고, 그 경우 무릎 너머 arm의 성적이 이 산수의 검증대가 된다.
+78%와 0.9% 사이 어디인지가 이 길이에 달렸다. 진입 확정 길이의 조작적 기준은 아직 고정하지 않았으며, 실제 validated prefix와 completion을 본 뒤 정한다. 값이 나오면 무릎을 β^k로 재계산한다. 그때까지 §1.3의 무릎 0.37은 진입이 token 하나로 결정된다는 근삿값이다. Sweep 격자가 이 불확실성을 괄호친다. 진입이 길게 확정되는 세계라면 β=0.8 arm이 살아 있는 유일한 보호이고, 그 경우 무릎 너머 arm의 성적이 이 산수의 검증대가 된다.
 
-주의할 점 하나. 이 절의 수치는 전부 문자열(정확한 token 시퀀스) 확률 기준이라 하한이다. branch는 표현이 다른 여러 continuation의 묶음이므로 실제 mode 수준의 retention은 이보다 후하다. 확정 판정은 panel의 cluster 질량으로 한다.
+주의할 점 하나. 이 절의 수치는 정확한 token 시퀀스의 확률을 기준으로 하므로 하한이다. 하나의 semantic branch에는 표현이 다른 여러 entry가 있을 수 있어 실제 mode 수준의 retention은 이보다 후하다. 최종 판정은 고정 panel의 entry mass와 생성 빈도를 함께 보고 내린다.
 
 ## 8. 부수 결과 세 가지
 
@@ -315,7 +315,7 @@ k_bind가 창 길이를 따라 쌓이므로, 발견 확률은 branch의 정체�
 
 ## 10. 판정 후 행동과 역할 분담
 
-판정은 §5에서 났다. 자릿수는 toy와 같고 무릎이 먼저 걸린다. β=0.4와 sweep 격자를 확정하고 distillation run에 들어갈 수 있다. 착공 전에 남은 측정은 §7.3의 진입 확정 길이 하나이며, branch-dev(panel 구축)의 첫 산출물로 둔다.
+판정은 §5에서 났다. 자릿수는 toy와 같고 무릎이 먼저 걸린다. β=0.4와 sweep 격자를 확정하고 distillation run에 들어갈 수 있다. 착공 전에 남은 측정은 §7.3의 진입 확정 길이 하나이며, semantic panel 구축의 첫 산출물로 둔다.
 
 확정 판정은 여전히 훈련 실측의 몫이라는 점은 분명히 해 둔다. "protected arm의 pass@1이 vanilla arm보다 δ 이상 처지는가"의 최종 답은 두 arm을 실제로 distillation해야 나온다. pass@1은 훈련된 student의 성질이기 때문이다. 다만 그 실험은 새로 추가하는 것이 아니라 이미 계획의 몸통이다. Experiments.md §2의 주 비교(실험 1)와 β sweep(실험 2)이 정확히 Base에서 시작해 두 방식의 OPD를 적용하는 실험이고, 각 arm의 handoff pass@1이 거기서 측정된다.
 

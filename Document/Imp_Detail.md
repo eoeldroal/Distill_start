@@ -323,9 +323,10 @@ RL 단계에서 계속 비용을 내지만, prevention은 앞단에서 한 번 �
 
 ## 7. 로깅
 
-§3.6의 기제 사슬(floor 작동 → 진입 확률 → E_j → D_succ → all-fail 감소 → informative 증가)의
-고리이거나 그 해석에 필요한 통제 변수만 남겼다. 얼린 checkpoint에서 사후에 계산되는 값(E_j, V_j,
-B, D_succ)은 로깅하지 않는다.
+§3.6의 기제 사슬(floor 작동 → \(E^{\mathrm{entry}}\) 증가 → \(E^{\mathrm{gen}}\) 회복 →
+\(D_{\mathrm{succ}}\) 증가 → all-fail 감소 → informative 증가)의 고리이거나, 그 해석에 필요한
+통제 변수만 남겼다. 얼린 checkpoint에서 사후에 계산하는 \(E^{\mathrm{entry}}\),
+\(E^{\mathrm{gen}}\), \(V\), \(B\), \(D_{\mathrm{succ}}\)는 학습 로그에 넣지 않는다.
 
 스칼라는 wandb에서 바로 시계열로 보이고 arm 간 비교도 자동이다.
 
